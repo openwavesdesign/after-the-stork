@@ -1,4 +1,10 @@
+import type { Metadata } from 'next'
 import type { Service, Testimonial as TestimonialType } from '@/types'
+
+export const metadata: Metadata = {
+  title: 'Postpartum Doula & Overnight Newborn Care | Philadelphia & Main Line | After the Stork',
+  description: 'After the Stork provides expert postpartum doula care for families in Philadelphia, the Main Line, Bucks County, New Jersey, and surrounding communities. After the Stork is known to be the leader in overnight support, starting babies off with good healthy sleep habits that they can take with them for their lifetimes. Daytime and overnight hours available. Book a free consultation today.',
+}
 import Button from '@/components/ui/Button'
 import Eyebrow from '@/components/ui/Eyebrow'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
@@ -42,7 +48,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-10 lg:gap-16 items-center">
               {/* Left: copy */}
               <div>
-                <Eyebrow>Philadelphia · Main Line · Surrounding Communities</Eyebrow>
+                <Eyebrow>Philadelphia · Main Line · Bucks County · New Jersey · Surrounding Communities</Eyebrow>
                 <h1
                   className="font-serif font-light text-ink mt-4"
                   style={{ fontSize: 'clamp(56px, 8vw, 80px)', lineHeight: 1.05 }}
@@ -56,7 +62,7 @@ export default function HomePage() {
                   style={{ fontSize: '13px', maxWidth: '520px' }}
                 >
                   Expert overnight postpartum doula and newborn care for families across
-                  Philadelphia, the Main Line, and beyond.
+                  Philadelphia, the Main Line, Bucks County, New Jersey and neighboring communities.
                 </p>
                 <div className="flex flex-row gap-4 mt-8 flex-wrap">
                   <Button variant="default" href="/contact">
@@ -158,11 +164,10 @@ export default function HomePage() {
                 className="font-mono text-dim leading-relaxed mt-4"
                 style={{ fontSize: '12px', maxWidth: '460px' }}
               >
-                After the Stork was founded over 25 years ago by Georgette Kerr — a certified
-                postpartum doula and certified Gentle Sleep Coach with four grown children and
-                seven grandchildren of her own. What began as moms sharing a phone number with
-                friends has grown into one of the most trusted postpartum care services in the
-                Philadelphia area.
+                We know the newborn stage can feel overwhelming. You&apos;re healing, adjusting,
+                and running on very little sleep — and we&apos;re here to help. Watch our short
+                welcome video to learn about why After the Stork is the leading postpartum care
+                team and how we support families like yours.
               </p>
               <div className="mt-6">
                 <Button variant="ghost" href="/about">
@@ -251,14 +256,16 @@ export default function HomePage() {
                     className="font-mono text-ink uppercase tracking-[0.12em] font-medium"
                     style={{ fontSize: '10px' }}
                   >
-                    25+ Years Experience
+                    20+ Years Experience
                   </p>
                   <p
                     className="font-mono text-dim leading-relaxed mt-1"
                     style={{ fontSize: '11px' }}
                   >
-                    Founded over 25 years ago by Georgette Kerr, After the Stork is one of the
-                    most established postpartum doula services in the greater Philadelphia area.
+                    Georgette founded After the Stork over 20 years ago. Our reputation was built
+                    one family at a time as moms shared her phone number to other mom-friends who
+                    needed a good night&apos;s rest. Now it&apos;s known by thousands of moms all
+                    over the Philadelphia area.
                   </p>
                 </div>
               </div>
@@ -282,8 +289,8 @@ export default function HomePage() {
                     className="font-mono text-dim leading-relaxed mt-1"
                     style={{ fontSize: '11px' }}
                   >
-                    Recognized by Philadelphia families four times with the LOVE Award, honoring
-                    excellence and community trust.
+                    Four-time LOVE Award winners — a community recognition of excellence in
+                    postpartum care.
                   </p>
                 </div>
               </div>
@@ -307,8 +314,8 @@ export default function HomePage() {
                     className="font-mono text-dim leading-relaxed mt-1"
                     style={{ fontSize: '11px' }}
                   >
-                    Allison Hart, MS RD IBCLC, holds the highest level of breastfeeding training
-                    available. Her mantra: your goals are our goals.
+                    Allison Hart, MS RD IBCLC, provides the highest level of breastfeeding and
+                    nutrition support available — rare for a postpartum doula service.
                   </p>
                 </div>
               </div>
@@ -332,9 +339,8 @@ export default function HomePage() {
                     className="font-mono text-dim leading-relaxed mt-1"
                     style={{ fontSize: '11px' }}
                   >
-                    Georgette completed the intensive Gentle Sleep Coach training program and
-                    provides infant sleep guidance to all After the Stork families at no additional
-                    charge.
+                    Georgette completed the intensive Gentle Sleep Coach training and guides all
+                    After the Stork families through infant sleep at no additional charge.
                   </p>
                 </div>
               </div>
@@ -358,8 +364,9 @@ export default function HomePage() {
                     className="font-mono text-dim leading-relaxed mt-1"
                     style={{ fontSize: '11px' }}
                   >
-                    After the Stork is run by Georgette and her daughters Ashley and Allison.
-                    Every team member meets Georgette&apos;s personal standard of excellence.
+                    Georgette, her daughter Ashley (GM), and daughter Allison (IBCLC) lead the
+                    team. This is personal — they care about your family because family is
+                    everything to them.
                   </p>
                 </div>
               </div>
@@ -417,8 +424,8 @@ export default function HomePage() {
                 className="font-mono text-dim leading-relaxed mt-4"
                 style={{ fontSize: '12px' }}
               >
-                We serve families across Philadelphia, the Main Line, and surrounding communities
-                — wherever new parents need support, we show up.
+                We proudly support families throughout Philadelphia, the Main Line, Bucks County,
+                New Jersey, and surrounding communities.
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
                 {[
@@ -466,8 +473,8 @@ export default function HomePage() {
                 className="font-mono leading-relaxed mt-4"
                 style={{ fontSize: '12px', maxWidth: '480px', color: 'rgba(255,255,255,0.6)' }}
               >
-                Book a free consultation and let us build a care plan that fits your family. We
-                serve Philadelphia, the Main Line, and beyond.
+                Booking a consultation is the first step toward real sleep, real recovery, and
+                real support.
               </p>
             </div>
 
