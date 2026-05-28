@@ -1,4 +1,5 @@
-import type { Service, FAQCategory } from '@/types'
+import type { Metadata } from 'next'
+import type { Service } from '@/types'
 import Button from '@/components/ui/Button'
 import Eyebrow from '@/components/ui/Eyebrow'
 import FAQItem from '@/components/ui/FAQItem'
@@ -6,12 +7,36 @@ import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
 import SectionBadge from '@/components/ui/SectionBadge'
 import Breadcrumb from '@/components/layout/Breadcrumb'
 import servicesData from '@/data/services.json'
-import faqsData from '@/data/faqs.json'
 
-export const metadata = { title: 'Postpartum Doula Services' }
+export const metadata: Metadata = {
+  title: 'Postpartum Doula & Overnight Newborn Care Services | Philadelphia & Main Line | After the Stork',
+  description: 'Overnight postpartum doula support, daytime newborn care, gentle sleep coaching, IBCLC lactation support, and hospital overnight services in Philadelphia and the Main Line.',
+}
 
 const services = servicesData as Service[]
-const servicesFAQs = (faqsData as FAQCategory[]).find(c => c.slug === 'our-services')
+
+const serviceFAQs = [
+  {
+    question: "What does a postpartum doula do?",
+    answer: "A postpartum doula provides professional in-home support: newborn care, feeding support, infant sleep guidance, breastfeeding support, household assistance, and emotional reassurance — a whole-family approach to the postpartum period."
+  },
+  {
+    question: "What's the difference between a night nurse and a postpartum doula?",
+    answer: "A night nurse focuses solely on the baby. A postpartum doula supports the entire family — newborn care, breastfeeding support, sleep coaching, household assistance, and emotional reassurance all included. At After the Stork, our overnight doulas do all of the above."
+  },
+  {
+    question: "Is Gentle Sleep Coaching really free?",
+    answer: "Yes. Georgette completed the intensive three-month Gentle Sleep Coach training program and makes herself available to all After the Stork families to guide and troubleshoot infant sleep issues at no additional charge. It's one of the things that sets us apart."
+  },
+  {
+    question: "Do you have a lactation consultant on staff?",
+    answer: "Yes. Allison Hart, MS RD IBCLC, is an International Board Certified Lactation Consultant — the highest level of breastfeeding training available. Georgette has also completed breastfeeding training through The Philadelphia Department of Public Health and The Breastfeeding Resource Center. Our mantra: your goals are our goals."
+  },
+  {
+    question: "Do you serve Bryn Mawr and Wayne?",
+    answer: "Yes — we serve families throughout the Main Line including Bryn Mawr, Wayne, Villanova, Ardmore, Gladwyne, and many surrounding communities."
+  },
+]
 
 export default function ServicesPage() {
   const overnight = services.find(s => s.id === 'overnight')
@@ -41,14 +66,13 @@ export default function ServicesPage() {
               className="font-serif font-light text-ink mt-4"
               style={{ fontSize: 'clamp(52px, 7vw, 72px)', lineHeight: 1.05, maxWidth: '900px' }}
             >
-              Postpartum Doula &amp; Newborn Care Services in Philadelphia and the <em>Main Line</em>
+              Postpartum Doula &amp; Newborn Care Services in Philadelphia and the Main Line
             </h1>
             <p
               className="font-mono text-dim leading-relaxed mt-4"
               style={{ fontSize: '13px', maxWidth: '600px' }}
             >
-              From overnight newborn care to lactation support, every After the Stork service is
-              designed to give new families the rest, confidence, and professional care they need.
+              We customize every care plan to fit your schedule, your home, and your needs. Serving Philadelphia, the Main Line, and surrounding communities including select families in New Jersey.
             </p>
           </div>
         </div>
@@ -73,20 +97,15 @@ export default function ServicesPage() {
               >
                 Overnight Postpartum Doula Support
               </h2>
-              <p
-                className="font-mono text-dim leading-relaxed mb-4"
-                style={{ fontSize: '12px' }}
-              >
-                {overnight?.fullDescription}
-              </p>
-              <p
-                className="font-mono text-dim leading-relaxed mb-6"
-                style={{ fontSize: '12px' }}
-              >
-                When baby sleeps, your doula quietly tends to the household: cleaning pump parts,
-                sterilizing bottles, doing laundry, wiping down counters, turning on coffee. You
-                wake up rested. Your home is a little more caught up.
-              </p>
+              {overnight?.fullDescription.split('\n\n').map((para, i, arr) => (
+                <p
+                  key={i}
+                  className={`font-mono text-dim leading-relaxed ${i < arr.length - 1 ? 'mb-4' : 'mb-6'}`}
+                  style={{ fontSize: '12px' }}
+                >
+                  {para}
+                </p>
+              ))}
               <Button variant="default" href="/contact">
                 Book This Service
               </Button>
@@ -325,7 +344,7 @@ export default function ServicesPage() {
             Questions About Our Services
           </h2>
 
-          {servicesFAQs?.items.map((item, i, arr) => (
+          {serviceFAQs.map((item, i, arr) => (
             <FAQItem
               key={i}
               question={item.question}

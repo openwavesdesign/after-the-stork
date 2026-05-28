@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import type { Doula } from '@/types'
 import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
@@ -7,7 +8,10 @@ import SectionBadge from '@/components/ui/SectionBadge'
 import Breadcrumb from '@/components/layout/Breadcrumb'
 import doulaData from '@/data/doulas.json'
 
-export const metadata = { title: 'About After the Stork' }
+export const metadata: Metadata = {
+  title: 'About After the Stork | Postpartum Doulas in Philadelphia & Surrounding Communities',
+  description: 'After the Stork is a family-founded, award-winning postpartum doula service with over 25 years of experience supporting families in Philadelphia, the Main Line, Bucks County, New Jersey, and surrounding communities.',
+}
 
 const leadership = (doulaData as Doula[]).filter(d => d.isLeadership).sort((a, b) => a.order - b.order)
 
@@ -78,13 +82,13 @@ export default function AboutPage() {
                 className="font-mono text-dim leading-relaxed mt-4"
                 style={{ fontSize: '12px', maxWidth: '480px' }}
               >
-                After the Stork was founded over 25 years ago by Georgette Kerr — a certified postpartum doula and certified Gentle Sleep Coach with a genuine desire to help new families through the postpartum period. She built this business slowly and organically, one family at a time. Moms shared her phone number with friends. Word traveled the way it does when someone genuinely cares.
+                More than 25 years ago, Georgette Kerr became a certified postpartum doula out of a genuine desire to help new families — especially new moms — through the most demanding stretch of early parenthood.
               </p>
               <p
                 className="font-mono text-dim leading-relaxed mt-3"
                 style={{ fontSize: '12px', maxWidth: '480px' }}
               >
-                Today, After the Stork is a family business — run by Georgette and her two daughters, Ashley and Allison. The same warmth, the same standard of excellence, and the same commitment to every family we serve.
+                There was no marketing plan. No launch strategy. Just Georgette, showing up for families in her home of Philadelphia and the Main Line, where she was proud to grow up. Georgette cared so deeply and people took notice. Mothers began sharing her number with other mom-friends. That&rsquo;s how After the Stork grew — organically, authentically, one family trusting another. Today, it&rsquo;s a LOVE Award-winning team with 25+ years of community trust behind it.
               </p>
               <div className="font-mono text-stroke mt-6 flex items-center gap-2" style={{ fontSize: '8px' }}>
                 ◆ LOVE Award winner: 2020 · 2021 · 2022 · 2024
@@ -122,7 +126,7 @@ export default function AboutPage() {
             className="font-mono text-dim leading-relaxed mb-12"
             style={{ fontSize: '12px', maxWidth: '640px' }}
           >
-            After the Stork is led by three women who each bring a different expertise — and a personal investment in the families they serve.
+            After the Stork is, at its heart, a family business — and the family at the center of it has spent decades turning genuine care into a professional practice.
           </p>
 
           {/* Leadership rows */}
@@ -175,7 +179,7 @@ export default function AboutPage() {
                 Postpartum Support
               </h3>
               <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '11px' }}>
-                Our overnight and daytime doulas provide expert newborn care, feeding support, emotional reassurance, and light household assistance — so you can focus on healing, bonding, and rest.
+                As mothers ourselves, we understand both the difficulties and joys of motherhood. We know when baby blues is no longer just baby blues and can refer you to the best local practitioners we&rsquo;ve worked with for many years.
               </p>
             </Card>
 
@@ -185,7 +189,7 @@ export default function AboutPage() {
                 Infant Sleep Support
               </h3>
               <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '11px' }}>
-                Georgette completed the intensive Gentle Sleep Coach training program and makes herself available to all After the Stork families to guide and troubleshoot infant sleep — at no additional charge.
+                Georgette attended the intensive three-month Gentle Sleep Coach training program and makes herself available to all After the Stork families to guide and troubleshoot through sleep issues — at no additional charge.
               </p>
             </Card>
 
@@ -195,7 +199,7 @@ export default function AboutPage() {
                 Breastfeeding Support
               </h3>
               <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '11px' }}>
-                Allison Hart, MS RD IBCLC, provides expert lactation support alongside postpartum nutrition guidance. &ldquo;Your goals are our goals.&rdquo;
+                &ldquo;Your goals are our goals.&rdquo; Allison Hart, MS RD IBCLC, holds the highest breastfeeding credential available. Georgette is also trained through The Philadelphia Dept. of Public Health and The Breastfeeding Resource Center.
               </p>
             </Card>
           </div>
@@ -219,13 +223,13 @@ export default function AboutPage() {
               className="font-mono text-dim leading-relaxed max-w-[640px] mx-auto mt-4"
               style={{ fontSize: '13px' }}
             >
-              We believe the postpartum period is one of the most significant — and most underserved — transitions in a family&rsquo;s life. Too often, new parents are sent home from the hospital with a newborn and an assumption that they&rsquo;ll figure it out. We&rsquo;re here to make sure they don&rsquo;t have to.
+              We believe postpartum support should feel like a trusted family member arrived — someone who knows exactly what to do, does it quietly and expertly, and leaves your home better than they found it.
             </p>
             <p
               className="font-mono text-dim leading-relaxed max-w-[640px] mx-auto mt-4"
               style={{ fontSize: '13px' }}
             >
-              Our standard is simple: every family should feel completely supported, completely confident, and completely at ease. We aim to work ourselves right out of a job — leaving behind a rested, confident family that no longer needs us.
+              We love to empower you as a parent. Our goal is to boost your knowledge and confidence — teaching you evidence-based methods of caring for and comforting your newborn. We aim to work ourselves right out of the job.
             </p>
           </div>
         </div>
@@ -255,7 +259,7 @@ export default function AboutPage() {
                 className="font-mono text-dim leading-relaxed mt-4 mb-8"
                 style={{ fontSize: '12px', maxWidth: '480px' }}
               >
-                Every member of the After the Stork team is a nationally trained professional. Our leadership team brings credentials that go well beyond standard doula certification.
+                Every doula on our team is professionally trained by one of the Nation&rsquo;s leading postpartum doula training organizations — CAPPA, DONA, and Birth Arts International. Our staff is proud to include Registered Nurses (Labor &amp; Delivery and Postpartum), Newborn Care Specialists (NCS), Certified Lactation Consultants (CLC), International Board Certified Lactation Consultants (IBCLC), Registered Dietitians (MS RD), and Certified Gentle Sleep Coaches — plus ongoing education in infant care, feeding, and postpartum recovery.
               </p>
 
               {/* 2x2 credential cards */}
@@ -290,6 +294,14 @@ export default function AboutPage() {
                   </h4>
                   <p className="font-mono text-dim leading-relaxed mt-1" style={{ fontSize: '10px' }}>
                     All team members certified
+                  </p>
+                </Card>
+                <Card compact>
+                  <h4 className="font-mono text-ink font-medium uppercase tracking-[0.12em]" style={{ fontSize: '10px' }}>
+                    TDAP Vaccine
+                  </h4>
+                  <p className="font-mono text-dim leading-relaxed mt-1" style={{ fontSize: '10px' }}>
+                    All After the Stork doulas receive the TDAP vaccine to protect the families we serve
                   </p>
                 </Card>
               </div>

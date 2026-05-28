@@ -4,7 +4,10 @@ import Eyebrow from '@/components/ui/Eyebrow'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
 import SectionBadge from '@/components/ui/SectionBadge'
 
-export const metadata: Metadata = { title: 'Postpartum Resources' }
+export const metadata: Metadata = {
+  title: 'Postpartum & Newborn Care Resources | After the Stork Philadelphia',
+  description: 'Helpful resources for new and expecting families in Philadelphia and the Main Line — postpartum recovery, newborn sleep, breastfeeding, and more.',
+}
 
 const resourceCategories = [
   {

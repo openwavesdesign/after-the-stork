@@ -5,7 +5,10 @@ import Eyebrow from '@/components/ui/Eyebrow'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
 import SectionBadge from '@/components/ui/SectionBadge'
 
-export const metadata: Metadata = { title: 'Contact Us' }
+export const metadata: Metadata = {
+  title: 'Contact After the Stork | Philadelphia Postpartum Doula Team',
+  description: 'Ready to get started? Contact After the Stork to book a free consultation or ask questions about postpartum doula services in Philadelphia and the Main Line.',
+}
 
 const inputClass =
   'border border-stroke bg-transparent font-mono text-dim outline-none w-full tracking-[0.05em] focus:border-ink transition-colors px-4 py-3'

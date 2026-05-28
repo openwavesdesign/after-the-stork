@@ -5,7 +5,10 @@ import Eyebrow from '@/components/ui/Eyebrow'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
 import SectionBadge from '@/components/ui/SectionBadge'
 
-export const metadata: Metadata = { title: 'Blog' }
+export const metadata: Metadata = {
+  title: 'Postpartum Doula Blog | After the Stork Philadelphia',
+  description: 'Expert insights on postpartum recovery, newborn care, breastfeeding, and infant sleep from the After the Stork team — 25+ years of Philadelphia experience.',
+}
 
 const posts = [
   { tag: 'Newborn Sleep', title: 'How to Establish a Sleep Routine in the First 6 Weeks', readingTime: '5 min read', coming: false },
