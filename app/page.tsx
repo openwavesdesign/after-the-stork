@@ -45,7 +45,7 @@ export default function HomePage() {
         <div className="px-6 md:px-14 pb-14" style={{ position: 'relative', zIndex: 2, maxWidth: '1280px', width: '100%', margin: '0 auto' }}>
           <h1
             className="font-serif font-light text-ink"
-            style={{ fontSize: 'clamp(2.75rem,8vw,7.5rem)', lineHeight: 1.02, letterSpacing: '-0.018em', maxWidth: '1100px' }}
+            style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em', maxWidth: '1100px' }}
           >
             Finally. A Good<br /><em>Night&apos;s Sleep.</em>
           </h1>
@@ -111,15 +111,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── Awards Ribbon ────────────────────────────────────────────── */}
-      <div className="awards-ribbon" style={{ justifyContent: 'center' }}>
-        <span className="awards-ribbon-item"><strong style={{ color: 'var(--ink)', fontWeight: 500 }}>LOVE Award Winner · 2020 · 2021 · 2022 · 2024</strong></span>
-        <span className="awards-ribbon-item">25+ Years of Practice</span>
-        <span className="awards-ribbon-item">Family Owned · Family Led</span>
-        <span className="awards-ribbon-item">IBCLC On Staff</span>
-        <span className="awards-ribbon-item">Certified Gentle Sleep Coach</span>
-      </div>
-
       {/* ─── Video + Intro ────────────────────────────────────────────── */}
       <section className="bg-paper py-20">
         <div className="mx-auto" style={{ maxWidth: '1280px' }}>
@@ -127,7 +118,7 @@ export default function HomePage() {
             {/* Left */}
             <div className="px-6 md:px-12 lg:pr-16">
               <Eyebrow>Meet the Team</Eyebrow>
-              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(2.5rem,4vw,4.5rem)', lineHeight: 1.05 }}>
+              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
                 Meet After<br /><em>the Stork.</em>
               </h2>
               <p className="mt-6" style={{ fontSize: '0.9375rem', lineHeight: '1.75', color: 'var(--dim)', maxWidth: '460px' }}>
@@ -165,7 +156,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 mb-14 items-end">
             <div>
               <Eyebrow>How We Help</Eyebrow>
-              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(2.5rem,4vw,4rem)', lineHeight: 1.05 }}>
+              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
                 Our Services.
               </h2>
             </div>
@@ -214,7 +205,7 @@ export default function HomePage() {
                     <div className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.6875rem', color: 'var(--ink)' }}>{service.hours}</div>
                   </div>
                   <div>
-                    <h3 className="font-serif font-light text-ink" style={{ fontSize: '2rem', marginBottom: '0.875rem' }}>{service.name}</h3>
+                    <h3 className="font-serif font-light text-ink" style={{ fontSize: '1.625rem', marginBottom: '0.875rem' }}>{service.name}</h3>
                     <p style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '580px' }}>{service.shortDescription}</p>
                   </div>
                   <ImagePlaceholder label={service.name} style={{ height: '180px' }} />
@@ -232,7 +223,7 @@ export default function HomePage() {
             {/* Left: why us */}
             <div>
               <Eyebrow>Why After the Stork</Eyebrow>
-              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(2.25rem,3.5vw,3.5rem)', lineHeight: 1.05 }}>
+              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
                 Why Families<br /><em>Choose Us.</em>
               </h2>
 
@@ -366,7 +357,7 @@ export default function HomePage() {
             {/* Right */}
             <div className="px-6 md:px-12 lg:pl-16 mt-12 lg:mt-0 lg:border-l border-ghost">
               <Eyebrow>Where We Serve</Eyebrow>
-              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(2.25rem,3.5vw,3.5rem)', lineHeight: 1.05 }}>
+              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
                 Greater Philadelphia<br />&amp; Beyond.
               </h2>
               <p className="mt-6" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '400px' }}>
@@ -394,7 +385,7 @@ export default function HomePage() {
               <Eyebrow dark>Ready to Rest?</Eyebrow>
               <h2
                 className="font-serif font-light"
-                style={{ fontSize: 'clamp(2.75rem,5vw,4.5rem)', lineHeight: 1.05, color: 'var(--paper)', letterSpacing: '-0.015em' }}
+                style={{ fontSize: 'clamp(1.875rem,3.5vw,2.75rem)', lineHeight: 1.05, color: 'var(--paper)', letterSpacing: '-0.015em' }}
               >
                 Let&apos;s Talk About<br /><em style={{ color: 'var(--accent-soft)' }}>Your Family.</em>
               </h2>

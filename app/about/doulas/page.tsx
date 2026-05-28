@@ -25,7 +25,7 @@ export default function DoulasPage() {
               <div className="pill">Our Team</div>
               <h1
                 className="font-serif font-light text-ink"
-                style={{ fontSize: 'clamp(3.25rem,6vw,6rem)', lineHeight: 1.02, letterSpacing: '-0.018em' }}
+                style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em' }}
               >
                 Meet the People Who Will Care for<br /><em>Your Family.</em>
               </h1>
@@ -50,7 +50,7 @@ export default function DoulasPage() {
           <div className="flex justify-between items-end mb-12 gap-8 flex-wrap">
             <div>
               <Eyebrow>The Team</Eyebrow>
-              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(2.5rem,4vw,3.5rem)' }}>
+              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)' }}>
                 Our doulas.
               </h2>
             </div>
@@ -123,7 +123,7 @@ export default function DoulasPage() {
       {/* ─── CTA ───────────────────────────────────────────────────────── */}
       <section className="py-20 bg-ink">
         <div className="mx-auto px-6 md:px-12 text-center" style={{ maxWidth: '1280px' }}>
-          <h2 className="font-serif font-light" style={{ fontSize: '2.75rem', color: 'var(--paper)' }}>
+          <h2 className="font-serif font-light" style={{ fontSize: '2.25rem', color: 'var(--paper)' }}>
             Would You Like to Meet Us First?
           </h2>
           <p className="mt-4 max-w-[480px] mx-auto" style={{ fontSize: '0.9375rem', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>

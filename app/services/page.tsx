@@ -67,7 +67,7 @@ export default function ServicesPage() {
           <div className="pill">Our Services</div>
           <h1
             className="font-serif font-light text-ink"
-            style={{ fontSize: 'clamp(3.25rem,7vw,7rem)', lineHeight: 1.02, letterSpacing: '-0.018em', maxWidth: '900px' }}
+            style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em', maxWidth: '900px' }}
           >
             Postpartum Doula &amp; Newborn Care Services<br /><em>in Philadelphia and the Main Line.</em>
           </h1>
@@ -81,7 +81,7 @@ export default function ServicesPage() {
       <section className="bg-canvas py-20">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <Eyebrow>At a Glance</Eyebrow>
-          <h2 className="font-serif font-light text-ink mb-10" style={{ fontSize: 'clamp(2.25rem,3.5vw,3.5rem)', lineHeight: 1.05 }}>
+          <h2 className="font-serif font-light text-ink mb-10" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
             Six ways to support<br /><em>your family.</em>
           </h2>
 
@@ -116,7 +116,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
             <div>
               <span className="svc-tag">Most Popular · 10 PM – 6 AM</span>
-              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2rem' }}>
                 Overnight Postpartum Doula Support
               </h2>
               {overnight?.fullDescription.split('\n\n').map((para, i, arr) => (
@@ -160,7 +160,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
             <div>
               <span className="svc-tag">Flexible · Commonly 9 PM – 7 AM</span>
-              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2rem' }}>
                 Extended Overnight Newborn Care
               </h2>
               <p className="text-dim mb-6" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
@@ -187,7 +187,7 @@ export default function ServicesPage() {
 
             <div>
               <span className="svc-tag">Daytime · 5–8 Hours</span>
-              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2rem' }}>
                 Daytime Postpartum Support
               </h2>
               {daytime?.fullDescription.split('\n\n').map((para, i, arr) => (
@@ -238,7 +238,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
             <div>
               <span className="svc-tag">Included for All Clients · No Additional Charge</span>
-              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2rem' }}>
                 Gentle Sleep Coaching
               </h2>
               {sleepCoaching?.fullDescription.split('\n\n').map((para, i, arr) => (
@@ -271,7 +271,7 @@ export default function ServicesPage() {
 
             <div>
               <span className="svc-tag">IBCLC On Staff · Highest Credential Available</span>
-              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2rem' }}>
                 Breastfeeding &amp; Lactation Support
               </h2>
               {lactation?.fullDescription.split('\n\n').map((para, i, arr) => (
@@ -295,7 +295,7 @@ export default function ServicesPage() {
       <section className="py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '900px' }}>
           <Eyebrow>Common Questions</Eyebrow>
-          <h2 className="font-serif font-light text-ink mb-8" style={{ fontSize: '2.5rem' }}>
+          <h2 className="font-serif font-light text-ink mb-8" style={{ fontSize: '2rem' }}>
             Questions About Our Services
           </h2>
 
@@ -319,7 +319,7 @@ export default function ServicesPage() {
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 items-center">
             <div>
-              <h2 className="font-serif font-light" style={{ fontSize: '2.75rem', lineHeight: 1.1, color: 'var(--paper)' }}>
+              <h2 className="font-serif font-light" style={{ fontSize: '2.25rem', lineHeight: 1.1, color: 'var(--paper)' }}>
                 Ready to Build Your Care Plan?
               </h2>
               <p className="mt-3" style={{ fontSize: '0.9375rem', maxWidth: '480px', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>

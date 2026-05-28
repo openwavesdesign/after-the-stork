@@ -58,7 +58,7 @@ export default function ResourcesPage() {
           <div className="pill">Resources</div>
           <h1
             className="font-serif font-light text-ink"
-            style={{ fontSize: 'clamp(3.25rem,6vw,6rem)', lineHeight: 1.02, letterSpacing: '-0.018em', maxWidth: '900px' }}
+            style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em', maxWidth: '900px' }}
           >
             Postpartum &amp; Newborn Care Resources for <em>Philadelphia Families</em>
           </h1>
@@ -74,7 +74,7 @@ export default function ResourcesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
             <div>
               <Eyebrow>Free Download</Eyebrow>
-              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2rem' }}>
                 What to Expect from an Overnight Postpartum Doula in Philadelphia
               </h2>
               <p className="text-dim mb-8" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
@@ -115,7 +115,7 @@ export default function ResourcesPage() {
               <div className="font-mono uppercase tracking-[0.22em] mb-5" style={{ fontSize: '0.5625rem', color: 'var(--accent)' }}>
                 After the Stork · Guide № 01
               </div>
-              <h3 className="font-serif font-light text-ink" style={{ fontSize: '2.625rem', lineHeight: 1.05 }}>
+              <h3 className="font-serif font-light text-ink" style={{ fontSize: '1.875rem', lineHeight: 1.05 }}>
                 What to Expect from an Overnight Postpartum Doula <em>in Philadelphia.</em>
               </h3>
               <div style={{ position: 'absolute', left: '32px', right: '32px', bottom: '32px' }}>

@@ -22,7 +22,7 @@ export default function FAQPage() {
               <div className="pill">FAQ</div>
               <h1
                 className="font-serif font-light text-ink"
-                style={{ fontSize: 'clamp(3.5rem,7vw,7rem)', lineHeight: 1.02, letterSpacing: '-0.018em' }}
+                style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em' }}
               >
                 Your Questions,<br /><em>Answered.</em>
               </h1>
@@ -105,7 +105,7 @@ export default function FAQPage() {
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 items-center">
             <div>
-              <h2 className="font-serif font-light" style={{ fontSize: '2.75rem', lineHeight: 1.1, color: 'var(--paper)' }}>
+              <h2 className="font-serif font-light" style={{ fontSize: '2.25rem', lineHeight: 1.1, color: 'var(--paper)' }}>
                 Still Have Questions?
               </h2>
               <p className="mt-3" style={{ fontSize: '0.9375rem', maxWidth: '480px', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>

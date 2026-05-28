@@ -54,7 +54,7 @@ export default function BlogPostPage({ params }: PageProps) {
             </span>
             <h1
               className="font-serif text-ink font-light"
-              style={{ fontSize: 'clamp(2.5rem, 5vw, 3.25rem)', lineHeight: 1.15 }}
+              style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.15 }}
             >
               {frontmatter.title}
             </h1>
