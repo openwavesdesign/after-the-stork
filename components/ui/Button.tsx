@@ -28,8 +28,8 @@ export default function Button({
   type = 'button',
 }: ButtonProps) {
   const base =
-    'inline-flex items-center gap-[10px] font-mono uppercase tracking-[0.16em] transition-colors duration-150'
-  const style = { fontSize: '9px', padding: '13px 32px' }
+    'inline-flex items-center gap-[0.625rem] font-mono uppercase tracking-[0.16em] transition-colors duration-150'
+  const style = { fontSize: '0.75rem', padding: '0.8125rem 2rem' }
   const classes = `${base} ${variantClasses[variant]} ${className}`
 
   if (href) {

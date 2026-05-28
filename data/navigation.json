@@ -1,7 +1,14 @@
 {
   "primary": [
     { "label": "Services", "href": "/services" },
-    { "label": "About", "href": "/about" },
+    {
+      "label": "About",
+      "children": [
+        { "label": "About Us", "href": "/about" },
+        { "label": "Meet Our Doulas", "href": "/about/doulas" },
+        { "label": "Join the Team", "href": "/about/join" }
+      ]
+    },
     { "label": "FAQ", "href": "/faq" },
     { "label": "Resources", "href": "/resources" }
   ],

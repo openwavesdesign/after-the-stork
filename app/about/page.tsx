@@ -1,153 +1,133 @@
+import type { Metadata } from 'next'
 import type { Doula } from '@/types'
 import Button from '@/components/ui/Button'
-import Card from '@/components/ui/Card'
 import Eyebrow from '@/components/ui/Eyebrow'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
-import SectionBadge from '@/components/ui/SectionBadge'
-import Breadcrumb from '@/components/layout/Breadcrumb'
 import doulaData from '@/data/doulas.json'
 
-export const metadata = { title: 'About After the Stork' }
+export const metadata: Metadata = {
+  title: 'About After the Stork | Postpartum Doulas in Philadelphia & surrounding communities',
+  description: 'After the Stork is a family-founded, award-winning postpartum doula service with over 25 years of experience supporting families in Philadelphia, the Main Line, Bucks County, New Jersey, and surrounding communities.',
+}
 
 const leadership = (doulaData as Doula[]).filter(d => d.isLeadership).sort((a, b) => a.order - b.order)
+
+const beyondItems = [
+  { icon: '◐', title: 'Postpartum Support', body: 'As mothers ourselves, we understand both the difficulties and joys of motherhood. We know when baby blues is no longer just baby blues — and can refer you to the best local practitioners we\'ve worked with for many years.' },
+  { icon: '☾', title: 'Infant Sleep Support', body: 'Georgette attended the intensive three-month Gentle Sleep Coach training and makes herself available to all After the Stork families to guide and troubleshoot through sleep issues — at no additional charge.' },
+  { icon: '✦', title: 'Breastfeeding Support', body: '"Your goals are our goals." Allison Hart, MS RD IBCLC, holds the highest breastfeeding credential available. Georgette is also trained through The Philadelphia Dept. of Public Health and The Breastfeeding Resource Center.' },
+]
 
 export default function AboutPage() {
   return (
     <>
-      {/* Breadcrumb */}
-      <div className="bg-paper border-b border-stroke">
-        <div className="mx-auto px-6 md:px-12 py-4" style={{ maxWidth: '1280px' }}>
-          <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'About Us' }]} />
-        </div>
-      </div>
-
-      {/* ─── 01 / Hero ──────────────────────────────────────────────────────── */}
-      <section className="relative bg-paper pt-16 md:pt-24 pb-14 md:pb-20">
-        <SectionBadge label="01 / Hero" />
-        <div className="mx-auto px-6 md:px-12 relative overflow-hidden" style={{ maxWidth: '1280px' }}>
-          {/* Decorative numeral */}
-          <span
-            className="absolute top-0 right-0 font-serif text-ghost select-none pointer-events-none hidden md:block"
-            style={{ fontSize: '180px', lineHeight: '0.85' }}
-            aria-hidden="true"
-          >
-            02
-          </span>
-
-          {/* Pill */}
-          <span className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-6" style={{ fontSize: '8px' }}>
-            About Us
-          </span>
-
-          {/* H1 */}
+      {/* ─── Hero ──────────────────────────────────────────────────────── */}
+      <section className="bg-paper py-20">
+        <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
+          <div className="pill">About Us</div>
           <h1
             className="font-serif font-light text-ink"
-            style={{ fontSize: 'clamp(56px, 6vw, 72px)', lineHeight: 1.05, maxWidth: '768px' }}
+            style={{ fontSize: 'clamp(3.5rem,7.5vw,7.5rem)', lineHeight: 1.02, letterSpacing: '-0.018em', maxWidth: '900px' }}
           >
             We&rsquo;re Here for the Hardest — and Most <em>Beautiful</em> — Part of Parenthood
           </h1>
+          <p className="mt-6" style={{ fontSize: '1.125rem', color: 'var(--dim)', lineHeight: '1.7', maxWidth: '620px' }}>
+            After the Stork is a family business built on 25+ years of genuine care, community trust, and an unwavering commitment to the families who let us into their homes.
+          </p>
         </div>
       </section>
 
-      {/* ─── 02 / Full-Width Brand Photo ────────────────────────────────────── */}
-      <section className="relative">
-        <SectionBadge label="02 / Brand Photo" />
+      {/* ─── Full-bleed image ──────────────────────────────────────────── */}
+      <div style={{ borderBottom: 'var(--rule-soft)' }}>
         <ImagePlaceholder
-          label="Full-Width Brand Photo"
-          dimensions="1440 × 420 px"
+          label="After the Stork Team — Bryn Mawr Studio"
+          dimensions="1440 × 520 px"
+          style={{ height: '520px' }}
           className="w-full"
-          style={{ height: '420px' }}
         />
-      </section>
+      </div>
 
-      {/* ─── 03 / Origin Story ──────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-paper">
-        <SectionBadge label="03 / Origin Story" />
-        <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
-          <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16">
-            {/* Left: copy */}
-            <div>
+      {/* ─── Story section ─────────────────────────────────────────────── */}
+      <section className="bg-paper py-20">
+        <div className="mx-auto" style={{ maxWidth: '1280px' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr]" style={{ gap: 0, alignItems: 'center' }}>
+            {/* Left */}
+            <div className="px-6 md:px-12 lg:pr-16">
               <Eyebrow>How It Began</Eyebrow>
-              <h2
-                className="font-serif font-light text-ink mt-3"
-                style={{ fontSize: '40px' }}
-              >
-                How After the Stork Began
+              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(2.5rem,4vw,4rem)', lineHeight: 1.05 }}>
+                How After<br /><em>the Stork Began.</em>
               </h2>
-              <p
-                className="font-mono text-dim leading-relaxed mt-4"
-                style={{ fontSize: '12px', maxWidth: '480px' }}
-              >
-                After the Stork was founded over 25 years ago by Georgette Kerr — a certified postpartum doula and certified Gentle Sleep Coach with a genuine desire to help new families through the postpartum period. She built this business slowly and organically, one family at a time. Moms shared her phone number with friends. Word traveled the way it does when someone genuinely cares.
+              <p className="mt-6" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
+                More than 25 years ago, Georgette Kerr became a certified postpartum doula out of a genuine desire to help new families — especially new moms — through the most demanding stretch of early parenthood.
               </p>
-              <p
-                className="font-mono text-dim leading-relaxed mt-3"
-                style={{ fontSize: '12px', maxWidth: '480px' }}
-              >
-                Today, After the Stork is a family business — run by Georgette and her two daughters, Ashley and Allison. The same warmth, the same standard of excellence, and the same commitment to every family we serve.
+              <p className="mt-4" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
+                There was no marketing plan. No launch strategy. Just Georgette, showing up for families in her home of Philadelphia and the Main Line. Mothers began sharing her number with other mom-friends. That&rsquo;s how After the Stork grew — organically, authentically, one family trusting another.
               </p>
-              <div className="font-mono text-stroke mt-6 flex items-center gap-2" style={{ fontSize: '8px' }}>
-                ◆ LOVE Award winner: 2020 · 2021 · 2022 · 2024
-              </div>
+              <p className="mt-4" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
+                Today, her daughters Ashley and Allison have joined the team — making After the Stork a true family business in every sense of the word.
+              </p>
+              <blockquote style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', fontStyle: 'italic', color: 'var(--ink-soft)', lineHeight: 1.5, borderLeft: '2px solid var(--accent)', paddingLeft: '1.5rem', marginTop: '2rem' }}>
+                Today, it&rsquo;s a LOVE Award-winning team with 25+ years of community trust behind it.
+              </blockquote>
             </div>
 
-            {/* Right: portrait */}
-            <div>
+            {/* Right */}
+            <div
+              className="px-6 md:px-12 lg:pl-16 mt-12 lg:mt-0"
+              style={{ borderLeft: '1px solid var(--ghost)' }}
+            >
               <ImagePlaceholder
-                label="Georgette — Founder Portrait"
-                dimensions="600 × 960 px"
-                className="w-full"
-                style={{ height: '480px' }}
+                label="Georgette Kerr, Founder"
+                style={{ aspectRatio: '3/4' } as React.CSSProperties}
               />
-              <p className="font-mono text-stroke mt-2" style={{ fontSize: '8px' }}>
-                Founder portrait — to be photographed
+              <p className="font-mono uppercase tracking-[0.18em] mt-3 flex items-center gap-3" style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}>
+                <span style={{ display: 'inline-block', width: '20px', height: '1px', background: 'var(--stroke)' }} />
+                LOVE Award winner — 2020, 2021, 2022 &amp; 2024
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ─── 04 / Leadership Team ───────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-canvas">
-        <SectionBadge label="04 / Leadership Team" />
+      {/* ─── Leadership section ────────────────────────────────────────── */}
+      <section className="bg-canvas py-20">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <Eyebrow>A Family Business</Eyebrow>
-          <h2
-            className="font-serif font-light text-ink mt-3 mb-3"
-            style={{ fontSize: '40px' }}
-          >
-            Meet the Family Behind After the Stork
+          <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(2.5rem,4vw,4rem)', lineHeight: 1.05 }}>
+            Meet the Family Behind<br /><em>After the Stork.</em>
           </h2>
-          <p
-            className="font-mono text-dim leading-relaxed mb-12"
-            style={{ fontSize: '12px', maxWidth: '640px' }}
-          >
-            After the Stork is led by three women who each bring a different expertise — and a personal investment in the families they serve.
+          <p className="mt-4 mb-2" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '580px' }}>
+            After the Stork is, at its heart, a family business — and the family at the center of it has spent decades turning genuine care into a professional practice.
           </p>
 
-          {/* Leadership rows */}
           {leadership.map((doula, i) => (
             <div
               key={doula.id}
-              className={`flex flex-row gap-8 items-start border-t border-stroke py-10 ${i === leadership.length - 1 ? 'border-b' : ''}`}
+              style={{
+                borderTop: 'var(--rule-soft)',
+                ...(i === leadership.length - 1 ? { borderBottom: 'var(--rule-soft)' } : {}),
+                display: 'grid',
+                gridTemplateColumns: '280px 1fr',
+                gap: '3.5rem',
+                padding: '3rem 0',
+                alignItems: 'start',
+              }}
             >
-              {/* Photo */}
               <ImagePlaceholder
-                label="Doula Photo"
-                style={{ width: '200px', height: '240px', flexShrink: 0 }}
+                label={`${doula.name} Photo`}
+                style={{ aspectRatio: '3/4', width: '280px' } as React.CSSProperties}
               />
-              {/* Info */}
               <div>
-                <p className="font-mono text-ink uppercase tracking-[0.14em] font-medium" style={{ fontSize: '10px' }}>
-                  {doula.name}
-                </p>
-                <p className="font-mono text-mid uppercase tracking-[0.12em] mt-1" style={{ fontSize: '9px' }}>
+                <div className="font-mono uppercase tracking-[0.22em]" style={{ fontSize: '0.5625rem', color: 'var(--accent)', marginBottom: '0.5rem' }}>
                   {doula.title}
-                </p>
-                <p className="font-mono text-stroke mt-1" style={{ fontSize: '9px' }}>
+                </div>
+                <h3 className="font-serif font-light text-ink" style={{ fontSize: '2.25rem', lineHeight: 1.1 }}>
+                  {doula.name}
+                </h3>
+                <p className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}>
                   {doula.credentials}
                 </p>
-                <p className="font-mono text-dim leading-relaxed mt-3" style={{ fontSize: '11px', maxWidth: '560px' }}>
+                <p className="mt-5" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '560px' }}>
                   {doula.bio}
                 </p>
               </div>
@@ -156,189 +136,133 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ─── 05 / Support Services ──────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-paper">
-        <SectionBadge label="05 / Support Services" />
+      {/* ─── Beyond the Baby trio ─────────────────────────────────────── */}
+      <section className="bg-paper py-20">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <Eyebrow>What We Offer Beyond Newborn Care</Eyebrow>
-          <h2
-            className="font-serif font-light text-ink mt-3 mb-10"
-            style={{ fontSize: '40px' }}
-          >
-            Support That Goes Beyond the Baby
+          <h2 className="font-serif font-light text-ink mb-12" style={{ fontSize: 'clamp(2.25rem,3.5vw,3.5rem)', lineHeight: 1.05 }}>
+            Support That Goes<br /><em>Beyond the Baby.</em>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Card 1 */}
-            <Card>
-              <h3 className="font-serif font-light text-ink mb-3" style={{ fontSize: '24px' }}>
-                Postpartum Support
-              </h3>
-              <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '11px' }}>
-                Our overnight and daytime doulas provide expert newborn care, feeding support, emotional reassurance, and light household assistance — so you can focus on healing, bonding, and rest.
-              </p>
-            </Card>
-
-            {/* Card 2 */}
-            <Card>
-              <h3 className="font-serif font-light text-ink mb-3" style={{ fontSize: '24px' }}>
-                Infant Sleep Support
-              </h3>
-              <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '11px' }}>
-                Georgette completed the intensive Gentle Sleep Coach training program and makes herself available to all After the Stork families to guide and troubleshoot infant sleep — at no additional charge.
-              </p>
-            </Card>
-
-            {/* Card 3 */}
-            <Card>
-              <h3 className="font-serif font-light text-ink mb-3" style={{ fontSize: '24px' }}>
-                Breastfeeding Support
-              </h3>
-              <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '11px' }}>
-                Allison Hart, MS RD IBCLC, provides expert lactation support alongside postpartum nutrition guidance. &ldquo;Your goals are our goals.&rdquo;
-              </p>
-            </Card>
+            {beyondItems.map((item) => (
+              <div
+                key={item.title}
+                className="border"
+                style={{ borderColor: 'var(--stroke)', padding: '2.5rem' }}
+              >
+                <div className="font-serif" style={{ fontSize: '2.625rem', color: 'var(--accent)', marginBottom: '1.25rem', lineHeight: 1 }}>
+                  {item.icon}
+                </div>
+                <h3 className="font-serif font-light text-ink" style={{ fontSize: '1.5rem', marginBottom: '0.875rem' }}>
+                  {item.title}
+                </h3>
+                <p style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75' }}>
+                  {item.body}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ─── 06 / Philosophy ────────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-paper">
-        <SectionBadge label="06 / Philosophy" />
-        <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
-          <div className="max-w-[900px] mx-auto text-center">
-            <Eyebrow center>Our Philosophy of Care</Eyebrow>
-            <h2
-              className="font-serif font-light text-ink mt-4 mb-6"
-              style={{ fontSize: '48px' }}
-            >
-              Care That Feels Like <em>Family</em>
-            </h2>
-            <hr className="border-t border-stroke my-8 w-24 mx-auto" />
-            <p
-              className="font-mono text-dim leading-relaxed max-w-[640px] mx-auto mt-4"
-              style={{ fontSize: '13px' }}
-            >
-              We believe the postpartum period is one of the most significant — and most underserved — transitions in a family&rsquo;s life. Too often, new parents are sent home from the hospital with a newborn and an assumption that they&rsquo;ll figure it out. We&rsquo;re here to make sure they don&rsquo;t have to.
-            </p>
-            <p
-              className="font-mono text-dim leading-relaxed max-w-[640px] mx-auto mt-4"
-              style={{ fontSize: '13px' }}
-            >
-              Our standard is simple: every family should feel completely supported, completely confident, and completely at ease. We aim to work ourselves right out of a job — leaving behind a rested, confident family that no longer needs us.
-            </p>
-          </div>
+      {/* ─── Philosophy ────────────────────────────────────────────────── */}
+      <section className="bg-canvas py-20">
+        <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '920px' }}>
+          <Eyebrow center>Our Philosophy of Care</Eyebrow>
+          <h2 className="font-serif font-light text-ink text-center" style={{ fontSize: 'clamp(2.25rem,4vw,3.5rem)', lineHeight: 1.05 }}>
+            Care That Feels Like <em>Family</em>
+          </h2>
+          <hr style={{ border: 'none', borderTop: 'var(--rule-soft)', margin: '2rem auto', width: '80px' }} />
+          <p className="text-center mt-6" style={{ fontSize: '1.125rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '680px', margin: '0 auto' }}>
+            We believe postpartum support should feel like a trusted family member arrived — someone who knows exactly what to do, does it quietly and expertly, and leaves your home better than they found it.
+          </p>
+          <p className="text-center mt-5" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '640px', margin: '1.25rem auto 0' }}>
+            We love to empower you as a parent. Our goal is to boost your knowledge and confidence — teaching you evidence-based methods of caring for and comforting your newborn. We aim to work ourselves right out of the job.
+          </p>
         </div>
       </section>
 
-      {/* ─── 07 / Credentials ───────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-canvas">
-        <SectionBadge label="07 / Credentials" />
-        <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      {/* ─── Credentials ───────────────────────────────────────────────── */}
+      <section className="bg-paper py-20">
+        <div className="mx-auto" style={{ maxWidth: '1280px' }}>
+          <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr]" style={{ gap: 0, alignItems: 'center' }}>
             {/* Left: image */}
-            <ImagePlaceholder
-              label="Certification / Team Photo"
-              style={{ height: '400px' }}
-            />
+            <div className="px-6 md:px-12 lg:pr-16">
+              <ImagePlaceholder
+                label="Certification / Team Photo"
+                style={{ aspectRatio: '4/5' } as React.CSSProperties}
+              />
+            </div>
 
-            {/* Right: content */}
-            <div>
+            {/* Right */}
+            <div
+              className="px-6 md:px-12 lg:pl-16 mt-12 lg:mt-0"
+              style={{ borderLeft: '1px solid var(--ghost)' }}
+            >
               <Eyebrow>Expertise</Eyebrow>
-              <h2
-                className="font-serif font-light text-ink mt-3"
-                style={{ fontSize: '40px' }}
-              >
-                Trained. Certified. <em>Experienced.</em>
+              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(2.25rem,3.5vw,3.5rem)', lineHeight: 1.05 }}>
+                Trained. Certified.<br /><em>Experienced.</em>
               </h2>
-              <p
-                className="font-mono text-dim leading-relaxed mt-4 mb-8"
-                style={{ fontSize: '12px', maxWidth: '480px' }}
-              >
-                Every member of the After the Stork team is a nationally trained professional. Our leadership team brings credentials that go well beyond standard doula certification.
+              <p className="mt-5 mb-8" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
+                Every doula on our team is professionally trained — CAPPA, DONA, and Birth Arts International. Our staff includes Registered Nurses, Newborn Care Specialists, IBCLCs, Registered Dietitians, and Certified Gentle Sleep Coaches.
               </p>
 
-              {/* 2x2 credential cards */}
               <div className="grid grid-cols-2 gap-4">
-                <Card compact>
-                  <h4 className="font-mono text-ink font-medium uppercase tracking-[0.12em]" style={{ fontSize: '10px' }}>
-                    IBCLC — Allison Hart
+                {[
+                  { title: 'IBCLC', body: 'Allison Hart, MS RD IBCLC — Highest breastfeeding credential available' },
+                  { title: 'Gentle Sleep Coach', body: 'Georgette — Intensive 3-month training program' },
+                  { title: 'LOVE Award', body: '2020 · 2021 · 2022 · 2024' },
+                  { title: 'CPR & First Aid', body: 'All team members certified' },
+                ].map(({ title, body }) => (
+                  <div key={title} style={{ border: 'var(--rule-soft)', padding: '1.25rem', background: 'var(--canvas)' }}>
+                    <h4 className="font-mono uppercase tracking-[0.18em] text-ink" style={{ fontSize: '0.5625rem', fontWeight: 500, marginBottom: '0.5rem' }}>
+                      {title}
+                    </h4>
+                    <p style={{ fontSize: '0.875rem', color: 'var(--dim)', lineHeight: '1.6' }}>
+                      {body}
+                    </p>
+                  </div>
+                ))}
+
+                {/* Full-width TDAP card */}
+                <div className="col-span-2" style={{ border: 'var(--rule-soft)', padding: '1.25rem', background: 'var(--canvas)' }}>
+                  <h4 className="font-mono uppercase tracking-[0.18em] text-ink" style={{ fontSize: '0.5625rem', fontWeight: 500, marginBottom: '0.5rem' }}>
+                    TDAP Vaccine
                   </h4>
-                  <p className="font-mono text-dim leading-relaxed mt-1" style={{ fontSize: '10px' }}>
-                    Highest breastfeeding credential available
+                  <p style={{ fontSize: '0.875rem', color: 'var(--dim)', lineHeight: '1.6' }}>
+                    All After the Stork doulas receive the TDAP vaccine to protect the families we serve.
                   </p>
-                </Card>
-                <Card compact>
-                  <h4 className="font-mono text-ink font-medium uppercase tracking-[0.12em]" style={{ fontSize: '10px' }}>
-                    Gentle Sleep Coach — Georgette
-                  </h4>
-                  <p className="font-mono text-dim leading-relaxed mt-1" style={{ fontSize: '10px' }}>
-                    Intensive 3-month training program
-                  </p>
-                </Card>
-                <Card compact>
-                  <h4 className="font-mono text-ink font-medium uppercase tracking-[0.12em]" style={{ fontSize: '10px' }}>
-                    LOVE Award
-                  </h4>
-                  <p className="font-mono text-dim leading-relaxed mt-1" style={{ fontSize: '10px' }}>
-                    2020 · 2021 · 2022 · 2024
-                  </p>
-                </Card>
-                <Card compact>
-                  <h4 className="font-mono text-ink font-medium uppercase tracking-[0.12em]" style={{ fontSize: '10px' }}>
-                    CPR &amp; First Aid
-                  </h4>
-                  <p className="font-mono text-dim leading-relaxed mt-1" style={{ fontSize: '10px' }}>
-                    All team members certified
-                  </p>
-                </Card>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ─── 08 / Awards + CTA ──────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-ink">
-        <SectionBadge label="08 / Awards + CTA" dark={true} />
+      {/* ─── Dark CTA ──────────────────────────────────────────────────── */}
+      <section className="bg-ink py-20">
         <div className="mx-auto px-6 md:px-12 text-center" style={{ maxWidth: '1280px' }}>
-          {/* Dark eyebrow */}
-          <div className="flex items-center justify-center gap-[10px]">
-            <span className="text-white/40" style={{ fontSize: '6px' }}>◆</span>
-            <span className="font-mono text-white/40 uppercase tracking-[0.2em]" style={{ fontSize: '9px' }}>Award-Winning Care</span>
-          </div>
-
-          <h2
-            className="font-serif text-paper font-light mt-4"
-            style={{ fontSize: 'clamp(44px, 5vw, 52px)', lineHeight: 1.1 }}
-          >
-            LOVE Award Winner — 2020, 2021, 2022 &amp; 2024
+          <Eyebrow center dark>Award-Winning Care</Eyebrow>
+          <h2 className="font-serif font-light" style={{ fontSize: 'clamp(2.5rem,4vw,4rem)', lineHeight: 1.05, color: 'var(--paper)' }}>
+            LOVE Award Winner — 2020, 2021, 2022 &amp; <em style={{ color: 'var(--accent-soft)' }}>2024.</em>
           </h2>
-
-          <p
-            className="font-mono leading-relaxed mt-4 max-w-[560px] mx-auto"
-            style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)' }}
-          >
-            The LOVE Award recognizes the businesses and organizations that Philadelphians love most. After the Stork has earned this recognition four times — a reflection of the trust families place in us year after year.
+          <p className="mt-6 max-w-[560px] mx-auto" style={{ fontSize: '0.9375rem', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>
+            These awards reflect the trust and loyalty of the families we&rsquo;ve been honored to serve, and they drive us to maintain the standard of excellence that Georgette built this business on over 25 years ago.
           </p>
-
-          {/* Area tags */}
-          <div className="mt-8 flex flex-wrap justify-center gap-2">
-            {['Philadelphia', 'Bryn Mawr', 'Wayne', 'Villanova', 'Ardmore', 'Gladwyne', 'Chestnut Hill'].map((area) => (
+          <div className="flex flex-wrap justify-center gap-2 mt-8">
+            {['Philadelphia', 'Bryn Mawr', 'Wayne', 'Villanova', 'Ardmore', 'Moorestown NJ', 'Haddonfield NJ'].map((area) => (
               <span
                 key={area}
-                className="border border-white/20 font-mono text-white/40 uppercase tracking-[0.12em] px-3 py-1"
-                style={{ fontSize: '8px' }}
+                className="font-mono uppercase tracking-[0.1em]"
+                style={{ border: '1px solid rgba(255,255,255,.2)', padding: '6px 14px', fontSize: '0.5625rem', color: 'rgba(244,239,230,.6)', borderRadius: '100px', whiteSpace: 'nowrap' }}
               >
                 {area}
               </span>
             ))}
           </div>
-
           <div className="mt-8">
-            <Button variant="inverse" href="/about/doulas">
-              Meet Our Doulas
-            </Button>
+            <Button variant="inverse" href="/about/doulas">Meet Our Doulas</Button>
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, DM_Mono } from 'next/font/google'
+import { Cormorant_Garamond, DM_Mono, Inter } from 'next/font/google'
 import '@/styles/globals.css'
 import SiteHeader from '@/components/layout/SiteHeader'
 import SiteFooter from '@/components/layout/SiteFooter'
@@ -19,6 +19,13 @@ const dmMono = DM_Mono({
   display: 'swap',
 })
 
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
   title: {
     default: 'After the Stork — Philadelphia Postpartum Doula & Newborn Care',
@@ -28,16 +35,13 @@ export const metadata: Metadata = {
     'Expert overnight postpartum doula and newborn care for families across Philadelphia, the Main Line, and beyond. Founded 25+ years ago by Georgette Kerr.',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${dmMono.variable}`}>
+    <html lang="en" className={`${cormorant.variable} ${dmMono.variable} ${inter.variable}`}>
       <body>
+        <a href="#main-content" className="skip-link">Skip to main content</a>
         <SiteHeader />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <SiteFooter />
       </body>
     </html>

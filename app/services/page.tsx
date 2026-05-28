@@ -1,17 +1,54 @@
-import type { Service, FAQCategory } from '@/types'
+import type { Metadata } from 'next'
+import type { Service } from '@/types'
 import Button from '@/components/ui/Button'
 import Eyebrow from '@/components/ui/Eyebrow'
 import FAQItem from '@/components/ui/FAQItem'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
-import SectionBadge from '@/components/ui/SectionBadge'
-import Breadcrumb from '@/components/layout/Breadcrumb'
 import servicesData from '@/data/services.json'
-import faqsData from '@/data/faqs.json'
 
-export const metadata = { title: 'Postpartum Doula Services' }
+export const metadata: Metadata = {
+  title: 'Postpartum Doula & Overnight Newborn Care Services | Philadelphia & Main Line | After the Stork',
+  description: 'Overnight postpartum doula support, daytime newborn care, gentle sleep coaching, IBCLC lactation support, and hospital overnight services in Philadelphia and the Main Line.',
+}
 
 const services = servicesData as Service[]
-const servicesFAQs = (faqsData as FAQCategory[]).find(c => c.slug === 'our-services')
+
+const atAGlanceData = [
+  ['Overnight Postpartum', '10 PM – 6 AM', 'Most Popular', 'Sleep restored, mornings caught up', '#overnight'],
+  ['Extended Overnight', '9 PM – 7 AM', 'Flexible', 'Custom timing for your body\'s needs', '#extended-overnight'],
+  ['Daytime Postpartum', '5 – 8 hrs', 'Daytime', 'A long shower, real rest, gentle support', '#daytime'],
+  ['Witching Hour', '4 PM – 10 PM', 'Evening', 'Continuous care into the night', '#witching-hour'],
+  ['Hospital Overnight', 'In-hospital', 'Critical First Nights', 'Support when nursery isn\'t available', '#hospital-overnight'],
+  ['Sleep + Lactation', 'Always', 'Included Free', 'IBCLC & Gentle Sleep Coach on staff', '#sleep-coaching'],
+] as const
+
+const overnightIncludes = [
+  'Newborn feeding', 'Diaper changes', 'Soothing & sleep', 'Pump cleaning', 'Bottle sterilizing',
+  'Baby laundry', 'Light tidying', 'Family laundry', 'Coffee on', 'Trash out', 'Morning hand-off',
+]
+
+const serviceFAQs = [
+  {
+    question: "What does a postpartum doula do?",
+    answer: "A postpartum doula provides professional in-home support: newborn care, feeding support, infant sleep guidance, breastfeeding support, household assistance, and emotional reassurance — a whole-family approach to the postpartum period."
+  },
+  {
+    question: "What's the difference between a night nurse and a postpartum doula?",
+    answer: "A night nurse focuses solely on the baby. A postpartum doula supports the entire family — newborn care, breastfeeding support, sleep coaching, household assistance, and emotional reassurance all included. At After the Stork, our overnight doulas do all of the above."
+  },
+  {
+    question: "Is Gentle Sleep Coaching really free?",
+    answer: "Yes. Georgette completed the intensive three-month Gentle Sleep Coach training program and makes herself available to all After the Stork families to guide and troubleshoot infant sleep issues at no additional charge. It's one of the things that sets us apart."
+  },
+  {
+    question: "Do you have a lactation consultant on staff?",
+    answer: "Yes. Allison Hart, MS RD IBCLC, is an International Board Certified Lactation Consultant — the highest level of breastfeeding training available. Georgette has also completed breastfeeding training through The Philadelphia Department of Public Health and The Breastfeeding Resource Center. Our mantra: your goals are our goals."
+  },
+  {
+    question: "Do you serve Bryn Mawr and Wayne?",
+    answer: "Yes — we serve families throughout the Main Line including Bryn Mawr, Wayne, Villanova, Ardmore, Gladwyne, and many surrounding communities."
+  },
+]
 
 export default function ServicesPage() {
   const overnight = services.find(s => s.id === 'overnight')
@@ -24,75 +61,91 @@ export default function ServicesPage() {
 
   return (
     <>
-      {/* ─── 01 / Hero ──────────────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-paper">
-        <SectionBadge label="01 / Hero" />
+      {/* ─── Hero ──────────────────────────────────────────────────────── */}
+      <section className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
-          <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Services' }]} />
+          <div className="pill">Our Services</div>
+          <h1
+            className="font-serif font-light text-ink"
+            style={{ fontSize: 'clamp(3.25rem,7vw,7rem)', lineHeight: 1.02, letterSpacing: '-0.018em', maxWidth: '900px' }}
+          >
+            Postpartum Doula &amp; Newborn Care<br /><em>in Philadelphia.</em>
+          </h1>
+          <p className="mt-6" style={{ fontSize: '1.125rem', color: 'var(--dim)', lineHeight: '1.7', maxWidth: '600px' }}>
+            We customize every care plan to fit your schedule, your home, and your needs. Serving Philadelphia, the Main Line, and surrounding communities including select families in New Jersey.
+          </p>
+        </div>
+      </section>
 
-          <div className="mt-8">
-            <span
-              className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1"
-              style={{ fontSize: '8px' }}
-            >
-              Our Services
-            </span>
-            <h1
-              className="font-serif font-light text-ink mt-4"
-              style={{ fontSize: 'clamp(52px, 7vw, 72px)', lineHeight: 1.05, maxWidth: '900px' }}
-            >
-              Postpartum Doula &amp; Newborn Care Services in Philadelphia and the <em>Main Line</em>
-            </h1>
-            <p
-              className="font-mono text-dim leading-relaxed mt-4"
-              style={{ fontSize: '13px', maxWidth: '600px' }}
-            >
-              From overnight newborn care to lactation support, every After the Stork service is
-              designed to give new families the rest, confidence, and professional care they need.
-            </p>
+      {/* ─── At a Glance ───────────────────────────────────────────────── */}
+      <section className="bg-canvas py-20">
+        <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
+          <Eyebrow>At a Glance</Eyebrow>
+          <h2 className="font-serif font-light text-ink mb-10" style={{ fontSize: 'clamp(2.25rem,3.5vw,3.5rem)', lineHeight: 1.05 }}>
+            Six ways to support<br /><em>your family.</em>
+          </h2>
+
+          <div style={{ overflowX: 'auto' }}>
+            {atAGlanceData.map(([name, hours, tag, desc, href], i, arr) => (
+              <div
+                key={name}
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: '1.6fr 1fr .8fr 1.4fr 80px',
+                  gap: '2rem',
+                  padding: '1.5rem 0',
+                  borderTop: 'var(--rule-soft)',
+                  ...(i === arr.length - 1 ? { borderBottom: 'var(--rule-soft)' } : {}),
+                  alignItems: 'center',
+                }}
+              >
+                <div className="font-serif text-ink" style={{ fontSize: '1.5rem', fontWeight: 300 }}>{name}</div>
+                <div className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.625rem', color: 'var(--dim)' }}>{hours}</div>
+                <span className="svc-tag">{tag}</span>
+                <div className="font-serif italic" style={{ fontSize: '1rem', color: 'var(--ink-soft)' }}>{desc}</div>
+                <a href={href} className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.625rem', color: 'var(--accent)', whiteSpace: 'nowrap' }}>Learn ↓</a>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ─── 02 / Overnight Support ─────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-canvas">
-        <SectionBadge label="02 / Overnight Support" />
+      {/* ─── Overnight Support ─────────────────────────────────────────── */}
+      <section id="overnight" className="py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
-            {/* Left: copy */}
             <div>
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-4"
-                style={{ fontSize: '8px' }}
-              >
-                Most Popular · 10 PM – 6 AM
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-4"
-                style={{ fontSize: '40px' }}
-              >
+              <span className="svc-tag">Most Popular · 10 PM – 6 AM</span>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
                 Overnight Postpartum Doula Support
               </h2>
-              <p
-                className="font-mono text-dim leading-relaxed mb-4"
-                style={{ fontSize: '12px' }}
-              >
-                {overnight?.fullDescription}
-              </p>
-              <p
-                className="font-mono text-dim leading-relaxed mb-6"
-                style={{ fontSize: '12px' }}
-              >
-                When baby sleeps, your doula quietly tends to the household: cleaning pump parts,
-                sterilizing bottles, doing laundry, wiping down counters, turning on coffee. You
-                wake up rested. Your home is a little more caught up.
-              </p>
-              <Button variant="default" href="/contact">
-                Book This Service
-              </Button>
+              {overnight?.fullDescription.split('\n\n').map((para, i, arr) => (
+                <p
+                  key={i}
+                  className={`text-dim ${i < arr.length - 1 ? 'mb-4' : 'mb-6'}`}
+                  style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}
+                >
+                  {para}
+                </p>
+              ))}
+
+              {/* What's Included */}
+              <div className="mt-2">
+                <p className="font-mono uppercase tracking-[0.18em] text-mid mb-3" style={{ fontSize: '0.5625rem' }}>
+                  Every overnight shift includes
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {overnightIncludes.map((item) => (
+                    <span key={item} className="area-tag">{item}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <Button variant="default" href="/contact">Book This Service</Button>
+              </div>
             </div>
 
-            {/* Right: image */}
             <ImagePlaceholder
               label="Overnight Service Photo"
               style={{ height: '480px' }}
@@ -101,34 +154,20 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ─── 03 / Extended Overnight ────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-canvas">
-        <SectionBadge label="03 / Extended Overnight" />
+      {/* ─── Extended Overnight ────────────────────────────────────────── */}
+      <section id="extended-overnight" className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
-            {/* Left: copy */}
             <div>
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-4"
-                style={{ fontSize: '8px' }}
-              >
-                Flexible · Commonly 9 PM – 7 AM
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-4"
-                style={{ fontSize: '40px' }}
-              >
+              <span className="svc-tag">Flexible · Commonly 9 PM – 7 AM</span>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
                 Extended Overnight Newborn Care
               </h2>
-              <p
-                className="font-mono text-dim leading-relaxed mb-6"
-                style={{ fontSize: '12px' }}
-              >
+              <p className="text-dim mb-6" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
                 {extendedOvernight?.fullDescription}
               </p>
             </div>
 
-            {/* Right: image */}
             <ImagePlaceholder
               label="Extended Overnight Photo"
               style={{ height: '360px' }}
@@ -137,97 +176,55 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ─── 04 / Daytime Support ───────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-paper">
-        <SectionBadge label="04 / Daytime Support" />
+      {/* ─── Daytime Support ───────────────────────────────────────────── */}
+      <section id="daytime" className="py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-16 items-center">
-            {/* Left: image */}
             <ImagePlaceholder
               label="Daytime Service Photo"
               style={{ height: '400px' }}
             />
 
-            {/* Right: copy */}
             <div>
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-4"
-                style={{ fontSize: '8px' }}
-              >
-                Daytime · 5–8 Hours
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-4"
-                style={{ fontSize: '40px' }}
-              >
+              <span className="svc-tag">Daytime · 5–8 Hours</span>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
                 Daytime Postpartum Support
               </h2>
-              <p
-                className="font-mono text-dim leading-relaxed"
-                style={{ fontSize: '12px' }}
-              >
-                {daytime?.fullDescription}
-              </p>
-              <p
-                className="font-mono text-dim leading-relaxed mt-3 mb-6"
-                style={{ fontSize: '12px' }}
-              >
-                Many families schedule one or two mornings a week — and that one morning becomes the
-                day you finally take that long, uninterrupted shower.
-              </p>
-              <Button variant="ghost" href="/contact">
-                Learn More
-              </Button>
+              {daytime?.fullDescription.split('\n\n').map((para, i, arr) => (
+                <p
+                  key={i}
+                  className={`text-dim ${i < arr.length - 1 ? 'mb-4' : 'mb-6'}`}
+                  style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}
+                >
+                  {para}
+                </p>
+              ))}
+              <Button variant="ghost" href="/contact">Learn More</Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ─── 05 / Evening & Hospital ────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-canvas">
-        <SectionBadge label="05 / Evening & Hospital" />
+      {/* ─── Evening & Hospital ────────────────────────────────────────── */}
+      <section className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Card 1: Witching Hour */}
-            <div className="border border-stroke bg-paper p-10">
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-4"
-                style={{ fontSize: '8px' }}
-              >
-                Evening · 4 PM – 10 PM
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-4"
-                style={{ fontSize: '32px' }}
-              >
+            <div id="witching-hour" style={{ border: 'var(--rule-soft)', background: 'var(--canvas)', padding: '2.5rem' }}>
+              <span className="svc-tag">Evening · 4 PM – 10 PM</span>
+              <h2 className="font-serif font-light text-ink mb-4" style={{ fontSize: '2rem' }}>
                 Witching Hour Support
               </h2>
-              <p
-                className="font-mono text-dim leading-relaxed"
-                style={{ fontSize: '12px' }}
-              >
+              <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
                 {witchingHour?.fullDescription}
               </p>
             </div>
 
-            {/* Card 2: Hospital Overnight */}
-            <div className="border border-stroke bg-paper p-10">
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-4"
-                style={{ fontSize: '8px' }}
-              >
-                Hospital · Philadelphia-Area Hospitals
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-4"
-                style={{ fontSize: '32px' }}
-              >
+            <div id="hospital-overnight" style={{ border: 'var(--rule-soft)', background: 'var(--canvas)', padding: '2.5rem' }}>
+              <span className="svc-tag">Hospital · Philadelphia-Area Hospitals</span>
+              <h2 className="font-serif font-light text-ink mb-4" style={{ fontSize: '2rem' }}>
                 Hospital Overnight Support
               </h2>
-              <p
-                className="font-mono text-dim leading-relaxed"
-                style={{ fontSize: '12px' }}
-              >
+              <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
                 {hospitalOvernight?.fullDescription}
               </p>
             </div>
@@ -235,34 +232,26 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ─── 06 / Gentle Sleep Coaching ─────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-paper">
-        <SectionBadge label="06 / Sleep Coaching" />
+      {/* ─── Gentle Sleep Coaching ─────────────────────────────────────── */}
+      <section id="sleep-coaching" className="py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
-            {/* Left: copy */}
             <div>
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-4"
-                style={{ fontSize: '8px' }}
-              >
-                Included for All Clients · No Additional Charge
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-4"
-                style={{ fontSize: '40px' }}
-              >
+              <span className="svc-tag">Included for All Clients · No Additional Charge</span>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
                 Gentle Sleep Coaching
               </h2>
-              <p
-                className="font-mono text-dim leading-relaxed"
-                style={{ fontSize: '12px' }}
-              >
-                {sleepCoaching?.fullDescription}
-              </p>
+              {sleepCoaching?.fullDescription.split('\n\n').map((para, i, arr) => (
+                <p
+                  key={i}
+                  className={`text-dim ${i < arr.length - 1 ? 'mb-4' : ''}`}
+                  style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}
+                >
+                  {para}
+                </p>
+              ))}
             </div>
 
-            {/* Right: image */}
             <ImagePlaceholder
               label="Georgette — Sleep Coaching"
               style={{ height: '360px' }}
@@ -271,41 +260,30 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ─── 07 / Breastfeeding & Lactation ─────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-canvas">
-        <SectionBadge label="07 / Lactation Support" />
+      {/* ─── Breastfeeding & Lactation ─────────────────────────────────── */}
+      <section id="lactation" className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left: image */}
             <ImagePlaceholder
               label="Allison Hart IBCLC"
               style={{ height: '360px' }}
             />
 
-            {/* Right: copy */}
             <div>
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-4"
-                style={{ fontSize: '8px' }}
-              >
-                IBCLC On Staff · Highest Credential Available
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-4"
-                style={{ fontSize: '40px' }}
-              >
+              <span className="svc-tag">IBCLC On Staff · Highest Credential Available</span>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
                 Breastfeeding &amp; Lactation Support
               </h2>
-              <p
-                className="font-mono text-dim leading-relaxed mb-3"
-                style={{ fontSize: '12px' }}
-              >
-                {lactation?.fullDescription}
-              </p>
-              <p
-                className="font-mono text-stroke"
-                style={{ fontSize: '8px' }}
-              >
+              {lactation?.fullDescription.split('\n\n').map((para, i, arr) => (
+                <p
+                  key={i}
+                  className={`text-dim ${i < arr.length - 1 ? 'mb-4' : 'mb-3'}`}
+                  style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}
+                >
+                  {para}
+                </p>
+              ))}
+              <p className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}>
                 Allison Hart, MS RD IBCLC
               </p>
             </div>
@@ -313,19 +291,15 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ─── 08 / Service FAQs ──────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-paper">
-        <SectionBadge label="08 / FAQ" />
+      {/* ─── Service FAQs ──────────────────────────────────────────────── */}
+      <section className="py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '900px' }}>
           <Eyebrow>Common Questions</Eyebrow>
-          <h2
-            className="font-serif font-light text-ink mt-3 mb-8"
-            style={{ fontSize: '40px' }}
-          >
+          <h2 className="font-serif font-light text-ink mb-8" style={{ fontSize: '2.5rem' }}>
             Questions About Our Services
           </h2>
 
-          {servicesFAQs?.items.map((item, i, arr) => (
+          {serviceFAQs.map((item, i, arr) => (
             <FAQItem
               key={i}
               question={item.question}
@@ -340,33 +314,20 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ─── 09 / CTA ───────────────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-ink">
-        <SectionBadge label="09 / CTA" dark={true} />
+      {/* ─── CTA ───────────────────────────────────────────────────────── */}
+      <section className="py-20 bg-ink">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 items-center">
-            {/* Left: copy */}
             <div>
-              <h2
-                className="font-serif text-paper font-light"
-                style={{ fontSize: '44px', lineHeight: 1.1 }}
-              >
+              <h2 className="font-serif font-light" style={{ fontSize: '2.75rem', lineHeight: 1.1, color: 'var(--paper)' }}>
                 Ready to Build Your Care Plan?
               </h2>
-              <p
-                className="font-mono leading-relaxed mt-3"
-                style={{ fontSize: '12px', maxWidth: '480px', color: 'rgba(255,255,255,0.6)' }}
-              >
-                Start with a free consultation. We&apos;ll match you with the right doula and put
-                together a care plan that makes sense for your family.
+              <p className="mt-3" style={{ fontSize: '0.9375rem', maxWidth: '480px', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>
+                Start with a free consultation. We&apos;ll match you with the right doula and put together a care plan that makes sense for your family.
               </p>
             </div>
-
-            {/* Right: CTA button */}
             <div>
-              <Button variant="inverse" href="/contact">
-                Book Your Free Consultation
-              </Button>
+              <Button variant="inverse" href="/contact">Book Your Free Consultation</Button>
             </div>
           </div>
         </div>
