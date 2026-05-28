@@ -17,17 +17,8 @@ export default function AboutPage() {
   return (
     <>
       {/* ─── Hero ──────────────────────────────────────────────────────── */}
-      <section className="relative bg-paper pt-16 md:pt-24 pb-14 md:pb-20">
-        <div className="mx-auto px-6 md:px-12 relative overflow-hidden" style={{ maxWidth: '1280px' }}>
-          {/* Decorative numeral */}
-          <span
-            className="absolute top-0 right-0 font-serif text-ghost select-none pointer-events-none hidden md:block"
-            style={{ fontSize: '11.25rem', lineHeight: '0.85' }}
-            aria-hidden="true"
-          >
-            02
-          </span>
-
+      <section className="bg-paper pt-16 md:pt-24 pb-14 md:pb-20">
+        <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <span className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-6" style={{ fontSize: '0.6875rem' }}>
             About Us
           </span>
