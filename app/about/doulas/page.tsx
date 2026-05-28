@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import type { Doula } from '@/types'
 import Button from '@/components/ui/Button'
 import Eyebrow from '@/components/ui/Eyebrow'
-import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
+import Media from '@/components/ui/Media'
 import doulaData from '@/data/doulas.json'
 
 export const metadata: Metadata = {
@@ -34,9 +34,9 @@ export default function DoulasPage() {
               </p>
             </div>
 
-            <ImagePlaceholder
-              label="Team Photo"
-              dimensions="Team together"
+            <Media
+              alt="The After the Stork team of postpartum doulas"
+              label="Our Team"
               style={{ height: '400px' }}
             />
           </div>
@@ -85,11 +85,12 @@ export default function DoulasPage() {
                       : 'border-stroke hover:border-accent'
                   }`}
                 >
-                  <ImagePlaceholder
-                    label="Doula Photo"
-                    dimensions="3:4 ratio"
+                  <Media
+                    src={doula.photo}
+                    alt={isPlaceholder ? 'After the Stork care team member' : `${doula.name}, ${doula.title}`}
+                    label={isPlaceholder ? 'Coming Soon' : doula.name}
+                    ratio="3/4"
                     className="w-full"
-                    style={{ aspectRatio: '3/4' } as React.CSSProperties}
                   />
                   <div style={{ padding: '28px', borderTop: 'var(--rule-soft)' }}>
                     <p className="font-serif text-ink font-light" style={{ fontSize: '1.625rem', lineHeight: 1.1 }}>

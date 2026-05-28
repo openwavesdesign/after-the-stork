@@ -42,9 +42,9 @@ const resourceCategories = [
   {
     category: 'Local Philadelphia Resources',
     items: [
-      { title: 'Philadelphia-Area Lactation Consultants', type: 'Curated List', source: 'Georgette/Ashley to review' },
-      { title: 'Postpartum Mental Health Support in the Region', type: 'Curated List', source: 'External Link' },
-      { title: 'Pediatrician Recommendations for Main Line Families', type: 'Curated List', source: 'Georgette/Ashley to review' },
+      { title: 'Philadelphia-Area Lactation Consultants', type: 'Curated List', source: 'After the Stork' },
+      { title: 'Postpartum Mental Health Support in the Region', type: 'Curated List', source: 'After the Stork' },
+      { title: 'Pediatrician Recommendations for Main Line Families', type: 'Curated List', source: 'After the Stork' },
     ],
   },
 ]
@@ -106,7 +106,7 @@ export default function ResourcesPage() {
                 </button>
               </div>
               <p className="font-mono mt-2" style={{ fontSize: '0.75rem', color: 'var(--muted)', letterSpacing: '.1em' }}>
-                Email capture — connects to email marketing platform
+                We&rsquo;ll email you the guide and the occasional helpful resource. Unsubscribe anytime.
               </p>
             </div>
 

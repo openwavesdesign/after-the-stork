@@ -6,7 +6,7 @@ import faqsData from '@/data/faqs.json'
 
 export const metadata: Metadata = {
   title: 'Postpartum Doula FAQs | After the Stork Philadelphia',
-  description: 'Have questions about postpartum doula and overnight newborn care? Find answers from the After the Stork team — serving Philadelphia and the Main Line for over 25 years.',
+  description: 'Have questions about postpartum doula and overnight newborn care? Find answers from the After the Stork team — Philadelphia and the Main Line’s premier and longest-running postpartum doula agency since 2006.',
 }
 
 const faqs = faqsData as FAQCategory[]

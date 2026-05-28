@@ -20,3 +20,6 @@ next-env.d.ts
 # OS
 .DS_Store
 Thumbs.db
+
+# one-off WordPress import source (not needed once posts are generated)
+import/

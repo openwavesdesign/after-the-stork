@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
 import Eyebrow from '@/components/ui/Eyebrow'
-import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
+import Media from '@/components/ui/Media'
 
 export const metadata: Metadata = {
   title: 'Postpartum Doula Jobs in Philadelphia | Join After the Stork',
@@ -61,8 +61,9 @@ export default function JoinPage() {
               </div>
             </div>
 
-            <ImagePlaceholder
-              label="Doula at Work Photo"
+            <Media
+              alt="An After the Stork doula caring for a newborn"
+              label="Join Our Team"
               style={{ height: '520px' }}
             />
           </div>
@@ -190,7 +191,7 @@ export default function JoinPage() {
                 Application Form
               </h2>
               <p className="text-dim mb-8" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
-                Fill out our short application and we&rsquo;ll be in touch within [X] business days.
+                Fill out our short application and we&rsquo;ll be in touch within two business days.
               </p>
 
               <form id="apply-form" className="flex flex-col gap-8">
@@ -232,7 +233,7 @@ export default function JoinPage() {
                 </div>
 
                 <p className="font-mono" style={{ fontSize: '0.75rem', color: 'var(--muted)', letterSpacing: '.1em' }}>
-                  Form connects to EngineHire CRM — to be wired up during development
+                  We respect your privacy. Your information is only used to follow up about joining our team.
                 </p>
               </form>
             </div>

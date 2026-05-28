@@ -1,4 +1,4 @@
-import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
+import Media from '@/components/ui/Media'
 import type { Service } from '@/types'
 
 interface ServiceBlockProps {
@@ -36,16 +36,16 @@ export default function ServiceBlock({ service, isLast = false }: ServiceBlockPr
             {service.name}
           </h3>
           <p
-            className="font-mono text-dim"
-            style={{ fontSize: '1rem', lineHeight: '1.8' }}
+            className="text-dim"
+            style={{ fontSize: '0.9375rem', lineHeight: '1.8' }}
           >
             {service.shortDescription}
           </p>
         </div>
         {/* Right: image */}
-        <ImagePlaceholder
+        <Media
+          alt={`${service.name} — After the Stork`}
           label={service.name}
-          dimensions="320 × 200 px"
           className="w-full"
           style={{ height: '160px' }}
         />

@@ -1,32 +1,11 @@
 import type { Metadata } from 'next'
-import Button from '@/components/ui/Button'
+import Script from 'next/script'
 import Eyebrow from '@/components/ui/Eyebrow'
-import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
+import site from '@/data/site.json'
 
 export const metadata: Metadata = {
   title: 'Contact After the Stork | Philadelphia Postpartum Doula Team',
   description: 'Ready to get started? Contact After the Stork to book a free consultation or ask questions about postpartum doula services in Philadelphia and the Main Line.',
-}
-
-const inputStyle: React.CSSProperties = {
-  borderBottom: 'var(--rule)',
-  background: 'transparent',
-  padding: '10px 0 14px',
-  fontFamily: 'var(--font-serif)',
-  fontSize: '1.125rem',
-  color: 'var(--ink)',
-  outline: 'none',
-  width: '100%',
-}
-
-const labelStyle: React.CSSProperties = {
-  fontFamily: 'var(--font-mono)',
-  fontSize: '0.75rem',
-  letterSpacing: '.2em',
-  textTransform: 'uppercase',
-  color: 'var(--mid)',
-  display: 'block',
-  marginBottom: '10px',
 }
 
 export default function ContactPage() {
@@ -53,78 +32,22 @@ export default function ContactPage() {
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-20 items-start">
 
-            {/* Left — Form Column */}
+            {/* Left — EngineHire form embed */}
             <div>
               <Eyebrow>Send a Message</Eyebrow>
-
-              {/* Form card */}
-              <div style={{ background: 'var(--paper)', border: 'var(--rule)', padding: '48px' }}>
-                <form className="flex flex-col gap-8">
-                  <div>
-                    <label htmlFor="firstName" style={labelStyle}>First Name</label>
-                    <input id="firstName" type="text" name="firstName" style={inputStyle} />
-                  </div>
-
-                  <div>
-                    <label htmlFor="lastName" style={labelStyle}>Last Name</label>
-                    <input id="lastName" type="text" name="lastName" style={inputStyle} />
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-8">
-                    <div>
-                      <label htmlFor="email" style={labelStyle}>Email</label>
-                      <input id="email" type="email" name="email" style={inputStyle} />
-                    </div>
-                    <div>
-                      <label htmlFor="phone" style={labelStyle}>Phone</label>
-                      <input id="phone" type="tel" name="phone" style={inputStyle} />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="dueDate" style={labelStyle}>Due Date / Baby&rsquo;s Birth Date</label>
-                    <input
-                      id="dueDate"
-                      type="text"
-                      name="dueDate"
-                      placeholder="MM/DD/YYYY"
-                      style={{ ...inputStyle, fontFamily: 'var(--font-mono)', fontSize: '0.9375rem' }}
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="howHeard" style={labelStyle}>How Did You Hear About Us</label>
-                    <select
-                      id="howHeard"
-                      name="howHeard"
-                      style={{ ...inputStyle, cursor: 'pointer', appearance: 'none' }}
-                    >
-                      <option value="">— Please select —</option>
-                      <option value="google">Google</option>
-                      <option value="referral">Referral from a Friend</option>
-                      <option value="instagram">Instagram</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" style={labelStyle}>How Can We Help You</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={5}
-                      style={{ ...inputStyle, resize: 'vertical' }}
-                    />
-                  </div>
-
-                  <div>
-                    <Button variant="default" type="submit">Send Message</Button>
-                    <p className="font-mono mt-3" style={{ fontSize: '0.75rem', color: 'var(--muted)', letterSpacing: '.1em' }}>
-                      Form connects to EngineHire CRM — to be wired up during development
-                    </p>
-                  </div>
-                </form>
+              <div style={{ background: 'var(--paper)', border: 'var(--rule)', padding: '12px' }}>
+                <div style={{ overflow: 'auto', WebkitOverflowScrolling: 'touch' }}>
+                  <iframe
+                    title="After the Stork — Contact Form"
+                    id="enginehire-iframe"
+                    src={site.engineHire.formSrc}
+                    width="100%"
+                    height="10000"
+                    style={{ border: 'none', minHeight: '5000px', display: 'block' }}
+                  />
+                </div>
               </div>
+              <Script src={site.engineHire.scriptSrc} strategy="afterInteractive" />
             </div>
 
             {/* Right — Info Column */}
@@ -136,28 +59,28 @@ export default function ContactPage() {
 
               {/* Phone */}
               <div style={{ borderTop: 'var(--rule-soft)', padding: '1.5rem 0', display: 'flex', alignItems: 'flex-start', gap: '1.25rem' }}>
-                <span className="font-serif" style={{ fontSize: '1.75rem', color: 'var(--accent)', lineHeight: 1 }}>☏</span>
+                <span className="font-serif" style={{ fontSize: '1.75rem', color: 'var(--accent)', lineHeight: 1 }} aria-hidden="true">☏</span>
                 <div>
                   <p className="font-mono uppercase tracking-[0.2em]" style={{ fontSize: '0.75rem', color: 'var(--mid)', marginBottom: '6px' }}>Phone</p>
-                  <span className="font-serif" style={{ fontSize: '1.375rem', color: 'var(--ink)', lineHeight: 1 }}>[Phone Number]</span>
+                  <a href={site.phone.href} className="font-serif hover:text-accent transition-colors" style={{ fontSize: '1.375rem', color: 'var(--ink)', lineHeight: 1 }}>{site.phone.display}</a>
                 </div>
               </div>
 
               {/* Email */}
               <div style={{ borderTop: 'var(--rule-soft)', padding: '1.5rem 0', display: 'flex', alignItems: 'flex-start', gap: '1.25rem' }}>
-                <span className="font-serif" style={{ fontSize: '1.75rem', color: 'var(--accent)', lineHeight: 1 }}>✉</span>
+                <span className="font-serif" style={{ fontSize: '1.75rem', color: 'var(--accent)', lineHeight: 1 }} aria-hidden="true">✉</span>
                 <div>
                   <p className="font-mono uppercase tracking-[0.2em]" style={{ fontSize: '0.75rem', color: 'var(--mid)', marginBottom: '6px' }}>Email</p>
-                  <span className="font-serif" style={{ fontSize: '1.375rem', color: 'var(--ink)', lineHeight: 1 }}>[Email Address]</span>
+                  <a href={site.email.href} className="font-serif hover:text-accent transition-colors" style={{ fontSize: '1.375rem', color: 'var(--ink)', lineHeight: 1 }}>{site.email.display}</a>
                 </div>
               </div>
 
               {/* Service Area */}
               <div style={{ borderTop: 'var(--rule-soft)', padding: '1.5rem 0', display: 'flex', alignItems: 'flex-start', gap: '1.25rem' }}>
-                <span className="font-serif" style={{ fontSize: '1.75rem', color: 'var(--accent)', lineHeight: 1 }}>◎</span>
+                <span className="font-serif" style={{ fontSize: '1.75rem', color: 'var(--accent)', lineHeight: 1 }} aria-hidden="true">◎</span>
                 <div>
                   <p className="font-mono uppercase tracking-[0.2em]" style={{ fontSize: '0.75rem', color: 'var(--mid)', marginBottom: '6px' }}>Service Area</p>
-                  <span className="font-serif" style={{ fontSize: '1.375rem', color: 'var(--ink)', lineHeight: 1.35 }}>Serving Philadelphia, the Main Line, Montgomery &amp; Delaware Counties, and select NJ communities.</span>
+                  <span className="font-serif" style={{ fontSize: '1.375rem', color: 'var(--ink)', lineHeight: 1.35 }}>{site.serviceArea}</span>
                 </div>
               </div>
 
@@ -167,12 +90,23 @@ export default function ContactPage() {
                 ))}
               </div>
 
-              <div style={{ height: '280px', position: 'relative' }}>
-                <ImagePlaceholder
-                  label="Embedded Google Map — Service Area"
-                  dimensions="Google Maps embed"
-                  className="w-full h-full"
-                />
+              {/* Social */}
+              <div style={{ borderTop: 'var(--rule-soft)', paddingTop: '1.5rem' }}>
+                <p className="font-mono uppercase tracking-[0.2em] mb-3" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>Follow Along</p>
+                <div className="flex flex-wrap gap-4">
+                  {site.social.map((s) => (
+                    <a
+                      key={s.label}
+                      href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-mono uppercase tracking-[0.18em] hover:text-accent transition-colors"
+                      style={{ fontSize: '0.75rem', color: 'var(--dim)', borderBottom: '1px solid var(--accent)', paddingBottom: '2px' }}
+                    >
+                      {s.label}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
 

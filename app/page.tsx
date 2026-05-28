@@ -2,7 +2,8 @@ import type { Metadata } from 'next'
 import type { Service, Testimonial as TestimonialType } from '@/types'
 import Button from '@/components/ui/Button'
 import Eyebrow from '@/components/ui/Eyebrow'
-import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
+import Media from '@/components/ui/Media'
+import Reveal from '@/components/ui/Reveal'
 import Testimonial from '@/components/ui/Testimonial'
 import servicesData from '@/data/services.json'
 import testimonialsData from '@/data/testimonials.json'
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 }
 
 const whyUsItems = [
-  { n: '01', ttl: '25+ Years Experience', body: 'Georgette founded After the Stork over 25 years ago. Our reputation was built one family at a time as moms shared her phone number — now known by thousands of moms all over the Philadelphia area.' },
+  { n: '01', ttl: 'Serving Families Since 2006', body: 'Georgette founded After the Stork in 2006. The premier and longest-running postpartum doula agency in the region, our reputation was built one family at a time as moms shared her phone number — now known by thousands of families all over the Philadelphia area.' },
   { n: '02', ttl: 'Four-Time LOVE Award Winner', body: 'A community recognition of excellence in postpartum care — 2020, 2021, 2022, and 2024.' },
   { n: '03', ttl: 'IBCLC Lactation Support On Staff', body: 'Allison Hart, MS RD IBCLC, provides the highest level of breastfeeding and nutrition support available — rare for a postpartum doula service.' },
   { n: '04', ttl: 'Certified Gentle Sleep Coach', body: 'Georgette completed the intensive Gentle Sleep Coach training and guides all After the Stork families through infant sleep at no additional charge.' },
@@ -33,10 +34,12 @@ export default function HomePage() {
     <>
       {/* ─── Hero ─────────────────────────────────────────────────────── */}
       <section style={{ position: 'relative', minHeight: '85vh', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-        <ImagePlaceholder
-          label="Hero Image · Family with Newborn"
-          dimensions="1440 × 900 px"
-          className="absolute inset-0 w-full h-full"
+        <Media
+          alt="A Philadelphia family resting peacefully with their newborn"
+          label="Family with Newborn"
+          priority
+          warm={false}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}
         />
 
         <div style={{ flex: 1 }} />
@@ -62,7 +65,7 @@ export default function HomePage() {
                   className="font-serif"
                   style={{ fontSize: '1.375rem', lineHeight: '1.45', maxWidth: '620px', fontWeight: 300, color: 'var(--ink-soft)', marginTop: 0 }}
                 >
-                  Expert overnight postpartum doula and newborn care for families across Philadelphia, the Main Line, Bucks County, New Jersey and neighboring communities.
+                  The region&apos;s premier and longest-running postpartum doula agency since 2006 — expert overnight and daytime newborn care for families across Philadelphia, the Main Line, Bucks County, New Jersey and neighboring communities.
                 </p>
                 <div className="flex flex-wrap gap-4 mt-8">
                   <Button variant="fill" href="/contact">Book a Free Consultation</Button>
@@ -94,8 +97,8 @@ export default function HomePage() {
                 style={{ borderLeft: '1px solid var(--ghost)' }}
               >
                 <div>
-                  <div className="font-serif text-ink" style={{ fontSize: '4.5rem', fontWeight: 300, lineHeight: .95, letterSpacing: '-.02em' }}>25+</div>
-                  <div className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.75rem', color: 'var(--mid)', lineHeight: 1.5 }}>Years Serving<br />Philadelphia Families</div>
+                  <div className="font-serif text-ink" style={{ fontSize: '4.5rem', fontWeight: 300, lineHeight: .95, letterSpacing: '-.02em' }}>2006</div>
+                  <div className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.75rem', color: 'var(--mid)', lineHeight: 1.5 }}>Serving Philadelphia<br />Families Since</div>
                 </div>
                 <div>
                   <div className="font-serif text-ink" style={{ fontSize: '4.5rem', fontWeight: 300, lineHeight: .95, letterSpacing: '-.02em' }}>4×</div>
@@ -110,6 +113,15 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ─── Awards / Affiliations ribbon ─────────────────────────────── */}
+      <div className="awards-ribbon" role="list" aria-label="Awards and certifications">
+        <span className="awards-ribbon-item" role="listitem">LOVE Award · 2020 · 2021 · 2022 · 2024</span>
+        <span className="awards-ribbon-item" role="listitem">IBCLC on Staff</span>
+        <span className="awards-ribbon-item" role="listitem">Certified Gentle Sleep Coach</span>
+        <span className="awards-ribbon-item" role="listitem">CAPPA · DONA Trained</span>
+        <span className="awards-ribbon-item" role="listitem">All Doulas CPR &amp; TDAP Certified</span>
+      </div>
 
       {/* ─── Video + Intro ────────────────────────────────────────────── */}
       <section className="bg-paper py-20">
@@ -134,9 +146,10 @@ export default function HomePage() {
 
             {/* Right */}
             <div className="px-6 md:px-12 lg:pl-16 mt-12 lg:mt-0 lg:border-l border-ghost">
-              <ImagePlaceholder
+              <Media
+                alt="After the Stork welcome video"
                 label="Welcome Video · 2:14"
-                style={{ aspectRatio: '4/5' } as React.CSSProperties}
+                ratio="4/5"
               />
               <p
                 className="font-mono uppercase tracking-[0.18em] mt-3"
@@ -171,8 +184,9 @@ export default function HomePage() {
           {/* Numbered service list */}
           <div>
             {services.map((service, i) => (
-              <div
+              <Reveal
                 key={service.id}
+                delay={(i % 3) * 70}
                 style={{
                   padding: '1.75rem 0',
                   borderTop: 'var(--rule-soft)',
@@ -208,9 +222,9 @@ export default function HomePage() {
                     <h3 className="font-serif font-light text-ink" style={{ fontSize: '1.625rem', marginBottom: '0.875rem' }}>{service.name}</h3>
                     <p style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '580px' }}>{service.shortDescription}</p>
                   </div>
-                  <ImagePlaceholder label={service.name} style={{ height: '180px' }} />
+                  <Media alt={`${service.name} — After the Stork`} label={service.name} style={{ height: '180px' }} />
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -229,8 +243,9 @@ export default function HomePage() {
 
               <div className="mt-8">
                 {whyUsItems.map(({ n, ttl, body }, i, arr) => (
-                  <div
+                  <Reveal
                     key={n}
+                    delay={(i % 3) * 60}
                     style={{
                       display: 'grid',
                       gridTemplateColumns: '60px 1fr',
@@ -252,7 +267,7 @@ export default function HomePage() {
                         {body}
                       </p>
                     </div>
-                  </div>
+                  </Reveal>
                 ))}
               </div>
             </div>

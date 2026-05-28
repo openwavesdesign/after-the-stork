@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import type { Doula } from '@/types'
 import Button from '@/components/ui/Button'
 import Eyebrow from '@/components/ui/Eyebrow'
-import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
+import Media from '@/components/ui/Media'
 import doulaData from '@/data/doulas.json'
 
 export const metadata: Metadata = {
   title: 'About After the Stork | Postpartum Doulas in Philadelphia & surrounding communities',
-  description: 'After the Stork is a family-founded, award-winning postpartum doula service with over 25 years of experience supporting families in Philadelphia, the Main Line, Bucks County, New Jersey, and surrounding communities.',
+  description: 'After the Stork is a family-founded, award-winning postpartum doula service — Philadelphia and the Main Line’s premier and longest-running agency since 2006 — supporting families in Philadelphia, the Main Line, Bucks County, New Jersey, and surrounding communities.',
 }
 
 const leadership = (doulaData as Doula[]).filter(d => d.isLeadership).sort((a, b) => a.order - b.order)
@@ -32,16 +32,16 @@ export default function AboutPage() {
             We&rsquo;re Here for the Hardest — and Most <em>Beautiful</em> — Part of Parenthood
           </h1>
           <p className="mt-6" style={{ fontSize: '1.125rem', color: 'var(--dim)', lineHeight: '1.7', maxWidth: '620px' }}>
-            After the Stork is a family business built on 25+ years of genuine care, community trust, and an unwavering commitment to the families who let us into their homes.
+            After the Stork is a family business built on two decades of genuine care, community trust, and an unwavering commitment to the families who let us into their homes.
           </p>
         </div>
       </section>
 
       {/* ─── Full-bleed image ──────────────────────────────────────────── */}
       <div style={{ borderBottom: 'var(--rule-soft)' }}>
-        <ImagePlaceholder
-          label="After the Stork Team — Bryn Mawr Studio"
-          dimensions="1440 × 520 px"
+        <Media
+          alt="The After the Stork team in Bryn Mawr"
+          label="After the Stork Team — Bryn Mawr"
           style={{ height: '520px' }}
           className="w-full"
         />
@@ -58,13 +58,13 @@ export default function AboutPage() {
                 How After<br /><em>the Stork Began.</em>
               </h2>
               <p className="mt-6" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
-                More than 25 years ago, Georgette Kerr became a certified postpartum doula out of a genuine desire to help new families — especially new moms — through the most demanding stretch of early parenthood. There was no marketing plan. No launch strategy. Just Georgette, showing up for families in her home of Philadelphia and the Main Line, where she was proud to grow up.
+                In 2006, Georgette Kerr became a certified postpartum doula out of a genuine desire to help new families — especially new moms — through the most demanding stretch of early parenthood. There was no marketing plan. No launch strategy. Just Georgette, showing up for families in her home of Philadelphia and the Main Line, where she was proud to grow up.
               </p>
               <p className="mt-4" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
                 Georgette cared so deeply and people took notice. Mothers began sharing her number with other mom-friends. That&rsquo;s how After the Stork grew — organically, authentically, one family trusting another.
               </p>
               <blockquote style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', fontStyle: 'italic', color: 'var(--ink-soft)', lineHeight: 1.5, borderLeft: '2px solid var(--accent)', paddingLeft: '1.5rem', marginTop: '2rem' }}>
-                Today, it&rsquo;s a LOVE Award-winning team with 25+ years of community trust behind it.
+                Today, it&rsquo;s a LOVE Award-winning team that has earned the region&rsquo;s trust as its premier and longest-running postpartum doula agency since 2006.
               </blockquote>
             </div>
 
@@ -73,9 +73,10 @@ export default function AboutPage() {
               className="px-6 md:px-12 lg:pl-16 mt-12 lg:mt-0"
               style={{ borderLeft: '1px solid var(--ghost)' }}
             >
-              <ImagePlaceholder
+              <Media
+                alt="Georgette Kerr, founder of After the Stork"
                 label="Georgette Kerr, Founder"
-                style={{ aspectRatio: '3/4' } as React.CSSProperties}
+                ratio="3/4"
               />
               <p className="font-mono uppercase tracking-[0.18em] mt-3 flex items-center gap-3" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>
                 <span style={{ display: 'inline-block', width: '20px', height: '1px', background: 'var(--stroke)' }} />
@@ -110,9 +111,12 @@ export default function AboutPage() {
                 alignItems: 'start',
               }}
             >
-              <ImagePlaceholder
-                label={`${doula.name} Photo`}
-                style={{ aspectRatio: '3/4', width: '280px' } as React.CSSProperties}
+              <Media
+                src={doula.photo}
+                alt={`${doula.name}, ${doula.title} at After the Stork`}
+                label={doula.name}
+                ratio="3/4"
+                style={{ width: '280px' }}
               />
               <div>
                 <div className="font-mono uppercase tracking-[0.22em]" style={{ fontSize: '0.75rem', color: 'var(--accent)', marginBottom: '0.5rem' }}>
@@ -186,9 +190,10 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr]" style={{ gap: 0, alignItems: 'center' }}>
             {/* Left: image */}
             <div className="px-6 md:px-12 lg:pr-16">
-              <ImagePlaceholder
-                label="Certification / Team Photo"
-                style={{ aspectRatio: '4/5' } as React.CSSProperties}
+              <Media
+                alt="After the Stork doulas with their professional certifications"
+                label="Trained & Certified Team"
+                ratio="4/5"
               />
             </div>
 
@@ -245,7 +250,7 @@ export default function AboutPage() {
             LOVE Award Winner — 2020, 2021, 2022 &amp; <em style={{ color: 'var(--accent-soft)' }}>2024.</em>
           </h2>
           <p className="mt-6 max-w-[560px] mx-auto" style={{ fontSize: '0.9375rem', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>
-            These awards reflect the trust and loyalty of the families we&rsquo;ve been honored to serve, and they drive us to maintain the standard of excellence that Georgette built this business on over 25 years ago.
+            These awards reflect the trust and loyalty of the families we&rsquo;ve been honored to serve, and they drive us to maintain the standard of excellence that Georgette built this business on back in 2006.
           </p>
           <div className="flex flex-wrap justify-center gap-2 mt-8">
             {['Philadelphia', 'Bryn Mawr', 'Wayne', 'Villanova', 'Ardmore', 'Moorestown NJ', 'Haddonfield NJ'].map((area) => (
