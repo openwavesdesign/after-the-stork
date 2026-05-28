@@ -58,13 +58,10 @@ export default function AboutPage() {
                 How After<br /><em>the Stork Began.</em>
               </h2>
               <p className="mt-6" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
-                More than 25 years ago, Georgette Kerr became a certified postpartum doula out of a genuine desire to help new families — especially new moms — through the most demanding stretch of early parenthood.
+                More than 25 years ago, Georgette Kerr became a certified postpartum doula out of a genuine desire to help new families — especially new moms — through the most demanding stretch of early parenthood. There was no marketing plan. No launch strategy. Just Georgette, showing up for families in her home of Philadelphia and the Main Line, where she was proud to grow up.
               </p>
               <p className="mt-4" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
-                There was no marketing plan. No launch strategy. Just Georgette, showing up for families in her home of Philadelphia and the Main Line. Mothers began sharing her number with other mom-friends. That&rsquo;s how After the Stork grew — organically, authentically, one family trusting another.
-              </p>
-              <p className="mt-4" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
-                Today, her daughters Ashley and Allison have joined the team — making After the Stork a true family business in every sense of the word.
+                Georgette cared so deeply and people took notice. Mothers began sharing her number with other mom-friends. That&rsquo;s how After the Stork grew — organically, authentically, one family trusting another.
               </p>
               <blockquote style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', fontStyle: 'italic', color: 'var(--ink-soft)', lineHeight: 1.5, borderLeft: '2px solid var(--accent)', paddingLeft: '1.5rem', marginTop: '2rem' }}>
                 Today, it&rsquo;s a LOVE Award-winning team with 25+ years of community trust behind it.
@@ -205,7 +202,7 @@ export default function AboutPage() {
                 Trained. Certified.<br /><em>Experienced.</em>
               </h2>
               <p className="mt-5 mb-8" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
-                Every doula on our team is professionally trained — CAPPA, DONA, and Birth Arts International. Our staff includes Registered Nurses, Newborn Care Specialists, IBCLCs, Registered Dietitians, and Certified Gentle Sleep Coaches.
+                Every doula on our team is professionally trained by one of the nation&rsquo;s leading postpartum doula training organizations — CAPPA, DONA, and Birth Arts International. Our staff is proud to include Registered Nurses (Labor &amp; Delivery and Postpartum), Newborn Care Specialists (NCS), Certified Lactation Consultants (CLC), an International Board Certified Lactation Consultant (IBCLC), a Registered Dietitian (MS RD), and a Certified Gentle Sleep Coach — plus ongoing education in infant care, feeding, and postpartum recovery.
               </p>
 
               <div className="grid grid-cols-2 gap-4">
@@ -231,7 +228,7 @@ export default function AboutPage() {
                     TDAP Vaccine
                   </h4>
                   <p style={{ fontSize: '0.875rem', color: 'var(--dim)', lineHeight: '1.6' }}>
-                    All After the Stork doulas receive the TDAP vaccine to protect the families we serve.
+                    All After the Stork doulas proudly receive the TDAP vaccine to do our part to protect the most vulnerable population we serve against whooping cough.
                   </p>
                 </div>
               </div>

@@ -157,7 +157,7 @@ export default function ContactPage() {
                 <span className="font-serif" style={{ fontSize: '1.75rem', color: 'var(--accent)', lineHeight: 1 }}>◎</span>
                 <div>
                   <p className="font-mono uppercase tracking-[0.2em]" style={{ fontSize: '0.5625rem', color: 'var(--mid)', marginBottom: '6px' }}>Service Area</p>
-                  <span className="font-serif" style={{ fontSize: '1.375rem', color: 'var(--ink)', lineHeight: 1.35 }}>Philadelphia, Main Line, Montgomery &amp; Delaware Counties, select NJ communities.</span>
+                  <span className="font-serif" style={{ fontSize: '1.375rem', color: 'var(--ink)', lineHeight: 1.35 }}>Serving Philadelphia, the Main Line, Montgomery &amp; Delaware Counties, and select NJ communities.</span>
                 </div>
               </div>
 

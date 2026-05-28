@@ -57,12 +57,12 @@ export default function HomePage() {
             <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_auto] gap-20 items-end">
               {/* Left */}
               <div>
-                <Eyebrow>Philadelphia · Main Line · Bucks · New Jersey</Eyebrow>
+                <Eyebrow>Philadelphia · Main Line · Bucks County · New Jersey · Surrounding Communities</Eyebrow>
                 <p
                   className="font-serif"
                   style={{ fontSize: '1.375rem', lineHeight: '1.45', maxWidth: '620px', fontWeight: 300, color: 'var(--ink-soft)', marginTop: 0 }}
                 >
-                  Expert overnight postpartum doula and newborn care for families across greater Philadelphia. Twenty-five years of bringing rest, expertise, and a little quiet magic into your first weeks at home.
+                  Expert overnight postpartum doula and newborn care for families across Philadelphia, the Main Line, Bucks County, New Jersey and neighboring communities.
                 </p>
                 <div className="flex flex-wrap gap-4 mt-8">
                   <Button variant="fill" href="/contact">Book a Free Consultation</Button>
@@ -75,7 +75,7 @@ export default function HomePage() {
                   <input
                     id="zip"
                     type="text"
-                    placeholder="Enter your ZIP — check coverage"
+                    placeholder="Enter ZIP code — check service area coverage"
                     style={{ flex: 1, border: 'none', background: 'transparent', padding: '16px 18px', fontFamily: 'var(--font-serif)', fontSize: '1rem', color: 'var(--ink)', outline: 'none' }}
                   />
                   <button
@@ -269,7 +269,7 @@ export default function HomePage() {
             {/* Right: testimonials */}
             <div>
               <div style={{ position: 'sticky', top: '120px', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                <Eyebrow>What Families Say</Eyebrow>
+                <Eyebrow>What Our Families Say</Eyebrow>
                 {testimonials.map((t) => (
                   <Testimonial key={t.id} quote={t.quote} attribution={t.attribution} />
                 ))}
@@ -399,7 +399,7 @@ export default function HomePage() {
                 Let&apos;s Talk About<br /><em style={{ color: 'var(--accent-soft)' }}>Your Family.</em>
               </h2>
               <p className="mt-6" style={{ fontSize: '0.9375rem', color: 'rgba(244,239,230,.75)', lineHeight: '1.75', maxWidth: '500px' }}>
-                Booking a consultation is the first step toward real sleep, real recovery, and real support. We typically respond within one business day.
+                Booking a consultation is the first step toward real sleep, real recovery, and real support.
               </p>
             </div>
 
