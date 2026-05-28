@@ -42,10 +42,10 @@ export default function HomePage() {
         <div style={{ flex: 1 }} />
 
         {/* Headline */}
-        <div style={{ position: 'relative', zIndex: 2, maxWidth: '1280px', width: '100%', margin: '0 auto', padding: '0 3.5rem 3.5rem' }}>
+        <div className="px-6 md:px-14 pb-14" style={{ position: 'relative', zIndex: 2, maxWidth: '1280px', width: '100%', margin: '0 auto' }}>
           <h1
             className="font-serif font-light text-ink"
-            style={{ fontSize: 'clamp(3.5rem,8vw,7.5rem)', lineHeight: 1.02, letterSpacing: '-0.018em', maxWidth: '1100px' }}
+            style={{ fontSize: 'clamp(2.75rem,8vw,7.5rem)', lineHeight: 1.02, letterSpacing: '-0.018em', maxWidth: '1100px' }}
           >
             Finally. A Good<br /><em>Night&apos;s Sleep.</em>
           </h1>
@@ -53,7 +53,7 @@ export default function HomePage() {
 
         {/* Bottom panel */}
         <div style={{ position: 'relative', zIndex: 2, background: 'var(--paper)', borderTop: '1px solid var(--ink)' }}>
-          <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '48px 3.5rem 56px' }}>
+          <div className="px-6 md:px-14 py-12 md:py-14" style={{ maxWidth: '1280px', margin: '0 auto' }}>
             <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_auto] gap-20 items-end">
               {/* Left */}
               <div>
@@ -70,7 +70,7 @@ export default function HomePage() {
                 </div>
 
                 {/* ZIP bar */}
-                <div style={{ display: 'flex', alignItems: 'stretch', border: '1px solid var(--ink)', maxWidth: '440px', marginTop: '2rem', background: 'var(--paper)' }}>
+                <div style={{ display: 'flex', alignItems: 'stretch', border: '1px solid var(--ink)', maxWidth: '440px', width: '100%', marginTop: '2rem', background: 'var(--paper)' }}>
                   <label htmlFor="zip" className="sr-only">ZIP code</label>
                   <input
                     id="zip"
@@ -142,10 +142,7 @@ export default function HomePage() {
             </div>
 
             {/* Right */}
-            <div
-              className="px-6 md:px-12 lg:pl-16 mt-12 lg:mt-0"
-              style={{ borderLeft: '1px solid var(--ghost)' }}
-            >
+            <div className="px-6 md:px-12 lg:pl-16 mt-12 lg:mt-0 lg:border-l border-ghost">
               <ImagePlaceholder
                 label="Welcome Video · 2:14"
                 style={{ aspectRatio: '4/5' } as React.CSSProperties}
@@ -181,45 +178,47 @@ export default function HomePage() {
           </div>
 
           {/* Numbered service list */}
-          <div style={{ overflowX: 'auto' }}>
+          <div>
             {services.map((service, i) => (
               <div
                 key={service.id}
                 style={{
-                  display: 'grid',
-                  gridTemplateColumns: '90px 220px 1fr 280px',
-                  gap: '48px',
-                  alignItems: 'center',
-                  padding: '2.25rem 0',
+                  padding: '1.75rem 0',
                   borderTop: 'var(--rule-soft)',
                   ...(i === services.length - 1 ? { borderBottom: 'var(--rule-soft)' } : {}),
                 }}
               >
-                {/* Col 1: number */}
-                <div className="font-serif" style={{ fontSize: '3rem', fontWeight: 300, fontStyle: 'italic', color: 'var(--accent-soft)', lineHeight: 1 }}>
-                  {String(i + 1).padStart(2, '0')}
-                </div>
-
-                {/* Col 2: tag + hours */}
-                <div>
-                  <div className="svc-tag">{service.tagline}</div>
-                  <div className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.6875rem', color: 'var(--ink)' }}>
-                    {service.hours}
+                {/* Mobile layout */}
+                <div className="flex gap-5 lg:hidden">
+                  <div className="font-serif flex-shrink-0" style={{ fontSize: '2rem', fontWeight: 300, fontStyle: 'italic', color: 'var(--accent-soft)', lineHeight: 1, width: '2.5rem' }}>
+                    {String(i + 1).padStart(2, '0')}
+                  </div>
+                  <div>
+                    <div className="svc-tag">{service.tagline}</div>
+                    <div className="font-mono uppercase tracking-[0.18em] mb-2" style={{ fontSize: '0.6875rem', color: 'var(--ink)' }}>{service.hours}</div>
+                    <h3 className="font-serif font-light text-ink" style={{ fontSize: '1.5rem', marginBottom: '0.625rem' }}>{service.name}</h3>
+                    <p style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75' }}>{service.shortDescription}</p>
                   </div>
                 </div>
 
-                {/* Col 3: name + description */}
-                <div>
-                  <h3 className="font-serif font-light text-ink" style={{ fontSize: '2rem', marginBottom: '0.875rem' }}>
-                    {service.name}
-                  </h3>
-                  <p style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '580px' }}>
-                    {service.shortDescription}
-                  </p>
+                {/* Desktop layout */}
+                <div
+                  className="hidden lg:grid"
+                  style={{ gridTemplateColumns: '90px 220px 1fr 280px', gap: '48px', alignItems: 'center' }}
+                >
+                  <div className="font-serif" style={{ fontSize: '3rem', fontWeight: 300, fontStyle: 'italic', color: 'var(--accent-soft)', lineHeight: 1 }}>
+                    {String(i + 1).padStart(2, '0')}
+                  </div>
+                  <div>
+                    <div className="svc-tag">{service.tagline}</div>
+                    <div className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.6875rem', color: 'var(--ink)' }}>{service.hours}</div>
+                  </div>
+                  <div>
+                    <h3 className="font-serif font-light text-ink" style={{ fontSize: '2rem', marginBottom: '0.875rem' }}>{service.name}</h3>
+                    <p style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '580px' }}>{service.shortDescription}</p>
+                  </div>
+                  <ImagePlaceholder label={service.name} style={{ height: '180px' }} />
                 </div>
-
-                {/* Col 4: image */}
-                <ImagePlaceholder label={service.name} style={{ height: '180px' }} />
               </div>
             ))}
           </div>
@@ -365,10 +364,7 @@ export default function HomePage() {
             </div>
 
             {/* Right */}
-            <div
-              className="px-6 md:px-12 lg:pl-16 mt-12 lg:mt-0"
-              style={{ borderLeft: '1px solid var(--ghost)' }}
-            >
+            <div className="px-6 md:px-12 lg:pl-16 mt-12 lg:mt-0 lg:border-l border-ghost">
               <Eyebrow>Where We Serve</Eyebrow>
               <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(2.25rem,3.5vw,3.5rem)', lineHeight: 1.05 }}>
                 Greater Philadelphia<br />&amp; Beyond.

@@ -144,8 +144,8 @@ h1, h2, h3, h4 {
 .awards-ribbon {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  padding: 1.25rem 3.5rem;
+  gap: 1rem;
+  padding: 1.125rem 1.5rem;
   background: var(--paper-2);
   border-top: var(--rule-soft);
   border-bottom: var(--rule-soft);
@@ -154,8 +154,11 @@ h1, h2, h3, h4 {
   letter-spacing: .22em;
   text-transform: uppercase;
   color: var(--mid);
-  overflow-x: auto;
+  overflow-x: hidden;
   flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+  .awards-ribbon { gap: 1.5rem; padding: 1.25rem 3rem; }
 }
 .awards-ribbon-item {
   display: inline-flex;
