@@ -38,7 +38,7 @@ export default function ContactPage() {
           <div className="pill">Contact Us</div>
           <h1
             className="font-serif font-light text-ink"
-            style={{ fontSize: 'clamp(3.25rem,6vw,6rem)', lineHeight: 1.02, letterSpacing: '-0.018em', maxWidth: '900px' }}
+            style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em', maxWidth: '900px' }}
           >
             Contact Our Philadelphia <em>Postpartum Doula</em> Team
           </h1>
@@ -130,7 +130,7 @@ export default function ContactPage() {
             {/* Right — Info Column */}
             <div>
               <Eyebrow>Get in Touch</Eyebrow>
-              <h2 className="font-serif font-light text-ink mb-8" style={{ fontSize: '2.25rem' }}>
+              <h2 className="font-serif font-light text-ink mb-8" style={{ fontSize: '1.75rem' }}>
                 Direct Contact
               </h2>
 

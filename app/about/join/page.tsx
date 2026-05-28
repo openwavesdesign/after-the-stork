@@ -49,7 +49,7 @@ export default function JoinPage() {
               <div className="pill">We&rsquo;re Hiring</div>
               <h1
                 className="font-serif font-light text-ink"
-                style={{ fontSize: 'clamp(3.25rem,6vw,6rem)', lineHeight: 1.02, letterSpacing: '-0.018em' }}
+                style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em' }}
               >
                 Join Our Team of Postpartum<br /><em>Doulas.</em>
               </h1>
@@ -73,7 +73,7 @@ export default function JoinPage() {
       <section className="py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <Eyebrow>What Makes Us Different</Eyebrow>
-          <h2 className="font-serif font-light text-ink mb-10" style={{ fontSize: 'clamp(2.25rem,3.5vw,3.5rem)', lineHeight: 1.05 }}>
+          <h2 className="font-serif font-light text-ink mb-10" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
             Why Doulas Love<br /><em>Working Here.</em>
           </h2>
 
@@ -149,7 +149,7 @@ export default function JoinPage() {
             {/* Left: requirements */}
             <div>
               <Eyebrow>Who We&rsquo;re Looking For</Eyebrow>
-              <h2 className="font-serif font-light text-ink mb-6" style={{ fontSize: '2.5rem' }}>
+              <h2 className="font-serif font-light text-ink mb-6" style={{ fontSize: '2rem' }}>
                 What We&rsquo;re<br /><em>Looking For.</em>
               </h2>
 
@@ -186,7 +186,7 @@ export default function JoinPage() {
             {/* Right: application form */}
             <div>
               <Eyebrow>Ready to Apply?</Eyebrow>
-              <h2 className="font-serif font-light text-ink mb-4" style={{ fontSize: '2.5rem' }}>
+              <h2 className="font-serif font-light text-ink mb-4" style={{ fontSize: '2rem' }}>
                 Application Form
               </h2>
               <p className="text-dim mb-8" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>

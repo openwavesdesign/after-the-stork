@@ -30,7 +30,7 @@ export default function BlogPage() {
               <div className="pill">Blog</div>
               <h1
                 className="font-serif font-light text-ink"
-                style={{ fontSize: 'clamp(3.5rem,6vw,6rem)', lineHeight: 1.02, letterSpacing: '-0.018em' }}
+                style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em' }}
               >
                 The After<br /><em>the Stork Blog.</em>
               </h1>
@@ -54,7 +54,7 @@ export default function BlogPage() {
             <div>
               <Eyebrow>Featured</Eyebrow>
               <span className="area-tag mb-4 inline-block">Postpartum Doula</span>
-              <h2 className="font-serif font-light text-ink mb-3" style={{ fontSize: '2.25rem', lineHeight: 1.1 }}>
+              <h2 className="font-serif font-light text-ink mb-3" style={{ fontSize: '1.75rem', lineHeight: 1.1 }}>
                 What Does a Postpartum Doula Actually Do? (And Do I Need One?)
               </h2>
               <div
@@ -134,7 +134,7 @@ export default function BlogPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <Eyebrow dark>Stay in the Loop</Eyebrow>
-              <h2 className="font-serif font-light" style={{ fontSize: '2.5rem', color: 'var(--paper)' }}>
+              <h2 className="font-serif font-light" style={{ fontSize: '2rem', color: 'var(--paper)' }}>
                 Get Postpartum Insights<br /><em style={{ color: 'var(--accent-soft)' }}>Delivered to Your Inbox.</em>
               </h2>
               <p className="mt-4" style={{ fontSize: '0.9375rem', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>
