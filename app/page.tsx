@@ -39,27 +39,6 @@ export default function HomePage() {
           className="absolute inset-0 w-full h-full"
         />
 
-        {/* Top markers */}
-        <div style={{
-          position: 'relative',
-          zIndex: 2,
-          padding: '48px 56px 0',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'flex-start',
-          fontFamily: 'var(--font-mono)',
-          fontSize: '0.625rem',
-          letterSpacing: '.2em',
-          textTransform: 'uppercase',
-        }}>
-          <span style={{ background: 'rgba(244,239,230,.85)', padding: '8px 14px', backdropFilter: 'blur(6px)', color: 'var(--ink)' }}>
-            № 01 · Welcome Home
-          </span>
-          <span style={{ background: 'rgba(244,239,230,.85)', padding: '8px 14px', backdropFilter: 'blur(6px)', color: 'var(--ink)' }}>
-            Est. 2004 · Philadelphia
-          </span>
-        </div>
-
         <div style={{ flex: 1 }} />
 
         {/* Headline */}
@@ -133,7 +112,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── Awards Ribbon ────────────────────────────────────────────── */}
-      <div className="awards-ribbon">
+      <div className="awards-ribbon" style={{ justifyContent: 'center' }}>
         <span className="awards-ribbon-item"><strong style={{ color: 'var(--ink)', fontWeight: 500 }}>LOVE Award Winner · 2020 · 2021 · 2022 · 2024</strong></span>
         <span className="awards-ribbon-item">25+ Years of Practice</span>
         <span className="awards-ribbon-item">Family Owned · Family Led</span>
