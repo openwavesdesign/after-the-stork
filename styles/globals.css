@@ -8,11 +8,13 @@
   --paper-3:      #E1D9C8;
   --ghost:        #D9D2C2;
   --stroke:       #8A8170;
+  --muted:        #5F5949;
   --mid:          #524D40;
   --dim:          #3F3B30;
   --ink-soft:     #2E2A22;
   --ink:          #1B1814;
   --accent:       #224068;
+  --accent-mid:   #496894;
   --accent-soft:  #94A8C5;
   --accent-tint:  #D3DCE8;
   --accent-deep:  #14273F;
@@ -89,7 +91,7 @@ h1, h2, h3, h4 {
   border: 1px solid var(--accent);
   padding: 6px 14px;
   font-family: var(--font-mono);
-  font-size: 0.5625rem;
+  font-size: 0.75rem;
   letter-spacing: .22em;
   text-transform: uppercase;
   color: var(--accent);
@@ -108,7 +110,7 @@ h1, h2, h3, h4 {
   align-items: center;
   gap: 10px;
   font-family: var(--font-mono);
-  font-size: 0.5625rem;
+  font-size: 0.75rem;
   letter-spacing: .2em;
   text-transform: uppercase;
   color: var(--accent);
@@ -129,7 +131,7 @@ h1, h2, h3, h4 {
   border: 1px solid var(--stroke);
   padding: 6px 14px;
   font-family: var(--font-mono);
-  font-size: 0.5625rem;
+  font-size: 0.75rem;
   letter-spacing: .1em;
   text-transform: uppercase;
   color: var(--dim);
@@ -150,7 +152,7 @@ h1, h2, h3, h4 {
   border-top: var(--rule-soft);
   border-bottom: var(--rule-soft);
   font-family: var(--font-mono);
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   letter-spacing: .22em;
   text-transform: uppercase;
   color: var(--mid);

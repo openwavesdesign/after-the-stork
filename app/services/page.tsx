@@ -100,10 +100,10 @@ export default function ServicesPage() {
                 }}
               >
                 <div className="font-serif text-ink" style={{ fontSize: '1.5rem', fontWeight: 300 }}>{name}</div>
-                <div className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.625rem', color: 'var(--dim)' }}>{hours}</div>
+                <div className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.75rem', color: 'var(--dim)' }}>{hours}</div>
                 <span className="svc-tag">{tag}</span>
                 <div className="font-serif italic" style={{ fontSize: '1rem', color: 'var(--ink-soft)' }}>{desc}</div>
-                <a href={href} className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.625rem', color: 'var(--accent)', whiteSpace: 'nowrap' }}>Learn ↓</a>
+                <a href={href} className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.75rem', color: 'var(--accent)', whiteSpace: 'nowrap' }}>Learn ↓</a>
               </div>
             ))}
           </div>
@@ -131,7 +131,7 @@ export default function ServicesPage() {
 
               {/* What's Included */}
               <div className="mt-2">
-                <p className="font-mono uppercase tracking-[0.18em] text-mid mb-3" style={{ fontSize: '0.5625rem' }}>
+                <p className="font-mono uppercase tracking-[0.18em] text-mid mb-3" style={{ fontSize: '0.75rem' }}>
                   Every overnight shift includes
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -283,7 +283,7 @@ export default function ServicesPage() {
                   {para}
                 </p>
               ))}
-              <p className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}>
+              <p className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>
                 Allison Hart, MS RD IBCLC
               </p>
             </div>

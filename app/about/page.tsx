@@ -77,7 +77,7 @@ export default function AboutPage() {
                 label="Georgette Kerr, Founder"
                 style={{ aspectRatio: '3/4' } as React.CSSProperties}
               />
-              <p className="font-mono uppercase tracking-[0.18em] mt-3 flex items-center gap-3" style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}>
+              <p className="font-mono uppercase tracking-[0.18em] mt-3 flex items-center gap-3" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>
                 <span style={{ display: 'inline-block', width: '20px', height: '1px', background: 'var(--stroke)' }} />
                 LOVE Award winner — 2020, 2021, 2022 &amp; 2024
               </p>
@@ -115,13 +115,13 @@ export default function AboutPage() {
                 style={{ aspectRatio: '3/4', width: '280px' } as React.CSSProperties}
               />
               <div>
-                <div className="font-mono uppercase tracking-[0.22em]" style={{ fontSize: '0.5625rem', color: 'var(--accent)', marginBottom: '0.5rem' }}>
+                <div className="font-mono uppercase tracking-[0.22em]" style={{ fontSize: '0.75rem', color: 'var(--accent)', marginBottom: '0.5rem' }}>
                   {doula.title}
                 </div>
                 <h3 className="font-serif font-light text-ink" style={{ fontSize: '1.625rem', lineHeight: 1.1 }}>
                   {doula.name}
                 </h3>
-                <p className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}>
+                <p className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>
                   {doula.credentials}
                 </p>
                 <p className="mt-5" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '560px' }}>
@@ -213,7 +213,7 @@ export default function AboutPage() {
                   { title: 'CPR & First Aid', body: 'All team members certified' },
                 ].map(({ title, body }) => (
                   <div key={title} style={{ border: 'var(--rule-soft)', padding: '1.25rem', background: 'var(--canvas)' }}>
-                    <h4 className="font-mono uppercase tracking-[0.18em] text-ink" style={{ fontSize: '0.5625rem', fontWeight: 500, marginBottom: '0.5rem' }}>
+                    <h4 className="font-mono uppercase tracking-[0.18em] text-ink" style={{ fontSize: '0.75rem', fontWeight: 500, marginBottom: '0.5rem' }}>
                       {title}
                     </h4>
                     <p style={{ fontSize: '0.875rem', color: 'var(--dim)', lineHeight: '1.6' }}>
@@ -224,7 +224,7 @@ export default function AboutPage() {
 
                 {/* Full-width TDAP card */}
                 <div className="col-span-2" style={{ border: 'var(--rule-soft)', padding: '1.25rem', background: 'var(--canvas)' }}>
-                  <h4 className="font-mono uppercase tracking-[0.18em] text-ink" style={{ fontSize: '0.5625rem', fontWeight: 500, marginBottom: '0.5rem' }}>
+                  <h4 className="font-mono uppercase tracking-[0.18em] text-ink" style={{ fontSize: '0.75rem', fontWeight: 500, marginBottom: '0.5rem' }}>
                     TDAP Vaccine
                   </h4>
                   <p style={{ fontSize: '0.875rem', color: 'var(--dim)', lineHeight: '1.6' }}>
@@ -252,7 +252,7 @@ export default function AboutPage() {
               <span
                 key={area}
                 className="font-mono uppercase tracking-[0.1em]"
-                style={{ border: '1px solid rgba(255,255,255,.2)', padding: '6px 14px', fontSize: '0.5625rem', color: 'rgba(244,239,230,.6)', borderRadius: '100px', whiteSpace: 'nowrap' }}
+                style={{ border: '1px solid rgba(255,255,255,.2)', padding: '6px 14px', fontSize: '0.75rem', color: 'rgba(244,239,230,.6)', borderRadius: '100px', whiteSpace: 'nowrap' }}
               >
                 {area}
               </span>

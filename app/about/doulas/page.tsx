@@ -54,7 +54,7 @@ export default function DoulasPage() {
                 Our doulas.
               </h2>
             </div>
-            <div className="flex gap-2 font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.625rem', color: 'var(--dim)' }}>
+            <div className="flex gap-2 font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.75rem', color: 'var(--dim)' }}>
               {filterOptions.map((f, i) => (
                 <span
                   key={f}
@@ -95,10 +95,10 @@ export default function DoulasPage() {
                     <p className="font-serif text-ink font-light" style={{ fontSize: '1.625rem', lineHeight: 1.1 }}>
                       {isPlaceholder ? 'Coming Soon' : doula.name}
                     </p>
-                    <p className="font-mono uppercase tracking-[0.22em] mt-2" style={{ fontSize: '0.5625rem', color: 'var(--accent)' }}>
+                    <p className="font-mono uppercase tracking-[0.22em] mt-2" style={{ fontSize: '0.75rem', color: 'var(--accent)' }}>
                       {isPlaceholder ? 'Postpartum Doula' : doula.title}
                     </p>
-                    <p className="font-mono mt-1" style={{ fontSize: '0.5625rem', color: 'var(--mid)', letterSpacing: '.1em' }}>
+                    <p className="font-mono mt-1" style={{ fontSize: '0.75rem', color: 'var(--mid)', letterSpacing: '.1em' }}>
                       {isPlaceholder ? 'Profile coming soon' : doula.credentials}
                     </p>
                     <p className="mt-4" style={{ fontSize: '0.875rem', color: 'var(--dim)', lineHeight: '1.7' }}>
@@ -107,7 +107,7 @@ export default function DoulasPage() {
                         : doula.bio}
                     </p>
                     {!isPlaceholder && (
-                      <p className="font-mono uppercase tracking-[0.14em] mt-4 flex items-center gap-2" style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}>
+                      <p className="font-mono uppercase tracking-[0.14em] mt-4 flex items-center gap-2" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>
                         <span aria-hidden="true">◎</span>
                         {areas}
                       </p>

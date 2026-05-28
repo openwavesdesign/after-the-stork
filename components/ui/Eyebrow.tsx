@@ -18,7 +18,7 @@ export default function Eyebrow({ children, className = '', center = false, dark
       />
       <span
         className="font-mono uppercase tracking-[0.22em]"
-        style={{ fontSize: '0.625rem', color }}
+        style={{ fontSize: '0.75rem', color }}
       >
         {children}
       </span>

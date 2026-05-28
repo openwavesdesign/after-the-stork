@@ -31,14 +31,14 @@ export default function ImagePlaceholder({
       <div className="relative z-10 flex flex-col items-center gap-1 px-4 text-center">
         <span
           className="font-mono text-mid uppercase tracking-[0.15em]"
-          style={{ fontSize: '0.6875rem' }}
+          style={{ fontSize: '0.75rem' }}
         >
           {label}
         </span>
         {dimensions && (
           <span
-            className="font-mono text-stroke"
-            style={{ fontSize: '0.625rem' }}
+            className="font-mono text-muted"
+            style={{ fontSize: '0.75rem' }}
           >
             {dimensions}
           </span>

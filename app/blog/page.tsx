@@ -59,7 +59,7 @@ export default function BlogPage() {
               </h2>
               <div
                 className="font-mono uppercase tracking-[0.16em] flex flex-wrap gap-4 mb-5"
-                style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}
+                style={{ fontSize: '0.75rem', color: 'var(--mid)' }}
               >
                 <span>March 1, 2025</span>
                 <span>·</span>
@@ -87,7 +87,7 @@ export default function BlogPage() {
               <span key={t} className="area-tag">{t}</span>
             ))}
           </div>
-          <span className="font-mono uppercase tracking-[0.18em] text-mid" style={{ fontSize: '0.625rem' }}>
+          <span className="font-mono uppercase tracking-[0.18em] text-mid" style={{ fontSize: '0.75rem' }}>
             Showing 6 of 23 posts
           </span>
         </div>
@@ -117,7 +117,7 @@ export default function BlogPage() {
                     {post.title}
                   </p>
                   {!post.coming && post.readingTime && (
-                    <p className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}>
+                    <p className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>
                       {post.readingTime}
                     </p>
                   )}
@@ -154,12 +154,12 @@ export default function BlogPage() {
                 />
                 <button
                   className="font-mono uppercase tracking-[0.16em] hover:bg-ghost transition-colors whitespace-nowrap"
-                  style={{ background: 'var(--paper)', color: 'var(--ink)', fontSize: '0.625rem', padding: '0 24px' }}
+                  style={{ background: 'var(--paper)', color: 'var(--ink)', fontSize: '0.75rem', padding: '0 24px' }}
                 >
                   Subscribe →
                 </button>
               </div>
-              <p className="font-mono mt-2" style={{ fontSize: '0.5625rem', color: 'rgba(244,239,230,.35)', letterSpacing: '.1em' }}>
+              <p className="font-mono mt-2" style={{ fontSize: '0.75rem', color: 'rgba(244,239,230,.35)', letterSpacing: '.1em' }}>
                 Connects to email marketing platform — to be wired up
               </p>
             </div>

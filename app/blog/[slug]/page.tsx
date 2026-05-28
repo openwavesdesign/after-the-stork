@@ -48,7 +48,7 @@ export default function BlogPostPage({ params }: PageProps) {
           <div className="max-w-[800px]">
             <span
               className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.12em] px-3 py-1 mb-5"
-              style={{ fontSize: '0.6875rem' }}
+              style={{ fontSize: '0.75rem' }}
             >
               {frontmatter.category}
             </span>
@@ -59,8 +59,8 @@ export default function BlogPostPage({ params }: PageProps) {
               {frontmatter.title}
             </h1>
             <div
-              className="flex items-center gap-4 font-mono text-stroke uppercase tracking-[0.1em] mt-4"
-              style={{ fontSize: '0.6875rem' }}
+              className="flex items-center gap-4 font-mono text-muted uppercase tracking-[0.1em] mt-4"
+              style={{ fontSize: '0.75rem' }}
             >
               <span>{frontmatter.date}</span>
               <span aria-hidden="true">·</span>
@@ -108,7 +108,7 @@ export default function BlogPostPage({ params }: PageProps) {
                 <div className="px-6 py-7 border-t border-stroke">
                   <span
                     className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.12em] px-2 py-0.5 mb-3"
-                    style={{ fontSize: '0.625rem' }}
+                    style={{ fontSize: '0.75rem' }}
                   >
                     {tag}
                   </span>

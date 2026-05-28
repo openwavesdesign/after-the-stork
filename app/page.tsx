@@ -81,7 +81,7 @@ export default function HomePage() {
                   <button
                     type="button"
                     className="bg-ink text-paper font-mono uppercase tracking-[0.18em] hover:bg-accent-deep transition-colors"
-                    style={{ padding: '0 26px', fontSize: '0.625rem' }}
+                    style={{ padding: '0 26px', fontSize: '0.75rem' }}
                   >
                     Check
                   </button>
@@ -95,15 +95,15 @@ export default function HomePage() {
               >
                 <div>
                   <div className="font-serif text-ink" style={{ fontSize: '4.5rem', fontWeight: 300, lineHeight: .95, letterSpacing: '-.02em' }}>25+</div>
-                  <div className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.625rem', color: 'var(--mid)', lineHeight: 1.5 }}>Years Serving<br />Philadelphia Families</div>
+                  <div className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.75rem', color: 'var(--mid)', lineHeight: 1.5 }}>Years Serving<br />Philadelphia Families</div>
                 </div>
                 <div>
                   <div className="font-serif text-ink" style={{ fontSize: '4.5rem', fontWeight: 300, lineHeight: .95, letterSpacing: '-.02em' }}>4×</div>
-                  <div className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.625rem', color: 'var(--mid)', lineHeight: 1.5 }}>LOVE Award<br />2020 · 2021 · 2022 · 2024</div>
+                  <div className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.75rem', color: 'var(--mid)', lineHeight: 1.5 }}>LOVE Award<br />2020 · 2021 · 2022 · 2024</div>
                 </div>
                 <div>
                   <div className="font-serif text-ink" style={{ fontSize: '2.625rem', fontWeight: 300, lineHeight: .95, letterSpacing: '-.02em' }}>IBCLC</div>
-                  <div className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.625rem', color: 'var(--mid)', lineHeight: 1.5 }}>Lactation Consultant<br />On Staff</div>
+                  <div className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.75rem', color: 'var(--mid)', lineHeight: 1.5 }}>Lactation Consultant<br />On Staff</div>
                 </div>
               </div>
             </div>
@@ -140,7 +140,7 @@ export default function HomePage() {
               />
               <p
                 className="font-mono uppercase tracking-[0.18em] mt-3"
-                style={{ fontSize: '0.5625rem', color: 'var(--accent)' }}
+                style={{ fontSize: '0.75rem', color: 'var(--accent)' }}
               >
                 Filmed in Bryn Mawr — Spring 2025
               </p>
@@ -181,12 +181,12 @@ export default function HomePage() {
               >
                 {/* Mobile layout */}
                 <div className="flex gap-5 lg:hidden">
-                  <div className="font-serif flex-shrink-0" style={{ fontSize: '2rem', fontWeight: 300, fontStyle: 'italic', color: 'var(--accent-soft)', lineHeight: 1, width: '2.5rem' }}>
+                  <div className="font-serif flex-shrink-0" style={{ fontSize: '2rem', fontWeight: 300, fontStyle: 'italic', color: 'var(--accent-mid)', lineHeight: 1, width: '2.5rem' }}>
                     {String(i + 1).padStart(2, '0')}
                   </div>
                   <div>
                     <div className="svc-tag">{service.tagline}</div>
-                    <div className="font-mono uppercase tracking-[0.18em] mb-2" style={{ fontSize: '0.6875rem', color: 'var(--ink)' }}>{service.hours}</div>
+                    <div className="font-mono uppercase tracking-[0.18em] mb-2" style={{ fontSize: '0.75rem', color: 'var(--ink)' }}>{service.hours}</div>
                     <h3 className="font-serif font-light text-ink" style={{ fontSize: '1.5rem', marginBottom: '0.625rem' }}>{service.name}</h3>
                     <p style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75' }}>{service.shortDescription}</p>
                   </div>
@@ -197,12 +197,12 @@ export default function HomePage() {
                   className="hidden lg:grid"
                   style={{ gridTemplateColumns: '90px 220px 1fr 280px', gap: '48px', alignItems: 'center' }}
                 >
-                  <div className="font-serif" style={{ fontSize: '3rem', fontWeight: 300, fontStyle: 'italic', color: 'var(--accent-soft)', lineHeight: 1 }}>
+                  <div className="font-serif" style={{ fontSize: '3rem', fontWeight: 300, fontStyle: 'italic', color: 'var(--accent-mid)', lineHeight: 1 }}>
                     {String(i + 1).padStart(2, '0')}
                   </div>
                   <div>
                     <div className="svc-tag">{service.tagline}</div>
-                    <div className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.6875rem', color: 'var(--ink)' }}>{service.hours}</div>
+                    <div className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.75rem', color: 'var(--ink)' }}>{service.hours}</div>
                   </div>
                   <div>
                     <h3 className="font-serif font-light text-ink" style={{ fontSize: '1.625rem', marginBottom: '0.875rem' }}>{service.name}</h3>
@@ -245,7 +245,7 @@ export default function HomePage() {
                       {n}
                     </div>
                     <div>
-                      <p className="font-mono uppercase tracking-[0.18em] text-ink" style={{ fontSize: '0.6875rem', fontWeight: 500, marginBottom: '0.5rem' }}>
+                      <p className="font-mono uppercase tracking-[0.18em] text-ink" style={{ fontSize: '0.75rem', fontWeight: 500, marginBottom: '0.5rem' }}>
                         {ttl}
                       </p>
                       <p style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75' }}>
@@ -277,7 +277,7 @@ export default function HomePage() {
             {/* Left: map */}
             <div className="px-6 md:px-12 lg:pr-16">
               <div style={{ height: '480px', background: 'var(--paper-3)', border: 'var(--rule)', position: 'relative', overflow: 'hidden' }}>
-                <svg viewBox="0 0 600 480" style={{ width: '100%', height: '100%' }}>
+                <svg viewBox="0 0 600 480" style={{ width: '100%', height: '100%' }} aria-hidden="true" role="presentation">
                   {/* Dot grid pattern */}
                   <defs>
                     <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">

@@ -100,19 +100,19 @@ export default function ResourcesPage() {
                 <button
                   type="submit"
                   className="bg-ink text-paper font-mono uppercase tracking-[0.16em] hover:bg-dim transition-colors whitespace-nowrap"
-                  style={{ fontSize: '0.625rem', padding: '0 24px' }}
+                  style={{ fontSize: '0.75rem', padding: '0 24px' }}
                 >
                   Download
                 </button>
               </div>
-              <p className="font-mono mt-2" style={{ fontSize: '0.5625rem', color: 'var(--stroke)', letterSpacing: '.1em' }}>
+              <p className="font-mono mt-2" style={{ fontSize: '0.75rem', color: 'var(--muted)', letterSpacing: '.1em' }}>
                 Email capture — connects to email marketing platform
               </p>
             </div>
 
             {/* PDF Mockup */}
             <div style={{ position: 'relative', aspectRatio: '3/4', background: 'var(--paper)', border: 'var(--rule)', padding: '48px 32px', boxShadow: '0 30px 60px -20px rgba(30,28,25,.18), 0 8px 24px -12px rgba(30,28,25,.12)' }}>
-              <div className="font-mono uppercase tracking-[0.22em] mb-5" style={{ fontSize: '0.5625rem', color: 'var(--accent)' }}>
+              <div className="font-mono uppercase tracking-[0.22em] mb-5" style={{ fontSize: '0.75rem', color: 'var(--accent)' }}>
                 After the Stork · Guide № 01
               </div>
               <h3 className="font-serif font-light text-ink" style={{ fontSize: '1.875rem', lineHeight: 1.05 }}>
@@ -120,7 +120,7 @@ export default function ResourcesPage() {
               </h3>
               <div style={{ position: 'absolute', left: '32px', right: '32px', bottom: '32px' }}>
                 <div style={{ height: '1px', background: 'var(--ghost)', marginBottom: '18px' }} />
-                <div className="flex justify-between font-mono uppercase tracking-[0.16em]" style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}>
+                <div className="flex justify-between font-mono uppercase tracking-[0.16em]" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>
                   <span>32 pages · PDF</span>
                   <span>2025 Edition</span>
                 </div>
@@ -143,7 +143,7 @@ export default function ResourcesPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {resourceCategories.slice(0, 3).map((cat) => (
               <div key={cat.category}>
-                <p className="font-mono uppercase tracking-[0.18em] text-ink pb-4 mb-2" style={{ fontSize: '0.625rem', fontWeight: 500, borderBottom: 'var(--rule-soft)' }}>
+                <p className="font-mono uppercase tracking-[0.18em] text-ink pb-4 mb-2" style={{ fontSize: '0.75rem', fontWeight: 500, borderBottom: 'var(--rule-soft)' }}>
                   {cat.category}
                 </p>
                 <div>
@@ -154,7 +154,7 @@ export default function ResourcesPage() {
                     >
                       <div>
                         <div className="font-serif text-ink" style={{ fontSize: '1.125rem', lineHeight: 1.3, marginBottom: '8px' }}>{item.title}</div>
-                        <div className="font-mono uppercase tracking-[0.14em]" style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}>{item.type} · {item.source}</div>
+                        <div className="font-mono uppercase tracking-[0.14em]" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>{item.type} · {item.source}</div>
                       </div>
                       <div className="font-serif" style={{ fontSize: '1.25rem', color: 'var(--accent)' }}>→</div>
                     </div>
@@ -168,7 +168,7 @@ export default function ResourcesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {resourceCategories.slice(3).map((cat) => (
               <div key={cat.category}>
-                <p className="font-mono uppercase tracking-[0.18em] text-ink pb-4 mb-2" style={{ fontSize: '0.625rem', fontWeight: 500, borderBottom: 'var(--rule-soft)' }}>
+                <p className="font-mono uppercase tracking-[0.18em] text-ink pb-4 mb-2" style={{ fontSize: '0.75rem', fontWeight: 500, borderBottom: 'var(--rule-soft)' }}>
                   {cat.category}
                 </p>
                 <div>
@@ -179,7 +179,7 @@ export default function ResourcesPage() {
                     >
                       <div>
                         <div className="font-serif text-ink" style={{ fontSize: '1.125rem', lineHeight: 1.3, marginBottom: '8px' }}>{item.title}</div>
-                        <div className="font-mono uppercase tracking-[0.14em]" style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}>{item.type} · {item.source}</div>
+                        <div className="font-mono uppercase tracking-[0.14em]" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>{item.type} · {item.source}</div>
                       </div>
                       <div className="font-serif" style={{ fontSize: '1.25rem', color: 'var(--accent)' }}>→</div>
                     </div>

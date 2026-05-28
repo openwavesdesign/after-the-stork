@@ -22,7 +22,7 @@ const inputStyle: React.CSSProperties = {
 
 const labelStyle: React.CSSProperties = {
   fontFamily: 'var(--font-mono)',
-  fontSize: '0.5625rem',
+  fontSize: '0.75rem',
   letterSpacing: '.2em',
   textTransform: 'uppercase',
   color: 'var(--mid)',
@@ -135,7 +135,7 @@ export default function JoinPage() {
           >
             &ldquo;After ten years bouncing between agencies, this is the first place I&apos;ve worked where the leadership actually <em style={{ color: 'var(--accent)' }}>remembers I have a family too.</em>&rdquo;
           </p>
-          <p className="font-mono uppercase tracking-[0.18em] mt-8" style={{ fontSize: '0.625rem', color: 'var(--mid)' }}>
+          <p className="font-mono uppercase tracking-[0.18em] mt-8" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>
             — Maria D. · Doula since 2018
           </p>
         </div>
@@ -231,7 +231,7 @@ export default function JoinPage() {
                   <Button variant="default" type="submit">Submit Application</Button>
                 </div>
 
-                <p className="font-mono" style={{ fontSize: '0.5625rem', color: 'var(--stroke)', letterSpacing: '.1em' }}>
+                <p className="font-mono" style={{ fontSize: '0.75rem', color: 'var(--muted)', letterSpacing: '.1em' }}>
                   Form connects to EngineHire CRM — to be wired up during development
                 </p>
               </form>
