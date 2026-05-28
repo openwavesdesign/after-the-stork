@@ -50,7 +50,7 @@ export default function SiteHeader() {
           </span>
           <span
             className="font-mono text-mid uppercase tracking-[0.22em]"
-            style={{ fontSize: '0.5rem', marginTop: '5px' }}
+            style={{ fontSize: '0.75rem', marginTop: '5px' }}
           >
             Philadelphia · Main Line · Postpartum Care
           </span>
@@ -68,13 +68,13 @@ export default function SiteHeader() {
               >
                 <button
                   className="font-mono uppercase tracking-[0.18em] flex items-center gap-1 transition-colors"
-                  style={{ fontSize: '0.625rem', color: isActive(item) ? 'var(--accent)' : 'var(--dim)' }}
+                  style={{ fontSize: '0.75rem', color: isActive(item) ? 'var(--accent)' : 'var(--dim)' }}
                   aria-haspopup="true"
                   aria-expanded={dropdownOpen === item.label}
                   onClick={() => setDropdownOpen(dropdownOpen === item.label ? null : item.label)}
                 >
                   {item.label}
-                  <span aria-hidden="true" style={{ fontSize: '0.5rem', marginTop: '1px' }}>▾</span>
+                  <span aria-hidden="true" style={{ fontSize: '0.75rem', marginTop: '1px' }}>▾</span>
                 </button>
 
                 {dropdownOpen === item.label && (
@@ -90,7 +90,7 @@ export default function SiteHeader() {
                         role="menuitem"
                         onClick={() => setDropdownOpen(null)}
                         className="block font-mono uppercase tracking-[0.18em] px-4 py-3 transition-colors hover:bg-canvas"
-                        style={{ fontSize: '0.625rem', color: pathname === child.href ? 'var(--accent)' : 'var(--dim)' }}
+                        style={{ fontSize: '0.75rem', color: pathname === child.href ? 'var(--accent)' : 'var(--dim)' }}
                       >
                         {child.label}
                       </Link>
@@ -103,7 +103,7 @@ export default function SiteHeader() {
                 key={item.href}
                 href={item.href!}
                 className="font-mono uppercase tracking-[0.18em] transition-colors hover:text-accent"
-                style={{ fontSize: '0.625rem', color: isActive(item) ? 'var(--accent)' : 'var(--dim)' }}
+                style={{ fontSize: '0.75rem', color: isActive(item) ? 'var(--accent)' : 'var(--dim)' }}
               >
                 {item.label}
               </Link>
@@ -116,7 +116,7 @@ export default function SiteHeader() {
           <Link
             href="/contact"
             className="font-mono text-ink border border-ink uppercase tracking-[0.18em] hover:bg-ink hover:text-paper transition-colors"
-            style={{ fontSize: '0.625rem', padding: '10px 22px' }}
+            style={{ fontSize: '0.75rem', padding: '10px 22px' }}
           >
             Book a Consultation
           </Link>
@@ -151,7 +151,7 @@ export default function SiteHeader() {
                   onClick={() => setMobileExpanded(mobileExpanded === item.label ? null : item.label)}
                 >
                   {item.label}
-                  <span aria-hidden="true" style={{ fontSize: '0.5rem' }}>
+                  <span aria-hidden="true" style={{ fontSize: '0.75rem' }}>
                     {mobileExpanded === item.label ? '▲' : '▾'}
                   </span>
                 </button>

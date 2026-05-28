@@ -44,7 +44,7 @@ export default function FAQPage() {
           className="mx-auto px-6 md:px-12 flex flex-wrap gap-8 items-center"
           style={{ maxWidth: '1280px', padding: '32px 3.5rem' }}
         >
-          <span className="font-mono uppercase tracking-[0.18em] text-mid" style={{ fontSize: '0.625rem' }}>
+          <span className="font-mono uppercase tracking-[0.18em] text-mid" style={{ fontSize: '0.75rem' }}>
             Jump to:
           </span>
           {faqs.map((cat, i) => (
@@ -52,7 +52,7 @@ export default function FAQPage() {
               key={cat.slug}
               href={`#faq-${i}`}
               className="font-mono uppercase tracking-[0.18em] text-dim hover:text-ink transition-colors"
-              style={{ fontSize: '0.625rem', borderBottom: '1px solid var(--accent)', paddingBottom: '2px' }}
+              style={{ fontSize: '0.75rem', borderBottom: '1px solid var(--accent)', paddingBottom: '2px' }}
             >
               {cat.category}
             </a>

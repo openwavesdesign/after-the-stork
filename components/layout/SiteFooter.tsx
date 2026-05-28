@@ -21,7 +21,7 @@ export default function SiteFooter() {
           </Link>
           <p
             className="font-mono uppercase tracking-[0.22em] mb-5"
-            style={{ fontSize: '0.5625rem', color: 'var(--accent-soft)' }}
+            style={{ fontSize: '0.75rem', color: 'var(--accent-soft)' }}
           >
             Est. 2004 · Philadelphia
           </p>
@@ -34,7 +34,7 @@ export default function SiteFooter() {
         <div>
           <h4
             className="font-mono uppercase tracking-[0.22em] mb-6"
-            style={{ fontSize: '0.5625rem', color: 'var(--accent-soft)' }}
+            style={{ fontSize: '0.75rem', color: 'var(--accent-soft)' }}
           >
             Services
           </h4>
@@ -53,7 +53,7 @@ export default function SiteFooter() {
         <div>
           <h4
             className="font-mono uppercase tracking-[0.22em] mb-6"
-            style={{ fontSize: '0.5625rem', color: 'var(--accent-soft)' }}
+            style={{ fontSize: '0.75rem', color: 'var(--accent-soft)' }}
           >
             Company
           </h4>
@@ -72,7 +72,7 @@ export default function SiteFooter() {
         <div>
           <h4
             className="font-mono uppercase tracking-[0.22em] mb-6"
-            style={{ fontSize: '0.5625rem', color: 'var(--accent-soft)' }}
+            style={{ fontSize: '0.75rem', color: 'var(--accent-soft)' }}
           >
             Contact
           </h4>
@@ -96,7 +96,7 @@ export default function SiteFooter() {
         style={{
           maxWidth: '1280px',
           borderTop: '1px solid rgba(255,255,255,.08)',
-          fontSize: '0.625rem',
+          fontSize: '0.75rem',
           color: 'rgba(244,239,230,.6)',
         }}
       >

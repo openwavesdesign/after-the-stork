@@ -25,7 +25,7 @@ export default function Testimonial({ quote, attribution, className = '' }: Test
       </p>
       <div
         className="flex items-center gap-3 mt-6 font-mono uppercase tracking-[0.18em]"
-        style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}
+        style={{ fontSize: '0.75rem', color: 'var(--mid)' }}
       >
         <span
           aria-hidden="true"

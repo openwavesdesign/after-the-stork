@@ -21,7 +21,7 @@ const inputStyle: React.CSSProperties = {
 
 const labelStyle: React.CSSProperties = {
   fontFamily: 'var(--font-mono)',
-  fontSize: '0.5625rem',
+  fontSize: '0.75rem',
   letterSpacing: '.2em',
   textTransform: 'uppercase',
   color: 'var(--mid)',
@@ -119,7 +119,7 @@ export default function ContactPage() {
 
                   <div>
                     <Button variant="default" type="submit">Send Message</Button>
-                    <p className="font-mono mt-3" style={{ fontSize: '0.5625rem', color: 'var(--stroke)', letterSpacing: '.1em' }}>
+                    <p className="font-mono mt-3" style={{ fontSize: '0.75rem', color: 'var(--muted)', letterSpacing: '.1em' }}>
                       Form connects to EngineHire CRM — to be wired up during development
                     </p>
                   </div>
@@ -138,7 +138,7 @@ export default function ContactPage() {
               <div style={{ borderTop: 'var(--rule-soft)', padding: '1.5rem 0', display: 'flex', alignItems: 'flex-start', gap: '1.25rem' }}>
                 <span className="font-serif" style={{ fontSize: '1.75rem', color: 'var(--accent)', lineHeight: 1 }}>☏</span>
                 <div>
-                  <p className="font-mono uppercase tracking-[0.2em]" style={{ fontSize: '0.5625rem', color: 'var(--mid)', marginBottom: '6px' }}>Phone</p>
+                  <p className="font-mono uppercase tracking-[0.2em]" style={{ fontSize: '0.75rem', color: 'var(--mid)', marginBottom: '6px' }}>Phone</p>
                   <span className="font-serif" style={{ fontSize: '1.375rem', color: 'var(--ink)', lineHeight: 1 }}>[Phone Number]</span>
                 </div>
               </div>
@@ -147,7 +147,7 @@ export default function ContactPage() {
               <div style={{ borderTop: 'var(--rule-soft)', padding: '1.5rem 0', display: 'flex', alignItems: 'flex-start', gap: '1.25rem' }}>
                 <span className="font-serif" style={{ fontSize: '1.75rem', color: 'var(--accent)', lineHeight: 1 }}>✉</span>
                 <div>
-                  <p className="font-mono uppercase tracking-[0.2em]" style={{ fontSize: '0.5625rem', color: 'var(--mid)', marginBottom: '6px' }}>Email</p>
+                  <p className="font-mono uppercase tracking-[0.2em]" style={{ fontSize: '0.75rem', color: 'var(--mid)', marginBottom: '6px' }}>Email</p>
                   <span className="font-serif" style={{ fontSize: '1.375rem', color: 'var(--ink)', lineHeight: 1 }}>[Email Address]</span>
                 </div>
               </div>
@@ -156,7 +156,7 @@ export default function ContactPage() {
               <div style={{ borderTop: 'var(--rule-soft)', padding: '1.5rem 0', display: 'flex', alignItems: 'flex-start', gap: '1.25rem' }}>
                 <span className="font-serif" style={{ fontSize: '1.75rem', color: 'var(--accent)', lineHeight: 1 }}>◎</span>
                 <div>
-                  <p className="font-mono uppercase tracking-[0.2em]" style={{ fontSize: '0.5625rem', color: 'var(--mid)', marginBottom: '6px' }}>Service Area</p>
+                  <p className="font-mono uppercase tracking-[0.2em]" style={{ fontSize: '0.75rem', color: 'var(--mid)', marginBottom: '6px' }}>Service Area</p>
                   <span className="font-serif" style={{ fontSize: '1.375rem', color: 'var(--ink)', lineHeight: 1.35 }}>Serving Philadelphia, the Main Line, Montgomery &amp; Delaware Counties, and select NJ communities.</span>
                 </div>
               </div>

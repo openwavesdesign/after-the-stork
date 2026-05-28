@@ -12,7 +12,7 @@ interface BreadcrumbProps {
 export default function Breadcrumb({ items }: BreadcrumbProps) {
   return (
     <nav
-      className="flex items-center gap-2 font-mono text-stroke"
+      className="flex items-center gap-2 font-mono text-muted"
       style={{ fontSize: '0.75rem' }}
       aria-label="Breadcrumb"
     >
