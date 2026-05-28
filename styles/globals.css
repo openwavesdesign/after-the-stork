@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #F7F6F3;
+  --canvas: #EEECEA;
+  --ghost: #E3E1DD;
+  --stroke: #C5C1BA;
+  --mid: #9C9690;
+  --dim: #76716A;
+  --ink: #1E1C19;
+  --rule: 1px solid #C5C1BA;
+  --rule-ink: 1.5px solid #1E1C19;
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-mono: var(--font-dm-mono), monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--paper);
+  color: var(--dim);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--ink);
+}

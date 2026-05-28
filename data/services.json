@@ -1,0 +1,72 @@
+[
+  {
+    "id": "overnight",
+    "name": "Overnight Support",
+    "tagline": "Sleep. We'll take the night shift.",
+    "hours": "10 pm – 6 am",
+    "shortDescription": "Our most requested service. A certified postpartum doula arrives at 10 pm, takes every feeding and settling through the night, and leaves at 6 am — so you can actually sleep.",
+    "fullDescription": "Our overnight support is the cornerstone of what we do. A certified postpartum doula arrives at your home at 10 pm and stays through 6 am, handling every feeding, diaper change, and settling throughout the night. Whether you are breastfeeding, bottle feeding, or combination feeding, our doulas are trained to support your chosen method. They will bring the baby to you for nursing sessions if needed, then return the baby to their sleep space so you can go right back to sleep. In the morning, they tidy up the feeding and baby areas before they leave. Most families book overnight support two to five nights per week during the first six to twelve weeks postpartum.",
+    "active": true,
+    "order": 1
+  },
+  {
+    "id": "extended-overnight",
+    "name": "Extended Overnight Support",
+    "tagline": "More hours, more rest.",
+    "hours": "9 pm – 7 am",
+    "shortDescription": "An extended overnight shift for families who want extra transition time in the evening and a longer handoff in the morning.",
+    "fullDescription": "Our extended overnight runs from 9 pm to 7 am, giving families an extra hour on each end of the night. The earlier arrival allows your doula to settle in with you during the transition to the evening routine, and the later departure means you have more time in the morning to ease into the day. This option is popular with families who have older children with early school schedules, or parents who have long commutes and need the extra morning buffer.",
+    "active": true,
+    "order": 2
+  },
+  {
+    "id": "daytime",
+    "name": "Daytime Support",
+    "tagline": "Rest while we hold the day.",
+    "hours": "9 am – 5 pm",
+    "shortDescription": "Daytime doula support while you sleep, recover, shower, or simply take a breath. Newborn care, light household tasks, and a calm presence.",
+    "fullDescription": "Daytime support is ideal for partners who have returned to work or for families who need help during the day. Your doula handles newborn care so you can sleep, shower, eat a real meal, or simply have some quiet time. Daytime doulas also assist with light household tasks related to the baby — washing bottles, organizing the nursery, and preparing feeding supplies. They are a calm, knowledgeable presence who can answer your questions, help you troubleshoot feeding, and offer reassurance during what can be an overwhelming time.",
+    "active": true,
+    "order": 3
+  },
+  {
+    "id": "witching-hour",
+    "name": "Evening / Witching Hour Support",
+    "tagline": "The hardest hours, covered.",
+    "hours": "5 pm – 10 pm",
+    "shortDescription": "The fussiest stretch of the day, handled by a professional. Our doulas take the witching hour so your family can regroup and get dinner on the table.",
+    "fullDescription": "The late afternoon and evening hours are often the most challenging with a newborn. Cluster feeding, peak fussiness, and sheer exhaustion collide right when you are trying to manage dinner, older children, and the end of a long day. Our evening doulas arrive at 5 pm and stay through 10 pm, taking over newborn care so you and your family can breathe. This service pairs well with overnight support or stands alone for families who have daytime help but struggle with evenings.",
+    "active": true,
+    "order": 4
+  },
+  {
+    "id": "hospital-overnight",
+    "name": "Hospital Overnight Support",
+    "tagline": "Support starts before you come home.",
+    "hours": "Overnight shift at the hospital",
+    "shortDescription": "A postpartum doula joins you at the hospital after delivery so you and your partner can sleep and recover while your newborn is expertly cared for.",
+    "fullDescription": "The night or two after delivery is a critical window for parental rest, and hospital nurses — however skilled — are managing an entire floor of patients. Our hospital overnight doulas come to you in your postpartum room, take care of your newborn through the night, support breastfeeding initiation, and allow you and your partner to actually sleep. Many families find that starting doula support in the hospital makes the transition home feel more manageable. This service is available at most hospitals in the Philadelphia and Main Line area.",
+    "active": true,
+    "order": 5
+  },
+  {
+    "id": "sleep-coaching",
+    "name": "Gentle Sleep Coaching",
+    "tagline": "Better sleep is closer than you think.",
+    "hours": "Flexible — package-based",
+    "shortDescription": "Georgette is a certified Gentle Sleep Coach and offers personalized sleep coaching for families ready to work toward longer, more predictable sleep for their baby.",
+    "fullDescription": "When families are ready to work on sleep independently, Georgette offers gentle, personalized sleep coaching. As a certified Gentle Sleep Coach, she creates a customized plan based on your baby's age, temperament, and your family's goals and values. She walks you through the process, answers your questions in real time, and troubleshoots with you as you go. This is not a cry-it-out program. The Gentle Sleep Coaching method prioritizes your baby's emotional security and your confidence as a parent. Sleep coaching is available to all After the Stork families at no additional charge as part of your doula relationship, or as a standalone service.",
+    "active": true,
+    "order": 6
+  },
+  {
+    "id": "lactation",
+    "name": "Lactation Support",
+    "tagline": "Your goals are our goals.",
+    "hours": "In-home visits · flexible scheduling",
+    "shortDescription": "Allison Hart, MS RD IBCLC, offers in-home lactation consultations for breastfeeding, pumping, supplementing, and weaning — with a dietitian's eye on your postpartum nutrition, too.",
+    "fullDescription": "Allison Hart is an International Board Certified Lactation Consultant (IBCLC) — the highest credential in breastfeeding support — and a Registered Dietitian. She offers in-home lactation visits for families navigating breastfeeding, pumping, combination feeding, or weaning. Her dual credentials mean she can also support your own postpartum nutrition, iron recovery, and energy needs alongside your baby's feeding plan. Allison's approach is warm, non-judgmental, and goal-oriented. Whatever your breastfeeding goals are, she will help you get there — or help you make peace with a different path.",
+    "active": true,
+    "order": 7
+  }
+]
