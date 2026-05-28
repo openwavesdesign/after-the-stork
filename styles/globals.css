@@ -3,17 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --paper: #F7F6F3;
-  --canvas: #EEECEA;
-  --ghost: #E3E1DD;
-  --stroke: #C5C1BA;
-  --mid: #9C9690;
-  --dim: #76716A;
-  --ink: #1E1C19;
-  --rule: 1px solid #C5C1BA;
-  --rule-ink: 1.5px solid #1E1C19;
-  --font-serif: var(--font-cormorant), Georgia, serif;
-  --font-mono: var(--font-dm-mono), monospace;
+  --paper:        #F4EFE6;
+  --paper-2:      #ECE6DA;
+  --paper-3:      #E1D9C8;
+  --ghost:        #D9D2C2;
+  --stroke:       #8A8170;
+  --mid:          #524D40;
+  --dim:          #3F3B30;
+  --ink-soft:     #2E2A22;
+  --ink:          #1B1814;
+  --accent:       #224068;
+  --accent-soft:  #94A8C5;
+  --accent-tint:  #D3DCE8;
+  --accent-deep:  #14273F;
+  --rule:         1px solid #C9C0AB;
+  --rule-soft:    1px solid #D9D2C2;
+  --rule-ink:     1px solid #1B1814;
+  --font-serif:   var(--font-cormorant), Georgia, serif;
+  --font-mono:    var(--font-dm-mono), monospace;
+  --font-sans:    var(--font-inter), system-ui, sans-serif;
 }
 
 *, *::before, *::after {
@@ -29,12 +37,26 @@ html {
 }
 
 body {
-  font-family: var(--font-mono);
-  font-size: 1rem;
-  line-height: 1.6;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  line-height: 1.65;
   background-color: var(--paper);
   color: var(--dim);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* Subtle paper grain overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2000;
+  background-image: radial-gradient(circle at 1px 1px, rgba(30,28,25,.04) 1px, transparent 0);
+  background-size: 3px 3px;
+  opacity: .35;
 }
 
 h1, h2, h3, h4 {
@@ -42,13 +64,11 @@ h1, h2, h3, h4 {
   color: var(--ink);
 }
 
-/* Accessible focus indicator */
 :focus-visible {
   outline: 2px solid var(--ink);
   outline-offset: 3px;
 }
 
-/* Skip to main content link for keyboard/screen-reader users */
 .skip-link {
   position: absolute;
   top: -100%;
@@ -61,6 +81,96 @@ h1, h2, h3, h4 {
   z-index: 9999;
 }
 
-.skip-link:focus {
-  top: 0;
+.skip-link:focus { top: 0; }
+
+/* Pill tag — rounded, accent */
+.pill {
+  display: inline-block;
+  border: 1px solid var(--accent);
+  padding: 6px 14px;
+  font-family: var(--font-mono);
+  font-size: 0.5625rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-radius: 100px;
+  white-space: nowrap;
+  margin-bottom: 1.75rem;
 }
+.pill-solid {
+  background: var(--accent);
+  color: var(--paper);
+}
+
+/* Service dot tag */
+.svc-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.5625rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.125rem;
+}
+.svc-tag::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+/* Area/location pills */
+.area-tag {
+  display: inline-block;
+  border: 1px solid var(--stroke);
+  padding: 6px 14px;
+  font-family: var(--font-mono);
+  font-size: 0.5625rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--dim);
+  border-radius: 100px;
+  transition: all .2s;
+  white-space: nowrap;
+  cursor: default;
+}
+.area-tag:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Awards ribbon */
+.awards-ribbon {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.25rem 3.5rem;
+  background: var(--paper-2);
+  border-top: var(--rule-soft);
+  border-bottom: var(--rule-soft);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--mid);
+  overflow-x: auto;
+  flex-wrap: wrap;
+}
+.awards-ribbon-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+}
+.awards-ribbon-item::before {
+  content: '✦';
+  color: var(--accent);
+}
+
+/* Footer links */
+.footer-link {
+  color: rgba(244,239,230,.85);
+  transition: color .2s;
+}
+.footer-link:hover { color: #F4EFE6; }
