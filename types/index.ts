@@ -63,6 +63,7 @@ export interface BlogPost {
   date: string
   readingTime: string
   featuredImage: string | null
+  sourceImage?: string | null
   metaDescription: string
   active: boolean
 }
