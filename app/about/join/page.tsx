@@ -3,49 +3,61 @@ import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
 import Eyebrow from '@/components/ui/Eyebrow'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
+
 export const metadata: Metadata = {
   title: 'Postpartum Doula Jobs in Philadelphia | Join After the Stork',
   description: 'After the Stork is hiring certified postpartum doulas in Philadelphia, the Main Line, and surrounding communities. Apply today.',
 }
 
-const inputClass =
-  'border border-stroke bg-transparent font-mono text-dim outline-none w-full tracking-[0.05em] focus:border-ink transition-colors'
-const labelClass = 'font-mono text-mid uppercase tracking-[0.14em] mb-1 block'
+const inputStyle: React.CSSProperties = {
+  borderBottom: 'var(--rule)',
+  background: 'transparent',
+  padding: '10px 0 14px',
+  fontFamily: 'var(--font-serif)',
+  fontSize: '1.125rem',
+  color: 'var(--ink)',
+  outline: 'none',
+  width: '100%',
+}
+
+const labelStyle: React.CSSProperties = {
+  fontFamily: 'var(--font-mono)',
+  fontSize: '0.5625rem',
+  letterSpacing: '.2em',
+  textTransform: 'uppercase',
+  color: 'var(--mid)',
+  display: 'block',
+  marginBottom: '10px',
+}
+
+const requirements = [
+  'Certified postpartum doula (CAPPA, DONA, or equivalent) or newborn care specialist (NCS)',
+  'CPR and First Aid certified (or willing to certify before starting)',
+  'Reliable transportation within the Philadelphia metro / Main Line area',
+  'Comfortable with overnight shifts (10 PM–6 AM or similar)',
+  'Professional, warm, and trustworthy presence in family homes',
+]
 
 export default function JoinPage() {
   return (
     <>
-
       {/* ─── Page Hero ─────────────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-paper">
+      <section className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-6"
-                style={{ fontSize: '0.6875rem' }}
-              >
-                We&rsquo;re Hiring
-              </span>
-
+              <div className="pill">We&rsquo;re Hiring</div>
               <h1
-                className="font-serif font-light text-ink mt-4"
-                style={{ fontSize: 'clamp(3.25rem, 6vw, 4rem)', lineHeight: 1.05 }}
+                className="font-serif font-light text-ink"
+                style={{ fontSize: 'clamp(3.25rem,6vw,6rem)', lineHeight: 1.02, letterSpacing: '-0.018em' }}
               >
-                Join Our Team of Postpartum Doulas
+                Join Our Team of Postpartum<br /><em>Doulas.</em>
               </h1>
-
-              <p
-                className="font-mono text-dim leading-relaxed mt-4"
-                style={{ fontSize: '1rem', maxWidth: '480px' }}
-              >
+              <p className="mt-6" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
                 We are always looking for talented, compassionate doulas and NCS professionals in Philadelphia, the Main Line, Bucks County, and New Jersey.
               </p>
-
               <div className="mt-8">
-                <Button variant="default" href="#apply">
-                  Apply Now
-                </Button>
+                <Button variant="default" href="#apply">Apply Now</Button>
               </div>
             </div>
 
@@ -58,14 +70,11 @@ export default function JoinPage() {
       </section>
 
       {/* ─── Why Work With Us ──────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-canvas">
+      <section className="py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <Eyebrow>What Makes Us Different</Eyebrow>
-          <h2
-            className="font-serif font-light text-ink mt-3 mb-10"
-            style={{ fontSize: '2.5rem' }}
-          >
-            Why Doulas Love Working Here
+          <h2 className="font-serif font-light text-ink mb-10" style={{ fontSize: 'clamp(2.25rem,3.5vw,3.5rem)', lineHeight: 1.05 }}>
+            Why Doulas Love<br /><em>Working Here.</em>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -73,7 +82,7 @@ export default function JoinPage() {
               <h3 className="font-serif text-ink mb-2" style={{ fontSize: '1.25rem' }}>
                 Flexible Scheduling
               </h3>
-              <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '1rem' }}>
+              <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
                 Build a schedule around your life. We have an online scheduling system that makes it easy to share your availability and pair you with clients that match. For those giving 4–6 nights of availability, we can commit to filling your schedule so you have a stable income you can count on.
               </p>
             </Card>
@@ -82,7 +91,7 @@ export default function JoinPage() {
               <h3 className="font-serif text-ink mb-2" style={{ fontSize: '1.25rem' }}>
                 Supportive Leadership
               </h3>
-              <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '1rem' }}>
+              <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
                 Regular communication, professional development, and genuine care for your experience.
               </p>
             </Card>
@@ -91,7 +100,7 @@ export default function JoinPage() {
               <h3 className="font-serif text-ink mb-2" style={{ fontSize: '1.25rem' }}>
                 Meaningful Work
               </h3>
-              <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '1rem' }}>
+              <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
                 Every shift changes a family&rsquo;s experience of the newborn stage. That matters.
               </p>
             </Card>
@@ -100,7 +109,7 @@ export default function JoinPage() {
               <h3 className="font-serif text-ink mb-2" style={{ fontSize: '1.25rem' }}>
                 Competitive Pay
               </h3>
-              <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '1rem' }}>
+              <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
                 Compensation that reflects your certifications, experience, and dedication.
               </p>
             </Card>
@@ -109,7 +118,7 @@ export default function JoinPage() {
               <h3 className="font-serif text-ink mb-2" style={{ fontSize: '1.25rem' }}>
                 Employee Based
               </h3>
-              <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '1rem' }}>
+              <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
                 We pay a portion of your taxes, offer PTO, and offer time-and-a-half pay for those who desire overtime hours.
               </p>
             </Card>
@@ -117,40 +126,59 @@ export default function JoinPage() {
         </div>
       </section>
 
+      {/* ─── Pull Quote ────────────────────────────────────────────────── */}
+      <section className="py-20 bg-paper">
+        <div className="mx-auto px-6 md:px-12 text-center" style={{ maxWidth: '920px' }}>
+          <p
+            className="font-serif font-light text-ink"
+            style={{ fontSize: 'clamp(1.5rem,3vw,2.25rem)', fontStyle: 'italic', lineHeight: 1.3, maxWidth: '760px', margin: '0 auto' }}
+          >
+            &ldquo;After ten years bouncing between agencies, this is the first place I&apos;ve worked where the leadership actually <em style={{ color: 'var(--accent)' }}>remembers I have a family too.</em>&rdquo;
+          </p>
+          <p className="font-mono uppercase tracking-[0.18em] mt-8" style={{ fontSize: '0.625rem', color: 'var(--mid)' }}>
+            — Maria D. · Doula since 2018
+          </p>
+        </div>
+      </section>
+
       {/* ─── Requirements + Application ────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-paper" id="apply">
+      <section className="py-20 bg-canvas" id="apply">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
 
             {/* Left: requirements */}
             <div>
               <Eyebrow>Who We&rsquo;re Looking For</Eyebrow>
-              <h2
-                className="font-serif font-light text-ink mt-3 mb-6"
-                style={{ fontSize: '2.5rem' }}
-              >
-                What We&rsquo;re Looking For
+              <h2 className="font-serif font-light text-ink mb-6" style={{ fontSize: '2.5rem' }}>
+                What We&rsquo;re<br /><em>Looking For.</em>
               </h2>
 
-              {[
-                'Certified postpartum doula (CAPPA, DONA, or equivalent) or newborn care specialist (NCS)',
-                'CPR and First Aid certified (or willing to certify before starting)',
-                'Reliable transportation within the Philadelphia metro / Main Line area',
-                'Comfortable with overnight shifts (10 PM–6 AM or similar)',
-                'Professional, warm, and trustworthy presence in family homes',
-              ].map((req, i) => (
-                <div key={i} className="border-t border-stroke py-5 flex gap-4 items-start">
-                  <span className="text-mid mt-[2px]" style={{ fontSize: '0.5rem' }} aria-hidden="true">◦</span>
-                  <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '1rem' }}>
+              {requirements.map((req, i) => (
+                <div
+                  key={i}
+                  style={{
+                    borderTop: 'var(--rule-soft)',
+                    display: 'grid',
+                    gridTemplateColumns: '48px 1fr',
+                    gap: '1rem',
+                    padding: '1.5rem 0',
+                    alignItems: 'start',
+                  }}
+                >
+                  <div
+                    className="font-serif italic"
+                    style={{ fontSize: '1.5rem', color: 'var(--accent)', fontWeight: 300, lineHeight: 1 }}
+                    aria-hidden="true"
+                  >
+                    {String(i + 1).padStart(2, '0')}
+                  </div>
+                  <p style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75' }}>
                     {req}
                   </p>
                 </div>
               ))}
 
-              <p
-                className="font-serif italic text-dim mt-6"
-                style={{ fontSize: '1rem' }}
-              >
+              <p className="font-serif italic text-dim mt-6" style={{ fontSize: '1rem' }}>
                 New graduates are welcome to apply. We value potential, attitude, and heart.
               </p>
             </div>
@@ -158,20 +186,14 @@ export default function JoinPage() {
             {/* Right: application form */}
             <div>
               <Eyebrow>Ready to Apply?</Eyebrow>
-              <h2
-                className="font-serif font-light text-ink mt-3 mb-4"
-                style={{ fontSize: '2.5rem' }}
-              >
+              <h2 className="font-serif font-light text-ink mb-4" style={{ fontSize: '2.5rem' }}>
                 Application Form
               </h2>
-              <p
-                className="font-mono text-dim leading-relaxed mb-6"
-                style={{ fontSize: '1rem' }}
-              >
+              <p className="text-dim mb-8" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
                 Fill out our short application and we&rsquo;ll be in touch within [X] business days.
               </p>
 
-              <form id="apply-form" className="flex flex-col gap-5">
+              <form id="apply-form" className="flex flex-col gap-8">
                 {[
                   { id: 'firstName', label: 'First Name', type: 'text' },
                   { id: 'lastName', label: 'Last Name', type: 'text' },
@@ -179,53 +201,37 @@ export default function JoinPage() {
                   { id: 'phone', label: 'Phone', type: 'tel' },
                 ].map(({ id, label, type }) => (
                   <div key={id}>
-                    <label htmlFor={id} className={labelClass} style={{ fontSize: '0.6875rem' }}>
-                      {label}
-                    </label>
-                    <input
-                      id={id}
-                      name={id}
-                      type={type}
-                      className={inputClass}
-                      style={{ fontSize: '1rem', padding: '12px 16px' }}
-                    />
+                    <label htmlFor={id} style={labelStyle}>{label}</label>
+                    <input id={id} name={id} type={type} style={inputStyle} />
                   </div>
                 ))}
 
                 <div>
-                  <label htmlFor="certifications" className={labelClass} style={{ fontSize: '0.6875rem' }}>
-                    Certifications
-                  </label>
+                  <label htmlFor="certifications" style={labelStyle}>Certifications</label>
                   <input
                     id="certifications"
                     name="certifications"
                     type="text"
                     placeholder="e.g. DONA Certified Postpartum Doula, IBCLC, NCS"
-                    className={`${inputClass} placeholder:text-stroke`}
-                    style={{ fontSize: '1rem', padding: '12px 16px' }}
+                    style={{ ...inputStyle, fontFamily: 'var(--font-mono)', fontSize: '0.9375rem' }}
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="about" className={labelClass} style={{ fontSize: '0.6875rem' }}>
-                    Tell Us About Yourself
-                  </label>
+                  <label htmlFor="about" style={labelStyle}>Tell Us About Yourself</label>
                   <textarea
                     id="about"
                     name="about"
                     rows={5}
-                    className={`${inputClass} resize-none`}
-                    style={{ fontSize: '1rem', padding: '12px 16px' }}
+                    style={{ ...inputStyle, resize: 'vertical' }}
                   />
                 </div>
 
                 <div className="mt-2">
-                  <Button variant="default" type="submit">
-                    Submit Application
-                  </Button>
+                  <Button variant="default" type="submit">Submit Application</Button>
                 </div>
 
-                <p className="font-mono text-stroke" style={{ fontSize: '0.75rem' }}>
+                <p className="font-mono" style={{ fontSize: '0.5625rem', color: 'var(--stroke)', letterSpacing: '.1em' }}>
                   Form connects to EngineHire CRM — to be wired up during development
                 </p>
               </form>

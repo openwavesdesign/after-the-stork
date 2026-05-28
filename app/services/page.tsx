@@ -13,6 +13,20 @@ export const metadata: Metadata = {
 
 const services = servicesData as Service[]
 
+const atAGlanceData = [
+  ['Overnight Postpartum', '10 PM – 6 AM', 'Most Popular', 'Sleep restored, mornings caught up', '#overnight'],
+  ['Extended Overnight', '9 PM – 7 AM', 'Flexible', 'Custom timing for your body\'s needs', '#extended-overnight'],
+  ['Daytime Postpartum', '5 – 8 hrs', 'Daytime', 'A long shower, real rest, gentle support', '#daytime'],
+  ['Witching Hour', '4 PM – 10 PM', 'Evening', 'Continuous care into the night', '#witching-hour'],
+  ['Hospital Overnight', 'In-hospital', 'Critical First Nights', 'Support when nursery isn\'t available', '#hospital-overnight'],
+  ['Sleep + Lactation', 'Always', 'Included Free', 'IBCLC & Gentle Sleep Coach on staff', '#sleep-coaching'],
+] as const
+
+const overnightIncludes = [
+  'Newborn feeding', 'Diaper changes', 'Soothing & sleep', 'Pump cleaning', 'Bottle sterilizing',
+  'Baby laundry', 'Light tidying', 'Family laundry', 'Coffee on', 'Trash out', 'Morning hand-off',
+]
+
 const serviceFAQs = [
   {
     question: "What does a postpartum doula do?",
@@ -48,60 +62,88 @@ export default function ServicesPage() {
   return (
     <>
       {/* ─── Hero ──────────────────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-paper">
+      <section className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
-          <div>
-            <span
-              className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1"
-              style={{ fontSize: '0.6875rem' }}
-            >
-              Our Services
-            </span>
-            <h1
-              className="font-serif font-light text-ink mt-4"
-              style={{ fontSize: 'clamp(3.25rem, 7vw, 4.5rem)', lineHeight: 1.05, maxWidth: '900px' }}
-            >
-              Postpartum Doula &amp; Newborn Care Services in Philadelphia and the Main Line
-            </h1>
-            <p
-              className="font-mono text-dim leading-relaxed mt-4"
-              style={{ fontSize: '1rem', maxWidth: '600px' }}
-            >
-              We customize every care plan to fit your schedule, your home, and your needs. Serving Philadelphia, the Main Line, and surrounding communities including select families in New Jersey.
-            </p>
+          <div className="pill">Our Services</div>
+          <h1
+            className="font-serif font-light text-ink"
+            style={{ fontSize: 'clamp(3.25rem,7vw,7rem)', lineHeight: 1.02, letterSpacing: '-0.018em', maxWidth: '900px' }}
+          >
+            Postpartum Doula &amp; Newborn Care<br /><em>in Philadelphia.</em>
+          </h1>
+          <p className="mt-6" style={{ fontSize: '1.125rem', color: 'var(--dim)', lineHeight: '1.7', maxWidth: '600px' }}>
+            We customize every care plan to fit your schedule, your home, and your needs. Serving Philadelphia, the Main Line, and surrounding communities including select families in New Jersey.
+          </p>
+        </div>
+      </section>
+
+      {/* ─── At a Glance ───────────────────────────────────────────────── */}
+      <section className="bg-canvas py-20">
+        <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
+          <Eyebrow>At a Glance</Eyebrow>
+          <h2 className="font-serif font-light text-ink mb-10" style={{ fontSize: 'clamp(2.25rem,3.5vw,3.5rem)', lineHeight: 1.05 }}>
+            Six ways to support<br /><em>your family.</em>
+          </h2>
+
+          <div style={{ overflowX: 'auto' }}>
+            {atAGlanceData.map(([name, hours, tag, desc, href], i, arr) => (
+              <div
+                key={name}
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: '1.6fr 1fr .8fr 1.4fr 80px',
+                  gap: '2rem',
+                  padding: '1.5rem 0',
+                  borderTop: 'var(--rule-soft)',
+                  ...(i === arr.length - 1 ? { borderBottom: 'var(--rule-soft)' } : {}),
+                  alignItems: 'center',
+                }}
+              >
+                <div className="font-serif text-ink" style={{ fontSize: '1.5rem', fontWeight: 300 }}>{name}</div>
+                <div className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.625rem', color: 'var(--dim)' }}>{hours}</div>
+                <span className="svc-tag">{tag}</span>
+                <div className="font-serif italic" style={{ fontSize: '1rem', color: 'var(--ink-soft)' }}>{desc}</div>
+                <a href={href} className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.625rem', color: 'var(--accent)', whiteSpace: 'nowrap' }}>Learn ↓</a>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* ─── Overnight Support ─────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-canvas">
+      <section id="overnight" className="py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
             <div>
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-4"
-                style={{ fontSize: '0.6875rem' }}
-              >
-                Most Popular · 10 PM – 6 AM
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-4"
-                style={{ fontSize: '2.5rem' }}
-              >
+              <span className="svc-tag">Most Popular · 10 PM – 6 AM</span>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
                 Overnight Postpartum Doula Support
               </h2>
               {overnight?.fullDescription.split('\n\n').map((para, i, arr) => (
                 <p
                   key={i}
-                  className={`font-mono text-dim leading-relaxed ${i < arr.length - 1 ? 'mb-4' : 'mb-6'}`}
-                  style={{ fontSize: '1rem' }}
+                  className={`text-dim ${i < arr.length - 1 ? 'mb-4' : 'mb-6'}`}
+                  style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}
                 >
                   {para}
                 </p>
               ))}
-              <Button variant="default" href="/contact">
-                Book This Service
-              </Button>
+
+              {/* What's Included */}
+              <div className="mt-2">
+                <p className="font-mono uppercase tracking-[0.18em] text-mid mb-3" style={{ fontSize: '0.5625rem' }}>
+                  Every overnight shift includes
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {overnightIncludes.map((item) => (
+                    <span key={item} className="area-tag">{item}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <Button variant="default" href="/contact">Book This Service</Button>
+              </div>
             </div>
 
             <ImagePlaceholder
@@ -113,26 +155,15 @@ export default function ServicesPage() {
       </section>
 
       {/* ─── Extended Overnight ────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-canvas">
+      <section id="extended-overnight" className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
             <div>
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-4"
-                style={{ fontSize: '0.6875rem' }}
-              >
-                Flexible · Commonly 9 PM – 7 AM
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-4"
-                style={{ fontSize: '2.5rem' }}
-              >
+              <span className="svc-tag">Flexible · Commonly 9 PM – 7 AM</span>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
                 Extended Overnight Newborn Care
               </h2>
-              <p
-                className="font-mono text-dim leading-relaxed mb-6"
-                style={{ fontSize: '1rem' }}
-              >
+              <p className="text-dim mb-6" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
                 {extendedOvernight?.fullDescription}
               </p>
             </div>
@@ -146,7 +177,7 @@ export default function ServicesPage() {
       </section>
 
       {/* ─── Daytime Support ───────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-paper">
+      <section id="daytime" className="py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-16 items-center">
             <ImagePlaceholder
@@ -155,77 +186,45 @@ export default function ServicesPage() {
             />
 
             <div>
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-4"
-                style={{ fontSize: '0.6875rem' }}
-              >
-                Daytime · 5–8 Hours
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-4"
-                style={{ fontSize: '2.5rem' }}
-              >
+              <span className="svc-tag">Daytime · 5–8 Hours</span>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
                 Daytime Postpartum Support
               </h2>
               {daytime?.fullDescription.split('\n\n').map((para, i, arr) => (
                 <p
                   key={i}
-                  className={`font-mono text-dim leading-relaxed ${i < arr.length - 1 ? 'mb-4' : 'mb-6'}`}
-                  style={{ fontSize: '1rem' }}
+                  className={`text-dim ${i < arr.length - 1 ? 'mb-4' : 'mb-6'}`}
+                  style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}
                 >
                   {para}
                 </p>
               ))}
-              <Button variant="ghost" href="/contact">
-                Learn More
-              </Button>
+              <Button variant="ghost" href="/contact">Learn More</Button>
             </div>
           </div>
         </div>
       </section>
 
       {/* ─── Evening & Hospital ────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-canvas">
+      <section className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="border border-stroke bg-paper p-10">
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-4"
-                style={{ fontSize: '0.6875rem' }}
-              >
-                Evening · 4 PM – 10 PM
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-4"
-                style={{ fontSize: '2rem' }}
-              >
+            <div id="witching-hour" style={{ border: 'var(--rule-soft)', background: 'var(--canvas)', padding: '2.5rem' }}>
+              <span className="svc-tag">Evening · 4 PM – 10 PM</span>
+              <h2 className="font-serif font-light text-ink mb-4" style={{ fontSize: '2rem' }}>
                 Witching Hour Support
               </h2>
-              <p
-                className="font-mono text-dim leading-relaxed"
-                style={{ fontSize: '1rem' }}
-              >
+              <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
                 {witchingHour?.fullDescription}
               </p>
             </div>
 
-            <div className="border border-stroke bg-paper p-10">
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-4"
-                style={{ fontSize: '0.6875rem' }}
-              >
-                Hospital · Philadelphia-Area Hospitals
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-4"
-                style={{ fontSize: '2rem' }}
-              >
+            <div id="hospital-overnight" style={{ border: 'var(--rule-soft)', background: 'var(--canvas)', padding: '2.5rem' }}>
+              <span className="svc-tag">Hospital · Philadelphia-Area Hospitals</span>
+              <h2 className="font-serif font-light text-ink mb-4" style={{ fontSize: '2rem' }}>
                 Hospital Overnight Support
               </h2>
-              <p
-                className="font-mono text-dim leading-relaxed"
-                style={{ fontSize: '1rem' }}
-              >
+              <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
                 {hospitalOvernight?.fullDescription}
               </p>
             </div>
@@ -234,27 +233,19 @@ export default function ServicesPage() {
       </section>
 
       {/* ─── Gentle Sleep Coaching ─────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-paper">
+      <section id="sleep-coaching" className="py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
             <div>
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-4"
-                style={{ fontSize: '0.6875rem' }}
-              >
-                Included for All Clients · No Additional Charge
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-4"
-                style={{ fontSize: '2.5rem' }}
-              >
+              <span className="svc-tag">Included for All Clients · No Additional Charge</span>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
                 Gentle Sleep Coaching
               </h2>
               {sleepCoaching?.fullDescription.split('\n\n').map((para, i, arr) => (
                 <p
                   key={i}
-                  className={`font-mono text-dim leading-relaxed ${i < arr.length - 1 ? 'mb-4' : ''}`}
-                  style={{ fontSize: '1rem' }}
+                  className={`text-dim ${i < arr.length - 1 ? 'mb-4' : ''}`}
+                  style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}
                 >
                   {para}
                 </p>
@@ -270,7 +261,7 @@ export default function ServicesPage() {
       </section>
 
       {/* ─── Breastfeeding & Lactation ─────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-canvas">
+      <section id="lactation" className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <ImagePlaceholder
@@ -279,31 +270,20 @@ export default function ServicesPage() {
             />
 
             <div>
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-4"
-                style={{ fontSize: '0.6875rem' }}
-              >
-                IBCLC On Staff · Highest Credential Available
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-4"
-                style={{ fontSize: '2.5rem' }}
-              >
+              <span className="svc-tag">IBCLC On Staff · Highest Credential Available</span>
+              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2.5rem' }}>
                 Breastfeeding &amp; Lactation Support
               </h2>
               {lactation?.fullDescription.split('\n\n').map((para, i, arr) => (
                 <p
                   key={i}
-                  className={`font-mono text-dim leading-relaxed ${i < arr.length - 1 ? 'mb-4' : 'mb-3'}`}
-                  style={{ fontSize: '1rem' }}
+                  className={`text-dim ${i < arr.length - 1 ? 'mb-4' : 'mb-3'}`}
+                  style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}
                 >
                   {para}
                 </p>
               ))}
-              <p
-                className="font-mono text-stroke"
-                style={{ fontSize: '0.75rem' }}
-              >
+              <p className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}>
                 Allison Hart, MS RD IBCLC
               </p>
             </div>
@@ -312,13 +292,10 @@ export default function ServicesPage() {
       </section>
 
       {/* ─── Service FAQs ──────────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-paper">
+      <section className="py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '900px' }}>
           <Eyebrow>Common Questions</Eyebrow>
-          <h2
-            className="font-serif font-light text-ink mt-3 mb-8"
-            style={{ fontSize: '2.5rem' }}
-          >
+          <h2 className="font-serif font-light text-ink mb-8" style={{ fontSize: '2.5rem' }}>
             Questions About Our Services
           </h2>
 
@@ -338,29 +315,19 @@ export default function ServicesPage() {
       </section>
 
       {/* ─── CTA ───────────────────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-ink">
+      <section className="py-20 bg-ink">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 items-center">
             <div>
-              <h2
-                className="font-serif text-paper font-light"
-                style={{ fontSize: '2.75rem', lineHeight: 1.1 }}
-              >
+              <h2 className="font-serif font-light" style={{ fontSize: '2.75rem', lineHeight: 1.1, color: 'var(--paper)' }}>
                 Ready to Build Your Care Plan?
               </h2>
-              <p
-                className="font-mono leading-relaxed mt-3"
-                style={{ fontSize: '1rem', maxWidth: '480px', color: 'rgba(255,255,255,0.7)' }}
-              >
-                Start with a free consultation. We&apos;ll match you with the right doula and put
-                together a care plan that makes sense for your family.
+              <p className="mt-3" style={{ fontSize: '0.9375rem', maxWidth: '480px', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>
+                Start with a free consultation. We&apos;ll match you with the right doula and put together a care plan that makes sense for your family.
               </p>
             </div>
-
             <div>
-              <Button variant="inverse" href="/contact">
-                Book Your Free Consultation
-              </Button>
+              <Button variant="inverse" href="/contact">Book Your Free Consultation</Button>
             </div>
           </div>
         </div>

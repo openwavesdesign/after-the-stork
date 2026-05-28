@@ -17,30 +17,27 @@ const posts = [
   { tag: 'Coming Soon', title: '[Future Post]', readingTime: '', coming: true },
 ]
 
+const filterTabs = ['Newborn Care', 'Breastfeeding', 'Infant Sleep', 'Postpartum Recovery', 'Philadelphia', 'Overnight']
+
 export default function BlogPage() {
   return (
     <>
       {/* ─── Hero ──────────────────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-paper">
+      <section className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1" style={{ fontSize: '0.6875rem' }}>
-                Blog
-              </span>
+              <div className="pill">Blog</div>
               <h1
-                className="font-serif font-light text-ink mt-4"
-                style={{ fontSize: '3.5rem', lineHeight: 1.05 }}
+                className="font-serif font-light text-ink"
+                style={{ fontSize: 'clamp(3.5rem,6vw,6rem)', lineHeight: 1.02, letterSpacing: '-0.018em' }}
               >
-                The After the Stork Blog
+                The After<br /><em>the Stork Blog.</em>
               </h1>
             </div>
 
             <div>
-              <p
-                className="font-mono text-dim leading-relaxed"
-                style={{ fontSize: '1rem', maxWidth: '440px' }}
-              >
+              <p className="text-dim" style={{ fontSize: '0.9375rem', maxWidth: '440px', lineHeight: '1.75' }}>
                 Postpartum recovery, newborn care, breastfeeding, and infant sleep — written by people with 25+ years of experience, an IBCLC on staff, and a Certified Gentle Sleep Coach. Real expertise, real families, real answers.
               </p>
             </div>
@@ -49,28 +46,20 @@ export default function BlogPage() {
       </section>
 
       {/* ─── Featured Post ─────────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-canvas">
+      <section className="py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
             <ImagePlaceholder label="Featured Post Image" style={{ height: '400px' }} />
 
             <div>
               <Eyebrow>Featured</Eyebrow>
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.12em] px-3 py-1 mb-3 mt-3"
-                style={{ fontSize: '0.6875rem' }}
-              >
-                Postpartum Doula
-              </span>
-              <h2
-                className="font-serif font-light text-ink mb-3"
-                style={{ fontSize: '2.25rem', lineHeight: 1.1 }}
-              >
+              <span className="area-tag mb-4 inline-block">Postpartum Doula</span>
+              <h2 className="font-serif font-light text-ink mb-3" style={{ fontSize: '2.25rem', lineHeight: 1.1 }}>
                 What Does a Postpartum Doula Actually Do? (And Do I Need One?)
               </h2>
               <div
-                className="font-mono text-stroke uppercase tracking-[0.1em] flex gap-4 mb-4"
-                style={{ fontSize: '0.6875rem' }}
+                className="font-mono uppercase tracking-[0.16em] flex flex-wrap gap-4 mb-5"
+                style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}
               >
                 <span>March 1, 2025</span>
                 <span>·</span>
@@ -78,10 +67,7 @@ export default function BlogPage() {
                 <span>·</span>
                 <span>Ashley Morrison</span>
               </div>
-              <p
-                className="font-mono text-dim leading-relaxed mb-6"
-                style={{ fontSize: '1rem' }}
-              >
+              <p className="text-dim mb-6" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
                 Everything you wanted to know about postpartum doulas — what they do, what they don&rsquo;t do, and how to know if one is right for your family&hellip;
               </p>
               <Button variant="ghost" href="/blog/what-does-a-postpartum-doula-do">
@@ -92,27 +78,38 @@ export default function BlogPage() {
         </div>
       </section>
 
+      {/* ─── Category filter bar ───────────────────────────────────────── */}
+      <section style={{ borderBottom: 'var(--rule)' }}>
+        <div className="mx-auto px-6 md:px-12 py-6 flex justify-between items-center flex-wrap gap-6" style={{ maxWidth: '1280px' }}>
+          <div className="flex gap-2 flex-wrap">
+            <span className="area-tag" style={{ borderColor: 'var(--ink)', color: 'var(--ink)', fontWeight: 500 }}>All Posts</span>
+            {filterTabs.map(t => (
+              <span key={t} className="area-tag">{t}</span>
+            ))}
+          </div>
+          <span className="font-mono uppercase tracking-[0.18em] text-mid" style={{ fontSize: '0.625rem' }}>
+            Showing 6 of 23 posts
+          </span>
+        </div>
+      </section>
+
       {/* ─── Post Grid ─────────────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-paper">
+      <section className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map((post) => (
               <div
                 key={post.title}
-                className={`border border-stroke bg-paper overflow-hidden${post.coming ? ' opacity-40' : ''}`}
+                className={`border bg-paper overflow-hidden transition-all duration-300 hover:border-accent hover:-translate-y-1${post.coming ? ' opacity-40' : ''}`}
+                style={{ borderColor: 'var(--stroke)' }}
               >
                 <ImagePlaceholder
                   label={`${post.tag} Post Image`}
                   dimensions="Blog Post Thumbnail"
                   style={{ height: '200px' }}
                 />
-                <div className="px-6 py-7 border-t border-stroke">
-                  <span
-                    className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.12em] px-2 py-0.5 mb-3"
-                    style={{ fontSize: '0.625rem' }}
-                  >
-                    {post.tag}
-                  </span>
+                <div className="px-6 py-7" style={{ borderTop: 'var(--rule-soft)' }}>
+                  <span className="area-tag mb-3 inline-block">{post.tag}</span>
                   <p
                     className="font-serif text-ink font-light leading-tight mb-3"
                     style={{ fontSize: '1.25rem' }}
@@ -120,10 +117,7 @@ export default function BlogPage() {
                     {post.title}
                   </p>
                   {!post.coming && post.readingTime && (
-                    <p
-                      className="font-mono text-stroke uppercase tracking-[0.1em]"
-                      style={{ fontSize: '0.6875rem' }}
-                    >
+                    <p className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.5625rem', color: 'var(--mid)' }}>
                       {post.readingTime}
                     </p>
                   )}
@@ -135,48 +129,37 @@ export default function BlogPage() {
       </section>
 
       {/* ─── Newsletter ────────────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-ink">
+      <section className="py-20 bg-ink">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="flex items-center gap-[0.625rem]">
-                <span className="text-white/40" style={{ fontSize: '0.5rem' }} aria-hidden="true">◆</span>
-                <span className="font-mono text-white/40 uppercase tracking-[0.2em]" style={{ fontSize: '0.6875rem' }}>
-                  Stay in the Loop
-                </span>
-              </div>
-              <h2
-                className="font-serif text-paper font-light mt-3"
-                style={{ fontSize: '2.5rem' }}
-              >
-                Get Postpartum Insights Delivered to Your Inbox
+              <Eyebrow dark>Stay in the Loop</Eyebrow>
+              <h2 className="font-serif font-light" style={{ fontSize: '2.5rem', color: 'var(--paper)' }}>
+                Get Postpartum Insights<br /><em style={{ color: 'var(--accent-soft)' }}>Delivered to Your Inbox.</em>
               </h2>
-              <p
-                className="font-mono leading-relaxed mt-3"
-                style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.7)' }}
-              >
+              <p className="mt-4" style={{ fontSize: '0.9375rem', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>
                 Practical tips, honest advice, and resources for new and expecting families. No noise, just good stuff.
               </p>
             </div>
 
             <div>
               <label htmlFor="newsletter-email" className="sr-only">Email address</label>
-              <div className="flex gap-0">
+              <div style={{ display: 'flex', border: '1px solid rgba(255,255,255,.2)' }}>
                 <input
                   id="newsletter-email"
                   type="email"
                   placeholder="Email address"
-                  className="border border-stroke bg-white/5 text-paper font-mono outline-none flex-1 tracking-[0.05em] placeholder:text-white/30 px-4 py-3"
-                  style={{ fontSize: '1rem' }}
+                  className="flex-1 outline-none"
+                  style={{ background: 'rgba(255,255,255,.05)', color: 'var(--paper)', fontFamily: 'var(--font-serif)', fontSize: '1rem', padding: '16px 18px', border: 'none' }}
                 />
                 <button
-                  className="bg-paper text-ink font-mono uppercase tracking-[0.16em] hover:bg-ghost transition-colors whitespace-nowrap px-6 py-3"
-                  style={{ fontSize: '0.75rem' }}
+                  className="font-mono uppercase tracking-[0.16em] hover:bg-ghost transition-colors whitespace-nowrap"
+                  style={{ background: 'var(--paper)', color: 'var(--ink)', fontSize: '0.625rem', padding: '0 24px' }}
                 >
                   Subscribe →
                 </button>
               </div>
-              <p className="font-mono text-white/30 mt-2" style={{ fontSize: '0.75rem' }}>
+              <p className="font-mono mt-2" style={{ fontSize: '0.5625rem', color: 'rgba(244,239,230,.35)', letterSpacing: '.1em' }}>
                 Connects to email marketing platform — to be wired up
               </p>
             </div>

@@ -15,29 +15,21 @@ export default function FAQPage() {
   return (
     <>
       {/* ─── Hero ──────────────────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-paper">
+      <section className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span
-                className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1"
-                style={{ fontSize: '0.6875rem' }}
-              >
-                FAQ
-              </span>
+              <div className="pill">FAQ</div>
               <h1
-                className="font-serif font-light text-ink mt-4"
-                style={{ fontSize: 'clamp(3.5rem, 7vw, 4.5rem)', lineHeight: 1.05 }}
+                className="font-serif font-light text-ink"
+                style={{ fontSize: 'clamp(3.5rem,7vw,7rem)', lineHeight: 1.02, letterSpacing: '-0.018em' }}
               >
-                Your Questions, Answered
+                Your Questions,<br /><em>Answered.</em>
               </h1>
             </div>
 
             <div>
-              <p
-                className="font-mono text-dim leading-relaxed"
-                style={{ fontSize: '1rem', maxWidth: '440px' }}
-              >
+              <p className="text-dim" style={{ fontSize: '0.9375rem', maxWidth: '440px', lineHeight: '1.75' }}>
                 We know choosing postpartum support is a big decision. Below are the questions we
                 hear most often from families in Philadelphia and the Main Line.
               </p>
@@ -46,19 +38,56 @@ export default function FAQPage() {
         </div>
       </section>
 
+      {/* ─── Quick links ───────────────────────────────────────────────── */}
+      <div style={{ borderBottom: 'var(--rule)' }}>
+        <div
+          className="mx-auto px-6 md:px-12 flex flex-wrap gap-8 items-center"
+          style={{ maxWidth: '1280px', padding: '32px 3.5rem' }}
+        >
+          <span className="font-mono uppercase tracking-[0.18em] text-mid" style={{ fontSize: '0.625rem' }}>
+            Jump to:
+          </span>
+          {faqs.map((cat, i) => (
+            <a
+              key={cat.slug}
+              href={`#faq-${i}`}
+              className="font-mono uppercase tracking-[0.18em] text-dim hover:text-ink transition-colors"
+              style={{ fontSize: '0.625rem', borderBottom: '1px solid var(--accent)', paddingBottom: '2px' }}
+            >
+              {cat.category}
+            </a>
+          ))}
+        </div>
+      </div>
+
       {/* ─── FAQ Categories ─────────────────────────────────────────────── */}
       {faqs.map((category, catIndex) => (
         <section
           key={category.slug}
-          className={`py-14 md:py-20 ${catIndex % 2 === 0 ? 'bg-canvas' : 'bg-paper'}`}
+          id={`faq-${catIndex}`}
+          className={`py-20 ${catIndex % 2 === 0 ? 'bg-canvas' : 'bg-paper'}`}
         >
           <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '900px' }}>
-            <p
-              className="font-mono text-dim uppercase tracking-[0.16em] mb-8"
-              style={{ fontSize: '0.75rem' }}
-            >
-              {category.category}
-            </p>
+            <div className="flex items-end justify-between mb-8">
+              <p
+                className="font-mono text-dim uppercase tracking-[0.22em]"
+                style={{ fontSize: '0.75rem' }}
+              >
+                {category.category}
+              </p>
+              <div
+                className="font-serif font-light italic hidden md:block"
+                style={{
+                  fontSize: 'clamp(6rem,10vw,8rem)',
+                  color: 'var(--accent-tint)',
+                  lineHeight: 1,
+                  userSelect: 'none',
+                }}
+                aria-hidden="true"
+              >
+                {String(catIndex + 1).padStart(2, '0')}
+              </div>
+            </div>
             {category.items.map((item, itemIndex) => (
               <FAQItem
                 key={itemIndex}
@@ -72,29 +101,21 @@ export default function FAQPage() {
       ))}
 
       {/* ─── CTA ───────────────────────────────────────────────────────── */}
-      <section className="py-14 md:py-20 bg-ink">
+      <section className="py-20 bg-ink">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 items-center">
             <div>
-              <h2
-                className="font-serif text-paper font-light"
-                style={{ fontSize: '2.75rem', lineHeight: 1.1 }}
-              >
+              <h2 className="font-serif font-light" style={{ fontSize: '2.75rem', lineHeight: 1.1, color: 'var(--paper)' }}>
                 Still Have Questions?
               </h2>
-              <p
-                className="font-mono leading-relaxed mt-3"
-                style={{ fontSize: '1rem', maxWidth: '480px', color: 'rgba(255,255,255,0.7)' }}
-              >
+              <p className="mt-3" style={{ fontSize: '0.9375rem', maxWidth: '480px', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>
                 We&apos;re happy to answer anything not covered above. Reach out directly — or book
                 a free consultation and we&apos;ll walk you through everything.
               </p>
             </div>
 
             <div>
-              <Button variant="inverse" href="/contact">
-                Contact Us
-              </Button>
+              <Button variant="inverse" href="/contact">Contact Us</Button>
             </div>
           </div>
         </div>

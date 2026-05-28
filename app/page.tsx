@@ -329,7 +329,7 @@ export default function HomePage() {
                   {/* Philadelphia */}
                   <g>
                     <circle cx="340" cy="200" r="6" fill="var(--accent)" />
-                    <text x="352" y="204" fontFamily="var(--font-mono)" fontSize="9" fill="var(--ink)" letterSpacing="0.08em" textTransform="uppercase">PHILADELPHIA</text>
+                    <text x="352" y="204" fontFamily="var(--font-mono)" fontSize="9" fill="var(--ink)" letterSpacing="0.08em">PHILADELPHIA</text>
                   </g>
                   {/* Bryn Mawr */}
                   <g>
