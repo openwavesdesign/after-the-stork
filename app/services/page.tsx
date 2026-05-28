@@ -3,7 +3,7 @@ import type { Service } from '@/types'
 import Button from '@/components/ui/Button'
 import Eyebrow from '@/components/ui/Eyebrow'
 import FAQItem from '@/components/ui/FAQItem'
-import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
+import Media from '@/components/ui/Media'
 import servicesData from '@/data/services.json'
 
 export const metadata: Metadata = {
@@ -146,8 +146,9 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            <ImagePlaceholder
-              label="Overnight Service Photo"
+            <Media
+              alt="An After the Stork doula providing overnight newborn care"
+              label="Overnight Postpartum Support"
               style={{ height: '480px' }}
             />
           </div>
@@ -168,8 +169,9 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <ImagePlaceholder
-              label="Extended Overnight Photo"
+            <Media
+              alt="A peacefully sleeping newborn during extended overnight care"
+              label="Extended Overnight Care"
               style={{ height: '360px' }}
             />
           </div>
@@ -180,8 +182,9 @@ export default function ServicesPage() {
       <section id="daytime" className="py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-16 items-center">
-            <ImagePlaceholder
-              label="Daytime Service Photo"
+            <Media
+              alt="A parent resting while a doula provides daytime newborn support"
+              label="Daytime Postpartum Support"
               style={{ height: '400px' }}
             />
 
@@ -252,7 +255,8 @@ export default function ServicesPage() {
               ))}
             </div>
 
-            <ImagePlaceholder
+            <Media
+              alt="Georgette Kerr guiding a family through gentle sleep coaching"
               label="Georgette — Sleep Coaching"
               style={{ height: '360px' }}
             />
@@ -264,8 +268,9 @@ export default function ServicesPage() {
       <section id="lactation" className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <ImagePlaceholder
-              label="Allison Hart IBCLC"
+            <Media
+              alt="Allison Hart, MS RD IBCLC, providing lactation support"
+              label="Allison Hart, IBCLC"
               style={{ height: '360px' }}
             />
 

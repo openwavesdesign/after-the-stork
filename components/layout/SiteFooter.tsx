@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import navData from '@/data/navigation.json'
+import site from '@/data/site.json'
 
 export default function SiteFooter() {
   return (
@@ -23,7 +24,7 @@ export default function SiteFooter() {
             className="font-mono uppercase tracking-[0.22em] mb-5"
             style={{ fontSize: '0.75rem', color: 'var(--accent-soft)' }}
           >
-            Est. 2004 · Philadelphia
+            Est. {site.foundingYear} · Philadelphia
           </p>
           <p style={{ fontSize: '0.875rem', color: 'rgba(244,239,230,.78)', lineHeight: '1.7', maxWidth: '320px' }}>
             Expert overnight postpartum doula and newborn care for families across Philadelphia, the Main Line, Bucks County, and select communities in New Jersey.
@@ -77,13 +78,38 @@ export default function SiteFooter() {
             Contact
           </h4>
           <ul className="flex flex-col gap-3">
-            <li style={{ fontSize: '0.875rem', color: 'rgba(244,239,230,.85)' }}>[Phone Number]</li>
-            <li style={{ fontSize: '0.875rem', color: 'rgba(244,239,230,.85)' }}>[Email Address]</li>
+            <li>
+              <a href={site.phone.href} className="footer-link" style={{ fontSize: '0.875rem' }}>
+                {site.phone.display}
+              </a>
+            </li>
+            <li>
+              <a href={site.email.href} className="footer-link" style={{ fontSize: '0.875rem' }}>
+                {site.email.display}
+              </a>
+            </li>
             {navData.footer[2].links.map((link) => (
               <li key={link.href}>
                 <Link href={link.href} className="footer-link" style={{ fontSize: '0.875rem' }}>
                   {link.label}
                 </Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* Social */}
+          <ul className="flex flex-wrap gap-4 mt-6">
+            {site.social.map((s) => (
+              <li key={s.label}>
+                <a
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-link font-mono uppercase tracking-[0.18em]"
+                  style={{ fontSize: '0.75rem' }}
+                >
+                  {s.label}
+                </a>
               </li>
             ))}
           </ul>

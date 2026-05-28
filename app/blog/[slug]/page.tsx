@@ -1,44 +1,32 @@
 import { notFound } from 'next/navigation'
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
+import Link from 'next/link'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import type { Metadata } from 'next'
-import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
+import Media from '@/components/ui/Media'
+import { getPost, getAllPosts, getOtherPosts, formatDate } from '@/lib/posts'
 
 interface PageProps {
   params: { slug: string }
 }
 
-function getPost(slug: string) {
-  const postsDir = path.join(process.cwd(), 'posts')
-  const filePath = path.join(postsDir, `${slug}.mdx`)
-  if (!fs.existsSync(filePath)) return null
-  const raw = fs.readFileSync(filePath, 'utf-8')
-  const { data, content } = matter(raw)
-  return { frontmatter: data, content }
+export function generateStaticParams() {
+  return getAllPosts().map((p) => ({ slug: p.slug }))
 }
 
-export async function generateStaticParams() {
-  const postsDir = path.join(process.cwd(), 'posts')
-  if (!fs.existsSync(postsDir)) return []
-  const files = fs.readdirSync(postsDir).filter(f => f.endsWith('.mdx'))
-  return files.map(f => ({ slug: f.replace('.mdx', '') }))
-}
-
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export function generateMetadata({ params }: PageProps): Metadata {
   const post = getPost(params.slug)
   if (!post) return {}
   return {
-    title: post.frontmatter.title,
-    description: post.frontmatter.metaDescription,
+    title: post.meta.title,
+    description: post.meta.metaDescription,
   }
 }
 
 export default function BlogPostPage({ params }: PageProps) {
   const post = getPost(params.slug)
   if (!post) notFound()
-  const { frontmatter, content } = post
+  const { meta, content } = post
+  const others = getOtherPosts(params.slug, 3)
 
   return (
     <>
@@ -50,23 +38,23 @@ export default function BlogPostPage({ params }: PageProps) {
               className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.12em] px-3 py-1 mb-5"
               style={{ fontSize: '0.75rem' }}
             >
-              {frontmatter.category}
+              {meta.category}
             </span>
             <h1
               className="font-serif text-ink font-light"
               style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.15 }}
             >
-              {frontmatter.title}
+              {meta.title}
             </h1>
             <div
               className="flex items-center gap-4 font-mono text-muted uppercase tracking-[0.1em] mt-4"
               style={{ fontSize: '0.75rem' }}
             >
-              <span>{frontmatter.date}</span>
+              <span>{formatDate(meta.date)}</span>
               <span aria-hidden="true">·</span>
-              <span>{frontmatter.readingTime}</span>
+              <span>{meta.readingTime}</span>
               <span aria-hidden="true">·</span>
-              <span>{frontmatter.author}</span>
+              <span>{meta.author}</span>
             </div>
           </div>
         </div>
@@ -75,10 +63,12 @@ export default function BlogPostPage({ params }: PageProps) {
       {/* Featured Image */}
       <section className="bg-canvas">
         <div className="mx-auto px-6 md:px-12 py-10" style={{ maxWidth: '1280px' }}>
-          <ImagePlaceholder
-            label="Featured Post Image"
-            dimensions="1280 × 640 px"
-            style={{ height: '400px' }}
+          <Media
+            src={meta.featuredImage}
+            alt={meta.title}
+            label={meta.category}
+            ratio="16/7"
+            priority
           />
         </div>
       </section>
@@ -86,41 +76,47 @@ export default function BlogPostPage({ params }: PageProps) {
       {/* Post Body */}
       <section className="py-14 md:py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '800px' }}>
-          <div className="font-mono text-dim leading-relaxed" style={{ fontSize: '1rem' }}>
+          <div className="prose">
             <MDXRemote source={content} />
           </div>
         </div>
       </section>
 
       {/* More from Blog */}
-      <section className="py-14 md:py-20 bg-canvas">
-        <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
-          <h2
-            className="font-serif text-ink font-light mb-8"
-            style={{ fontSize: '2.25rem' }}
-          >
-            More from the Blog
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {['Newborn Sleep', 'Breastfeeding', 'Postpartum Recovery'].map((tag) => (
-              <div key={tag} className="border border-stroke bg-paper overflow-hidden">
-                <ImagePlaceholder label={`${tag} Post`} style={{ height: '200px' }} />
-                <div className="px-6 py-7 border-t border-stroke">
-                  <span
-                    className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.12em] px-2 py-0.5 mb-3"
-                    style={{ fontSize: '0.75rem' }}
-                  >
-                    {tag}
-                  </span>
-                  <p className="font-serif text-ink font-light" style={{ fontSize: '1.25rem' }}>
-                    Placeholder Post Title
-                  </p>
-                </div>
-              </div>
-            ))}
+      {others.length > 0 && (
+        <section className="py-14 md:py-20 bg-canvas">
+          <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
+            <h2
+              className="font-serif text-ink font-light mb-8"
+              style={{ fontSize: '2.25rem' }}
+            >
+              More from the Blog
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {others.map((p) => (
+                <Link
+                  key={p.slug}
+                  href={`/blog/${p.slug}`}
+                  className="group block border border-stroke bg-paper overflow-hidden transition-all duration-300 hover:border-accent hover:-translate-y-1"
+                >
+                  <Media src={p.featuredImage} alt={p.title} label={p.category} ratio="16/10" />
+                  <div className="px-6 py-7 border-t border-stroke">
+                    <span
+                      className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.12em] px-2 py-0.5 mb-3"
+                      style={{ fontSize: '0.75rem' }}
+                    >
+                      {p.category}
+                    </span>
+                    <p className="font-serif text-ink font-light" style={{ fontSize: '1.25rem', lineHeight: 1.25 }}>
+                      {p.title}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </>
   )
 }
