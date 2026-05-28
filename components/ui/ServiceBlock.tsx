@@ -16,13 +16,13 @@ export default function ServiceBlock({ service, isLast = false }: ServiceBlockPr
         <div className="flex flex-col gap-3 pt-1">
           <span
             className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em]"
-            style={{ fontSize: '8px', padding: '4px 10px' }}
+            style={{ fontSize: '0.6875rem', padding: '0.25rem 0.625rem' }}
           >
             {service.tagline}
           </span>
           <span
             className="font-mono text-stroke"
-            style={{ fontSize: '9px' }}
+            style={{ fontSize: '0.6875rem' }}
           >
             {service.hours}
           </span>
@@ -31,13 +31,13 @@ export default function ServiceBlock({ service, isLast = false }: ServiceBlockPr
         <div className="flex flex-col gap-3">
           <h3
             className="font-serif text-ink font-light"
-            style={{ fontSize: '24px' }}
+            style={{ fontSize: '1.5rem' }}
           >
             {service.name}
           </h3>
           <p
             className="font-mono text-dim"
-            style={{ fontSize: '12px', lineHeight: '1.8' }}
+            style={{ fontSize: '1rem', lineHeight: '1.8' }}
           >
             {service.shortDescription}
           </p>

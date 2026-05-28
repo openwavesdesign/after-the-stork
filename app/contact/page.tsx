@@ -3,7 +3,6 @@ import Breadcrumb from '@/components/layout/Breadcrumb'
 import Button from '@/components/ui/Button'
 import Eyebrow from '@/components/ui/Eyebrow'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
-import SectionBadge from '@/components/ui/SectionBadge'
 
 export const metadata: Metadata = {
   title: 'Contact After the Stork | Philadelphia Postpartum Doula Team',
@@ -24,34 +23,32 @@ export default function ContactPage() {
         </div>
       </div>
 
-      {/* ─── 01 / Hero ──────────────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-paper">
-        <SectionBadge label="01 / Hero" />
+      {/* ─── Hero ──────────────────────────────────────────────────────── */}
+      <section className="py-14 md:py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <span
             className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1"
-            style={{ fontSize: '8px' }}
+            style={{ fontSize: '0.6875rem' }}
           >
             Contact Us
           </span>
           <h1
             className="font-serif font-light text-ink mt-4"
-            style={{ fontSize: 'clamp(52px, 6vw, 72px)', lineHeight: 1.05, maxWidth: '900px' }}
+            style={{ fontSize: 'clamp(3.25rem, 6vw, 4.5rem)', lineHeight: 1.05, maxWidth: '900px' }}
           >
             Contact Our Philadelphia <em>Postpartum Doula</em> Team
           </h1>
           <p
             className="font-mono text-dim leading-relaxed mt-4"
-            style={{ fontSize: '13px', maxWidth: '560px' }}
+            style={{ fontSize: '1rem', maxWidth: '560px' }}
           >
             Whether you&rsquo;re planning ahead during pregnancy, newly home from the hospital, or still figuring out what kind of support you need — reach out. There are no silly questions here. We typically respond within one business day.
           </p>
         </div>
       </section>
 
-      {/* ─── 02 / Contact Layout ────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-canvas">
-        <SectionBadge label="02 / Contact" />
+      {/* ─── Contact Layout ────────────────────────────────────────────── */}
+      <section className="py-14 md:py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-20 items-start">
 
@@ -60,59 +57,53 @@ export default function ContactPage() {
               <Eyebrow>Get in Touch</Eyebrow>
               <h2
                 className="font-serif font-light text-ink mt-3 mb-8"
-                style={{ fontSize: '36px' }}
+                style={{ fontSize: '2.25rem' }}
               >
                 Direct Contact
               </h2>
 
-              {/* Phone */}
               <div className="border-t border-stroke py-5 flex items-start gap-4">
-                <span className="text-mid font-mono" style={{ fontSize: '16px' }}>☏</span>
+                <span className="text-mid font-mono" style={{ fontSize: '1rem' }} aria-hidden="true">☏</span>
                 <div>
-                  <p className="font-mono text-stroke uppercase tracking-[0.14em] mb-1" style={{ fontSize: '8px' }}>
+                  <p className="font-mono text-stroke uppercase tracking-[0.14em] mb-1" style={{ fontSize: '0.6875rem' }}>
                     Phone
                   </p>
-                  {/* TODO: CLIENT INPUT NEEDED */}
-                  <span className="font-mono text-dim" style={{ fontSize: '11px' }}>[Phone Number]</span>
+                  <span className="font-mono text-dim" style={{ fontSize: '1rem' }}>[Phone Number]</span>
                 </div>
               </div>
 
-              {/* Email */}
               <div className="border-t border-stroke py-5 flex items-start gap-4">
-                <span className="text-mid font-mono" style={{ fontSize: '16px' }}>✉</span>
+                <span className="text-mid font-mono" style={{ fontSize: '1rem' }} aria-hidden="true">✉</span>
                 <div>
-                  <p className="font-mono text-stroke uppercase tracking-[0.14em] mb-1" style={{ fontSize: '8px' }}>
+                  <p className="font-mono text-stroke uppercase tracking-[0.14em] mb-1" style={{ fontSize: '0.6875rem' }}>
                     Email
                   </p>
-                  <span className="font-mono text-dim" style={{ fontSize: '11px' }}>[Email Address]</span>
+                  <span className="font-mono text-dim" style={{ fontSize: '1rem' }}>[Email Address]</span>
                 </div>
               </div>
 
-              {/* Service Area */}
               <div className="border-t border-stroke py-5 flex items-start gap-4">
-                <span className="text-mid font-mono" style={{ fontSize: '16px' }}>◎</span>
+                <span className="text-mid font-mono" style={{ fontSize: '1rem' }} aria-hidden="true">◎</span>
                 <div>
-                  <p className="font-mono text-stroke uppercase tracking-[0.14em] mb-1" style={{ fontSize: '8px' }}>
+                  <p className="font-mono text-stroke uppercase tracking-[0.14em] mb-1" style={{ fontSize: '0.6875rem' }}>
                     Service Area
                   </p>
-                  <span className="font-mono text-dim" style={{ fontSize: '11px' }}>Serving Philadelphia, the Main Line, Montgomery &amp; Delaware Counties, and select NJ communities.</span>
+                  <span className="font-mono text-dim" style={{ fontSize: '1rem' }}>Serving Philadelphia, the Main Line, Montgomery &amp; Delaware Counties, and select NJ communities.</span>
                 </div>
               </div>
 
-              {/* Area tags */}
               <div className="mt-6 flex flex-wrap gap-2">
                 {['Philadelphia', 'Bryn Mawr', 'Wayne', 'Villanova', 'Dresher', 'Moorestown NJ', 'Haddonfield NJ'].map((area) => (
                   <span
                     key={area}
                     className="border border-stroke font-mono text-mid uppercase tracking-[0.12em] px-3 py-1"
-                    style={{ fontSize: '8px' }}
+                    style={{ fontSize: '0.6875rem' }}
                   >
                     {area}
                   </span>
                 ))}
               </div>
 
-              {/* Map placeholder */}
               <div className="mt-8 border border-dashed border-stroke relative" style={{ height: '280px' }}>
                 <ImagePlaceholder
                   label="Embedded Google Map — Service Area"
@@ -127,81 +118,58 @@ export default function ContactPage() {
               <Eyebrow>Send a Message</Eyebrow>
 
               <form className="flex flex-col gap-5 mt-6">
-                {/* First Name */}
                 <div>
-                  <label className={labelClass} style={{ fontSize: '8px' }}>
+                  <label htmlFor="firstName" className={labelClass} style={{ fontSize: '0.6875rem' }}>
                     First Name
                   </label>
-                  <input
-                    type="text"
-                    name="firstName"
-                    className={inputClass}
-                    style={{ fontSize: '11px' }}
-                  />
+                  <input id="firstName" type="text" name="firstName" className={inputClass} style={{ fontSize: '1rem' }} />
                 </div>
 
-                {/* Last Name */}
                 <div>
-                  <label className={labelClass} style={{ fontSize: '8px' }}>
+                  <label htmlFor="lastName" className={labelClass} style={{ fontSize: '0.6875rem' }}>
                     Last Name
                   </label>
-                  <input
-                    type="text"
-                    name="lastName"
-                    className={inputClass}
-                    style={{ fontSize: '11px' }}
-                  />
+                  <input id="lastName" type="text" name="lastName" className={inputClass} style={{ fontSize: '1rem' }} />
                 </div>
 
-                {/* Email + Phone */}
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className={labelClass} style={{ fontSize: '8px' }}>
+                    <label htmlFor="email" className={labelClass} style={{ fontSize: '0.6875rem' }}>
                       Email
                     </label>
-                    <input
-                      type="email"
-                      name="email"
-                      className={inputClass}
-                      style={{ fontSize: '11px' }}
-                    />
+                    <input id="email" type="email" name="email" className={inputClass} style={{ fontSize: '1rem' }} />
                   </div>
                   <div>
-                    <label className={labelClass} style={{ fontSize: '8px' }}>
+                    <label htmlFor="phone" className={labelClass} style={{ fontSize: '0.6875rem' }}>
                       Phone
                     </label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      className={inputClass}
-                      style={{ fontSize: '11px' }}
-                    />
+                    <input id="phone" type="tel" name="phone" className={inputClass} style={{ fontSize: '1rem' }} />
                   </div>
                 </div>
 
-                {/* Due Date */}
                 <div>
-                  <label className={labelClass} style={{ fontSize: '8px' }}>
+                  <label htmlFor="dueDate" className={labelClass} style={{ fontSize: '0.6875rem' }}>
                     Due Date / Baby&rsquo;s Birth Date
                   </label>
                   <input
+                    id="dueDate"
                     type="text"
                     name="dueDate"
                     placeholder="MM/DD/YYYY"
                     className={inputClass}
-                    style={{ fontSize: '11px' }}
+                    style={{ fontSize: '1rem' }}
                   />
                 </div>
 
-                {/* How Did You Hear */}
                 <div>
-                  <label className={labelClass} style={{ fontSize: '8px' }}>
+                  <label htmlFor="howHeard" className={labelClass} style={{ fontSize: '0.6875rem' }}>
                     How Did You Hear About Us
                   </label>
                   <select
+                    id="howHeard"
                     name="howHeard"
                     className={`${inputClass} appearance-none cursor-pointer`}
-                    style={{ fontSize: '11px' }}
+                    style={{ fontSize: '1rem' }}
                   >
                     <option value="">— Please select —</option>
                     <option value="google">Google</option>
@@ -211,16 +179,16 @@ export default function ContactPage() {
                   </select>
                 </div>
 
-                {/* How Can We Help */}
                 <div>
-                  <label className={labelClass} style={{ fontSize: '8px' }}>
+                  <label htmlFor="message" className={labelClass} style={{ fontSize: '0.6875rem' }}>
                     How Can We Help You
                   </label>
                   <textarea
+                    id="message"
                     name="message"
                     rows={5}
                     className={inputClass}
-                    style={{ fontSize: '11px', resize: 'vertical' }}
+                    style={{ fontSize: '1rem', resize: 'vertical' }}
                   />
                 </div>
 
@@ -228,7 +196,7 @@ export default function ContactPage() {
                   <Button variant="default" type="submit">
                     Send Message
                   </Button>
-                  <p className="font-mono text-stroke mt-3" style={{ fontSize: '8px' }}>
+                  <p className="font-mono text-stroke mt-3" style={{ fontSize: '0.75rem' }}>
                     Form connects to EngineHire CRM — to be wired up during development
                   </p>
                 </div>
@@ -239,13 +207,12 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ─── 03 / Closing ───────────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-ink">
-        <SectionBadge label="03 / Closing" dark={true} />
+      {/* ─── Closing ───────────────────────────────────────────────────── */}
+      <section className="py-14 md:py-20 bg-ink">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <p
             className="font-serif italic text-paper text-center"
-            style={{ fontSize: '36px', fontWeight: 300 }}
+            style={{ fontSize: '2.25rem', fontWeight: 300 }}
           >
             We look forward to supporting your family.
           </p>

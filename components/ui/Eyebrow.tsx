@@ -7,12 +7,12 @@ interface EyebrowProps {
 export default function Eyebrow({ children, className = '', center = false }: EyebrowProps) {
   return (
     <div
-      className={`flex items-center gap-[10px] ${center ? 'justify-center' : ''} ${className}`}
+      className={`flex items-center gap-[0.625rem] ${center ? 'justify-center' : ''} ${className}`}
     >
-      <span className="text-mid" style={{ fontSize: '6px' }}>◆</span>
+      <span className="text-mid" style={{ fontSize: '0.5rem' }} aria-hidden="true">◆</span>
       <span
         className="font-mono text-mid uppercase tracking-[0.2em]"
-        style={{ fontSize: '9px' }}
+        style={{ fontSize: '0.6875rem' }}
       >
         {children}
       </span>

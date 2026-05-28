@@ -17,6 +17,7 @@ export default function ImagePlaceholder({
     <div
       className={`relative flex flex-col items-center justify-center bg-ghost overflow-hidden ${className}`}
       style={style}
+      aria-hidden="true"
     >
       {/* SVG X mark */}
       <svg
@@ -24,31 +25,20 @@ export default function ImagePlaceholder({
         preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <line
-          x1="0" y1="0" x2="100%" y2="100%"
-          stroke="#C5C1BA"
-          strokeOpacity="0.5"
-          strokeWidth="1"
-        />
-        <line
-          x1="100%" y1="0" x2="0" y2="100%"
-          stroke="#C5C1BA"
-          strokeOpacity="0.5"
-          strokeWidth="1"
-        />
+        <line x1="0" y1="0" x2="100%" y2="100%" stroke="#C5C1BA" strokeOpacity="0.5" strokeWidth="1" />
+        <line x1="100%" y1="0" x2="0" y2="100%" stroke="#C5C1BA" strokeOpacity="0.5" strokeWidth="1" />
       </svg>
-      {/* Label */}
       <div className="relative z-10 flex flex-col items-center gap-1 px-4 text-center">
         <span
           className="font-mono text-mid uppercase tracking-[0.15em]"
-          style={{ fontSize: '9px' }}
+          style={{ fontSize: '0.6875rem' }}
         >
           {label}
         </span>
         {dimensions && (
           <span
             className="font-mono text-stroke"
-            style={{ fontSize: '8px' }}
+            style={{ fontSize: '0.625rem' }}
           >
             {dimensions}
           </span>

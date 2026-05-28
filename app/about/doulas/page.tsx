@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import type { Doula } from '@/types'
 import Button from '@/components/ui/Button'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
-import SectionBadge from '@/components/ui/SectionBadge'
 import Breadcrumb from '@/components/layout/Breadcrumb'
 import doulaData from '@/data/doulas.json'
 
@@ -29,37 +28,33 @@ export default function DoulasPage() {
         </div>
       </div>
 
-      {/* ─── 01 / Page Hero ─────────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-paper">
-        <SectionBadge label="01 / Hero" />
+      {/* ─── Page Hero ─────────────────────────────────────────────────── */}
+      <section className="py-14 md:py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left: copy */}
             <div>
-              {/* Pill */}
               <span
                 className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1 mb-6"
-                style={{ fontSize: '8px' }}
+                style={{ fontSize: '0.6875rem' }}
               >
                 Our Team
               </span>
 
               <h1
                 className="font-serif font-light text-ink mt-4"
-                style={{ fontSize: 'clamp(52px, 6vw, 64px)', lineHeight: 1.05 }}
+                style={{ fontSize: 'clamp(3.25rem, 6vw, 4rem)', lineHeight: 1.05 }}
               >
                 Meet the People Who Will Care for Your Family
               </h1>
 
               <p
                 className="font-mono text-dim leading-relaxed mt-4"
-                style={{ fontSize: '12px', maxWidth: '480px' }}
+                style={{ fontSize: '1rem', maxWidth: '480px' }}
               >
                 Our team of postpartum doulas brings warmth, expertise, and genuine dedication to every family. Every team member is professionally trained, background-checked, and passionate about postpartum care.
               </p>
             </div>
 
-            {/* Right: team photo */}
             <ImagePlaceholder
               label="Team Photo"
               dimensions="Team together"
@@ -69,9 +64,8 @@ export default function DoulasPage() {
         </div>
       </section>
 
-      {/* ─── 02 / Doula Profiles ────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-canvas">
-        <SectionBadge label="02 / Doula Profiles" />
+      {/* ─── Doula Profiles ────────────────────────────────────────────── */}
+      <section className="py-14 md:py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {allDoulas.map((doula) => {
@@ -96,25 +90,25 @@ export default function DoulasPage() {
                   <div className="p-7 border-t border-stroke">
                     <p
                       className="font-serif text-ink font-light"
-                      style={{ fontSize: '22px' }}
+                      style={{ fontSize: '1.375rem' }}
                     >
                       {isPlaceholder ? 'Coming Soon' : doula.name}
                     </p>
                     <p
                       className="font-mono text-mid uppercase tracking-[0.12em] mt-1"
-                      style={{ fontSize: '9px' }}
+                      style={{ fontSize: '0.6875rem' }}
                     >
                       {isPlaceholder ? 'Postpartum Doula' : doula.title}
                     </p>
                     <p
                       className="font-mono text-stroke mt-1 leading-relaxed"
-                      style={{ fontSize: '9px' }}
+                      style={{ fontSize: '0.6875rem' }}
                     >
                       {isPlaceholder ? 'Profile coming soon' : doula.credentials}
                     </p>
                     <p
                       className="font-mono text-dim leading-relaxed mt-3"
-                      style={{ fontSize: '11px' }}
+                      style={{ fontSize: '1rem' }}
                     >
                       {isPlaceholder
                         ? 'A member of the After the Stork care team.'
@@ -123,7 +117,7 @@ export default function DoulasPage() {
                     {!isPlaceholder && (
                       <p
                         className="font-mono text-stroke uppercase tracking-[0.1em] mt-3"
-                        style={{ fontSize: '9px' }}
+                        style={{ fontSize: '0.6875rem' }}
                       >
                         {areas}
                       </p>
@@ -136,19 +130,18 @@ export default function DoulasPage() {
         </div>
       </section>
 
-      {/* ─── 03 / CTA ───────────────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-ink">
-        <SectionBadge label="03 / CTA" dark={true} />
+      {/* ─── CTA ───────────────────────────────────────────────────────── */}
+      <section className="py-14 md:py-20 bg-ink">
         <div className="mx-auto px-6 md:px-12 text-center" style={{ maxWidth: '1280px' }}>
           <h2
             className="font-serif text-paper font-light"
-            style={{ fontSize: '44px' }}
+            style={{ fontSize: '2.75rem' }}
           >
             Would You Like to Meet Us First?
           </h2>
           <p
             className="font-mono leading-relaxed mt-4 max-w-[480px] mx-auto"
-            style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)' }}
+            style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.7)' }}
           >
             We offer a complimentary consultation call so you can ask questions, share your needs, and feel confident that you&rsquo;ll be well cared for during those first crucial weeks as new parents.
           </p>

@@ -12,22 +12,21 @@ export default function FAQItem({ question, answer, isLast = false }: FAQItemPro
       <div className="flex items-start justify-between gap-6">
         <h3
           className="font-serif text-ink font-light flex-1"
-          style={{ fontSize: '19px' }}
+          style={{ fontSize: '1.1875rem' }}
         >
           {question}
         </h3>
         <span
           className="font-mono text-mid flex-shrink-0 mt-0.5"
-          style={{ fontSize: '16px' }}
+          style={{ fontSize: '1rem' }}
           aria-hidden="true"
         >
           +
         </span>
       </div>
-      {/* Answer always visible in this build; structure supports accordion refactor */}
       <p
         className="font-mono text-dim mt-4 max-w-[640px]"
-        style={{ fontSize: '12px', lineHeight: '1.8' }}
+        style={{ fontSize: '1rem', lineHeight: '1.8' }}
       >
         {answer}
       </p>

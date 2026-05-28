@@ -20,13 +20,13 @@ export default function SiteHeader() {
         <Link href="/" className="flex flex-col leading-none">
           <span
             className="font-serif text-ink"
-            style={{ fontSize: '20px', fontWeight: 400 }}
+            style={{ fontSize: '1.25rem', fontWeight: 400 }}
           >
             After the Stork
           </span>
           <span
             className="font-mono text-mid uppercase tracking-[0.12em]"
-            style={{ fontSize: '8px', marginTop: '3px' }}
+            style={{ fontSize: '0.6875rem', marginTop: '3px' }}
           >
             Philadelphia · Main Line · Postpartum Care
           </span>
@@ -39,7 +39,7 @@ export default function SiteHeader() {
               key={link.href}
               href={link.href}
               className="font-mono text-dim hover:text-ink transition-colors uppercase tracking-[0.14em]"
-              style={{ fontSize: '9px' }}
+              style={{ fontSize: '0.75rem' }}
             >
               {link.label}
             </Link>
@@ -51,7 +51,7 @@ export default function SiteHeader() {
           <Link
             href="/contact"
             className="font-mono text-ink border border-ink uppercase tracking-[0.16em] hover:bg-ink hover:text-paper transition-colors"
-            style={{ fontSize: '9px', padding: '9px 22px' }}
+            style={{ fontSize: '0.75rem', padding: '9px 22px' }}
           >
             Book a Consultation
           </Link>
@@ -59,9 +59,12 @@ export default function SiteHeader() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden font-mono text-ink text-xs"
+          className="md:hidden font-mono text-ink"
+          style={{ fontSize: '1rem' }}
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
+          aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-menu"
         >
           {mobileOpen ? '✕' : '☰'}
         </button>
@@ -70,6 +73,7 @@ export default function SiteHeader() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div
+          id="mobile-menu"
           className="md:hidden bg-paper border-t border-stroke px-6 py-6 flex flex-col gap-5"
         >
           {navData.primary.map((link) => (
@@ -78,7 +82,7 @@ export default function SiteHeader() {
               href={link.href}
               onClick={() => setMobileOpen(false)}
               className="font-mono text-dim hover:text-ink uppercase tracking-[0.14em]"
-              style={{ fontSize: '9px' }}
+              style={{ fontSize: '0.875rem' }}
             >
               {link.label}
             </Link>
@@ -87,7 +91,7 @@ export default function SiteHeader() {
             href="/contact"
             onClick={() => setMobileOpen(false)}
             className="font-mono text-ink border border-ink uppercase tracking-[0.16em] text-center hover:bg-ink hover:text-paper transition-colors"
-            style={{ fontSize: '9px', padding: '9px 22px' }}
+            style={{ fontSize: '0.875rem', padding: '12px 22px' }}
           >
             Book a Consultation
           </Link>

@@ -8,7 +8,6 @@ export const metadata: Metadata = {
 import Button from '@/components/ui/Button'
 import Eyebrow from '@/components/ui/Eyebrow'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
-import SectionBadge from '@/components/ui/SectionBadge'
 import ServiceBlock from '@/components/ui/ServiceBlock'
 import Testimonial from '@/components/ui/Testimonial'
 import servicesData from '@/data/services.json'
@@ -25,10 +24,8 @@ export default function HomePage() {
 
   return (
     <>
-      {/* ─── 01 / Hero ─────────────────────────────────────────────────────── */}
+      {/* ─── Hero ─────────────────────────────────────────────────────── */}
       <section className="relative bg-paper" style={{ minHeight: '520px' }}>
-        <SectionBadge label="01 / Hero" />
-
         {/* Background image placeholder */}
         <ImagePlaceholder
           label="Full-Bleed Hero Image"
@@ -51,7 +48,7 @@ export default function HomePage() {
                 <Eyebrow>Philadelphia · Main Line · Bucks County · New Jersey · Surrounding Communities</Eyebrow>
                 <h1
                   className="font-serif font-light text-ink mt-4"
-                  style={{ fontSize: 'clamp(56px, 8vw, 80px)', lineHeight: 1.05 }}
+                  style={{ fontSize: 'clamp(3.5rem, 8vw, 5rem)', lineHeight: 1.05 }}
                 >
                   Finally. A Good
                   <br />
@@ -59,7 +56,7 @@ export default function HomePage() {
                 </h1>
                 <p
                   className="font-mono text-dim leading-relaxed mt-4"
-                  style={{ fontSize: '13px', maxWidth: '520px' }}
+                  style={{ fontSize: '1rem', maxWidth: '520px' }}
                 >
                   Expert overnight postpartum doula and newborn care for families across
                   Philadelphia, the Main Line, Bucks County, New Jersey and neighboring communities.
@@ -78,22 +75,17 @@ export default function HomePage() {
                     type="text"
                     placeholder="Enter ZIP code — check service area coverage"
                     className="border border-stroke font-mono text-dim px-4 py-3 outline-none bg-transparent w-64"
-                    style={{ fontSize: '10px', letterSpacing: '0.1em' }}
+                    style={{ fontSize: '0.75rem', letterSpacing: '0.1em' }}
+                    aria-label="ZIP code"
                   />
                   <button
                     type="button"
                     className="bg-ink text-paper font-mono uppercase px-5 py-3"
-                    style={{ fontSize: '9px', letterSpacing: '0.16em' }}
+                    style={{ fontSize: '0.75rem', letterSpacing: '0.16em' }}
                   >
                     Check
                   </button>
                 </div>
-                <p
-                  className="font-mono text-stroke mt-2"
-                  style={{ fontSize: '8px' }}
-                >
-                  ZIP lookup widget — confirms coverage in real time
-                </p>
               </div>
 
               {/* Right: stats */}
@@ -101,13 +93,13 @@ export default function HomePage() {
                 <div>
                   <div
                     className="font-serif text-ink font-light"
-                    style={{ fontSize: '48px', lineHeight: 1 }}
+                    style={{ fontSize: '3rem', lineHeight: 1 }}
                   >
                     25+
                   </div>
                   <div
                     className="font-mono text-dim uppercase tracking-[0.12em] mt-1"
-                    style={{ fontSize: '9px' }}
+                    style={{ fontSize: '0.6875rem' }}
                   >
                     Years Serving Philadelphia Families
                   </div>
@@ -115,13 +107,13 @@ export default function HomePage() {
                 <div>
                   <div
                     className="font-serif text-ink font-light"
-                    style={{ fontSize: '48px', lineHeight: 1 }}
+                    style={{ fontSize: '3rem', lineHeight: 1 }}
                   >
                     4×
                   </div>
                   <div
                     className="font-mono text-dim uppercase tracking-[0.12em] mt-1"
-                    style={{ fontSize: '9px' }}
+                    style={{ fontSize: '0.6875rem' }}
                   >
                     LOVE Award Winner / 2020 · 2021 · 2022 · 2024
                   </div>
@@ -129,13 +121,13 @@ export default function HomePage() {
                 <div>
                   <div
                     className="font-serif text-ink font-light"
-                    style={{ fontSize: '48px', lineHeight: 1 }}
+                    style={{ fontSize: '3rem', lineHeight: 1 }}
                   >
                     IBCLC
                   </div>
                   <div
                     className="font-mono text-dim uppercase tracking-[0.12em] mt-1"
-                    style={{ fontSize: '9px' }}
+                    style={{ fontSize: '0.6875rem' }}
                   >
                     Lactation Consultant / On Staff
                   </div>
@@ -146,9 +138,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── 02 / Welcome Video ─────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-paper">
-        <SectionBadge label="02 / Welcome Video" />
+      {/* ─── Welcome Video ─────────────────────────────────────────────── */}
+      <section className="py-14 md:py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
             {/* Left: copy */}
@@ -156,13 +147,13 @@ export default function HomePage() {
               <Eyebrow>Meet the Team</Eyebrow>
               <h2
                 className="font-serif font-light text-ink mt-3"
-                style={{ fontSize: '40px' }}
+                style={{ fontSize: '2.5rem' }}
               >
                 Meet After the Stork
               </h2>
               <p
                 className="font-mono text-dim leading-relaxed mt-4"
-                style={{ fontSize: '12px', maxWidth: '460px' }}
+                style={{ fontSize: '1rem', maxWidth: '460px' }}
               >
                 We know the newborn stage can feel overwhelming. You&apos;re healing, adjusting,
                 and running on very little sleep — and we&apos;re here to help. Watch our short
@@ -186,7 +177,7 @@ export default function HomePage() {
               />
               <p
                 className="font-mono text-stroke mt-2"
-                style={{ fontSize: '8px' }}
+                style={{ fontSize: '0.75rem' }}
               >
                 Video embed — to be recorded and added before launch
               </p>
@@ -195,9 +186,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── 03 / Services Overview ─────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-canvas">
-        <SectionBadge label="03 / Services Overview" />
+      {/* ─── Services Overview ─────────────────────────────────────────── */}
+      <section className="py-14 md:py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           {/* Header row */}
           <div className="flex justify-between items-end mb-8 flex-wrap gap-6">
@@ -205,7 +195,7 @@ export default function HomePage() {
               <Eyebrow>How We Help</Eyebrow>
               <h2
                 className="font-serif font-light text-ink mt-3"
-                style={{ fontSize: '40px' }}
+                style={{ fontSize: '2.5rem' }}
               >
                 Our Services
               </h2>
@@ -228,9 +218,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── 04 / Trust + Testimonials ──────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-paper">
-        <SectionBadge label="04 / Trust + Testimonials" />
+      {/* ─── Trust + Testimonials ──────────────────────────────────────── */}
+      <section className="py-14 md:py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Left: trust items */}
@@ -238,138 +227,42 @@ export default function HomePage() {
               <Eyebrow>Why After the Stork</Eyebrow>
               <h2
                 className="font-serif font-light text-ink mt-3"
-                style={{ fontSize: '40px' }}
+                style={{ fontSize: '2.5rem' }}
               >
                 Why Families Choose Us
               </h2>
 
-              {/* Trust item 1 */}
-              <div className="border-t border-stroke py-6 flex gap-5 items-start">
-                <span
-                  className="font-serif text-ghost font-light"
-                  style={{ fontSize: '36px', minWidth: '40px', lineHeight: 1 }}
-                >
-                  01
-                </span>
-                <div>
-                  <p
-                    className="font-mono text-ink uppercase tracking-[0.12em] font-medium"
-                    style={{ fontSize: '10px' }}
+              {[
+                { n: '01', title: '20+ Years Experience', body: "Georgette founded After the Stork over 20 years ago. Our reputation was built one family at a time as moms shared her phone number to other mom-friends who needed a good night’s rest. Now it’s known by thousands of moms all over the Philadelphia area." },
+                { n: '02', title: 'LOVE Award — 2020, 2021, 2022 & 2024', body: 'Four-time LOVE Award winners — a community recognition of excellence in postpartum care.' },
+                { n: '03', title: 'IBCLC Lactation Support On Staff', body: 'Allison Hart, MS RD IBCLC, provides the highest level of breastfeeding and nutrition support available — rare for a postpartum doula service.' },
+                { n: '04', title: 'Certified Gentle Sleep Coach', body: 'Georgette completed the intensive Gentle Sleep Coach training and guides all After the Stork families through infant sleep at no additional charge.' },
+                { n: '05', title: 'A Family Business', body: 'Georgette, her daughter Ashley (GM), and daughter Allison (IBCLC) lead the team. This is personal — they care about your family because family is everything to them.' },
+              ].map(({ n, title, body }, i, arr) => (
+                <div key={n} className={`border-t ${i === arr.length - 1 ? 'border-b' : ''} border-stroke py-6 flex gap-5 items-start`}>
+                  <span
+                    className="font-serif text-ghost font-light"
+                    style={{ fontSize: '2.25rem', minWidth: '2.5rem', lineHeight: 1 }}
+                    aria-hidden="true"
                   >
-                    20+ Years Experience
-                  </p>
-                  <p
-                    className="font-mono text-dim leading-relaxed mt-1"
-                    style={{ fontSize: '11px' }}
-                  >
-                    Georgette founded After the Stork over 20 years ago. Our reputation was built
-                    one family at a time as moms shared her phone number to other mom-friends who
-                    needed a good night&apos;s rest. Now it&apos;s known by thousands of moms all
-                    over the Philadelphia area.
-                  </p>
+                    {n}
+                  </span>
+                  <div>
+                    <p
+                      className="font-mono text-ink uppercase tracking-[0.12em] font-medium"
+                      style={{ fontSize: '0.75rem' }}
+                    >
+                      {title}
+                    </p>
+                    <p
+                      className="font-mono text-dim leading-relaxed mt-1"
+                      style={{ fontSize: '1rem' }}
+                    >
+                      {body}
+                    </p>
+                  </div>
                 </div>
-              </div>
-
-              {/* Trust item 2 */}
-              <div className="border-t border-stroke py-6 flex gap-5 items-start">
-                <span
-                  className="font-serif text-ghost font-light"
-                  style={{ fontSize: '36px', minWidth: '40px', lineHeight: 1 }}
-                >
-                  02
-                </span>
-                <div>
-                  <p
-                    className="font-mono text-ink uppercase tracking-[0.12em] font-medium"
-                    style={{ fontSize: '10px' }}
-                  >
-                    LOVE Award — 2020, 2021, 2022 &amp; 2024
-                  </p>
-                  <p
-                    className="font-mono text-dim leading-relaxed mt-1"
-                    style={{ fontSize: '11px' }}
-                  >
-                    Four-time LOVE Award winners — a community recognition of excellence in
-                    postpartum care.
-                  </p>
-                </div>
-              </div>
-
-              {/* Trust item 3 */}
-              <div className="border-t border-stroke py-6 flex gap-5 items-start">
-                <span
-                  className="font-serif text-ghost font-light"
-                  style={{ fontSize: '36px', minWidth: '40px', lineHeight: 1 }}
-                >
-                  03
-                </span>
-                <div>
-                  <p
-                    className="font-mono text-ink uppercase tracking-[0.12em] font-medium"
-                    style={{ fontSize: '10px' }}
-                  >
-                    IBCLC Lactation Support On Staff
-                  </p>
-                  <p
-                    className="font-mono text-dim leading-relaxed mt-1"
-                    style={{ fontSize: '11px' }}
-                  >
-                    Allison Hart, MS RD IBCLC, provides the highest level of breastfeeding and
-                    nutrition support available — rare for a postpartum doula service.
-                  </p>
-                </div>
-              </div>
-
-              {/* Trust item 4 */}
-              <div className="border-t border-stroke py-6 flex gap-5 items-start">
-                <span
-                  className="font-serif text-ghost font-light"
-                  style={{ fontSize: '36px', minWidth: '40px', lineHeight: 1 }}
-                >
-                  04
-                </span>
-                <div>
-                  <p
-                    className="font-mono text-ink uppercase tracking-[0.12em] font-medium"
-                    style={{ fontSize: '10px' }}
-                  >
-                    Certified Gentle Sleep Coach
-                  </p>
-                  <p
-                    className="font-mono text-dim leading-relaxed mt-1"
-                    style={{ fontSize: '11px' }}
-                  >
-                    Georgette completed the intensive Gentle Sleep Coach training and guides all
-                    After the Stork families through infant sleep at no additional charge.
-                  </p>
-                </div>
-              </div>
-
-              {/* Trust item 5 */}
-              <div className="border-t border-b border-stroke py-6 flex gap-5 items-start">
-                <span
-                  className="font-serif text-ghost font-light"
-                  style={{ fontSize: '36px', minWidth: '40px', lineHeight: 1 }}
-                >
-                  05
-                </span>
-                <div>
-                  <p
-                    className="font-mono text-ink uppercase tracking-[0.12em] font-medium"
-                    style={{ fontSize: '10px' }}
-                  >
-                    A Family Business
-                  </p>
-                  <p
-                    className="font-mono text-dim leading-relaxed mt-1"
-                    style={{ fontSize: '11px' }}
-                  >
-                    Georgette, her daughter Ashley (GM), and daughter Allison (IBCLC) lead the
-                    team. This is personal — they care about your family because family is
-                    everything to them.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
 
             {/* Right: testimonials */}
@@ -388,7 +281,7 @@ export default function HomePage() {
               </div>
               <p
                 className="font-mono text-stroke mt-3"
-                style={{ fontSize: '8px' }}
+                style={{ fontSize: '0.75rem' }}
               >
                 Real client testimonials — to be collected and verified before launch
               </p>
@@ -397,9 +290,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── 05 / Service Area ──────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-canvas">
-        <SectionBadge label="05 / Service Area" />
+      {/* ─── Service Area ──────────────────────────────────────────────── */}
+      <section className="py-14 md:py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-16 items-center">
             {/* Left: map */}
@@ -416,36 +308,26 @@ export default function HomePage() {
               <Eyebrow>Where We Serve</Eyebrow>
               <h2
                 className="font-serif font-light text-ink mt-3"
-                style={{ fontSize: '40px' }}
+                style={{ fontSize: '2.5rem' }}
               >
                 Greater Philadelphia &amp; Beyond
               </h2>
               <p
                 className="font-mono text-dim leading-relaxed mt-4"
-                style={{ fontSize: '12px' }}
+                style={{ fontSize: '1rem' }}
               >
                 We proudly support families throughout Philadelphia, the Main Line, Bucks County,
                 New Jersey, and surrounding communities.
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
                 {[
-                  'Philadelphia',
-                  'Bryn Mawr',
-                  'Wayne',
-                  'Villanova',
-                  'Ardmore',
-                  'Gladwyne',
-                  'Chestnut Hill',
-                  'Dresher',
-                  'New Hope',
-                  'Moorestown NJ',
-                  'Haddonfield NJ',
-                  '+ More',
+                  'Philadelphia', 'Bryn Mawr', 'Wayne', 'Villanova', 'Ardmore',
+                  'Gladwyne', 'Chestnut Hill', 'Dresher', 'New Hope', 'Moorestown NJ', 'Haddonfield NJ', '+ More',
                 ].map((area) => (
                   <span
                     key={area}
                     className="border border-stroke font-mono text-mid uppercase tracking-[0.12em] px-3 py-1"
-                    style={{ fontSize: '8px' }}
+                    style={{ fontSize: '0.6875rem' }}
                   >
                     {area}
                   </span>
@@ -456,22 +338,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── 06 / CTA Banner ────────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-ink">
-        <SectionBadge label="06 / CTA" dark={true} />
+      {/* ─── CTA Banner ────────────────────────────────────────────────── */}
+      <section className="py-14 md:py-20 bg-ink">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 items-center">
             {/* Left: heading + body */}
             <div>
               <h2
                 className="font-serif text-paper font-light"
-                style={{ fontSize: 'clamp(44px, 5vw, 52px)', lineHeight: 1.1 }}
+                style={{ fontSize: 'clamp(2.75rem, 5vw, 3.25rem)', lineHeight: 1.1 }}
               >
                 Ready to Rest? Let&apos;s Talk.
               </h2>
               <p
                 className="font-mono leading-relaxed mt-4"
-                style={{ fontSize: '12px', maxWidth: '480px', color: 'rgba(255,255,255,0.6)' }}
+                style={{ fontSize: '1rem', maxWidth: '480px', color: 'rgba(255,255,255,0.7)' }}
               >
                 Booking a consultation is the first step toward real sleep, real recovery, and
                 real support.

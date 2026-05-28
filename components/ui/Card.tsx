@@ -15,7 +15,7 @@ export default function Card({ children, cardNumber, className = '', compact = f
       {cardNumber && (
         <div
           className="font-serif text-ghost mb-4 leading-none"
-          style={{ fontSize: '36px' }}
+          style={{ fontSize: '2.25rem' }}
           aria-hidden="true"
         >
           {cardNumber}

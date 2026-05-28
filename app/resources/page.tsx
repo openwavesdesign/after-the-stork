@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Breadcrumb from '@/components/layout/Breadcrumb'
 import Eyebrow from '@/components/ui/Eyebrow'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
-import SectionBadge from '@/components/ui/SectionBadge'
 
 export const metadata: Metadata = {
   title: 'Postpartum & Newborn Care Resources | After the Stork Philadelphia',
@@ -62,70 +61,67 @@ export default function ResourcesPage() {
         </div>
       </div>
 
-      {/* ─── 01 / Hero ──────────────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-paper">
-        <SectionBadge label="01 / Hero" />
+      {/* ─── Hero ──────────────────────────────────────────────────────── */}
+      <section className="py-14 md:py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
-          <span className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1" style={{ fontSize: '8px' }}>
+          <span className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1" style={{ fontSize: '0.6875rem' }}>
             Resources
           </span>
           <h1
             className="font-serif font-light text-ink mt-4"
-            style={{ fontSize: 'clamp(52px, 6vw, 72px)', lineHeight: 1.05, maxWidth: '900px' }}
+            style={{ fontSize: 'clamp(3.25rem, 6vw, 4.5rem)', lineHeight: 1.05, maxWidth: '900px' }}
           >
             Postpartum &amp; Newborn Care Resources for <em>Philadelphia Families</em>
           </h1>
           <p
             className="font-mono text-dim leading-relaxed mt-4"
-            style={{ fontSize: '13px', maxWidth: '600px' }}
+            style={{ fontSize: '1rem', maxWidth: '600px' }}
           >
             Trusted information, practical guides, and a little reassurance — whenever you need it.
           </p>
         </div>
       </section>
 
-      {/* ─── 02 / Lead Magnet ───────────────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-canvas">
-        <SectionBadge label="02 / Free Guide" />
+      {/* ─── Lead Magnet ───────────────────────────────────────────────── */}
+      <section className="py-14 md:py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
-            {/* Left */}
             <div>
               <Eyebrow>Free Download</Eyebrow>
               <h2
                 className="font-serif font-light text-ink mt-3 mb-4"
-                style={{ fontSize: '40px' }}
+                style={{ fontSize: '2.5rem' }}
               >
                 What to Expect from an Overnight Postpartum Doula in Philadelphia
               </h2>
               <p
                 className="font-mono text-dim leading-relaxed mb-6"
-                style={{ fontSize: '12px' }}
+                style={{ fontSize: '1rem' }}
               >
                 Never hired a postpartum doula before? This free guide walks you through exactly what overnight doula support looks like — what your doula does, what to prepare, and how to get the most from your care.
               </p>
-              {/* Email + button row */}
               <div className="flex gap-0">
+                <label htmlFor="guide-email" className="sr-only">Your email address</label>
                 <input
+                  id="guide-email"
                   type="email"
                   placeholder="Your email address"
                   className="border border-stroke bg-transparent font-mono text-dim outline-none flex-1 tracking-[0.05em] focus:border-ink transition-colors px-4 py-3"
-                  style={{ fontSize: '11px' }}
+                  style={{ fontSize: '1rem' }}
                 />
                 <button
                   type="submit"
                   className="bg-ink text-paper font-mono uppercase tracking-[0.16em] hover:bg-dim transition-colors whitespace-nowrap px-6 py-3"
-                  style={{ fontSize: '9px' }}
+                  style={{ fontSize: '0.75rem' }}
                 >
                   Download the Free Guide
                 </button>
               </div>
-              <p className="font-mono text-stroke mt-2" style={{ fontSize: '8px' }}>
+              <p className="font-mono text-stroke mt-2" style={{ fontSize: '0.75rem' }}>
                 Email capture — connects to email marketing platform
               </p>
             </div>
 
-            {/* Right */}
             <ImagePlaceholder
               label="Guide Cover Mockup"
               dimensions="PDF Preview Image"
@@ -135,9 +131,8 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* ─── 03 / Resource Categories ───────────────────────────────────────── */}
-      <section className="relative py-14 md:py-20 bg-paper">
-        <SectionBadge label="03 / Resources" />
+      {/* ─── Resource Categories ────────────────────────────────────────── */}
+      <section className="py-14 md:py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           {/* First 3 categories: 3-column grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -145,19 +140,19 @@ export default function ResourcesPage() {
               <div key={cat.category}>
                 <p
                   className="font-mono text-ink uppercase tracking-[0.14em] font-medium mb-4 pb-3 border-b border-stroke"
-                  style={{ fontSize: '10px' }}
+                  style={{ fontSize: '0.75rem' }}
                 >
                   {cat.category}
                 </p>
                 <ul>
                   {cat.items.map((item) => (
                     <li key={item.title} className="border-t border-stroke py-4 flex items-start gap-3">
-                      <span className="text-mid mt-0.5" style={{ fontSize: '12px' }}>◎</span>
+                      <span className="text-mid mt-0.5" style={{ fontSize: '0.75rem' }} aria-hidden="true">◎</span>
                       <div>
-                        <p className="font-mono text-ink" style={{ fontSize: '12px' }}>{item.title}</p>
+                        <p className="font-mono text-ink" style={{ fontSize: '1rem' }}>{item.title}</p>
                         <p
                           className="font-mono text-stroke uppercase tracking-[0.1em] mt-0.5"
-                          style={{ fontSize: '9px' }}
+                          style={{ fontSize: '0.6875rem' }}
                         >
                           {item.type} · {item.source}
                         </p>
@@ -175,19 +170,19 @@ export default function ResourcesPage() {
               <div key={cat.category}>
                 <p
                   className="font-mono text-ink uppercase tracking-[0.14em] font-medium mb-4 pb-3 border-b border-stroke"
-                  style={{ fontSize: '10px' }}
+                  style={{ fontSize: '0.75rem' }}
                 >
                   {cat.category}
                 </p>
                 <ul>
                   {cat.items.map((item) => (
                     <li key={item.title} className="border-t border-stroke py-4 flex items-start gap-3">
-                      <span className="text-mid mt-0.5" style={{ fontSize: '12px' }}>◎</span>
+                      <span className="text-mid mt-0.5" style={{ fontSize: '0.75rem' }} aria-hidden="true">◎</span>
                       <div>
-                        <p className="font-mono text-ink" style={{ fontSize: '12px' }}>{item.title}</p>
+                        <p className="font-mono text-ink" style={{ fontSize: '1rem' }}>{item.title}</p>
                         <p
                           className="font-mono text-stroke uppercase tracking-[0.1em] mt-0.5"
-                          style={{ fontSize: '9px' }}
+                          style={{ fontSize: '0.6875rem' }}
                         >
                           {item.type} · {item.source}
                         </p>
