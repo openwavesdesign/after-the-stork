@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import type { Doula } from '@/types'
 import Button from '@/components/ui/Button'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
@@ -5,7 +6,10 @@ import SectionBadge from '@/components/ui/SectionBadge'
 import Breadcrumb from '@/components/layout/Breadcrumb'
 import doulaData from '@/data/doulas.json'
 
-export const metadata = { title: 'Meet Our Doulas' }
+export const metadata: Metadata = {
+  title: 'Meet Our Postpartum Doulas, Registered Nurses, Newborn Care Specialists, CLCs & IBCLCs | After the Stork',
+  description: 'Meet the postpartum doulas of After the Stork, serving families in Philadelphia, the Main Line, Bucks County, New Jersey, and surrounding areas.',
+}
 
 const allDoulas = (doulaData as Doula[]).filter(d => d.active).sort((a, b) => a.order - b.order)
 
@@ -51,7 +55,7 @@ export default function DoulasPage() {
                 className="font-mono text-dim leading-relaxed mt-4"
                 style={{ fontSize: '12px', maxWidth: '480px' }}
               >
-                Every person on the After the Stork team is selected personally by Georgette. Warmth, expertise, and a genuine love of this work — these are not optional.
+                Our team of postpartum doulas brings warmth, expertise, and genuine dedication to every family. Every team member is professionally trained, background-checked, and passionate about postpartum care.
               </p>
             </div>
 
@@ -146,7 +150,7 @@ export default function DoulasPage() {
             className="font-mono leading-relaxed mt-4 max-w-[480px] mx-auto"
             style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)' }}
           >
-            Book a free consultation. We&rsquo;ll answer your questions, tell you about our team, and help you decide if After the Stork is the right fit for your family.
+            We offer a complimentary consultation call so you can ask questions, share your needs, and feel confident that you&rsquo;ll be well cared for during those first crucial weeks as new parents.
           </p>
           <div className="mt-8">
             <Button variant="inverse" href="/contact">

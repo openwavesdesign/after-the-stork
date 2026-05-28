@@ -13,41 +13,41 @@ const resourceCategories = [
   {
     category: 'Postpartum Recovery',
     items: [
-      { title: 'The Fourth Trimester: What No One Tells You', type: 'Article', source: 'What to Expect' },
-      { title: 'Physical Recovery After Childbirth', type: 'Guide', source: 'ACOG' },
-      { title: 'Postpartum Mental Health: Recognizing the Signs', type: 'Article', source: 'Postpartum Support International' },
+      { title: 'What Is the Fourth Trimester?', type: 'Blog Post', source: 'After the Stork Blog' },
+      { title: "Postpartum Recovery: What's Normal (and What's Not)", type: 'Blog Post', source: 'After the Stork Blog' },
+      { title: 'Postpartum Mental Health Resources in Philadelphia', type: 'External Resource', source: 'Curated List' },
     ],
   },
   {
     category: 'Newborn Sleep',
     items: [
-      { title: 'Safe Sleep Guidelines for Infants', type: 'Guide', source: 'American Academy of Pediatrics' },
-      { title: 'Understanding Newborn Sleep Cycles', type: 'Article', source: 'Sleep Foundation' },
-      { title: "When to Worry About Your Newborn's Sleep", type: 'Article', source: 'Healthychildren.org' },
+      { title: 'Newborn Sleep: What to Expect in the First 12 Weeks', type: 'Blog Post', source: 'After the Stork Blog' },
+      { title: 'Gentle Sleep Coaching: What It Is and When to Start', type: 'Blog Post', source: 'By Georgette Kerr' },
+      { title: 'How Overnight Doula Support Protects Your Sleep', type: 'Blog Post', source: 'After the Stork Blog' },
     ],
   },
   {
     category: 'Breastfeeding & Feeding',
     items: [
-      { title: 'Breastfeeding Basics: Getting Started', type: 'Guide', source: 'La Leche League' },
-      { title: 'Pumping and Storage Guidelines', type: 'Guide', source: 'CDC' },
-      { title: 'Formula Feeding: What You Need to Know', type: 'Article', source: 'American Academy of Pediatrics' },
+      { title: "Breastfeeding in the First Weeks: What's Normal, What's Not", type: 'Blog Post', source: 'By Allison Hart, IBCLC' },
+      { title: 'Breastfeeding vs. Formula: A Non-Judgmental Overview', type: 'Blog Post', source: 'After the Stork Blog' },
+      { title: 'When to Call a Lactation Consultant', type: 'Blog Post', source: 'After the Stork Blog' },
     ],
   },
   {
     category: 'Choosing Your Support Team',
     items: [
-      { title: 'What Is a Postpartum Doula? A Complete Guide', type: 'Article', source: 'DONA International' },
-      { title: "Night Nurse vs. Postpartum Doula: What's the Difference?", type: 'Article', source: 'After the Stork Blog' },
-      { title: 'Questions to Ask Before Hiring a Postpartum Doula', type: 'Checklist', source: 'After the Stork' },
+      { title: "Night Nurse vs. Postpartum Doula: What's the Difference?", type: 'Blog Post', source: 'After the Stork Blog' },
+      { title: 'How to Choose a Postpartum Doula in Philadelphia', type: 'Blog Post', source: 'After the Stork Blog' },
+      { title: 'Questions to Ask Before Hiring a Postpartum Doula', type: 'Blog Post', source: 'After the Stork Blog' },
     ],
   },
   {
     category: 'Local Philadelphia Resources',
     items: [
-      { title: 'Philadelphia WIC Program', type: 'Local Resource', source: 'City of Philadelphia' },
-      { title: 'The Breastfeeding Resource Center', type: 'Local Resource', source: 'Philadelphia, PA' },
-      { title: 'Jefferson Hospital Lactation Services', type: 'Local Resource', source: 'Jefferson Health' },
+      { title: 'Philadelphia-Area Lactation Consultants', type: 'Curated List', source: 'Georgette/Ashley to review' },
+      { title: 'Postpartum Mental Health Support in the Region', type: 'Curated List', source: 'External Link' },
+      { title: 'Pediatrician Recommendations for Main Line Families', type: 'Curated List', source: 'Georgette/Ashley to review' },
     ],
   },
 ]
@@ -79,7 +79,7 @@ export default function ResourcesPage() {
             className="font-mono text-dim leading-relaxed mt-4"
             style={{ fontSize: '13px', maxWidth: '600px' }}
           >
-            Helpful reading, guides, and local resources for expecting and new parents in the Philadelphia area. Curated by the After the Stork team.
+            Trusted information, practical guides, and a little reassurance — whenever you need it.
           </p>
         </div>
       </section>
@@ -102,7 +102,7 @@ export default function ResourcesPage() {
                 className="font-mono text-dim leading-relaxed mb-6"
                 style={{ fontSize: '12px' }}
               >
-                A practical, honest guide for families considering postpartum doula care. What your doula does, what she doesn&rsquo;t do, and how to make the most of overnight support.
+                Never hired a postpartum doula before? This free guide walks you through exactly what overnight doula support looks like — what your doula does, what to prepare, and how to get the most from your care.
               </p>
               {/* Email + button row */}
               <div className="flex gap-0">

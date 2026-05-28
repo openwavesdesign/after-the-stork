@@ -9,7 +9,7 @@ import Breadcrumb from '@/components/layout/Breadcrumb'
 import doulaData from '@/data/doulas.json'
 
 export const metadata: Metadata = {
-  title: 'About After the Stork | Postpartum Doulas in Philadelphia & Surrounding Communities',
+  title: 'About After the Stork | Postpartum Doulas in Philadelphia & surrounding communities',
   description: 'After the Stork is a family-founded, award-winning postpartum doula service with over 25 years of experience supporting families in Philadelphia, the Main Line, Bucks County, New Jersey, and surrounding communities.',
 }
 
@@ -331,12 +331,12 @@ export default function AboutPage() {
             className="font-mono leading-relaxed mt-4 max-w-[560px] mx-auto"
             style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)' }}
           >
-            The LOVE Award recognizes the businesses and organizations that Philadelphians love most. After the Stork has earned this recognition four times — a reflection of the trust families place in us year after year.
+            These awards reflect the trust and loyalty of the families we&rsquo;ve been honored to serve, and they drive us to maintain the standard of excellence that Georgette built this business on over 25 years ago.
           </p>
 
           {/* Area tags */}
           <div className="mt-8 flex flex-wrap justify-center gap-2">
-            {['Philadelphia', 'Bryn Mawr', 'Wayne', 'Villanova', 'Ardmore', 'Gladwyne', 'Chestnut Hill'].map((area) => (
+            {['Philadelphia', 'Bryn Mawr', 'Wayne', 'Villanova', 'Ardmore', 'Moorestown NJ', 'Haddonfield NJ'].map((area) => (
               <span
                 key={area}
                 className="border border-white/20 font-mono text-white/40 uppercase tracking-[0.12em] px-3 py-1"

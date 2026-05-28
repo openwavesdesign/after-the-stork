@@ -44,7 +44,7 @@ export default function ContactPage() {
             className="font-mono text-dim leading-relaxed mt-4"
             style={{ fontSize: '13px', maxWidth: '560px' }}
           >
-            We&rsquo;d love to hear from you. Book a free consultation, ask a question, or tell us about your family. We typically respond within 24 hours.
+            Whether you&rsquo;re planning ahead during pregnancy, newly home from the hospital, or still figuring out what kind of support you need — reach out. There are no silly questions here. We typically respond within one business day.
           </p>
         </div>
       </section>
@@ -95,13 +95,13 @@ export default function ContactPage() {
                   <p className="font-mono text-stroke uppercase tracking-[0.14em] mb-1" style={{ fontSize: '8px' }}>
                     Service Area
                   </p>
-                  <span className="font-mono text-dim" style={{ fontSize: '11px' }}>Philadelphia, Main Line &amp; Surrounding Communities</span>
+                  <span className="font-mono text-dim" style={{ fontSize: '11px' }}>Serving Philadelphia, the Main Line, Montgomery &amp; Delaware Counties, and select NJ communities.</span>
                 </div>
               </div>
 
               {/* Area tags */}
               <div className="mt-6 flex flex-wrap gap-2">
-                {['Philadelphia', 'Bryn Mawr', 'Wayne', 'Villanova', 'Ardmore'].map((area) => (
+                {['Philadelphia', 'Bryn Mawr', 'Wayne', 'Villanova', 'Dresher', 'Moorestown NJ', 'Haddonfield NJ'].map((area) => (
                   <span
                     key={area}
                     className="border border-stroke font-mono text-mid uppercase tracking-[0.12em] px-3 py-1"

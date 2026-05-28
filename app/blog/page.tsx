@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 }
 
 const posts = [
-  { tag: 'Newborn Sleep', title: 'How to Establish a Sleep Routine in the First 6 Weeks', readingTime: '5 min read', coming: false },
-  { tag: 'Breastfeeding', title: 'Breastfeeding in the Hospital: What to Expect the First 48 Hours', readingTime: '4 min read', coming: false },
-  { tag: 'Postpartum', title: 'The Emotional Side of the Postpartum Period Nobody Warned Me About', readingTime: '7 min read', coming: false },
-  { tag: 'Newborn Care', title: 'Why Families Hire a Postpartum Doula Even When Grandma Is Nearby', readingTime: '4 min read', coming: false },
-  { tag: 'Lactation', title: "When Breastfeeding Isn't Working: How to Get Real Help", readingTime: '5 min read', coming: false },
-  { tag: 'Coming Soon', title: 'More Articles Coming Soon', readingTime: '', coming: true },
+  { tag: 'Newborn Care', title: "Night Nurse vs. Postpartum Doula: What's the Difference?", readingTime: '5 min read', coming: false },
+  { tag: 'Breastfeeding', title: "Breastfeeding in the First Weeks: What's Normal, What's Not", readingTime: '6 min read', coming: false },
+  { tag: 'Infant Sleep', title: 'Gentle Sleep Coaching: What It Is and When to Start', readingTime: '5 min read', coming: false },
+  { tag: 'Philadelphia', title: 'How Much Does a Postpartum Doula Cost in Philadelphia?', readingTime: '5 min read', coming: false },
+  { tag: 'Overnight Support', title: '10 Signs You Could Benefit from an Overnight Doula', readingTime: '6 min read', coming: false },
+  { tag: 'Coming Soon', title: '[Future Post]', readingTime: '', coming: true },
 ]
 
 export default function BlogPage() {
@@ -53,7 +53,7 @@ export default function BlogPage() {
                 className="font-mono text-dim leading-relaxed"
                 style={{ fontSize: '13px', maxWidth: '440px' }}
               >
-                Practical advice, honest perspectives, and resources for new and expecting families in Philadelphia and beyond — from the After the Stork team.
+                Postpartum recovery, newborn care, breastfeeding, and infant sleep — written by people with 25+ years of experience, an IBCLC on staff, and a Certified Gentle Sleep Coach. Real expertise, real families, real answers.
               </p>
             </div>
           </div>
@@ -97,7 +97,7 @@ export default function BlogPage() {
                 className="font-mono text-dim leading-relaxed mb-6"
                 style={{ fontSize: '12px' }}
               >
-                Everything you wanted to know about postpartum doulas — what they do, what they don&rsquo;t do, and how to know if one is right for your family.
+                Everything you wanted to know about postpartum doulas — what they do, what they don&rsquo;t do, and how to know if one is right for your family&hellip;
               </p>
               <Button variant="ghost" href="/blog/what-does-a-postpartum-doula-do">
                 Read the Post
@@ -160,20 +160,20 @@ export default function BlogPage() {
               <div className="flex items-center gap-[10px]">
                 <span className="text-white/40" style={{ fontSize: '6px' }}>◆</span>
                 <span className="font-mono text-white/40 uppercase tracking-[0.2em]" style={{ fontSize: '9px' }}>
-                  Stay Connected
+                  Stay in the Loop
                 </span>
               </div>
               <h2
                 className="font-serif text-paper font-light mt-3"
                 style={{ fontSize: '40px' }}
               >
-                Postpartum Insights, Delivered
+                Get Postpartum Insights Delivered to Your Inbox
               </h2>
               <p
                 className="font-mono leading-relaxed mt-3"
                 style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)' }}
               >
-                New articles, local resources, and occasional updates from the After the Stork team. No spam, ever.
+                Practical tips, honest advice, and resources for new and expecting families. No noise, just good stuff.
               </p>
             </div>
 

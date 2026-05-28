@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
 import Eyebrow from '@/components/ui/Eyebrow'
@@ -5,7 +6,10 @@ import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
 import SectionBadge from '@/components/ui/SectionBadge'
 import Breadcrumb from '@/components/layout/Breadcrumb'
 
-export const metadata = { title: 'Join the Team' }
+export const metadata: Metadata = {
+  title: 'Postpartum Doula Jobs in Philadelphia | Join After the Stork',
+  description: 'After the Stork is hiring certified postpartum doulas in Philadelphia, the Main Line, and surrounding communities. Apply today.',
+}
 
 export default function JoinPage() {
   return (
@@ -42,14 +46,14 @@ export default function JoinPage() {
                 className="font-serif font-light text-ink mt-4"
                 style={{ fontSize: 'clamp(52px, 6vw, 64px)', lineHeight: 1.05 }}
               >
-                Join Our Team of Postpartum Doulas &amp; NCS
+                Join Our Team of Postpartum Doulas
               </h1>
 
               <p
                 className="font-mono text-dim leading-relaxed mt-4"
                 style={{ fontSize: '12px', maxWidth: '480px' }}
               >
-                After the Stork is a growing, family-led postpartum care practice with 25+ years of roots in the Philadelphia community. We&rsquo;re looking for warm, skilled, reliable doulas and newborn care specialists who share our commitment to excellence.
+                We are always looking for talented, compassionate doulas and NCS professionals in Philadelphia, the Main Line, Bucks County, and New Jersey.
               </p>
 
               <div className="mt-8">
@@ -80,14 +84,14 @@ export default function JoinPage() {
             Why Doulas Love Working Here
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Card 1 */}
             <Card cardNumber="01">
               <h3 className="font-serif text-ink mb-2" style={{ fontSize: '20px' }}>
                 Flexible Scheduling
               </h3>
               <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '11px' }}>
-                We work around your availability. Whether you&rsquo;re looking for overnight shifts, daytime hours, or a consistent weekly schedule, we&rsquo;ll build something that works for you.
+                Build a schedule around your life. We have an online scheduling system that makes it easy to share your availability and pair you with clients that match. For those giving 4–6 nights of availability, we can commit to filling your schedule so you have a stable income you can count on.
               </p>
             </Card>
 
@@ -97,7 +101,7 @@ export default function JoinPage() {
                 Supportive Leadership
               </h3>
               <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '11px' }}>
-                Our leadership team does this work themselves. They understand exactly what you&rsquo;ll encounter in the field and are always available to support, advise, and troubleshoot.
+                Regular communication, professional development, and genuine care for your experience.
               </p>
             </Card>
 
@@ -107,7 +111,7 @@ export default function JoinPage() {
                 Meaningful Work
               </h3>
               <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '11px' }}>
-                Every shift you work makes a real difference. The families you support will remember your care for years. That&rsquo;s not hyperbole — it&rsquo;s what they tell us.
+                Every shift changes a family&rsquo;s experience of the newborn stage. That matters.
               </p>
             </Card>
 
@@ -117,7 +121,17 @@ export default function JoinPage() {
                 Competitive Pay
               </h3>
               <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '11px' }}>
-                We offer competitive compensation that reflects the skill, professionalism, and importance of postpartum care.
+                Compensation that reflects your certifications, experience, and dedication.
+              </p>
+            </Card>
+
+            {/* Card 5 */}
+            <Card cardNumber="05">
+              <h3 className="font-serif text-ink mb-2" style={{ fontSize: '20px' }}>
+                Employee Based
+              </h3>
+              <p className="font-mono text-dim leading-relaxed" style={{ fontSize: '11px' }}>
+                We pay a portion of your taxes, offer PTO, and offer time-and-a-half pay for those who desire overtime hours.
               </p>
             </Card>
           </div>
@@ -142,11 +156,11 @@ export default function JoinPage() {
 
               {/* Requirement items */}
               {[
-                'Certified postpartum doula, newborn care specialist, or relevant maternal/infant health credential',
-                'Experience working with newborns and postpartum families in a professional capacity',
-                'Reliable transportation and the ability to work overnight shifts',
-                'A warm, professional, and calm presence — even at 3 AM',
-                'CPR and first aid certification (or willingness to obtain)',
+                'Certified postpartum doula (CAPPA, DONA, or equivalent) or newborn care specialist (NCS)',
+                'CPR and First Aid certified (or willing to certify before starting)',
+                'Reliable transportation within the Philadelphia metro / Main Line area',
+                'Comfortable with overnight shifts (10 PM–6 AM or similar)',
+                'Professional, warm, and trustworthy presence in family homes',
               ].map((req, i) => (
                 <div key={i} className="border-t border-stroke py-5 flex gap-4 items-start">
                   <span className="text-mid mt-[2px]" style={{ fontSize: '8px' }}>◦</span>
@@ -177,7 +191,7 @@ export default function JoinPage() {
                 className="font-mono text-dim leading-relaxed mb-6"
                 style={{ fontSize: '12px' }}
               >
-                Fill out the form below and we&rsquo;ll be in touch. All applications are reviewed personally by Georgette.
+                Fill out our short application and we&rsquo;ll be in touch within [X] business days.
               </p>
 
               <form id="apply-form" className="flex flex-col gap-5">

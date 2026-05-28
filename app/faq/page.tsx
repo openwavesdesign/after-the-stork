@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import type { FAQCategory } from '@/types'
 import Button from '@/components/ui/Button'
 import FAQItem from '@/components/ui/FAQItem'
@@ -5,7 +6,10 @@ import SectionBadge from '@/components/ui/SectionBadge'
 import Breadcrumb from '@/components/layout/Breadcrumb'
 import faqsData from '@/data/faqs.json'
 
-export const metadata = { title: 'FAQ' }
+export const metadata: Metadata = {
+  title: 'Postpartum Doula FAQs | After the Stork Philadelphia',
+  description: 'Have questions about postpartum doula and overnight newborn care? Find answers from the After the Stork team — serving Philadelphia and the Main Line for over 25 years.',
+}
 
 const faqs = faqsData as FAQCategory[]
 
@@ -41,8 +45,8 @@ export default function FAQPage() {
                 className="font-mono text-dim leading-relaxed"
                 style={{ fontSize: '13px', maxWidth: '440px' }}
               >
-                We&apos;ve answered the questions families ask us most often — about postpartum
-                doulas, our services, and what working with After the Stork actually looks like.
+                We know choosing postpartum support is a big decision. Below are the questions we
+                hear most often from families in Philadelphia and the Main Line.
               </p>
             </div>
           </div>
