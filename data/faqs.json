@@ -1,81 +1,89 @@
 [
   {
+    "category": "About Postpartum Doulas",
+    "slug": "about-postpartum-doulas",
+    "items": [
+      {
+        "question": "What exactly is a postpartum doula?",
+        "answer": "A postpartum doula is a trained professional who provides in-home support to families during the postpartum period — newborn care, feeding support, household tasks, and emotional reassurance for new parents."
+      },
+      {
+        "question": "Is a postpartum doula the same as a baby nurse or night nurse?",
+        "answer": "Not quite. A night nurse focuses on the newborn. A postpartum doula supports the whole family — baby care plus emotional support, household assistance, and breastfeeding guidance."
+      },
+      {
+        "question": "Do I need a doula if I already have family helping?",
+        "answer": "Family support is wonderful — but a postpartum doula brings neutral, professional expertise without the emotional complexity. Many families find that having a doula lets them actually enjoy time with visiting family."
+      }
+    ]
+  },
+  {
+    "category": "Our Services",
+    "slug": "our-services",
+    "items": [
+      {
+        "question": "What shifts do you offer?",
+        "answer": "Overnight (10 PM–6 AM), extended overnight (customizable, commonly 9 PM–7 AM), daytime (5–8 hrs), evening witching hour (4–10 PM), and hospital overnight. We work with your schedule to create the right coverage."
+      },
+      {
+        "question": "How early should I book?",
+        "answer": "We recommend booking during your second or third trimester. Overnight shifts fill up quickly. We do our best to accommodate last-minute requests and will always let you know what's available."
+      },
+      {
+        "question": "Do you work with twins or multiples?",
+        "answer": "Yes. We have experience with twins and multiples. Please mention this when you reach out so we can match you with a doula who has the right experience."
+      },
+      {
+        "question": "Is the Gentle Sleep Coaching really included at no charge?",
+        "answer": "Yes. Georgette completed the intensive three-month Gentle Sleep Coach training program and makes herself available to all After the Stork families to guide and troubleshoot through infant sleep issues at no additional charge. It's best to establish healthy sleep habits from the start — we'll help get your whole family on the right foot."
+      },
+      {
+        "question": "Do you provide lactation support?",
+        "answer": "Yes — and this is one of the things that truly sets After the Stork apart. Our team includes Allison Hart, MS RD IBCLC — the highest level of breastfeeding training available. Georgette has also completed breastfeeding training through The Philadelphia Department of Public Health and The Breastfeeding Resource Center. Our mantra: your goals are our goals."
+      }
+    ]
+  },
+  {
     "category": "Getting Started",
     "slug": "getting-started",
     "items": [
       {
-        "question": "What is a postpartum doula?",
-        "answer": "A postpartum doula is a trained professional who provides non-medical support to families after the birth of a baby. Our doulas offer newborn care, infant feeding support, overnight care so parents can sleep, and emotional reassurance during the early weeks and months of parenthood. We are not nurses or medical providers — but we are experienced, certified, and deeply knowledgeable about newborns and postpartum recovery."
+        "question": "How does the process work?",
+        "answer": "It starts with a free consultation call. We'll learn about your family, recommend a care plan, match you with the right doula, and walk you through scheduling and next steps."
       },
       {
-        "question": "When should I book?",
-        "answer": "As early as possible. Many families book during the second trimester. We do our best to accommodate last-minute requests, but our most experienced doulas book out quickly — especially for overnight shifts. If you are already postpartum and in need of support, please call us directly and we will do everything we can to help."
+        "question": "What if I don't like my assigned doula?",
+        "answer": "Your comfort is everything. Tell us and we'll work to find a better fit. We want every family to feel completely at ease with the person coming into their home."
       },
       {
-        "question": "How many nights per week do most families book?",
-        "answer": "Most families book two to five nights per week during the first six to twelve weeks postpartum. Some families start with two nights and add more as they realize how much the sleep helps. Others book five nights from the start and taper down as their baby's sleep consolidates. We work around your schedule and adjust as needed."
-      },
-      {
-        "question": "Do you work with families who are not in the Philadelphia or Main Line area?",
-        "answer": "Our primary service area is Philadelphia and the Main Line suburbs — including Bryn Mawr, Wayne, Villanova, Ardmore, Gladwyne, and Chestnut Hill. If you are nearby but not sure whether we cover your area, please reach out and we will let you know."
+        "question": "Is there a minimum number of shifts required?",
+        "answer": "[Georgette/Ashley to fill in the minimum booking policy here.]"
       }
     ]
   },
   {
-    "category": "Overnight Care",
-    "slug": "overnight-care",
+    "category": "Practical Questions",
+    "slug": "practical-questions",
     "items": [
       {
-        "question": "What does your overnight doula actually do while we sleep?",
-        "answer": "Your overnight doula handles everything related to your baby through the night. She monitors the baby, responds to every wake-up, handles all diaper changes, and manages all feedings. If you are breastfeeding, she will bring your baby to you, stay nearby to support the latch and transfer, and return your baby to their sleep space when the feeding is complete — so you do not have to fully wake up. If you are bottle feeding, she handles every feeding entirely so you can sleep uninterrupted. In the morning, she tidies the feeding area, washes any bottles or pump parts used overnight, and gives you a brief handoff before she leaves."
+        "question": "How long has After the Stork been in business?",
+        "answer": "After the Stork was founded over 25 years ago by Georgette Kerr. We are one of the most established postpartum doula services in the Philadelphia area, and have earned the LOVE Award in 2020, 2021, 2022, and 2024."
       },
       {
-        "question": "Will the overnight doula sleep?",
-        "answer": "No. Our overnight doulas are awake and attentive for the entire shift. This is not a sleeping-nanny arrangement. Your doula is alert and available to your baby from the moment she arrives until she leaves."
+        "question": "What areas do you serve?",
+        "answer": "Philadelphia, the Main Line (Bryn Mawr, Wayne, Villanova, Ardmore, Gladwyne, Chestnut Hill), Dresher, New Hope, and select NJ communities including Moorestown and Haddonfield."
       },
       {
-        "question": "What is the difference between the standard overnight and the extended overnight?",
-        "answer": "The standard overnight runs from 10 pm to 6 am. The extended overnight runs from 9 pm to 7 am — giving you an extra hour on each end. Many families with early-rising older children or long commutes prefer the extended shift. The content of care is identical; the extended version simply gives everyone a bit more breathing room."
+        "question": "Are your doulas background-checked?",
+        "answer": "Yes. All team members undergo thorough background checks before joining After the Stork."
       },
       {
-        "question": "Can we have the same doula every night?",
-        "answer": "We do our best to provide consistency, and most families develop a primary doula relationship. That said, our doulas have their own schedules and lives, so we always introduce at least one backup doula early in the engagement so your family is covered if your primary doula is unavailable."
-      }
-    ]
-  },
-  {
-    "category": "Breastfeeding & Lactation",
-    "slug": "breastfeeding-lactation",
-    "items": [
-      {
-        "question": "What is an IBCLC and why does it matter?",
-        "answer": "IBCLC stands for International Board Certified Lactation Consultant. It is the gold-standard credential in lactation support, requiring hundreds of clinical hours and a rigorous board examination. Allison Hart, our lactation consultant, holds this credential in addition to her master's degree in dietetics and her Registered Dietitian license. This combination means she can support your breastfeeding goals and your postpartum nutritional recovery at the same time."
+        "question": "What does overnight care cost?",
+        "answer": "[Georgette/Ashley to add current rate information here, or direct families to contact for a custom quote.]"
       },
       {
-        "question": "Do you support moms who want to formula feed or combination feed?",
-        "answer": "Absolutely. Our doulas support whatever feeding method you choose — breastfeeding, pumping, formula feeding, or any combination. We are not here to advocate for any particular approach. We are here to support your goals."
-      },
-      {
-        "question": "How do I book a lactation consultation with Allison?",
-        "answer": "You can request a lactation consultation through our contact form or by calling us directly. Allison offers in-home visits and works around your schedule. She sees clients in Philadelphia and the Main Line area."
-      }
-    ]
-  },
-  {
-    "category": "Sleep Coaching",
-    "slug": "sleep-coaching",
-    "items": [
-      {
-        "question": "What age can you start sleep coaching?",
-        "answer": "Gentle sleep coaching is generally appropriate starting around four to six months, depending on your baby's development and weight. Georgette will assess your individual baby's readiness before recommending a plan. For younger babies, our overnight doula support is the most effective way to maximize everyone's sleep."
-      },
-      {
-        "question": "Is this a cry-it-out method?",
-        "answer": "No. The Gentle Sleep Coaching method is not a cry-it-out program. It prioritizes your baby's emotional security and works gradually, with parental involvement throughout. Georgette tailors every plan to your baby's temperament and your family's comfort level."
-      },
-      {
-        "question": "Is sleep coaching included in the cost of doula support?",
-        "answer": "Yes. Georgette makes herself available to all After the Stork families for sleep guidance and troubleshooting at no additional charge as part of your doula relationship. Sleep coaching is also available as a standalone service for families who did not use our doula support."
+        "question": "Do you accept insurance?",
+        "answer": "Postpartum doula services are not typically covered by insurance, though some FSA/HSA accounts may allow reimbursement. We provide documentation of services if helpful for your records."
       }
     ]
   }
