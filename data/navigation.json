@@ -10,7 +10,8 @@
       ]
     },
     { "label": "FAQ", "href": "/faq" },
-    { "label": "Resources", "href": "/resources" }
+    { "label": "Resources", "href": "/resources" },
+    { "label": "Blog", "href": "/blog" }
   ],
   "footer": [
     {

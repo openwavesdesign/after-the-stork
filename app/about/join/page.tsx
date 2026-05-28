@@ -83,7 +83,7 @@ export default function JoinPage() {
                 Flexible Scheduling
               </h3>
               <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
-                Build a schedule around your life. We have an online scheduling system that makes it easy to share your availability and pair you with clients that match. For those giving 4–6 nights of availability, we can commit to filling your schedule so you have a stable income you can count on.
+                Build a schedule around your life. We have an online scheduling system that makes it easy to share your availability and pair you with clients that match your schedule. We are proud to have a full-time scheduling manager dedicated to making your schedule work around your life. For those giving 4–6 nights of availability, we can commit to filling your schedule so you have a stable income you can count on. No more weeks of waiting or losing work unexpectedly — we can make this a full-time job that truly supports your family.
               </p>
             </Card>
 

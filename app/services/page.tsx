@@ -69,7 +69,7 @@ export default function ServicesPage() {
             className="font-serif font-light text-ink"
             style={{ fontSize: 'clamp(3.25rem,7vw,7rem)', lineHeight: 1.02, letterSpacing: '-0.018em', maxWidth: '900px' }}
           >
-            Postpartum Doula &amp; Newborn Care<br /><em>in Philadelphia.</em>
+            Postpartum Doula &amp; Newborn Care Services<br /><em>in Philadelphia and the Main Line.</em>
           </h1>
           <p className="mt-6" style={{ fontSize: '1.125rem', color: 'var(--dim)', lineHeight: '1.7', maxWidth: '600px' }}>
             We customize every care plan to fit your schedule, your home, and your needs. Serving Philadelphia, the Main Line, and surrounding communities including select families in New Jersey.
