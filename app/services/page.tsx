@@ -4,7 +4,6 @@ import Button from '@/components/ui/Button'
 import Eyebrow from '@/components/ui/Eyebrow'
 import FAQItem from '@/components/ui/FAQItem'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
-import Breadcrumb from '@/components/layout/Breadcrumb'
 import servicesData from '@/data/services.json'
 
 export const metadata: Metadata = {
@@ -51,9 +50,7 @@ export default function ServicesPage() {
       {/* ─── Hero ──────────────────────────────────────────────────────── */}
       <section className="py-14 md:py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
-          <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Services' }]} />
-
-          <div className="mt-8">
+          <div>
             <span
               className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1"
               style={{ fontSize: '0.6875rem' }}

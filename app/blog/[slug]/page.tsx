@@ -4,7 +4,6 @@ import path from 'path'
 import matter from 'gray-matter'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import type { Metadata } from 'next'
-import Breadcrumb from '@/components/layout/Breadcrumb'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
 
 interface PageProps {
@@ -46,12 +45,7 @@ export default function BlogPostPage({ params }: PageProps) {
       {/* Post Header */}
       <section className="py-14 md:py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
-          <Breadcrumb items={[
-            { label: 'Home', href: '/' },
-            { label: 'Blog', href: '/blog' },
-            { label: frontmatter.title },
-          ]} />
-          <div className="mt-8 max-w-[800px]">
+          <div className="max-w-[800px]">
             <span
               className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.12em] px-3 py-1 mb-5"
               style={{ fontSize: '0.6875rem' }}

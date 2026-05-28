@@ -3,8 +3,6 @@ import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
 import Eyebrow from '@/components/ui/Eyebrow'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
-import Breadcrumb from '@/components/layout/Breadcrumb'
-
 export const metadata: Metadata = {
   title: 'Postpartum Doula Jobs in Philadelphia | Join After the Stork',
   description: 'After the Stork is hiring certified postpartum doulas in Philadelphia, the Main Line, and surrounding communities. Apply today.',
@@ -17,18 +15,6 @@ const labelClass = 'font-mono text-mid uppercase tracking-[0.14em] mb-1 block'
 export default function JoinPage() {
   return (
     <>
-      {/* Breadcrumb */}
-      <div className="bg-paper border-b border-stroke">
-        <div className="mx-auto px-6 md:px-12 py-4" style={{ maxWidth: '1280px' }}>
-          <Breadcrumb
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'About', href: '/about' },
-              { label: 'Join the Team' },
-            ]}
-          />
-        </div>
-      </div>
 
       {/* ─── Page Hero ─────────────────────────────────────────────────── */}
       <section className="py-14 md:py-20 bg-paper">

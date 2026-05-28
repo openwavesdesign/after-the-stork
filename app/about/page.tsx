@@ -4,7 +4,6 @@ import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
 import Eyebrow from '@/components/ui/Eyebrow'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
-import Breadcrumb from '@/components/layout/Breadcrumb'
 import doulaData from '@/data/doulas.json'
 
 export const metadata: Metadata = {
@@ -17,13 +16,6 @@ const leadership = (doulaData as Doula[]).filter(d => d.isLeadership).sort((a, b
 export default function AboutPage() {
   return (
     <>
-      {/* Breadcrumb */}
-      <div className="bg-paper border-b border-stroke">
-        <div className="mx-auto px-6 md:px-12 py-4" style={{ maxWidth: '1280px' }}>
-          <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'About Us' }]} />
-        </div>
-      </div>
-
       {/* ─── Hero ──────────────────────────────────────────────────────── */}
       <section className="relative bg-paper pt-16 md:pt-24 pb-14 md:pb-20">
         <div className="mx-auto px-6 md:px-12 relative overflow-hidden" style={{ maxWidth: '1280px' }}>

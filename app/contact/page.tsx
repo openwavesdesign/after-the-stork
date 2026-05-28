@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Breadcrumb from '@/components/layout/Breadcrumb'
 import Button from '@/components/ui/Button'
 import Eyebrow from '@/components/ui/Eyebrow'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
@@ -16,13 +15,6 @@ const labelClass = 'font-mono text-mid uppercase tracking-[0.14em] block mb-1'
 export default function ContactPage() {
   return (
     <>
-      {/* Breadcrumb */}
-      <div className="bg-paper border-b border-stroke">
-        <div className="mx-auto px-6 md:px-12 py-4" style={{ maxWidth: '1280px' }}>
-          <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Contact' }]} />
-        </div>
-      </div>
-
       {/* ─── Hero ──────────────────────────────────────────────────────── */}
       <section className="py-14 md:py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>

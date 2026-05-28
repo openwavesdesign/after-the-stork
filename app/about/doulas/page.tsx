@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import type { Doula } from '@/types'
 import Button from '@/components/ui/Button'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
-import Breadcrumb from '@/components/layout/Breadcrumb'
 import doulaData from '@/data/doulas.json'
 
 export const metadata: Metadata = {
@@ -15,18 +14,6 @@ const allDoulas = (doulaData as Doula[]).filter(d => d.active).sort((a, b) => a.
 export default function DoulasPage() {
   return (
     <>
-      {/* Breadcrumb */}
-      <div className="bg-paper border-b border-stroke">
-        <div className="mx-auto px-6 md:px-12 py-4" style={{ maxWidth: '1280px' }}>
-          <Breadcrumb
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'About', href: '/about' },
-              { label: 'Meet Our Doulas' },
-            ]}
-          />
-        </div>
-      </div>
 
       {/* ─── Page Hero ─────────────────────────────────────────────────── */}
       <section className="py-14 md:py-20 bg-paper">

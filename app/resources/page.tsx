@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Breadcrumb from '@/components/layout/Breadcrumb'
 import Eyebrow from '@/components/ui/Eyebrow'
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder'
 
@@ -54,13 +53,6 @@ const resourceCategories = [
 export default function ResourcesPage() {
   return (
     <>
-      {/* Breadcrumb */}
-      <div className="bg-paper border-b border-stroke">
-        <div className="mx-auto px-6 md:px-12 py-4" style={{ maxWidth: '1280px' }}>
-          <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Resources' }]} />
-        </div>
-      </div>
-
       {/* ─── Hero ──────────────────────────────────────────────────────── */}
       <section className="py-14 md:py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>

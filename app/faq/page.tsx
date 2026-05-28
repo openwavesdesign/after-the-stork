@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import type { FAQCategory } from '@/types'
 import Button from '@/components/ui/Button'
 import FAQItem from '@/components/ui/FAQItem'
-import Breadcrumb from '@/components/layout/Breadcrumb'
 import faqsData from '@/data/faqs.json'
 
 export const metadata: Metadata = {
@@ -18,9 +17,7 @@ export default function FAQPage() {
       {/* ─── Hero ──────────────────────────────────────────────────────── */}
       <section className="py-14 md:py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
-          <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'FAQ' }]} />
-
-          <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <span
                 className="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em] px-3 py-1"
