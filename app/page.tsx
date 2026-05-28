@@ -25,19 +25,15 @@ export default function HomePage() {
   return (
     <>
       {/* ─── Hero ─────────────────────────────────────────────────────── */}
-      <section className="relative bg-paper" style={{ minHeight: '520px' }}>
-        {/* Background image placeholder */}
+      <section className="bg-paper">
         <ImagePlaceholder
           label="Full-Bleed Hero Image"
           dimensions="1440 × 900 px minimum"
-          className="absolute inset-0 w-full h-full"
+          style={{ height: '480px' }}
+          className="w-full"
         />
 
-        {/* Content panel anchored to bottom */}
-        <div
-          className="absolute bottom-0 left-0 right-0 bg-paper"
-          style={{ borderTop: 'var(--rule-ink)' }}
-        >
+        <div style={{ borderTop: 'var(--rule-ink)' }}>
           <div
             className="mx-auto px-6 md:px-12 py-10 md:py-14"
             style={{ maxWidth: '1280px' }}
