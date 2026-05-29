@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import Script from 'next/script'
 import Eyebrow from '@/components/ui/Eyebrow'
+import ContactFormEmbed from './ContactFormEmbed'
 import SocialIcon from '@/components/ui/SocialIcon'
 import site from '@/data/site.json'
 
@@ -37,18 +37,8 @@ export default function ContactPage() {
             <div>
               <Eyebrow>Send a Message</Eyebrow>
               <div style={{ background: 'var(--paper)', border: 'var(--rule)', padding: '12px' }}>
-                <div style={{ overflow: 'auto', WebkitOverflowScrolling: 'touch' }}>
-                  <iframe
-                    title="After the Stork — Contact Form"
-                    id="enginehire-iframe"
-                    src={site.engineHire.formSrc}
-                    width="100%"
-                    height="10000"
-                    style={{ border: 'none', minHeight: '5000px', display: 'block' }}
-                  />
-                </div>
+                <ContactFormEmbed />
               </div>
-              <Script src={site.engineHire.scriptSrc} strategy="afterInteractive" />
             </div>
 
             {/* Right — Info Column */}
