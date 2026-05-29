@@ -37,14 +37,13 @@ export default function ContactPage() {
             <div>
               <Eyebrow>Send a Message</Eyebrow>
               <div style={{ background: 'var(--paper)', border: 'var(--rule)', padding: '12px' }}>
-                <div style={{ overflow: 'auto', WebkitOverflowScrolling: 'touch' }}>
+                <div style={{ overflow: 'hidden' }}>
                   <iframe
                     title="After the Stork — Contact Form"
                     id="enginehire-iframe"
                     src={site.engineHire.formSrc}
                     width="100%"
-                    height="10000"
-                    style={{ border: 'none', minHeight: '5000px', display: 'block' }}
+                    style={{ border: 'none', display: 'block', width: '100%' }}
                   />
                 </div>
               </div>
