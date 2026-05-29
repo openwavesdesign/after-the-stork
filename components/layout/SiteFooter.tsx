@@ -138,7 +138,7 @@ export default function SiteFooter() {
         }}
       >
         <span>© 2026 After the Stork — All rights reserved</span>
-        <span>Privacy · Terms · LOVE Award Winner 2020 · 2021 · 2022 · 2024 · 2026</span>
+        <span>Legal</span>
       </div>
     </footer>
   )
