@@ -11,16 +11,12 @@ export default function Testimonial({ quote, attribution, className = '' }: Test
       style={{ borderColor: 'var(--stroke)' }}
     >
       <span
-        className="font-serif italic select-none block"
-        style={{ fontSize: '5rem', color: 'var(--accent-soft)', lineHeight: '0.7', marginBottom: '0.875rem' }}
+        className="font-serif italic select-none block text-accent-soft text-[5rem] leading-[0.7] mb-3.5"
         aria-hidden="true"
       >
         &ldquo;
       </span>
-      <p
-        className="font-serif italic"
-        style={{ fontSize: '1.3125rem', color: 'var(--ink-soft)', lineHeight: '1.45' }}
-      >
+      <p className="font-serif italic text-ink-soft text-[1.375rem] leading-[1.45]">
         {quote}
       </p>
       <div

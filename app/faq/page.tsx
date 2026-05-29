@@ -20,10 +20,7 @@ export default function FAQPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="pill">FAQ</div>
-              <h1
-                className="font-serif font-light text-ink"
-                style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em' }}
-              >
+              <h1 className="font-serif font-light text-ink text-display">
                 Your Questions,<br /><em>Answered.</em>
               </h1>
             </div>
@@ -76,13 +73,7 @@ export default function FAQPage() {
                 {category.category}
               </p>
               <div
-                className="font-serif font-light italic hidden md:block"
-                style={{
-                  fontSize: 'clamp(6rem,10vw,8rem)',
-                  color: 'var(--accent-tint)',
-                  lineHeight: 1,
-                  userSelect: 'none',
-                }}
+                className="font-serif font-light italic hidden md:block select-none text-accent-tint text-numeral"
                 aria-hidden="true"
               >
                 {String(catIndex + 1).padStart(2, '0')}
@@ -105,7 +96,7 @@ export default function FAQPage() {
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 items-center">
             <div>
-              <h2 className="font-serif font-light" style={{ fontSize: '2.25rem', lineHeight: 1.1, color: 'var(--paper)' }}>
+              <h2 className="font-serif font-light text-paper text-h1">
                 Still Have Questions?
               </h2>
               <p className="mt-3" style={{ fontSize: '0.9375rem', maxWidth: '480px', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>

@@ -23,10 +23,7 @@ export default function DoulasPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="pill">Our Team</div>
-              <h1
-                className="font-serif font-light text-ink"
-                style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em' }}
-              >
+              <h1 className="font-serif font-light text-ink text-display">
                 Meet the People Who Will Care for<br /><em>Your Family.</em>
               </h1>
               <p className="mt-6" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
@@ -50,7 +47,7 @@ export default function DoulasPage() {
           <div className="flex justify-between items-end mb-12 gap-8 flex-wrap">
             <div>
               <Eyebrow>The Team</Eyebrow>
-              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)' }}>
+              <h2 className="font-serif font-light text-ink text-h2">
                 Our doulas.
               </h2>
             </div>
@@ -93,7 +90,7 @@ export default function DoulasPage() {
                     className="w-full"
                   />
                   <div style={{ padding: '28px', borderTop: 'var(--rule-soft)' }}>
-                    <p className="font-serif text-ink font-light" style={{ fontSize: '1.625rem', lineHeight: 1.1 }}>
+                    <p className="font-serif text-ink font-light text-h3">
                       {isPlaceholder ? 'Coming Soon' : doula.name}
                     </p>
                     <p className="font-mono uppercase tracking-[0.22em] mt-2" style={{ fontSize: '0.75rem', color: 'var(--accent)' }}>
@@ -124,7 +121,7 @@ export default function DoulasPage() {
       {/* ─── CTA ───────────────────────────────────────────────────────── */}
       <section className="py-20 bg-ink">
         <div className="mx-auto px-6 md:px-12 text-center" style={{ maxWidth: '1280px' }}>
-          <h2 className="font-serif font-light" style={{ fontSize: '2.25rem', color: 'var(--paper)' }}>
+          <h2 className="font-serif font-light text-paper text-h1">
             Would You Like to Meet Us First?
           </h2>
           <p className="mt-4 max-w-[480px] mx-auto" style={{ fontSize: '0.9375rem', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>

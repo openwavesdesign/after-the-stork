@@ -31,6 +31,16 @@ const config: Config = {
         mono: ['var(--font-dm-mono)', 'monospace'],
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
       },
+      fontSize: {
+        // Semantic heading scale — size + line-height + tracking bundled.
+        // Larger steps grow more than smaller ones (expanded hierarchy).
+        display: ['clamp(2.5rem, 5.5vw, 3.75rem)', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
+        h1: ['clamp(2.125rem, 4vw, 3.125rem)', { lineHeight: '1.08', letterSpacing: '-0.015em' }],
+        h2: ['clamp(1.875rem, 3.25vw, 2.75rem)', { lineHeight: '1.1', letterSpacing: '-0.01em' }],
+        h3: ['clamp(1.5rem, 2vw, 1.875rem)', { lineHeight: '1.2', letterSpacing: '-0.005em' }],
+        h4: ['1.375rem', { lineHeight: '1.3' }],
+        numeral: ['clamp(6.5rem, 11vw, 9rem)', { lineHeight: '1', letterSpacing: '-0.01em' }],
+      },
     },
   },
   plugins: [],

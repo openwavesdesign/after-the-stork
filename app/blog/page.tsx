@@ -25,10 +25,7 @@ export default function BlogPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="pill">Blog</div>
-              <h1
-                className="font-serif font-light text-ink"
-                style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em' }}
-              >
+              <h1 className="font-serif font-light text-ink text-display">
                 The After<br /><em>the Stork Blog.</em>
               </h1>
             </div>
@@ -57,7 +54,7 @@ export default function BlogPage() {
               <div>
                 <Eyebrow>Featured</Eyebrow>
                 <span className="area-tag mb-4 inline-block">{featured.category}</span>
-                <h2 className="font-serif font-light text-ink mb-3" style={{ fontSize: '1.75rem', lineHeight: 1.1 }}>
+                <h2 className="font-serif font-light text-ink text-h3 mb-3">
                   {featured.title}
                 </h2>
                 <div
@@ -139,7 +136,7 @@ export default function BlogPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <Eyebrow dark>Stay in the Loop</Eyebrow>
-              <h2 className="font-serif font-light" style={{ fontSize: '2rem', color: 'var(--paper)' }}>
+              <h2 className="font-serif font-light text-paper text-h2">
                 Get Postpartum Insights<br /><em style={{ color: 'var(--accent-soft)' }}>Delivered to Your Inbox.</em>
               </h2>
               <p className="mt-4" style={{ fontSize: '0.9375rem', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>
