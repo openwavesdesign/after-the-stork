@@ -273,6 +273,21 @@ h1, h2, h3, h4 {
   transform-origin: top center;
 }
 
+/* At-a-Glance service rows — stacked card on mobile, 5-col grid on md+ */
+.at-a-glance-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (min-width: 768px) {
+  .at-a-glance-row {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 0.8fr 1.4fr 80px;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
 /* Respect users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }

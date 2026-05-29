@@ -82,18 +82,15 @@ export default function ServicesPage() {
             Six ways to support<br /><em>your family.</em>
           </h2>
 
-          <div style={{ overflowX: 'auto' }}>
+          <div>
             {atAGlanceData.map(([name, hours, tag, desc, href], i, arr) => (
               <div
                 key={name}
+                className="at-a-glance-row"
                 style={{
-                  display: 'grid',
-                  gridTemplateColumns: '1.6fr 1fr .8fr 1.4fr 80px',
-                  gap: '2rem',
                   padding: '1.5rem 0',
                   borderTop: 'var(--rule-soft)',
                   ...(i === arr.length - 1 ? { borderBottom: 'var(--rule-soft)' } : {}),
-                  alignItems: 'center',
                 }}
               >
                 <div className="font-serif text-ink" style={{ fontSize: '1.5rem', fontWeight: 300 }}>{name}</div>
