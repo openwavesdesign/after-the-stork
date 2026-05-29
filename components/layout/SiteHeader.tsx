@@ -128,12 +128,6 @@ export default function SiteHeader() {
             <em style={{ fontStyle: 'italic', color: 'var(--accent)', fontWeight: 400 }}>the</em>{' '}
             Stork
           </span>
-          <span
-            className="font-mono text-mid uppercase tracking-[0.22em]"
-            style={{ fontSize: '0.75rem', marginTop: '5px' }}
-          >
-            Philadelphia · Main Line · Postpartum Care
-          </span>
         </Link>
 
         {/* Desktop Nav */}

@@ -36,7 +36,6 @@ export default function HomePage() {
       <section style={{ position: 'relative', minHeight: '85vh', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
         <Media
           alt="A Philadelphia family resting peacefully with their newborn"
-          label="Family with Newborn"
           priority
           warm={false}
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}
@@ -65,7 +64,7 @@ export default function HomePage() {
                   The region&apos;s premier and longest-running postpartum doula agency since 2006 — expert overnight and daytime newborn care for families across Philadelphia, the Main Line, Bucks County, New Jersey and neighboring communities.
                 </p>
                 <div className="flex flex-wrap gap-4 mt-8">
-                  <Button variant="fill" href="/contact">Book a Free Consultation</Button>
+                  <Button variant="fill" href="/contact">Contact Us</Button>
                   <Button variant="ghost" href="/services">Explore Services</Button>
                 </div>
 
@@ -111,16 +110,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── Awards / Affiliations ribbon ─────────────────────────────── */}
-      <div className="awards-ribbon" role="list" aria-label="Awards and certifications">
-        <span className="awards-ribbon-item" role="listitem">LOVE Award · 2020 · 2021 · 2022 · 2024 · 2026</span>
-        <span className="awards-ribbon-item" role="listitem">Family Favorite Honoree · 2021 · 2022 · 2026</span>
-        <span className="awards-ribbon-item" role="listitem">IBCLC on Staff</span>
-        <span className="awards-ribbon-item" role="listitem">Certified Gentle Sleep Coach</span>
-        <span className="awards-ribbon-item" role="listitem">CAPPA · DONA Trained</span>
-        <span className="awards-ribbon-item" role="listitem">All Doulas CPR &amp; TDAP Certified</span>
-      </div>
-
       {/* ─── Video + Intro ────────────────────────────────────────────── */}
       <section className="bg-paper py-20">
         <div className="mx-auto" style={{ maxWidth: '1280px' }}>
@@ -147,7 +136,7 @@ export default function HomePage() {
               <Media
                 alt="After the Stork welcome video"
                 label="Welcome Video · 2:14"
-                ratio="4/5"
+                ratio="16/9"
               />
               <p
                 className="font-mono uppercase tracking-[0.18em] mt-3"
@@ -406,7 +395,7 @@ export default function HomePage() {
 
             {/* Right */}
             <div className="flex flex-col gap-4">
-              <Button variant="inverse" href="/contact">Book a Free Consultation</Button>
+              <Button variant="inverse" href="/contact">Contact Us</Button>
               <Button variant="inverse" href="/services">Explore Our Services</Button>
             </div>
           </div>

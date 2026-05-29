@@ -37,7 +37,7 @@
     {
       "label": "Contact",
       "links": [
-        { "label": "Contact Form", "href": "/contact" },
+        { "label": "Contact Us", "href": "/contact" },
         { "label": "Book a Consultation", "href": "/contact" }
       ]
     }
