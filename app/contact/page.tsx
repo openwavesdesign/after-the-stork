@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import Eyebrow from '@/components/ui/Eyebrow'
+import SocialIcon from '@/components/ui/SocialIcon'
 import site from '@/data/site.json'
 
 export const metadata: Metadata = {
@@ -93,17 +94,27 @@ export default function ContactPage() {
               {/* Social */}
               <div style={{ borderTop: 'var(--rule-soft)', paddingTop: '1.5rem' }}>
                 <p className="font-mono uppercase tracking-[0.2em] mb-3" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>Follow Along</p>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-3">
                   {site.social.map((s) => (
                     <a
                       key={s.label}
                       href={s.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-mono uppercase tracking-[0.18em] hover:text-accent transition-colors"
-                      style={{ fontSize: '0.75rem', color: 'var(--dim)', borderBottom: '1px solid var(--accent)', paddingBottom: '2px' }}
+                      aria-label={s.label}
+                      className="hover:text-accent transition-colors"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        width: '2.25rem',
+                        height: '2.25rem',
+                        borderRadius: '50%',
+                        border: '1px solid var(--rule)',
+                        color: 'var(--dim)',
+                      }}
                     >
-                      {s.label}
+                      <SocialIcon platform={s.label as 'Facebook' | 'Instagram' | 'LinkedIn'} size={16} />
                     </a>
                   ))}
                 </div>
