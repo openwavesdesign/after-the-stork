@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import navData from '@/data/navigation.json'
 import site from '@/data/site.json'
+import SocialIcon from '@/components/ui/SocialIcon'
 
 export default function SiteFooter() {
   return (
@@ -98,17 +99,27 @@ export default function SiteFooter() {
           </ul>
 
           {/* Social */}
-          <ul className="flex flex-wrap gap-4 mt-6">
+          <ul className="flex flex-wrap gap-3 mt-6">
             {site.social.map((s) => (
               <li key={s.label}>
                 <a
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="footer-link font-mono uppercase tracking-[0.18em]"
-                  style={{ fontSize: '0.75rem' }}
+                  aria-label={s.label}
+                  className="footer-link"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    width: '2rem',
+                    height: '2rem',
+                    borderRadius: '50%',
+                    border: '1px solid rgba(244,239,230,.2)',
+                    transition: 'border-color 0.2s, color 0.2s',
+                  }}
                 >
-                  {s.label}
+                  <SocialIcon platform={s.label as 'Facebook' | 'Instagram' | 'LinkedIn'} size={15} />
                 </a>
               </li>
             ))}
