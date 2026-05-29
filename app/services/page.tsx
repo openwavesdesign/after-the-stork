@@ -82,25 +82,44 @@ export default function ServicesPage() {
             Six ways to support<br /><em>your family.</em>
           </h2>
 
-          <div style={{ overflowX: 'auto' }}>
+          <div>
             {atAGlanceData.map(([name, hours, tag, desc, href], i, arr) => (
               <div
                 key={name}
                 style={{
-                  display: 'grid',
-                  gridTemplateColumns: '1.6fr 1fr .8fr 1.4fr 80px',
-                  gap: '2rem',
-                  padding: '1.5rem 0',
                   borderTop: 'var(--rule-soft)',
                   ...(i === arr.length - 1 ? { borderBottom: 'var(--rule-soft)' } : {}),
-                  alignItems: 'center',
                 }}
               >
-                <div className="font-serif text-ink" style={{ fontSize: '1.5rem', fontWeight: 300 }}>{name}</div>
-                <div className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.75rem', color: 'var(--dim)' }}>{hours}</div>
-                <span className="svc-tag">{tag}</span>
-                <div className="font-serif italic" style={{ fontSize: '1rem', color: 'var(--ink-soft)' }}>{desc}</div>
-                <a href={href} className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.75rem', color: 'var(--accent)', whiteSpace: 'nowrap' }}>Learn ↓</a>
+                {/* Mobile layout — stacked vertically */}
+                <div className="md:hidden flex flex-col gap-2 py-5">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="font-serif text-ink" style={{ fontSize: '1.25rem', fontWeight: 300 }}>{name}</div>
+                    <a href={href} className="font-mono uppercase tracking-[0.18em] flex-shrink-0 mt-1" style={{ fontSize: '0.75rem', color: 'var(--accent)' }}>Learn ↓</a>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="svc-tag">{tag}</span>
+                    <span className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.75rem', color: 'var(--dim)' }}>{hours}</span>
+                  </div>
+                  <div className="font-serif italic" style={{ fontSize: '0.9375rem', color: 'var(--ink-soft)' }}>{desc}</div>
+                </div>
+
+                {/* Desktop layout — grid */}
+                <div
+                  className="hidden md:grid"
+                  style={{
+                    gridTemplateColumns: '1.6fr 1fr .8fr 1.4fr 80px',
+                    gap: '2rem',
+                    padding: '1.5rem 0',
+                    alignItems: 'center',
+                  }}
+                >
+                  <div className="font-serif text-ink" style={{ fontSize: '1.5rem', fontWeight: 300 }}>{name}</div>
+                  <div className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.75rem', color: 'var(--dim)' }}>{hours}</div>
+                  <span className="svc-tag">{tag}</span>
+                  <div className="font-serif italic" style={{ fontSize: '1rem', color: 'var(--ink-soft)' }}>{desc}</div>
+                  <a href={href} className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.75rem', color: 'var(--accent)', whiteSpace: 'nowrap' }}>Learn ↓</a>
+                </div>
               </div>
             ))}
           </div>
