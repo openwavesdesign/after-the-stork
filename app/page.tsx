@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const whyUsItems = [
   { n: '01', ttl: 'Serving Families Since 2006', body: 'Georgette founded After the Stork in 2006. The premier and longest-running postpartum doula agency in the region, our reputation was built one family at a time as moms shared her phone number — now known by thousands of families all over the Philadelphia area.' },
-  { n: '02', ttl: 'Four-Time LOVE Award Winner', body: 'A community recognition of excellence in postpartum care — 2020, 2021, 2022, and 2024.' },
+  { n: '02', ttl: 'Five-Time LOVE Award Winner', body: 'A community recognition of excellence in postpartum care — 2020, 2021, 2022, 2024, and 2026. Also Family Favorite Honorees in 2021, 2022, and 2026.' },
   { n: '03', ttl: 'IBCLC Lactation Support On Staff', body: 'Allison Hart, MS RD IBCLC, provides the highest level of breastfeeding and nutrition support available — rare for a postpartum doula service.' },
   { n: '04', ttl: 'Certified Gentle Sleep Coach', body: 'Georgette completed the intensive Gentle Sleep Coach training and guides all After the Stork families through infant sleep at no additional charge.' },
   { n: '05', ttl: 'A Family Business', body: 'Georgette, her daughter Ashley (GM), and daughter Allison (IBCLC) lead the team. This is personal — family is everything to them.' },
@@ -98,8 +98,8 @@ export default function HomePage() {
                   <div className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.75rem', color: 'var(--mid)', lineHeight: 1.5 }}>Serving Philadelphia<br />Families Since</div>
                 </div>
                 <div>
-                  <div className="font-serif text-ink" style={{ fontSize: '4.5rem', fontWeight: 300, lineHeight: .95, letterSpacing: '-.02em' }}>4×</div>
-                  <div className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.75rem', color: 'var(--mid)', lineHeight: 1.5 }}>LOVE Award<br />2020 · 2021 · 2022 · 2024</div>
+                  <div className="font-serif text-ink" style={{ fontSize: '4.5rem', fontWeight: 300, lineHeight: .95, letterSpacing: '-.02em' }}>5×</div>
+                  <div className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.75rem', color: 'var(--mid)', lineHeight: 1.5 }}>LOVE Award<br />2020 · 2021 · 2022 · 2024 · 2026</div>
                 </div>
                 <div>
                   <div className="font-serif text-ink" style={{ fontSize: '2.625rem', fontWeight: 300, lineHeight: .95, letterSpacing: '-.02em' }}>IBCLC</div>
@@ -113,7 +113,8 @@ export default function HomePage() {
 
       {/* ─── Awards / Affiliations ribbon ─────────────────────────────── */}
       <div className="awards-ribbon" role="list" aria-label="Awards and certifications">
-        <span className="awards-ribbon-item" role="listitem">LOVE Award · 2020 · 2021 · 2022 · 2024</span>
+        <span className="awards-ribbon-item" role="listitem">LOVE Award · 2020 · 2021 · 2022 · 2024 · 2026</span>
+        <span className="awards-ribbon-item" role="listitem">Family Favorite Honoree · 2021 · 2022 · 2026</span>
         <span className="awards-ribbon-item" role="listitem">IBCLC on Staff</span>
         <span className="awards-ribbon-item" role="listitem">Certified Gentle Sleep Coach</span>
         <span className="awards-ribbon-item" role="listitem">CAPPA · DONA Trained</span>
