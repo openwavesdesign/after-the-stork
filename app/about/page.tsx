@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import type { Doula } from '@/types'
+import Image from 'next/image'
 import Button from '@/components/ui/Button'
 import Eyebrow from '@/components/ui/Eyebrow'
 import Media from '@/components/ui/Media'
@@ -77,7 +78,7 @@ export default function AboutPage() {
               />
               <p className="font-mono uppercase tracking-[0.18em] mt-3 flex items-center gap-3" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>
                 <span style={{ display: 'inline-block', width: '20px', height: '1px', background: 'var(--stroke)' }} />
-                LOVE Award winner — 2020, 2021, 2022 &amp; 2024
+                LOVE Award winner — 2020, 2021, 2022, 2024 &amp; 2026
               </p>
             </div>
           </div>
@@ -211,7 +212,7 @@ export default function AboutPage() {
                 {[
                   { title: 'IBCLC', body: 'Allison Hart, MS RD IBCLC — Highest breastfeeding credential available' },
                   { title: 'Gentle Sleep Coach', body: 'Georgette — Intensive 3-month training program' },
-                  { title: 'LOVE Award', body: '2020 · 2021 · 2022 · 2024' },
+                  { title: 'LOVE Award', body: '2020 · 2021 · 2022 · 2024 · 2026' },
                   { title: 'CPR & First Aid', body: 'All team members certified' },
                 ].map(({ title, body }) => (
                   <div key={title} style={{ border: 'var(--rule-soft)', padding: '1.25rem', background: 'var(--canvas)' }}>
@@ -223,6 +224,16 @@ export default function AboutPage() {
                     </p>
                   </div>
                 ))}
+
+                {/* Full-width Family Favorite Honoree card */}
+                <div className="col-span-2" style={{ border: 'var(--rule-soft)', padding: '1.25rem', background: 'var(--canvas)' }}>
+                  <h4 className="font-mono uppercase tracking-[0.18em] text-ink" style={{ fontSize: '0.75rem', fontWeight: 500, marginBottom: '0.5rem' }}>
+                    Family Favorite Honoree
+                  </h4>
+                  <p style={{ fontSize: '0.875rem', color: 'var(--dim)', lineHeight: '1.6' }}>
+                    2021 (Main Line) · 2022 (Philadelphia) · 2026 (Philadelphia)
+                  </p>
+                </div>
 
                 {/* Full-width TDAP card */}
                 <div className="col-span-2" style={{ border: 'var(--rule-soft)', padding: '1.25rem', background: 'var(--canvas)' }}>
@@ -244,11 +255,25 @@ export default function AboutPage() {
         <div className="mx-auto px-6 md:px-12 text-center" style={{ maxWidth: '1280px' }}>
           <Eyebrow center dark>Award-Winning Care</Eyebrow>
           <h2 className="font-serif font-light text-paper text-h1">
-            LOVE Award Winner — 2020, 2021, 2022 &amp; <em style={{ color: 'var(--accent-soft)' }}>2024.</em>
+            LOVE Award Winner — 2020, 2021, 2022, 2024 &amp; <em style={{ color: 'var(--accent-soft)' }}>2026.</em>
           </h2>
           <p className="mt-6 max-w-[560px] mx-auto" style={{ fontSize: '0.9375rem', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>
             These awards reflect the trust and loyalty of the families we&rsquo;ve been honored to serve, and they drive us to maintain the standard of excellence that Georgette built this business on back in 2006.
           </p>
+
+          {/* Award badge images */}
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 mt-10">
+            {[
+              { src: '/images/awards/love-award-philadelphia.png', alt: 'LOVE Award — Philadelphia', width: 436, height: 130 },
+              { src: '/images/awards/love-award-main-line.png', alt: 'LOVE Award — Main Line', width: 488, height: 137 },
+              { src: '/images/awards/love-award-bucks-county.png', alt: 'LOVE Award — Bucks County', width: 449, height: 151 },
+            ].map(({ src, alt, width, height }) => (
+              <div key={src} style={{ background: 'rgba(255,255,255,.06)', borderRadius: '4px', padding: '1rem 1.5rem' }}>
+                <Image src={src} alt={alt} width={width} height={height} style={{ maxWidth: '280px', width: '100%', height: 'auto' }} />
+              </div>
+            ))}
+          </div>
+
           <div className="flex flex-wrap justify-center gap-2 mt-8">
             {['Philadelphia', 'Bryn Mawr', 'Wayne', 'Villanova', 'Ardmore', 'Moorestown NJ', 'Haddonfield NJ'].map((area) => (
               <span
