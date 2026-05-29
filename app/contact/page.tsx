@@ -16,10 +16,7 @@ export default function ContactPage() {
       <section className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="pill">Contact Us</div>
-          <h1
-            className="font-serif font-light text-ink"
-            style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em', maxWidth: '900px' }}
-          >
+          <h1 className="font-serif font-light text-ink text-display max-w-[900px]">
             Contact Our Philadelphia <em>Postpartum Doula</em> Team
           </h1>
           <p className="mt-6" style={{ fontSize: '1.125rem', color: 'var(--dim)', lineHeight: '1.7', maxWidth: '560px' }}>
@@ -44,7 +41,7 @@ export default function ContactPage() {
             {/* Right — Info Column */}
             <div>
               <Eyebrow>Get in Touch</Eyebrow>
-              <h2 className="font-serif font-light text-ink mb-8" style={{ fontSize: '1.75rem' }}>
+              <h2 className="font-serif font-light text-ink text-h3 mb-8">
                 Direct Contact
               </h2>
 
@@ -118,10 +115,7 @@ export default function ContactPage() {
       {/* ─── Closing ───────────────────────────────────────────────────── */}
       <section className="py-20 bg-ink">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
-          <p
-            className="font-serif italic text-center"
-            style={{ fontSize: '2.25rem', fontWeight: 300, color: 'var(--paper)' }}
-          >
+          <p className="font-serif font-light italic text-center text-paper text-h2">
             We look forward to supporting your family.
           </p>
         </div>

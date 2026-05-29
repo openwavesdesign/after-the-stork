@@ -197,7 +197,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-serif);
   font-weight: 400;
   color: var(--ink);
-  font-size: 1.875rem;
+  font-size: 2rem;
   line-height: 1.2;
   letter-spacing: -.01em;
   margin-top: 2.2em;
@@ -206,7 +206,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-serif);
   font-weight: 400;
   color: var(--ink);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.25;
   margin-top: 1.8em;
 }

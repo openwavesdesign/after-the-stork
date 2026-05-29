@@ -25,10 +25,7 @@ export default function AboutPage() {
       <section className="bg-paper py-20">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="pill">About Us</div>
-          <h1
-            className="font-serif font-light text-ink"
-            style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em', maxWidth: '900px' }}
-          >
+          <h1 className="font-serif font-light text-ink text-display max-w-[900px]">
             We&rsquo;re Here for the Hardest — and Most <em>Beautiful</em> — Part of Parenthood
           </h1>
           <p className="mt-6" style={{ fontSize: '1.125rem', color: 'var(--dim)', lineHeight: '1.7', maxWidth: '620px' }}>
@@ -54,7 +51,7 @@ export default function AboutPage() {
             {/* Left */}
             <div className="px-6 md:px-12 lg:pr-16">
               <Eyebrow>How It Began</Eyebrow>
-              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
+              <h2 className="font-serif font-light text-ink text-h2">
                 How After<br /><em>the Stork Began.</em>
               </h2>
               <p className="mt-6" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
@@ -91,7 +88,7 @@ export default function AboutPage() {
       <section className="bg-canvas py-20">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <Eyebrow>A Family Business</Eyebrow>
-          <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
+          <h2 className="font-serif font-light text-ink text-h2">
             Meet the Family Behind<br /><em>After the Stork.</em>
           </h2>
           <p className="mt-4 mb-2" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '580px' }}>
@@ -122,7 +119,7 @@ export default function AboutPage() {
                 <div className="font-mono uppercase tracking-[0.22em]" style={{ fontSize: '0.75rem', color: 'var(--accent)', marginBottom: '0.5rem' }}>
                   {doula.title}
                 </div>
-                <h3 className="font-serif font-light text-ink" style={{ fontSize: '1.625rem', lineHeight: 1.1 }}>
+                <h3 className="font-serif font-light text-ink text-h3">
                   {doula.name}
                 </h3>
                 <p className="font-mono uppercase tracking-[0.18em] mt-2" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>
@@ -141,7 +138,7 @@ export default function AboutPage() {
       <section className="bg-paper py-20">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <Eyebrow>What We Offer Beyond Newborn Care</Eyebrow>
-          <h2 className="font-serif font-light text-ink mb-12" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
+          <h2 className="font-serif font-light text-ink text-h2 mb-12">
             Support That Goes<br /><em>Beyond the Baby.</em>
           </h2>
 
@@ -152,10 +149,10 @@ export default function AboutPage() {
                 className="border"
                 style={{ borderColor: 'var(--stroke)', padding: '2.5rem' }}
               >
-                <div className="font-serif" style={{ fontSize: '2.625rem', color: 'var(--accent)', marginBottom: '1.25rem', lineHeight: 1 }}>
+                <div className="font-serif text-accent text-[2.625rem] leading-none mb-5">
                   {item.icon}
                 </div>
-                <h3 className="font-serif font-light text-ink" style={{ fontSize: '1.5rem', marginBottom: '0.875rem' }}>
+                <h3 className="font-serif font-light text-ink text-h3 mb-3.5">
                   {item.title}
                 </h3>
                 <p style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75' }}>
@@ -171,7 +168,7 @@ export default function AboutPage() {
       <section className="bg-canvas py-20">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '920px' }}>
           <Eyebrow center>Our Philosophy of Care</Eyebrow>
-          <h2 className="font-serif font-light text-ink text-center" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
+          <h2 className="font-serif font-light text-ink text-center text-h2">
             Care That Feels Like <em>Family</em>
           </h2>
           <hr style={{ border: 'none', borderTop: 'var(--rule-soft)', margin: '2rem auto', width: '80px' }} />
@@ -203,7 +200,7 @@ export default function AboutPage() {
               style={{ borderLeft: '1px solid var(--ghost)' }}
             >
               <Eyebrow>Expertise</Eyebrow>
-              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
+              <h2 className="font-serif font-light text-ink text-h2">
                 Trained. Certified.<br /><em>Experienced.</em>
               </h2>
               <p className="mt-5 mb-8" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
@@ -246,7 +243,7 @@ export default function AboutPage() {
       <section className="bg-ink py-20">
         <div className="mx-auto px-6 md:px-12 text-center" style={{ maxWidth: '1280px' }}>
           <Eyebrow center dark>Award-Winning Care</Eyebrow>
-          <h2 className="font-serif font-light" style={{ fontSize: 'clamp(1.875rem,3.5vw,2.75rem)', lineHeight: 1.05, color: 'var(--paper)' }}>
+          <h2 className="font-serif font-light text-paper text-h1">
             LOVE Award Winner — 2020, 2021, 2022 &amp; <em style={{ color: 'var(--accent-soft)' }}>2024.</em>
           </h2>
           <p className="mt-6 max-w-[560px] mx-auto" style={{ fontSize: '0.9375rem', color: 'rgba(244,239,230,.75)', lineHeight: '1.75' }}>

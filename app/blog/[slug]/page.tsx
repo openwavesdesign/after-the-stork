@@ -40,10 +40,7 @@ export default function BlogPostPage({ params }: PageProps) {
             >
               {meta.category}
             </span>
-            <h1
-              className="font-serif text-ink font-light"
-              style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.15 }}
-            >
+            <h1 className="font-serif text-ink font-light text-display">
               {meta.title}
             </h1>
             <div
@@ -86,10 +83,7 @@ export default function BlogPostPage({ params }: PageProps) {
       {others.length > 0 && (
         <section className="py-14 md:py-20 bg-canvas">
           <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
-            <h2
-              className="font-serif text-ink font-light mb-8"
-              style={{ fontSize: '2.25rem' }}
-            >
+            <h2 className="font-serif text-ink font-light text-h2 mb-8">
               More from the Blog
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -107,7 +101,7 @@ export default function BlogPostPage({ params }: PageProps) {
                     >
                       {p.category}
                     </span>
-                    <p className="font-serif text-ink font-light" style={{ fontSize: '1.25rem', lineHeight: 1.25 }}>
+                    <p className="font-serif text-ink font-light text-h4">
                       {p.title}
                     </p>
                   </div>

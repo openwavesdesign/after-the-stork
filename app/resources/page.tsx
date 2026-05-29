@@ -56,10 +56,7 @@ export default function ResourcesPage() {
       <section className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <div className="pill">Resources</div>
-          <h1
-            className="font-serif font-light text-ink"
-            style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em', maxWidth: '900px' }}
-          >
+          <h1 className="font-serif font-light text-ink text-display max-w-[900px]">
             Postpartum &amp; Newborn Care Resources for <em>Philadelphia Families</em>
           </h1>
           <p className="mt-6" style={{ fontSize: '1.125rem', color: 'var(--dim)', lineHeight: '1.7', maxWidth: '600px' }}>
@@ -74,7 +71,7 @@ export default function ResourcesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
             <div>
               <Eyebrow>Free Download</Eyebrow>
-              <h2 className="font-serif font-light text-ink mb-5" style={{ fontSize: '2rem' }}>
+              <h2 className="font-serif font-light text-ink text-h2 mb-5">
                 What to Expect from an Overnight Postpartum Doula in Philadelphia
               </h2>
               <p className="text-dim mb-8" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
@@ -115,7 +112,7 @@ export default function ResourcesPage() {
               <div className="font-mono uppercase tracking-[0.22em] mb-5" style={{ fontSize: '0.75rem', color: 'var(--accent)' }}>
                 After the Stork · Guide № 01
               </div>
-              <h3 className="font-serif font-light text-ink" style={{ fontSize: '1.875rem', lineHeight: 1.05 }}>
+              <h3 className="font-serif font-light text-ink text-h3">
                 What to Expect from an Overnight Postpartum Doula <em>in Philadelphia.</em>
               </h3>
               <div style={{ position: 'absolute', left: '32px', right: '32px', bottom: '32px' }}>
@@ -153,7 +150,7 @@ export default function ResourcesPage() {
                       style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '14px', padding: '22px 0', borderTop: 'var(--rule-soft)', alignItems: 'center', cursor: 'pointer' }}
                     >
                       <div>
-                        <div className="font-serif text-ink" style={{ fontSize: '1.125rem', lineHeight: 1.3, marginBottom: '8px' }}>{item.title}</div>
+                        <div className="font-serif text-ink text-h4 mb-2">{item.title}</div>
                         <div className="font-mono uppercase tracking-[0.14em]" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>{item.type} · {item.source}</div>
                       </div>
                       <div className="font-serif" style={{ fontSize: '1.25rem', color: 'var(--accent)' }}>→</div>
@@ -178,7 +175,7 @@ export default function ResourcesPage() {
                       style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '14px', padding: '22px 0', borderTop: 'var(--rule-soft)', alignItems: 'center', cursor: 'pointer' }}
                     >
                       <div>
-                        <div className="font-serif text-ink" style={{ fontSize: '1.125rem', lineHeight: 1.3, marginBottom: '8px' }}>{item.title}</div>
+                        <div className="font-serif text-ink text-h4 mb-2">{item.title}</div>
                         <div className="font-mono uppercase tracking-[0.14em]" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>{item.type} · {item.source}</div>
                       </div>
                       <div className="font-serif" style={{ fontSize: '1.25rem', color: 'var(--accent)' }}>→</div>

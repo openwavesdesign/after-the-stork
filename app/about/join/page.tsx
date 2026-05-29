@@ -47,10 +47,7 @@ export default function JoinPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="pill">We&rsquo;re Hiring</div>
-              <h1
-                className="font-serif font-light text-ink"
-                style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em' }}
-              >
+              <h1 className="font-serif font-light text-ink text-display">
                 Join Our Team of Postpartum<br /><em>Doulas.</em>
               </h1>
               <p className="mt-6" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '480px' }}>
@@ -74,13 +71,13 @@ export default function JoinPage() {
       <section className="py-20 bg-canvas">
         <div className="mx-auto px-6 md:px-12" style={{ maxWidth: '1280px' }}>
           <Eyebrow>What Makes Us Different</Eyebrow>
-          <h2 className="font-serif font-light text-ink mb-10" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
+          <h2 className="font-serif font-light text-ink text-h2 mb-10">
             Why Doulas Love<br /><em>Working Here.</em>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card cardNumber="01">
-              <h3 className="font-serif text-ink mb-2" style={{ fontSize: '1.25rem' }}>
+              <h3 className="font-serif text-ink text-h4 mb-2">
                 Flexible Scheduling
               </h3>
               <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
@@ -89,7 +86,7 @@ export default function JoinPage() {
             </Card>
 
             <Card cardNumber="02">
-              <h3 className="font-serif text-ink mb-2" style={{ fontSize: '1.25rem' }}>
+              <h3 className="font-serif text-ink text-h4 mb-2">
                 Supportive Leadership
               </h3>
               <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
@@ -98,7 +95,7 @@ export default function JoinPage() {
             </Card>
 
             <Card cardNumber="03">
-              <h3 className="font-serif text-ink mb-2" style={{ fontSize: '1.25rem' }}>
+              <h3 className="font-serif text-ink text-h4 mb-2">
                 Meaningful Work
               </h3>
               <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
@@ -107,7 +104,7 @@ export default function JoinPage() {
             </Card>
 
             <Card cardNumber="04">
-              <h3 className="font-serif text-ink mb-2" style={{ fontSize: '1.25rem' }}>
+              <h3 className="font-serif text-ink text-h4 mb-2">
                 Competitive Pay
               </h3>
               <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
@@ -116,7 +113,7 @@ export default function JoinPage() {
             </Card>
 
             <Card cardNumber="05">
-              <h3 className="font-serif text-ink mb-2" style={{ fontSize: '1.25rem' }}>
+              <h3 className="font-serif text-ink text-h4 mb-2">
                 Employee Based
               </h3>
               <p className="text-dim" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>
@@ -130,10 +127,7 @@ export default function JoinPage() {
       {/* ─── Pull Quote ────────────────────────────────────────────────── */}
       <section className="py-20 bg-paper">
         <div className="mx-auto px-6 md:px-12 text-center" style={{ maxWidth: '920px' }}>
-          <p
-            className="font-serif font-light text-ink"
-            style={{ fontSize: 'clamp(1.5rem,3vw,2.25rem)', fontStyle: 'italic', lineHeight: 1.3, maxWidth: '760px', margin: '0 auto' }}
-          >
+          <p className="font-serif font-light italic text-ink text-[clamp(1.625rem,3vw,2.375rem)] leading-[1.3] max-w-[760px] mx-auto">
             &ldquo;After ten years bouncing between agencies, this is the first place I&apos;ve worked where the leadership actually <em style={{ color: 'var(--accent)' }}>remembers I have a family too.</em>&rdquo;
           </p>
           <p className="font-mono uppercase tracking-[0.18em] mt-8" style={{ fontSize: '0.75rem', color: 'var(--mid)' }}>
@@ -150,7 +144,7 @@ export default function JoinPage() {
             {/* Left: requirements */}
             <div>
               <Eyebrow>Who We&rsquo;re Looking For</Eyebrow>
-              <h2 className="font-serif font-light text-ink mb-6" style={{ fontSize: '2rem' }}>
+              <h2 className="font-serif font-light text-ink text-h2 mb-6">
                 What We&rsquo;re<br /><em>Looking For.</em>
               </h2>
 
@@ -167,8 +161,7 @@ export default function JoinPage() {
                   }}
                 >
                   <div
-                    className="font-serif italic"
-                    style={{ fontSize: '1.5rem', color: 'var(--accent)', fontWeight: 300, lineHeight: 1 }}
+                    className="font-serif italic font-light text-accent text-[1.5rem] leading-none"
                     aria-hidden="true"
                   >
                     {String(i + 1).padStart(2, '0')}
@@ -187,7 +180,7 @@ export default function JoinPage() {
             {/* Right: application form */}
             <div>
               <Eyebrow>Ready to Apply?</Eyebrow>
-              <h2 className="font-serif font-light text-ink mb-4" style={{ fontSize: '2rem' }}>
+              <h2 className="font-serif font-light text-ink text-h2 mb-4">
                 Application Form
               </h2>
               <p className="text-dim mb-8" style={{ fontSize: '0.9375rem', lineHeight: '1.75' }}>

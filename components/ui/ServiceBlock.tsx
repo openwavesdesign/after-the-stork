@@ -29,10 +29,7 @@ export default function ServiceBlock({ service, isLast = false }: ServiceBlockPr
         </div>
         {/* Center: heading + copy */}
         <div className="flex flex-col gap-3">
-          <h3
-            className="font-serif text-ink font-light"
-            style={{ fontSize: '1.5rem' }}
-          >
+          <h3 className="font-serif text-ink font-light text-h3">
             {service.name}
           </h3>
           <p

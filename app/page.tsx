@@ -46,10 +46,7 @@ export default function HomePage() {
 
         {/* Headline */}
         <div className="px-6 md:px-14 pb-14" style={{ position: 'relative', zIndex: 2, maxWidth: '1280px', width: '100%', margin: '0 auto' }}>
-          <h1
-            className="font-serif font-light text-ink"
-            style={{ fontSize: 'clamp(2.25rem,4.5vw,3.25rem)', lineHeight: 1.05, letterSpacing: '-0.015em', maxWidth: '1100px' }}
-          >
+          <h1 className="font-serif font-light text-ink text-display max-w-[1100px]">
             Finally. A Good<br /><em>Night&apos;s Sleep.</em>
           </h1>
         </div>
@@ -130,7 +127,7 @@ export default function HomePage() {
             {/* Left */}
             <div className="px-6 md:px-12 lg:pr-16">
               <Eyebrow>Meet the Team</Eyebrow>
-              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
+              <h2 className="font-serif font-light text-ink text-h2">
                 Meet After<br /><em>the Stork.</em>
               </h2>
               <p className="mt-6" style={{ fontSize: '0.9375rem', lineHeight: '1.75', color: 'var(--dim)', maxWidth: '460px' }}>
@@ -169,7 +166,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10 mb-14 items-end">
             <div>
               <Eyebrow>How We Help</Eyebrow>
-              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
+              <h2 className="font-serif font-light text-ink text-h2">
                 Our Services.
               </h2>
             </div>
@@ -201,7 +198,7 @@ export default function HomePage() {
                   <div>
                     <div className="svc-tag">{service.tagline}</div>
                     <div className="font-mono uppercase tracking-[0.18em] mb-2" style={{ fontSize: '0.75rem', color: 'var(--ink)' }}>{service.hours}</div>
-                    <h3 className="font-serif font-light text-ink" style={{ fontSize: '1.5rem', marginBottom: '0.625rem' }}>{service.name}</h3>
+                    <h3 className="font-serif font-light text-ink text-h3 mb-2.5">{service.name}</h3>
                     <p style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75' }}>{service.shortDescription}</p>
                   </div>
                 </div>
@@ -211,7 +208,7 @@ export default function HomePage() {
                   className="hidden lg:grid"
                   style={{ gridTemplateColumns: '90px 220px 1fr 280px', gap: '48px', alignItems: 'center' }}
                 >
-                  <div className="font-serif" style={{ fontSize: '3rem', fontWeight: 300, fontStyle: 'italic', color: 'var(--accent-mid)', lineHeight: 1 }}>
+                  <div className="font-serif font-light italic text-accent-mid text-[3rem] leading-none">
                     {String(i + 1).padStart(2, '0')}
                   </div>
                   <div>
@@ -219,7 +216,7 @@ export default function HomePage() {
                     <div className="font-mono uppercase tracking-[0.18em]" style={{ fontSize: '0.75rem', color: 'var(--ink)' }}>{service.hours}</div>
                   </div>
                   <div>
-                    <h3 className="font-serif font-light text-ink" style={{ fontSize: '1.625rem', marginBottom: '0.875rem' }}>{service.name}</h3>
+                    <h3 className="font-serif font-light text-ink text-h3 mb-3.5">{service.name}</h3>
                     <p style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '580px' }}>{service.shortDescription}</p>
                   </div>
                   <Media alt={`${service.name} — After the Stork`} label={service.name} style={{ height: '180px' }} />
@@ -237,7 +234,7 @@ export default function HomePage() {
             {/* Left: why us */}
             <div>
               <Eyebrow>Why After the Stork</Eyebrow>
-              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
+              <h2 className="font-serif font-light text-ink text-h2">
                 Why Families<br /><em>Choose Us.</em>
               </h2>
 
@@ -372,7 +369,7 @@ export default function HomePage() {
             {/* Right */}
             <div className="px-6 md:px-12 lg:pl-16 mt-12 lg:mt-0 lg:border-l border-ghost">
               <Eyebrow>Where We Serve</Eyebrow>
-              <h2 className="font-serif font-light text-ink" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', lineHeight: 1.05 }}>
+              <h2 className="font-serif font-light text-ink text-h2">
                 Greater Philadelphia<br />&amp; Beyond.
               </h2>
               <p className="mt-6" style={{ fontSize: '0.9375rem', color: 'var(--dim)', lineHeight: '1.75', maxWidth: '400px' }}>
@@ -398,10 +395,7 @@ export default function HomePage() {
             {/* Left */}
             <div>
               <Eyebrow dark>Ready to Rest?</Eyebrow>
-              <h2
-                className="font-serif font-light"
-                style={{ fontSize: 'clamp(1.875rem,3.5vw,2.75rem)', lineHeight: 1.05, color: 'var(--paper)', letterSpacing: '-0.015em' }}
-              >
+              <h2 className="font-serif font-light text-paper text-h1">
                 Let&apos;s Talk About<br /><em style={{ color: 'var(--accent-soft)' }}>Your Family.</em>
               </h2>
               <p className="mt-6" style={{ fontSize: '0.9375rem', color: 'rgba(244,239,230,.75)', lineHeight: '1.75', maxWidth: '500px' }}>

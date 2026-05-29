@@ -24,10 +24,7 @@ export default function FAQItem({ question, answer, isLast = false }: FAQItemPro
         onClick={() => setOpen(!open)}
         aria-expanded={open}
       >
-        <h3
-          className="font-serif text-ink"
-          style={{ fontSize: '1.5rem', fontWeight: 400, letterSpacing: '-0.005em', lineHeight: 1.3, flex: 1 }}
-        >
+        <h3 className="font-serif text-ink font-normal text-h3 flex-1">
           {question}
         </h3>
         <span
