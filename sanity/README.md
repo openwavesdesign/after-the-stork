@@ -4,19 +4,19 @@ The schema definitions in this directory (`blogPost.ts`, `doula.ts`) are scaffol
 
 ## To activate Sanity
 
-1. Install the Sanity SDK: `npm install next-sanity @sanity/image-url`
+1. Install the Sanity SDK: `npm install @sanity/client @sanity/image-url`
 2. Create a Sanity project at https://sanity.io
-3. Add environment variables to `.env.local`:
+3. Add environment variables to `.env`:
    ```
-   NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
-   NEXT_PUBLIC_SANITY_DATASET=production
+   PUBLIC_SANITY_PROJECT_ID=your_project_id
+   PUBLIC_SANITY_DATASET=production
    ```
 4. Create a `sanity/client.ts` file:
    ```ts
-   import { createClient } from 'next-sanity'
+   import { createClient } from '@sanity/client'
    export const sanityClient = createClient({
-     projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
-     dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
+     projectId: import.meta.env.PUBLIC_SANITY_PROJECT_ID,
+     dataset: import.meta.env.PUBLIC_SANITY_DATASET || 'production',
      apiVersion: '2024-01-01',
      useCdn: true,
    })
@@ -24,8 +24,8 @@ The schema definitions in this directory (`blogPost.ts`, `doula.ts`) are scaffol
 
 ## Replacing JSON data
 
-- **Blog posts**: Replace MDX file reading in `app/blog/[slug]/page.tsx` with GROQ queries to Sanity.
-- **Doula profiles**: Replace `data/doulas.json` imports with a Sanity GROQ query.
+- **Blog posts**: Replace Astro content collection entries in `src/content/blog/` with GROQ queries to Sanity.
+- **Doula profiles**: Replace `src/data/doulas.json` imports with a Sanity GROQ query.
 
 ## GROQ query examples
 
