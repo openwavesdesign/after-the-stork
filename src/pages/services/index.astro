@@ -1,0 +1,212 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Button from '@/components/ui/Button.astro'
+import Eyebrow from '@/components/ui/Eyebrow.astro'
+import FAQItem from '@/components/ui/FAQItem'
+import Media from '@/components/ui/Media.astro'
+import type { Service } from '@/types'
+import servicesData from '@/data/services.json'
+
+const services = servicesData as Service[]
+const overnight = services.find(s => s.id === 'overnight')
+const extendedOvernight = services.find(s => s.id === 'extended-overnight')
+const daytime = services.find(s => s.id === 'daytime')
+const witchingHour = services.find(s => s.id === 'witching-hour')
+const hospitalOvernight = services.find(s => s.id === 'hospital-overnight')
+const sleepCoaching = services.find(s => s.id === 'sleep-coaching')
+const lactation = services.find(s => s.id === 'lactation')
+
+const atAGlanceData = [
+  ['Overnight Postpartum', '10 PM – 6 AM', 'Most Popular', 'Sleep restored, mornings caught up', '#overnight'],
+  ['Extended Overnight', '9 PM – 7 AM', 'Flexible', "Custom timing for your body's needs", '#extended-overnight'],
+  ['Daytime Postpartum', '5 – 8 hrs', 'Daytime', 'A long shower, real rest, gentle support', '#daytime'],
+  ['Witching Hour', '4 PM – 10 PM', 'Evening', 'Continuous care into the night', '#witching-hour'],
+  ['Hospital Overnight', 'In-hospital', 'Critical First Nights', "Support when nursery isn't available", '#hospital-overnight'],
+  ['Sleep + Lactation', 'Always', 'Included Free', 'IBCLC & Gentle Sleep Coach on staff', '#sleep-coaching'],
+] as const
+
+const overnightIncludes = [
+  'Newborn feeding', 'Diaper changes', 'Soothing & sleep', 'Pump cleaning', 'Bottle sterilizing',
+  'Baby laundry', 'Light tidying', 'Family laundry', 'Coffee on', 'Trash out', 'Morning hand-off',
+]
+
+const serviceFAQs = [
+  { question: "What does a postpartum doula do?", answer: "A postpartum doula provides professional in-home support: newborn care, feeding support, infant sleep guidance, breastfeeding support, household assistance, and emotional reassurance — a whole-family approach to the postpartum period." },
+  { question: "What's the difference between a night nurse and a postpartum doula?", answer: "A night nurse focuses solely on the baby. A postpartum doula supports the entire family — newborn care, breastfeeding support, sleep coaching, household assistance, and emotional reassurance all included. At After the Stork, our overnight doulas do all of the above." },
+  { question: "Is Gentle Sleep Coaching really free?", answer: "Yes. Georgette completed the intensive three-month Gentle Sleep Coach training program and makes herself available to all After the Stork families to guide and troubleshoot infant sleep issues at no additional charge. It's one of the things that sets us apart." },
+  { question: "Do you have a lactation consultant on staff?", answer: "Yes. Allison Hart, MS RD IBCLC, is an International Board Certified Lactation Consultant — the highest level of breastfeeding training available. Our mantra: your goals are our goals." },
+  { question: "Do you serve Bryn Mawr and Wayne?", answer: "Yes — we serve families throughout the Main Line including Bryn Mawr, Wayne, Villanova, Ardmore, Gladwyne, and many surrounding communities." },
+]
+---
+
+<Layout
+  title="Postpartum Doula & Overnight Newborn Care Services | Philadelphia & Main Line | After the Stork"
+  description="Overnight postpartum doula support, daytime newborn care, gentle sleep coaching, IBCLC lactation support, and hospital overnight services in Philadelphia and the Main Line."
+>
+
+  <section class="py-20 bg-paper">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <div class="pill">Our Services</div>
+      <h1 class="font-serif font-light text-ink text-display max-w-[900px]">
+        Postpartum Doula &amp; Newborn Care Services<br /><em>in Philadelphia and the Main Line.</em>
+      </h1>
+      <p class="mt-6" style="font-size: 1.125rem; color: var(--dim); line-height: 1.7; max-width: 600px;">
+        We customize every care plan to fit your schedule, your home, and your needs. Serving Philadelphia, the Main Line, and surrounding communities including select families in New Jersey.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-canvas py-20">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <Eyebrow>At a Glance</Eyebrow>
+      <h2 class="font-serif font-light text-ink text-h2 mb-10">Six ways to support<br /><em>your family.</em></h2>
+      <div style="overflow-x: auto;">
+        {atAGlanceData.map(([name, hours, tag, desc, href], i, arr) => (
+          <div style={`display: grid; grid-template-columns: 1.6fr 1fr .8fr 1.4fr 80px; gap: 2rem; padding: 1.5rem 0; border-top: var(--rule-soft); ${i === arr.length - 1 ? 'border-bottom: var(--rule-soft);' : ''} align-items: center;`}>
+            <div class="font-serif text-ink" style="font-size: 1.5rem; font-weight: 300;">{name}</div>
+            <div class="font-mono uppercase tracking-[0.18em]" style="font-size: 0.75rem; color: var(--dim);">{hours}</div>
+            <span class="svc-tag">{tag}</span>
+            <div class="font-serif italic" style="font-size: 1rem; color: var(--ink-soft);">{desc}</div>
+            <a href={href} class="font-mono uppercase tracking-[0.18em]" style="font-size: 0.75rem; color: var(--accent); white-space: nowrap;">Learn ↓</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section id="overnight" class="py-20 bg-canvas">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <div class="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
+        <div>
+          <span class="svc-tag">Most Popular · 10 PM – 6 AM</span>
+          <h2 class="font-serif font-light text-ink text-h2 mb-5">Overnight Postpartum Doula Support</h2>
+          {overnight?.fullDescription.split('\n\n').map((para, i, arr) => (
+            <p class={`text-dim ${i < arr.length - 1 ? 'mb-4' : 'mb-6'}`} style="font-size: 0.9375rem; line-height: 1.75;">{para}</p>
+          ))}
+          <div class="mt-2">
+            <p class="font-mono uppercase tracking-[0.18em] text-mid mb-3" style="font-size: 0.75rem;">Every overnight shift includes</p>
+            <div class="flex flex-wrap gap-2">
+              {overnightIncludes.map((item) => (
+                <span class="area-tag">{item}</span>
+              ))}
+            </div>
+          </div>
+          <div class="mt-8">
+            <Button variant="default" href="/contact">Book This Service</Button>
+          </div>
+        </div>
+        <Media alt="An After the Stork doula providing overnight newborn care" label="Overnight Postpartum Support" style="height: 480px;" />
+      </div>
+    </div>
+  </section>
+
+  <section id="extended-overnight" class="py-20 bg-paper">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <div class="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
+        <div>
+          <span class="svc-tag">Flexible · Commonly 9 PM – 7 AM</span>
+          <h2 class="font-serif font-light text-ink text-h2 mb-5">Extended Overnight Newborn Care</h2>
+          <p class="text-dim mb-6" style="font-size: 0.9375rem; line-height: 1.75;">{extendedOvernight?.fullDescription}</p>
+        </div>
+        <Media alt="A peacefully sleeping newborn during extended overnight care" label="Extended Overnight Care" style="height: 360px;" />
+      </div>
+    </div>
+  </section>
+
+  <section id="daytime" class="py-20 bg-canvas">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <div class="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-16 items-center">
+        <Media alt="A parent resting while a doula provides daytime newborn support" label="Daytime Postpartum Support" style="height: 400px;" />
+        <div>
+          <span class="svc-tag">Daytime · 5–8 Hours</span>
+          <h2 class="font-serif font-light text-ink text-h2 mb-5">Daytime Postpartum Support</h2>
+          {daytime?.fullDescription.split('\n\n').map((para, i, arr) => (
+            <p class={`text-dim ${i < arr.length - 1 ? 'mb-4' : 'mb-6'}`} style="font-size: 0.9375rem; line-height: 1.75;">{para}</p>
+          ))}
+          <Button variant="ghost" href="/contact">Learn More</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-paper">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div id="witching-hour" style="border: var(--rule-soft); background: var(--canvas); padding: 2.5rem;">
+          <span class="svc-tag">Evening · 4 PM – 10 PM</span>
+          <h2 class="font-serif font-light text-ink text-h2 mb-4">Witching Hour Support</h2>
+          <p class="text-dim" style="font-size: 0.9375rem; line-height: 1.75;">{witchingHour?.fullDescription}</p>
+        </div>
+        <div id="hospital-overnight" style="border: var(--rule-soft); background: var(--canvas); padding: 2.5rem;">
+          <span class="svc-tag">Hospital · Philadelphia-Area Hospitals</span>
+          <h2 class="font-serif font-light text-ink text-h2 mb-4">Hospital Overnight Support</h2>
+          <p class="text-dim" style="font-size: 0.9375rem; line-height: 1.75;">{hospitalOvernight?.fullDescription}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sleep-coaching" class="py-20 bg-canvas">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <div class="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-16 items-center">
+        <div>
+          <span class="svc-tag">Included for All Clients · No Additional Charge</span>
+          <h2 class="font-serif font-light text-ink text-h2 mb-5">Gentle Sleep Coaching</h2>
+          {sleepCoaching?.fullDescription.split('\n\n').map((para, i, arr) => (
+            <p class={`text-dim ${i < arr.length - 1 ? 'mb-4' : ''}`} style="font-size: 0.9375rem; line-height: 1.75;">{para}</p>
+          ))}
+        </div>
+        <Media alt="Georgette Kerr guiding a family through gentle sleep coaching" label="Georgette — Sleep Coaching" style="height: 360px;" />
+      </div>
+    </div>
+  </section>
+
+  <section id="lactation" class="py-20 bg-paper">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <Media alt="Allison Hart, MS RD IBCLC, providing lactation support" label="Allison Hart, IBCLC" style="height: 360px;" />
+        <div>
+          <span class="svc-tag">IBCLC On Staff · Highest Credential Available</span>
+          <h2 class="font-serif font-light text-ink text-h2 mb-5">Breastfeeding &amp; Lactation Support</h2>
+          {lactation?.fullDescription.split('\n\n').map((para, i, arr) => (
+            <p class={`text-dim ${i < arr.length - 1 ? 'mb-4' : 'mb-3'}`} style="font-size: 0.9375rem; line-height: 1.75;">{para}</p>
+          ))}
+          <p class="font-mono uppercase tracking-[0.18em]" style="font-size: 0.75rem; color: var(--mid);">Allison Hart, MS RD IBCLC</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-canvas">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 900px;">
+      <Eyebrow>Common Questions</Eyebrow>
+      <h2 class="font-serif font-light text-ink text-h2 mb-8">Questions About Our Services</h2>
+      {serviceFAQs.map((item, i, arr) => (
+        <FAQItem
+          question={item.question}
+          answer={item.answer}
+          isLast={i === arr.length - 1}
+          client:load
+        />
+      ))}
+      <Button variant="ghost" href="/faq" class="mt-8">See All FAQs</Button>
+    </div>
+  </section>
+
+  <section class="py-20 bg-ink">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 items-center">
+        <div>
+          <h2 class="font-serif font-light text-paper text-h1">Ready to Build Your Care Plan?</h2>
+          <p class="mt-3" style="font-size: 0.9375rem; max-width: 480px; color: rgba(244,239,230,.75); line-height: 1.75;">
+            Start with a free consultation. We'll match you with the right doula and put together a care plan that makes sense for your family.
+          </p>
+        </div>
+        <div>
+          <Button variant="inverse" href="/contact">Book Your Free Consultation</Button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>

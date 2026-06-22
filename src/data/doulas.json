@@ -1,0 +1,74 @@
+[
+  {
+    "id": "georgette-kerr",
+    "name": "Georgette Kerr",
+    "title": "Owner & Founder",
+    "credentials": "Certified Postpartum Doula · Gentle Sleep Coach · 25+ Years",
+    "bio": "Georgette became a certified postpartum doula over 25 years ago and founded After the Stork out of a genuine desire to support new families. She built the business organically — moms sharing her phone number with friends — and grew it into a LOVE Award-winning service. She has four grown children and seven grandchildren of her own. She attended the intensive three-month Gentle Sleep Coach training program and makes herself available to all After the Stork families to guide infant sleep at no additional charge.",
+    "photo": null,
+    "areas": ["Philadelphia", "Bryn Mawr", "Wayne", "Villanova", "Ardmore", "Gladwyne", "Chestnut Hill"],
+    "active": true,
+    "order": 1,
+    "isLeadership": true
+  },
+  {
+    "id": "ashley-morrison",
+    "name": "Ashley Morrison",
+    "title": "General Manager",
+    "credentials": "Certified Postpartum Doula · Elementary Education · Child Development",
+    "bio": "Ashley is Georgette's oldest daughter. She spent her early college years as a full-time nanny, became a certified elementary school teacher with extensive child development training, and received her postpartum doula training twenty years ago. Now a mother of four boys ages nine to eighteen, Ashley brings a grounded, practical understanding of family life to her role managing After the Stork's operations.",
+    "photo": null,
+    "areas": ["Philadelphia", "Bryn Mawr", "Wayne"],
+    "active": true,
+    "order": 2,
+    "isLeadership": true
+  },
+  {
+    "id": "allison-hart",
+    "name": "Allison Hart, MS RD IBCLC",
+    "title": "Lactation Consultant",
+    "credentials": "International Board Certified Lactation Consultant · Registered Dietitian · West Chester University",
+    "bio": "Allison is Georgette's youngest daughter and holds a master's degree in dietetics from West Chester University. As a Registered Dietitian she had the rewarding experience of counseling clients toward their health goals. Allison went on to earn her IBCLC credential — the highest level of breastfeeding training available. She lives by the team's mantra Georgette has instilled in the whole After the Stork team: your goals are our goals. Allison has two young children of her own who make her home a place of lots of girly giggles.",
+    "photo": null,
+    "areas": ["Philadelphia", "Main Line"],
+    "active": true,
+    "order": 3,
+    "isLeadership": true
+  },
+  {
+    "id": "doula-placeholder-1",
+    "name": "Doula Team Member",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "A member of the After the Stork care team, bringing warmth, expertise, and dedication to every family we serve.",
+    "photo": null,
+    "areas": ["Philadelphia", "Main Line"],
+    "active": true,
+    "order": 4,
+    "isLeadership": false
+  },
+  {
+    "id": "doula-placeholder-2",
+    "name": "Doula Team Member",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "A member of the After the Stork care team, bringing warmth, expertise, and dedication to every family we serve.",
+    "photo": null,
+    "areas": ["Philadelphia", "Main Line"],
+    "active": true,
+    "order": 5,
+    "isLeadership": false
+  },
+  {
+    "id": "doula-placeholder-3",
+    "name": "Doula Team Member",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "A member of the After the Stork care team, bringing warmth, expertise, and dedication to every family we serve.",
+    "photo": null,
+    "areas": ["Philadelphia", "Main Line"],
+    "active": true,
+    "order": 6,
+    "isLeadership": false
+  }
+]

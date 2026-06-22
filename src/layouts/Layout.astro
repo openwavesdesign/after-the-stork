@@ -1,0 +1,49 @@
+---
+import '@/styles/globals.css'
+import SiteHeader from '@/components/layout/SiteHeader'
+import SiteFooter from '@/components/layout/SiteFooter.astro'
+
+interface Props {
+  title?: string
+  description?: string
+}
+
+const { title, description } = Astro.props
+const pathname = Astro.url.pathname
+
+const defaultTitle = 'After the Stork — Philadelphia Postpartum Doula & Newborn Care'
+const defaultDesc = 'Philadelphia and the Main Line\'s premier and longest-running postpartum doula agency since 2006.'
+const fullTitle = title ? `${title} | After the Stork` : defaultTitle
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description ?? defaultDesc} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description ?? defaultDesc} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="After the Stork" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --font-cormorant: 'Cormorant Garamond';
+        --font-dm-mono: 'DM Mono';
+        --font-inter: 'Inter';
+      }
+    </style>
+    <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <SiteHeader pathname={pathname} client:load />
+    <main id="main-content"><slot /></main>
+    <SiteFooter />
+  </body>
+</html>

@@ -1,0 +1,31 @@
+---
+interface Props {
+  variant?: 'default' | 'ghost' | 'inverse' | 'fill'
+  href?: string
+  class?: string
+  type?: 'button' | 'submit' | 'reset'
+}
+
+const { variant = 'default', href, class: className = '', type = 'button' } = Astro.props
+
+const variantClasses: Record<string, string> = {
+  default: 'border border-ink text-ink hover:bg-ink hover:text-paper',
+  ghost: 'border border-stroke text-dim hover:border-ink hover:text-ink',
+  inverse: 'border border-white/40 text-paper hover:border-white',
+  fill: 'bg-ink text-paper border border-ink hover:bg-dim',
+}
+
+const base = 'inline-flex items-center gap-[0.625rem] font-mono uppercase tracking-[0.16em] transition-colors duration-150'
+const classes = `${base} ${variantClasses[variant]} ${className}`
+const style = 'font-size: 0.75rem; padding: 0.8125rem 2rem;'
+---
+
+{href ? (
+  <a href={href} class={classes} style={style}>
+    <slot /><span aria-hidden="true">→</span>
+  </a>
+) : (
+  <button type={type} class={classes} style={style}>
+    <slot /><span aria-hidden="true">→</span>
+  </button>
+)}

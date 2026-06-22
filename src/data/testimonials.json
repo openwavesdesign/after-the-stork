@@ -1,0 +1,20 @@
+[
+  {
+    "id": "testimonial-1",
+    "quote": "I truly don't know how we would have survived those first weeks without After the Stork. Georgette and her team felt like family from night one. I went from feeling completely overwhelmed to feeling like I actually knew what I was doing — and I got to sleep, which changed everything.",
+    "attribution": "Mother of twins, Bryn Mawr",
+    "active": true
+  },
+  {
+    "id": "testimonial-2",
+    "quote": "We hired After the Stork for our second baby because our first postpartum experience was so hard. I wish we had known about them the first time. Our doula was calm, competent, and so kind. She never made us feel like we were asking too many questions. Highly recommend.",
+    "attribution": "Mother of two, Wayne",
+    "active": true
+  },
+  {
+    "id": "testimonial-3",
+    "quote": "Allison's lactation support was a game changer. I was ready to give up breastfeeding at two weeks because it hurt and I was exhausted and nothing felt right. One visit with Allison and everything clicked. We went on to breastfeed for fourteen months. I am so grateful.",
+    "attribution": "First-time mother, Philadelphia",
+    "active": true
+  }
+]

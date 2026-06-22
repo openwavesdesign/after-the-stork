@@ -1,0 +1,36 @@
+{
+  "name": "After the Stork",
+  "foundingYear": 2006,
+  "tagline": "Philadelphia and the Main Line's premier and longest-running postpartum doula agency since 2006.",
+  "phone": {
+    "display": "(267) 229-0614",
+    "href": "tel:+12672290614"
+  },
+  "email": {
+    "display": "office@afterthestork.info",
+    "href": "mailto:office@afterthestork.info"
+  },
+  "website": {
+    "display": "afterthestork.info",
+    "href": "https://www.afterthestork.info"
+  },
+  "serviceArea": "Serving Philadelphia, the Main Line, Montgomery & Delaware Counties, Bucks County, and select communities in New Jersey.",
+  "social": [
+    {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/afterthestorknewborncare"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/afterthestork_/"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/company/after-the-stork-postpartum-doula-services"
+    }
+  ],
+  "engineHire": {
+    "scriptSrc": "https://agency.enginehire.io/src/assets/js/embedded_script.js",
+    "formSrc": "https://afterthestork.enginehire.io/application-form/691/23951"
+  }
+}

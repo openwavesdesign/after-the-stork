@@ -1,0 +1,280 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Button from '@/components/ui/Button.astro'
+import Eyebrow from '@/components/ui/Eyebrow.astro'
+import Media from '@/components/ui/Media.astro'
+import type { Doula } from '@/types'
+import doulaData from '@/data/doulas.json'
+
+const allDoulas = doulaData as Doula[]
+const leadership = allDoulas.filter(d => d.isLeadership).sort((a, b) => a.order - b.order)
+
+const beyondItems = [
+  { icon: '◐', title: 'Postpartum Support', body: "As mothers ourselves, we understand both the difficulties and joys of motherhood. We know when baby blues is no longer just baby blues — and can refer you to the best local practitioners we've worked with for many years." },
+  { icon: '☾', title: 'Infant Sleep Support', body: 'Georgette attended the intensive three-month Gentle Sleep Coach training and makes herself available to all After the Stork families to guide and troubleshoot through sleep issues — at no additional charge.' },
+  { icon: '✦', title: 'Breastfeeding Support', body: '"Your goals are our goals." Allison Hart, MS RD IBCLC, holds the highest breastfeeding credential available. Georgette is also trained through The Philadelphia Dept. of Public Health and The Breastfeeding Resource Center.' },
+]
+---
+
+<Layout
+  title="About After the Stork | Postpartum Doulas in Philadelphia & surrounding communities"
+  description="After the Stork is a family-founded, award-winning postpartum doula service — Philadelphia and the Main Line's premier and longest-running agency since 2006 — supporting families in Philadelphia, the Main Line, Bucks County, New Jersey, and surrounding communities."
+>
+  <!-- Hero -->
+  <section class="bg-paper py-20">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <div class="pill">About Us</div>
+      <h1 class="font-serif font-light text-ink text-display max-w-[900px]">
+        We&rsquo;re Here for the Hardest — and Most <em>Beautiful</em> — Part of Parenthood
+      </h1>
+      <p class="mt-6" style="font-size: 1.125rem; color: var(--dim); line-height: 1.7; max-width: 620px;">
+        After the Stork is a family business built on two decades of genuine care, community trust, and an unwavering commitment to the families who let us into their homes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Full-bleed image -->
+  <div style="border-bottom: var(--rule-soft);">
+    <Media
+      alt="The After the Stork team in Bryn Mawr"
+      label="After the Stork Team — Bryn Mawr"
+      style="height: 520px;"
+      class="w-full"
+    />
+  </div>
+
+  <!-- Story section -->
+  <section class="bg-paper py-20">
+    <div class="mx-auto" style="max-width: 1280px;">
+      <div class="grid grid-cols-1 lg:grid-cols-[5fr_7fr]" style="gap: 0; align-items: center;">
+        <!-- Left -->
+        <div class="px-6 md:px-12 lg:pr-16">
+          <Eyebrow>How It Began</Eyebrow>
+          <h2 class="font-serif font-light text-ink text-h2">
+            How After<br /><em>the Stork Began.</em>
+          </h2>
+          <p class="mt-6" style="font-size: 0.9375rem; color: var(--dim); line-height: 1.75; max-width: 480px;">
+            In 2006, Georgette Kerr became a certified postpartum doula out of a genuine desire to help new families — especially new moms — through the most demanding stretch of early parenthood. There was no marketing plan. No launch strategy. Just Georgette, showing up for families in her home of Philadelphia and the Main Line, where she was proud to grow up.
+          </p>
+          <p class="mt-4" style="font-size: 0.9375rem; color: var(--dim); line-height: 1.75; max-width: 480px;">
+            Georgette cared so deeply and people took notice. Mothers began sharing her number with other mom-friends. That&rsquo;s how After the Stork grew — organically, authentically, one family trusting another.
+          </p>
+          <blockquote style="font-family: var(--font-serif); font-size: 1.25rem; font-style: italic; color: var(--ink-soft); line-height: 1.5; border-left: 2px solid var(--accent); padding-left: 1.5rem; margin-top: 2rem;">
+            Today, it&rsquo;s a LOVE Award-winning team that has earned the region&rsquo;s trust as its premier and longest-running postpartum doula agency since 2006.
+          </blockquote>
+        </div>
+
+        <!-- Right -->
+        <div
+          class="px-6 md:px-12 lg:pl-16 mt-12 lg:mt-0"
+          style="border-left: 1px solid var(--ghost);"
+        >
+          <Media
+            alt="Georgette Kerr, founder of After the Stork"
+            label="Georgette Kerr, Founder"
+            ratio="3/4"
+          />
+          <p class="font-mono uppercase tracking-[0.18em] mt-3 flex items-center gap-3" style="font-size: 0.75rem; color: var(--mid);">
+            <span style="display: inline-block; width: 20px; height: 1px; background: var(--stroke);" />
+            LOVE Award winner — 2020, 2021, 2022, 2024 &amp; 2026
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership section -->
+  <section class="bg-canvas py-20">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <Eyebrow>A Family Business</Eyebrow>
+      <h2 class="font-serif font-light text-ink text-h2">
+        Meet the Family Behind<br /><em>After the Stork.</em>
+      </h2>
+      <p class="mt-4 mb-2" style="font-size: 0.9375rem; color: var(--dim); line-height: 1.75; max-width: 580px;">
+        After the Stork is, at its heart, a family business — and the family at the center of it has spent decades turning genuine care into a professional practice.
+      </p>
+
+      {leadership.map((doula, i) => (
+        <div
+          style={`border-top: var(--rule-soft); ${i === leadership.length - 1 ? 'border-bottom: var(--rule-soft);' : ''} display: grid; grid-template-columns: 280px 1fr; gap: 3.5rem; padding: 3rem 0; align-items: start;`}
+        >
+          <Media
+            src={doula.photo}
+            alt={`${doula.name}, ${doula.title} at After the Stork`}
+            label={doula.name}
+            ratio="3/4"
+            style="width: 280px;"
+          />
+          <div>
+            <div class="font-mono uppercase tracking-[0.22em]" style="font-size: 0.75rem; color: var(--accent); margin-bottom: 0.5rem;">
+              {doula.title}
+            </div>
+            <h3 class="font-serif font-light text-ink text-h3">
+              {doula.name}
+            </h3>
+            <p class="font-mono uppercase tracking-[0.18em] mt-2" style="font-size: 0.75rem; color: var(--mid);">
+              {doula.credentials}
+            </p>
+            <p class="mt-5" style="font-size: 0.9375rem; color: var(--dim); line-height: 1.75; max-width: 560px;">
+              {doula.bio}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Beyond the Baby trio -->
+  <section class="bg-paper py-20">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <Eyebrow>What We Offer Beyond Newborn Care</Eyebrow>
+      <h2 class="font-serif font-light text-ink text-h2 mb-12">
+        Support That Goes<br /><em>Beyond the Baby.</em>
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {beyondItems.map((item) => (
+          <div
+            class="border"
+            style="border-color: var(--stroke); padding: 2.5rem;"
+          >
+            <div class="font-serif text-accent text-[2.625rem] leading-none mb-5">
+              {item.icon}
+            </div>
+            <h3 class="font-serif font-light text-ink text-h3 mb-3.5">
+              {item.title}
+            </h3>
+            <p style="font-size: 0.9375rem; color: var(--dim); line-height: 1.75;">
+              {item.body}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="bg-canvas py-20">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 920px;">
+      <Eyebrow center>Our Philosophy of Care</Eyebrow>
+      <h2 class="font-serif font-light text-ink text-center text-h2">
+        Care That Feels Like <em>Family</em>
+      </h2>
+      <hr style="border: none; border-top: var(--rule-soft); margin: 2rem auto; width: 80px;" />
+      <p class="text-center mt-6" style="font-size: 1.125rem; color: var(--dim); line-height: 1.75; max-width: 680px; margin: 0 auto;">
+        We believe postpartum support should feel like a trusted family member arrived — someone who knows exactly what to do, does it quietly and expertly, and leaves your home better than they found it.
+      </p>
+      <p class="text-center mt-5" style="font-size: 0.9375rem; color: var(--dim); line-height: 1.75; max-width: 640px; margin: 1.25rem auto 0;">
+        We love to empower you as a parent. Our goal is to boost your knowledge and confidence — teaching you evidence-based methods of caring for and comforting your newborn. We aim to work ourselves right out of the job.
+      </p>
+    </div>
+  </section>
+
+  <!-- Credentials -->
+  <section class="bg-paper py-20">
+    <div class="mx-auto" style="max-width: 1280px;">
+      <div class="grid grid-cols-1 lg:grid-cols-[5fr_7fr]" style="gap: 0; align-items: center;">
+        <!-- Left: image -->
+        <div class="px-6 md:px-12 lg:pr-16">
+          <Media
+            alt="After the Stork doulas with their professional certifications"
+            label="Trained & Certified Team"
+            ratio="4/5"
+          />
+        </div>
+
+        <!-- Right -->
+        <div
+          class="px-6 md:px-12 lg:pl-16 mt-12 lg:mt-0"
+          style="border-left: 1px solid var(--ghost);"
+        >
+          <Eyebrow>Expertise</Eyebrow>
+          <h2 class="font-serif font-light text-ink text-h2">
+            Trained. Certified.<br /><em>Experienced.</em>
+          </h2>
+          <p class="mt-5 mb-8" style="font-size: 0.9375rem; color: var(--dim); line-height: 1.75; max-width: 480px;">
+            Every doula on our team is professionally trained by one of the nation&rsquo;s leading postpartum doula training organizations — CAPPA, DONA, and Birth Arts International. Our staff is proud to include Registered Nurses (Labor &amp; Delivery and Postpartum), Newborn Care Specialists (NCS), Certified Lactation Consultants (CLC), an International Board Certified Lactation Consultant (IBCLC), a Registered Dietitian (MS RD), and a Certified Gentle Sleep Coach — plus ongoing education in infant care, feeding, and postpartum recovery.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4">
+            {[
+              { title: 'IBCLC', body: 'Allison Hart, MS RD IBCLC — Highest breastfeeding credential available' },
+              { title: 'Gentle Sleep Coach', body: 'Georgette — Intensive 3-month training program' },
+              { title: 'LOVE Award', body: '2020 · 2021 · 2022 · 2024 · 2026' },
+              { title: 'CPR & First Aid', body: 'All team members certified' },
+            ].map(({ title, body }) => (
+              <div style="border: var(--rule-soft); padding: 1.25rem; background: var(--canvas);">
+                <h4 class="font-mono uppercase tracking-[0.18em] text-ink" style="font-size: 0.75rem; font-weight: 500; margin-bottom: 0.5rem;">
+                  {title}
+                </h4>
+                <p style="font-size: 0.875rem; color: var(--dim); line-height: 1.6;">
+                  {body}
+                </p>
+              </div>
+            ))}
+
+            <!-- Full-width Family Favorite Honoree card -->
+            <div class="col-span-2" style="border: var(--rule-soft); padding: 1.25rem; background: var(--canvas);">
+              <h4 class="font-mono uppercase tracking-[0.18em] text-ink" style="font-size: 0.75rem; font-weight: 500; margin-bottom: 0.5rem;">
+                Family Favorite Honoree
+              </h4>
+              <p style="font-size: 0.875rem; color: var(--dim); line-height: 1.6;">
+                2021 (Main Line) · 2022 (Philadelphia) · 2026 (Philadelphia)
+              </p>
+            </div>
+
+            <!-- Full-width TDAP card -->
+            <div class="col-span-2" style="border: var(--rule-soft); padding: 1.25rem; background: var(--canvas);">
+              <h4 class="font-mono uppercase tracking-[0.18em] text-ink" style="font-size: 0.75rem; font-weight: 500; margin-bottom: 0.5rem;">
+                TDAP Vaccine
+              </h4>
+              <p style="font-size: 0.875rem; color: var(--dim); line-height: 1.6;">
+                All After the Stork doulas proudly receive the TDAP vaccine to do our part to protect the most vulnerable population we serve against whooping cough.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dark CTA -->
+  <section class="bg-ink py-20">
+    <div class="mx-auto px-6 md:px-12 text-center" style="max-width: 1280px;">
+      <Eyebrow center dark>Award-Winning Care</Eyebrow>
+      <h2 class="font-serif font-light text-paper text-h1">
+        LOVE Award Winner — 2020, 2021, 2022, 2024 &amp; <em style="color: var(--accent-soft);">2026.</em>
+      </h2>
+      <p class="mt-6 max-w-[560px] mx-auto" style="font-size: 0.9375rem; color: rgba(244,239,230,.75); line-height: 1.75;">
+        These awards reflect the trust and loyalty of the families we&rsquo;ve been honored to serve, and they drive us to maintain the standard of excellence that Georgette built this business on back in 2006.
+      </p>
+
+      <!-- Award badge images -->
+      <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-6 mt-10">
+        {[
+          { src: '/images/awards/love-award-philadelphia.png', alt: 'LOVE Award — Philadelphia', width: 436, height: 130 },
+          { src: '/images/awards/love-award-main-line.png', alt: 'LOVE Award — Main Line', width: 488, height: 137 },
+          { src: '/images/awards/love-award-bucks-county.png', alt: 'LOVE Award — Bucks County', width: 449, height: 151 },
+        ].map(({ src, alt, width, height }) => (
+          <div style="background: rgba(255,255,255,.06); border-radius: 4px; padding: 1rem 1.5rem;">
+            <img src={src} alt={alt} width={width} height={height} style="max-width: 280px; width: 100%; height: auto;" />
+          </div>
+        ))}
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-2 mt-8">
+        {['Philadelphia', 'Bryn Mawr', 'Wayne', 'Villanova', 'Ardmore', 'Moorestown NJ', 'Haddonfield NJ'].map((area) => (
+          <span
+            class="font-mono uppercase tracking-[0.1em]"
+            style="border: 1px solid rgba(255,255,255,.2); padding: 6px 14px; font-size: 0.75rem; color: rgba(244,239,230,.6); border-radius: 100px; white-space: nowrap;"
+          >
+            {area}
+          </span>
+        ))}
+      </div>
+      <div class="mt-8">
+        <Button variant="inverse" href="/about/doulas">Meet Our Doulas</Button>
+      </div>
+    </div>
+  </section>
+</Layout>
