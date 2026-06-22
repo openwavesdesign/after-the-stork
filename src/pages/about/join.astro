@@ -1,0 +1,138 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Button from '@/components/ui/Button.astro'
+import Card from '@/components/ui/Card.astro'
+import Eyebrow from '@/components/ui/Eyebrow.astro'
+import Media from '@/components/ui/Media.astro'
+
+const requirements = [
+  'Certified postpartum doula (CAPPA, DONA, or equivalent) or newborn care specialist (NCS)',
+  'CPR and First Aid certified (or willing to certify before starting)',
+  'Reliable transportation within the Philadelphia metro / Main Line area',
+  'Comfortable with overnight shifts (10 PM–6 AM or similar)',
+  'Professional, warm, and trustworthy presence in family homes',
+]
+
+const inputStyle = 'border-bottom: var(--rule); background: transparent; padding: 10px 0 14px; font-family: var(--font-serif); font-size: 1.125rem; color: var(--ink); outline: none; width: 100%;'
+const labelStyle = 'font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: .2em; text-transform: uppercase; color: var(--mid); display: block; margin-bottom: 10px;'
+---
+
+<Layout
+  title="Postpartum Doula Jobs in Philadelphia | Join After the Stork"
+  description="After the Stork is hiring certified postpartum doulas in Philadelphia, the Main Line, and surrounding communities. Apply today."
+>
+
+  <section class="py-20 bg-paper">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="pill">We're Hiring</div>
+          <h1 class="font-serif font-light text-ink text-display">
+            Join Our Team of Postpartum<br /><em>Doulas.</em>
+          </h1>
+          <p class="mt-6" style="font-size: 0.9375rem; color: var(--dim); line-height: 1.75; max-width: 480px;">
+            We are always looking for talented, compassionate doulas and NCS professionals in Philadelphia, the Main Line, Bucks County, and New Jersey.
+          </p>
+          <div class="mt-8">
+            <Button variant="default" href="#apply">Apply Now</Button>
+          </div>
+        </div>
+        <Media alt="An After the Stork doula caring for a newborn" label="Join Our Team" style="height: 520px;" />
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-canvas">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <Eyebrow>What Makes Us Different</Eyebrow>
+      <h2 class="font-serif font-light text-ink text-h2 mb-10">
+        Why Doulas Love<br /><em>Working Here.</em>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <Card cardNumber="01">
+          <h3 class="font-serif text-ink text-h4 mb-2">Flexible Scheduling</h3>
+          <p class="text-dim" style="font-size: 0.9375rem; line-height: 1.75;">Build a schedule around your life. We have an online scheduling system that makes it easy to share your availability and pair you with clients that match your schedule. For those giving 4–6 nights of availability, we can commit to filling your schedule so you have a stable income you can count on.</p>
+        </Card>
+        <Card cardNumber="02">
+          <h3 class="font-serif text-ink text-h4 mb-2">Supportive Leadership</h3>
+          <p class="text-dim" style="font-size: 0.9375rem; line-height: 1.75;">Regular communication, professional development, and genuine care for your experience.</p>
+        </Card>
+        <Card cardNumber="03">
+          <h3 class="font-serif text-ink text-h4 mb-2">Meaningful Work</h3>
+          <p class="text-dim" style="font-size: 0.9375rem; line-height: 1.75;">Every shift changes a family's experience of the newborn stage. That matters.</p>
+        </Card>
+        <Card cardNumber="04">
+          <h3 class="font-serif text-ink text-h4 mb-2">Competitive Pay</h3>
+          <p class="text-dim" style="font-size: 0.9375rem; line-height: 1.75;">Compensation that reflects your certifications, experience, and dedication.</p>
+        </Card>
+        <Card cardNumber="05">
+          <h3 class="font-serif text-ink text-h4 mb-2">Employee Based</h3>
+          <p class="text-dim" style="font-size: 0.9375rem; line-height: 1.75;">We pay a portion of your taxes, offer PTO, and offer time-and-a-half pay for those who desire overtime hours.</p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-paper">
+    <div class="mx-auto px-6 md:px-12 text-center" style="max-width: 920px;">
+      <p class="font-serif font-light italic text-ink max-w-[760px] mx-auto" style="font-size: clamp(1.625rem, 3vw, 2.375rem); line-height: 1.3;">
+        &ldquo;After ten years bouncing between agencies, this is the first place I&apos;ve worked where the leadership actually <em style="color: var(--accent);">remembers I have a family too.</em>&rdquo;
+      </p>
+      <p class="font-mono uppercase tracking-[0.18em] mt-8" style="font-size: 0.75rem; color: var(--mid);">
+        — Maria D. · Doula since 2018
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20 bg-canvas" id="apply">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+        <div>
+          <Eyebrow>Who We're Looking For</Eyebrow>
+          <h2 class="font-serif font-light text-ink text-h2 mb-6">What We're<br /><em>Looking For.</em></h2>
+          {requirements.map((req, i) => (
+            <div style={`border-top: var(--rule-soft); display: grid; grid-template-columns: 48px 1fr; gap: 1rem; padding: 1.5rem 0; align-items: start;`}>
+              <div class="font-serif italic font-light text-accent text-[1.5rem] leading-none" aria-hidden="true">
+                {String(i + 1).padStart(2, '0')}
+              </div>
+              <p style="font-size: 0.9375rem; color: var(--dim); line-height: 1.75;">{req}</p>
+            </div>
+          ))}
+          <p class="font-serif italic text-dim mt-6" style="font-size: 1rem;">New graduates are welcome to apply. We value potential, attitude, and heart.</p>
+        </div>
+
+        <div>
+          <Eyebrow>Ready to Apply?</Eyebrow>
+          <h2 class="font-serif font-light text-ink text-h2 mb-4">Application Form</h2>
+          <p class="text-dim mb-8" style="font-size: 0.9375rem; line-height: 1.75;">Fill out our short application and we'll be in touch within two business days.</p>
+          <form id="apply-form" class="flex flex-col gap-8">
+            {[
+              { id: 'firstName', label: 'First Name', type: 'text' },
+              { id: 'lastName', label: 'Last Name', type: 'text' },
+              { id: 'email', label: 'Email', type: 'email' },
+              { id: 'phone', label: 'Phone', type: 'tel' },
+            ].map(({ id, label, type }) => (
+              <div>
+                <label for={id} style={labelStyle}>{label}</label>
+                <input id={id} name={id} type={type} style={inputStyle} />
+              </div>
+            ))}
+            <div>
+              <label for="certifications" style={labelStyle}>Certifications</label>
+              <input id="certifications" name="certifications" type="text" placeholder="e.g. DONA Certified Postpartum Doula, IBCLC, NCS" style={`${inputStyle} font-family: var(--font-mono); font-size: 0.9375rem;`} />
+            </div>
+            <div>
+              <label for="about" style={labelStyle}>Tell Us About Yourself</label>
+              <textarea id="about" name="about" rows="5" style={`${inputStyle} resize: vertical;`}></textarea>
+            </div>
+            <div class="mt-2">
+              <Button variant="default" type="submit">Submit Application</Button>
+            </div>
+            <p class="font-mono" style="font-size: 0.75rem; color: var(--muted); letter-spacing: .1em;">We respect your privacy. Your information is only used to follow up about joining our team.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>

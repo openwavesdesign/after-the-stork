@@ -1,0 +1,23 @@
+---
+interface Props {
+  cardNumber?: string
+  class?: string
+  compact?: boolean
+}
+
+const { cardNumber, class: className = '', compact = false } = Astro.props
+---
+
+<div
+  class={`border border-stroke bg-paper ${compact ? 'p-5' : 'p-8'} ${className}`}
+>
+  {cardNumber && (
+    <div
+      class="font-serif text-ghost mb-4 leading-none text-[2.25rem]"
+      aria-hidden="true"
+    >
+      {cardNumber}
+    </div>
+  )}
+  <slot />
+</div>

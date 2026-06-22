@@ -1,0 +1,72 @@
+[
+  {
+    "id": "overnight",
+    "name": "Overnight Postpartum Support",
+    "tagline": "Most Popular",
+    "hours": "10 PM – 6 AM",
+    "shortDescription": "Our \"nighttime fairies\" — the service After the Stork is known for. We care for your baby all night while you sleep, clean pump parts, do laundry, turn on the coffee, and take out the trash on the way out. You wake up rested and caught up.",
+    "fullDescription": "Our most popular shift by far — and the service After the Stork is known for. Our overnight doulas have earned the nickname \"nighttime fairies\" from the families we serve. They come in while you sleep, make sure every one of your baby's needs is met, and quietly tend to your home so you wake up to a better morning.\n\nWhile you rest, your overnight doula feeds, soothes, diapers, and monitors your newborn. When the baby sleeps, they clean pump parts, sterilize bottles, wipe down counters, unload the dishwasher quietly, and do baby's laundry — plus up to two loads of family laundry. On the way out, they'll turn on your coffee and take out the trash. You wake up caught up, rested, and ready for morning snuggles.",
+    "active": true,
+    "order": 1
+  },
+  {
+    "id": "extended-overnight",
+    "name": "Extended Overnight Newborn Care",
+    "tagline": "Flexible",
+    "hours": "Commonly 9 PM – 7 AM",
+    "shortDescription": "For families who want more time to unwind before bed or sleep in later. We offer extended overnight shifts and work with you on exact timing.",
+    "fullDescription": "Some clients prefer more time to unwind before bed, or to sleep in a bit later while their doula focuses on the baby. You know your body's needs. We offer extended overnight shifts and will work with you on the exact timing — the most common request is 9 PM–7 AM. Book early, they fill up.",
+    "active": true,
+    "order": 2
+  },
+  {
+    "id": "daytime",
+    "name": "Daytime Postpartum Support",
+    "tagline": "Flexible",
+    "hours": "5 – 8 Hours",
+    "shortDescription": "One or two mornings a week where you can have a slower day — take that long uninterrupted shower, rest while your doula cares for baby and supports your recovery. Ideal for the first weeks home.",
+    "fullDescription": "Daytime shifts are 5–8 hours and work beautifully as one or two mornings a week during the first few weeks home. That one morning becomes your day to take a long, uninterrupted shower — the one that keeps getting cut short by newborn cat naps.\n\nYour doula provides attentive newborn care, emotional reassurance, feeding support, and light household assistance, so you can focus on healing, bonding, and simply catching your breath.",
+    "active": true,
+    "order": 3
+  },
+  {
+    "id": "witching-hour",
+    "name": "Witching Hour Support",
+    "tagline": "Evening",
+    "hours": "4 PM – 10 PM",
+    "shortDescription": "It's nearing the end of the day and every little person needs something at once — and you are only one person. Especially helpful for families with a toddler. Pairs seamlessly with overnight coverage.",
+    "fullDescription": "We've all been there. It's nearing the end of the day and every little person needs something at the same time — and you are only one person. Especially helpful when siblings are involved. The 4 PM–10 PM window allows your doula to keep things running smoothly until your overnight doula arrives — continuous care from late afternoon through morning.",
+    "active": true,
+    "order": 4
+  },
+  {
+    "id": "hospital-overnight",
+    "name": "Hospital Overnight Support",
+    "tagline": "Hospital",
+    "hours": "Philadelphia-Area Hospitals",
+    "shortDescription": "Many local hospitals no longer have nursery support. Many families now send dad home to rest — your doula is there for you and your newborn through those critical first nights.",
+    "fullDescription": "Many of our local Philadelphia hospitals no longer have nursery support. It's essential to have a support person with mom overnight. Many families now send dad home to rest after labor and delivery — your doula is there for you and your newborn through those critical first nights. We find this service incredibly helpful for the families who use it.",
+    "active": true,
+    "order": 5
+  },
+  {
+    "id": "sleep-coaching",
+    "name": "Gentle Sleep Coaching",
+    "tagline": "Included Free",
+    "hours": "All Families",
+    "shortDescription": "Georgette completed the intensive Gentle Sleep Coach training program and makes herself available to all After the Stork families to guide and troubleshoot infant sleep — at no additional charge.",
+    "fullDescription": "Throughout our work with families, we've noticed that many parents have questions about healthy infant sleep habits and how best to establish them from the start. Georgette attended the intensive three-month Gentle Sleep Coach training program specifically to meet that need — and she makes herself available to all After the Stork families to guide and troubleshoot through sleep issues at no additional charge.\n\nOur goal is a great night of sleep for your entire family, as soon as possible. We aim to work ourselves right out of the job.",
+    "active": true,
+    "order": 6
+  },
+  {
+    "id": "lactation",
+    "name": "Breastfeeding & Lactation Support",
+    "tagline": "IBCLC On Staff",
+    "hours": "All Families",
+    "shortDescription": "\"Your goals are our goals.\" Allison Hart, MS RD IBCLC, holds the highest breastfeeding credential available. Georgette is also trained through The Philadelphia Dept. of Public Health and The Breastfeeding Resource Center in order to support your breastfeeding journey.",
+    "fullDescription": "\"Your goals are our goals\" is our mantra when it comes to breastfeeding. We understand every mother's journey is different. If it's important to you to breastfeed your baby, we will guide you in how to do that.\n\nAllison Hart, MS RD IBCLC, holds the highest level of breastfeeding training available anywhere in the world. Georgette has also completed breastfeeding courses through The Philadelphia Department of Public Health and The Breastfeeding Resource Center, and has observed several lactation coaches in the field.",
+    "active": true,
+    "order": 7
+  }
+]

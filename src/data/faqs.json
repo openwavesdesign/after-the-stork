@@ -1,0 +1,90 @@
+[
+  {
+    "category": "About Postpartum Doulas",
+    "slug": "about-postpartum-doulas",
+    "items": [
+      {
+        "question": "What exactly is a postpartum doula?",
+        "answer": "A postpartum doula is a trained professional who provides in-home support to families during the postpartum period — newborn care, feeding support, household tasks, and emotional reassurance for new parents."
+      },
+      {
+        "question": "Is a postpartum doula the same as a baby nurse or night nurse?",
+        "answer": "Not quite. A night nurse focuses on the newborn. A postpartum doula supports the whole family — baby care plus emotional support, household assistance, and breastfeeding guidance."
+      },
+      {
+        "question": "Do I need a doula if I already have family helping?",
+        "answer": "Family support is wonderful — but a postpartum doula brings neutral, professional expertise without the emotional complexity. Many families find that having a doula lets them actually enjoy time with visiting family."
+      }
+    ]
+  },
+  {
+    "category": "Our Services",
+    "slug": "our-services",
+    "items": [
+      {
+        "question": "What shifts do you offer?",
+        "answer": "Overnight (10 PM–6 AM), extended overnight (customizable, commonly 9 PM–7 AM), daytime (5–8 hrs), evening witching hour (4–10 PM), and hospital overnight. We work with your schedule to create the right coverage."
+      },
+      {
+        "question": "How early should I book?",
+        "answer": "We recommend booking during your second or third trimester. Overnight shifts fill up quickly. We do our best to accommodate last-minute requests and will always let you know what's available."
+      },
+      {
+        "question": "Do you work with twins or multiples?",
+        "answer": "Yes. We have experience with twins and multiples. Please mention this when you reach out so we can match you with a doula who has the right experience."
+      },
+      {
+        "question": "Is the Gentle Sleep Coaching really included at no charge?",
+        "answer": "Yes. Georgette completed the intensive three-month Gentle Sleep Coach training program and makes herself available to all After the Stork families to guide and troubleshoot through infant sleep issues at no additional charge. It's best to establish healthy sleep habits from the start — we'll help get your whole family on the right foot."
+      },
+      {
+        "question": "Do you provide lactation support?",
+        "answer": "Yes — and this is one of the things that truly sets After the Stork apart. Our team includes Allison Hart, MS RD IBCLC — the highest level of breastfeeding training available. Georgette has also completed breastfeeding training through The Philadelphia Department of Public Health and The Breastfeeding Resource Center. Our mantra: your goals are our goals."
+      }
+    ]
+  },
+  {
+    "category": "Getting Started",
+    "slug": "getting-started",
+    "items": [
+      {
+        "question": "How does the process work?",
+        "answer": "It starts with a free consultation call. We'll learn about your family, recommend a care plan, match you with the right doula, and walk you through scheduling and next steps."
+      },
+      {
+        "question": "What if I don't like my assigned doula?",
+        "answer": "Your comfort is everything. Tell us and we'll work to find a better fit. We want every family to feel completely at ease with the person coming into their home."
+      },
+      {
+        "question": "Is there a minimum number of shifts required?",
+        "answer": "[Georgette/Ashley to fill in the minimum booking policy here.]"
+      }
+    ]
+  },
+  {
+    "category": "Practical Questions",
+    "slug": "practical-questions",
+    "items": [
+      {
+        "question": "How long has After the Stork been in business?",
+        "answer": "After the Stork was founded over 25 years ago by Georgette Kerr. We are one of the most established postpartum doula services in the Philadelphia area, and have earned the LOVE Award in 2020, 2021, 2022, 2024, and 2026, as well as the Family Favorite Honoree distinction in 2021, 2022, and 2026."
+      },
+      {
+        "question": "What areas do you serve?",
+        "answer": "Philadelphia, the Main Line (Bryn Mawr, Wayne, Villanova, Ardmore, Gladwyne, Chestnut Hill), Dresher, New Hope, and select NJ communities including Moorestown and Haddonfield."
+      },
+      {
+        "question": "Are your doulas background-checked?",
+        "answer": "Yes. All team members undergo thorough background checks before joining After the Stork."
+      },
+      {
+        "question": "What does overnight care cost?",
+        "answer": "[Georgette/Ashley to add current rate information here, or direct families to contact for a custom quote.]"
+      },
+      {
+        "question": "Do you accept insurance?",
+        "answer": "Postpartum doula services are not typically covered by insurance, though some FSA/HSA accounts may allow reimbursement. We provide documentation of services if helpful for your records."
+      }
+    ]
+  }
+]

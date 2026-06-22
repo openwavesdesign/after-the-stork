@@ -1,0 +1,125 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Button from '@/components/ui/Button.astro'
+import Eyebrow from '@/components/ui/Eyebrow.astro'
+import Media from '@/components/ui/Media.astro'
+import type { Doula } from '@/types'
+import doulaData from '@/data/doulas.json'
+
+const allDoulas = (doulaData as Doula[]).filter(d => d.active).sort((a, b) => a.order - b.order)
+const filterOptions = ['All', 'Overnight', 'Daytime', 'NCS']
+---
+
+<Layout
+  title="Meet Our Postpartum Doulas, Registered Nurses, Newborn Care Specialists, CLCs & IBCLCs | After the Stork"
+  description="Meet the postpartum doulas of After the Stork, serving families in Philadelphia, the Main Line, Bucks County, New Jersey, and surrounding areas."
+>
+  <!-- Page Hero -->
+  <section class="py-20 bg-paper">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="pill">Our Team</div>
+          <h1 class="font-serif font-light text-ink text-display">
+            Meet the People Who Will Care for<br /><em>Your Family.</em>
+          </h1>
+          <p class="mt-6" style="font-size: 0.9375rem; color: var(--dim); line-height: 1.75; max-width: 480px;">
+            Our team of postpartum doulas brings warmth, expertise, and genuine dedication to every family. Every team member is professionally trained, background-checked, and passionate about postpartum care.
+          </p>
+        </div>
+
+        <Media
+          alt="The After the Stork team of postpartum doulas"
+          label="Our Team"
+          style="height: 400px;"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Doula Profiles -->
+  <section class="py-20 bg-canvas">
+    <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
+      <!-- Filter + header row -->
+      <div class="flex justify-between items-end mb-12 gap-8 flex-wrap">
+        <div>
+          <Eyebrow>The Team</Eyebrow>
+          <h2 class="font-serif font-light text-ink text-h2">
+            Our doulas.
+          </h2>
+        </div>
+        <div class="flex gap-2 font-mono uppercase tracking-[0.18em]" style="font-size: 0.75rem; color: var(--dim);">
+          {filterOptions.map((f, i) => (
+            <span
+              style={`padding: 6px 14px; border: 1px solid ${i === 0 ? 'var(--ink)' : 'var(--stroke)'}; color: ${i === 0 ? 'var(--ink)' : 'var(--dim)'}; cursor: pointer;`}
+            >
+              {f}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {allDoulas.map((doula) => {
+          const isPlaceholder = doula.name === 'Doula Team Member'
+          const areas = doula.areas.slice(0, 3).join(' · ')
+
+          return (
+            <div
+              class={`border bg-paper overflow-hidden transition-colors ${
+                isPlaceholder
+                  ? 'opacity-45 border-dashed border-stroke'
+                  : 'border-stroke hover:border-accent'
+              }`}
+            >
+              <Media
+                src={doula.photo}
+                alt={isPlaceholder ? 'After the Stork care team member' : `${doula.name}, ${doula.title}`}
+                label={isPlaceholder ? 'Coming Soon' : doula.name}
+                ratio="3/4"
+                class="w-full"
+              />
+              <div style="padding: 28px; border-top: var(--rule-soft);">
+                <p class="font-serif text-ink font-light text-h3">
+                  {isPlaceholder ? 'Coming Soon' : doula.name}
+                </p>
+                <p class="font-mono uppercase tracking-[0.22em] mt-2" style="font-size: 0.75rem; color: var(--accent);">
+                  {isPlaceholder ? 'Postpartum Doula' : doula.title}
+                </p>
+                <p class="font-mono mt-1" style="font-size: 0.75rem; color: var(--mid); letter-spacing: .1em;">
+                  {isPlaceholder ? 'Profile coming soon' : doula.credentials}
+                </p>
+                <p class="mt-4" style="font-size: 0.875rem; color: var(--dim); line-height: 1.7;">
+                  {isPlaceholder
+                    ? 'A member of the After the Stork care team.'
+                    : doula.bio}
+                </p>
+                {!isPlaceholder && (
+                  <p class="font-mono uppercase tracking-[0.14em] mt-4 flex items-center gap-2" style="font-size: 0.75rem; color: var(--mid);">
+                    <span aria-hidden="true">◎</span>
+                    {areas}
+                  </p>
+                )}
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-ink">
+    <div class="mx-auto px-6 md:px-12 text-center" style="max-width: 1280px;">
+      <h2 class="font-serif font-light text-paper text-h1">
+        Would You Like to Meet Us First?
+      </h2>
+      <p class="mt-4 max-w-[480px] mx-auto" style="font-size: 0.9375rem; color: rgba(244,239,230,.75); line-height: 1.75;">
+        We offer a complimentary consultation call so you can ask questions, share your needs, and feel confident that you&rsquo;ll be well cared for during those first crucial weeks as new parents.
+      </p>
+      <div class="mt-8">
+        <Button variant="inverse" href="/contact">Book a Free Consultation</Button>
+      </div>
+    </div>
+  </section>
+</Layout>

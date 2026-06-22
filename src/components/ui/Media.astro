@@ -1,0 +1,47 @@
+---
+interface Props {
+  src?: string | null
+  alt: string
+  label?: string
+  ratio?: string
+  class?: string
+  style?: string
+  priority?: boolean
+  warm?: boolean
+  zoom?: boolean
+}
+
+const { src, alt, label, ratio, class: className = '', style: styleProp = '', warm = true, zoom = true } = Astro.props
+
+const wrapperStyle = [
+  'position: relative; overflow: hidden; background-color: var(--paper-3);',
+  ratio ? `aspect-ratio: ${ratio};` : '',
+  styleProp,
+].join(' ')
+---
+
+{src ? (
+  <div class={`media-frame ${zoom ? 'media-zoom' : ''} ${className}`} style={wrapperStyle}>
+    <img src={src} alt={alt} style="object-fit: cover; width: 100%; height: 100%; display: block;" />
+    {warm && (
+      <span aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(34,64,104,.04) 0%, rgba(27,24,20,.10) 100%); mix-blend-mode: multiply; pointer-events: none;"></span>
+    )}
+  </div>
+) : (
+  <div
+    class={`relative flex items-center justify-center overflow-hidden ${className}`}
+    style={`${wrapperStyle} background: linear-gradient(135deg, var(--paper-2) 0%, var(--paper-3) 45%, var(--accent-tint) 100%);`}
+    aria-hidden="true"
+  >
+    <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.12;">
+      <circle cx="100" cy="100" r="78" fill="none" stroke="var(--accent)" stroke-width="0.6" />
+      <circle cx="100" cy="100" r="54" fill="none" stroke="var(--accent)" stroke-width="0.6" />
+      <circle cx="100" cy="100" r="30" fill="none" stroke="var(--accent)" stroke-width="0.6" />
+    </svg>
+    {label && (
+      <span class="relative z-10 font-mono uppercase tracking-[0.18em] text-center px-4" style="font-size: 0.6875rem; color: var(--mid);">
+        {label}
+      </span>
+    )}
+  </div>
+)}

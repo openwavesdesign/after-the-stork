@@ -1,0 +1,52 @@
+---
+import Media from '@/components/ui/Media.astro'
+import type { Service } from '@/types'
+
+interface Props {
+  service: Service
+  isLast?: boolean
+}
+
+const { service, isLast = false } = Astro.props
+---
+
+<div
+  class={`border-t border-stroke ${isLast ? 'border-b' : ''} py-8`}
+>
+  <div class="grid grid-cols-1 gap-6 lg:grid-cols-[200px_1fr_320px]">
+    <!-- Left: tag + hours -->
+    <div class="flex flex-col gap-3 pt-1">
+      <span
+        class="inline-block border border-stroke font-mono text-mid uppercase tracking-[0.16em]"
+        style="font-size: 0.75rem; padding: 0.25rem 0.625rem;"
+      >
+        {service.tagline}
+      </span>
+      <span
+        class="font-mono text-muted"
+        style="font-size: 0.75rem;"
+      >
+        {service.hours}
+      </span>
+    </div>
+    <!-- Center: heading + copy -->
+    <div class="flex flex-col gap-3">
+      <h3 class="font-serif text-ink font-light text-h3">
+        {service.name}
+      </h3>
+      <p
+        class="text-dim"
+        style="font-size: 0.9375rem; line-height: 1.8;"
+      >
+        {service.shortDescription}
+      </p>
+    </div>
+    <!-- Right: image -->
+    <Media
+      alt={`${service.name} — After the Stork`}
+      label={service.name}
+      class="w-full"
+      style="height: 160px;"
+    />
+  </div>
+</div>
