@@ -170,8 +170,19 @@ function DoulaModal({ doula, onClose }: { doula: Doula; onClose: () => void }) {
 export default function DoulaGrid({ doulas }: DoulaGridProps) {
   const [selected, setSelected] = useState('All')
   const [openDoula, setOpenDoula] = useState<Doula | null>(null)
+  const [visible, setVisible] = useState(true)
 
   const filtered = selected === 'All' ? doulas : doulas.filter(d => d.areas.includes(selected))
+  const [displayed, setDisplayed] = useState(filtered)
+
+  useEffect(() => {
+    setVisible(false)
+    const timeout = setTimeout(() => {
+      setDisplayed(filtered)
+      setVisible(true)
+    }, 220)
+    return () => clearTimeout(timeout)
+  }, [selected])
 
   return (
     <>
@@ -200,10 +211,17 @@ export default function DoulaGrid({ doulas }: DoulaGridProps) {
         </div>
       </div>
 
-      {filtered.length === 0 ? (
+      {displayed.length === 0 ? (
         <div
           className="text-center"
-          style={{ padding: '4rem 0', color: 'var(--dim)', fontSize: '0.9375rem' }}
+          style={{
+            padding: '4rem 0',
+            color: 'var(--dim)',
+            fontSize: '0.9375rem',
+            opacity: visible ? 1 : 0,
+            transform: visible ? 'none' : 'translateY(6px)',
+            transition: 'opacity .22s ease, transform .22s cubic-bezier(.2,.6,.2,1)',
+          }}
         >
           We don&rsquo;t have a doula listed for {selected} yet &mdash;{' '}
           <a href="/contact" style={{ color: 'var(--accent)', textDecoration: 'underline' }}>
@@ -212,8 +230,15 @@ export default function DoulaGrid({ doulas }: DoulaGridProps) {
           and we&rsquo;ll match you with the right team member.
         </div>
       ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-          {filtered.map((doula) => (
+        <div
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 sm:gap-8"
+          style={{
+            opacity: visible ? 1 : 0,
+            transform: visible ? 'none' : 'translateY(6px)',
+            transition: 'opacity .22s ease, transform .22s cubic-bezier(.2,.6,.2,1)',
+          }}
+        >
+          {displayed.map((doula) => (
             <button
               key={doula.id}
               type="button"
@@ -229,7 +254,7 @@ export default function DoulaGrid({ doulas }: DoulaGridProps) {
                   className="font-mono uppercase tracking-[0.18em] mt-1"
                   style={{ fontSize: '0.6875rem', color: 'var(--accent)' }}
                 >
-                  {doula.title}
+                  {doula.areas[0]}
                 </p>
               </div>
             </button>
