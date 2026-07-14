@@ -231,7 +231,7 @@ export default function DoulaGrid({ doulas }: DoulaGridProps) {
         </div>
       ) : (
         <div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 sm:gap-8"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8"
           style={{
             opacity: visible ? 1 : 0,
             transform: visible ? 'none' : 'translateY(6px)',
