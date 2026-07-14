@@ -6,7 +6,7 @@ import Media from '@/components/ui/Media.astro'
 import type { Doula } from '@/types'
 import doulaData from '@/data/doulas.json'
 
-const allDoulas = (doulaData as Doula[]).filter(d => d.active).sort((a, b) => a.order - b.order)
+const allDoulas = (doulaData as Doula[]).filter(d => d.active && !d.isLeadership).sort((a, b) => a.order - b.order)
 const filterOptions = ['All', 'Overnight', 'Daytime', 'NCS']
 ---
 
