@@ -3,11 +3,11 @@ import Layout from '@/layouts/Layout.astro'
 import Button from '@/components/ui/Button.astro'
 import Eyebrow from '@/components/ui/Eyebrow.astro'
 import Media from '@/components/ui/Media.astro'
+import DoulaGrid from '@/components/ui/DoulaGrid.tsx'
 import type { Doula } from '@/types'
 import doulaData from '@/data/doulas.json'
 
-const allDoulas = (doulaData as Doula[]).filter(d => d.active).sort((a, b) => a.order - b.order)
-const filterOptions = ['All', 'Overnight', 'Daytime', 'NCS']
+const allDoulas = (doulaData as Doula[]).filter(d => d.active && !d.isLeadership).sort((a, b) => a.order - b.order)
 ---
 
 <Layout
@@ -40,71 +40,15 @@ const filterOptions = ['All', 'Overnight', 'Daytime', 'NCS']
   <!-- Doula Profiles -->
   <section class="py-20 bg-canvas">
     <div class="mx-auto px-6 md:px-12" style="max-width: 1280px;">
-      <!-- Filter + header row -->
-      <div class="flex justify-between items-end mb-12 gap-8 flex-wrap">
-        <div>
-          <Eyebrow>The Team</Eyebrow>
-          <h2 class="font-serif font-light text-ink text-h2">
-            Our doulas.
-          </h2>
-        </div>
-        <div class="flex gap-2 font-mono uppercase tracking-[0.18em]" style="font-size: 0.75rem; color: var(--dim);">
-          {filterOptions.map((f, i) => (
-            <span
-              style={`padding: 6px 14px; border: 1px solid ${i === 0 ? 'var(--ink)' : 'var(--stroke)'}; color: ${i === 0 ? 'var(--ink)' : 'var(--dim)'}; cursor: pointer;`}
-            >
-              {f}
-            </span>
-          ))}
-        </div>
+      <!-- Section header -->
+      <div class="mb-12">
+        <Eyebrow>The Team</Eyebrow>
+        <h2 class="font-serif font-light text-ink text-h2">
+          Our doulas.
+        </h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {allDoulas.map((doula) => {
-          const isPlaceholder = doula.name === 'Doula Team Member'
-          const areas = doula.areas.slice(0, 3).join(' · ')
-
-          return (
-            <div
-              class={`border bg-paper overflow-hidden transition-colors ${
-                isPlaceholder
-                  ? 'opacity-45 border-dashed border-stroke'
-                  : 'border-stroke hover:border-accent'
-              }`}
-            >
-              <Media
-                src={doula.photo}
-                alt={isPlaceholder ? 'After the Stork care team member' : `${doula.name}, ${doula.title}`}
-                label={isPlaceholder ? 'Coming Soon' : doula.name}
-                ratio="3/4"
-                class="w-full"
-              />
-              <div style="padding: 28px; border-top: var(--rule-soft);">
-                <p class="font-serif text-ink font-light text-h3">
-                  {isPlaceholder ? 'Coming Soon' : doula.name}
-                </p>
-                <p class="font-mono uppercase tracking-[0.22em] mt-2" style="font-size: 0.75rem; color: var(--accent);">
-                  {isPlaceholder ? 'Postpartum Doula' : doula.title}
-                </p>
-                <p class="font-mono mt-1" style="font-size: 0.75rem; color: var(--mid); letter-spacing: .1em;">
-                  {isPlaceholder ? 'Profile coming soon' : doula.credentials}
-                </p>
-                <p class="mt-4" style="font-size: 0.875rem; color: var(--dim); line-height: 1.7;">
-                  {isPlaceholder
-                    ? 'A member of the After the Stork care team.'
-                    : doula.bio}
-                </p>
-                {!isPlaceholder && (
-                  <p class="font-mono uppercase tracking-[0.14em] mt-4 flex items-center gap-2" style="font-size: 0.75rem; color: var(--mid);">
-                    <span aria-hidden="true">◎</span>
-                    {areas}
-                  </p>
-                )}
-              </div>
-            </div>
-          )
-        })}
-      </div>
+      <DoulaGrid doulas={allDoulas} client:load />
     </div>
   </section>
 

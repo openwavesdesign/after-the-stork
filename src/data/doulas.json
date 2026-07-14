@@ -3,10 +3,18 @@
     "id": "georgette-kerr",
     "name": "Georgette Kerr",
     "title": "Owner & Founder",
-    "credentials": "Certified Postpartum Doula · Gentle Sleep Coach · 25+ Years",
-    "bio": "Georgette became a certified postpartum doula over 25 years ago and founded After the Stork out of a genuine desire to support new families. She built the business organically — moms sharing her phone number with friends — and grew it into a LOVE Award-winning service. She has four grown children and seven grandchildren of her own. She attended the intensive three-month Gentle Sleep Coach training program and makes herself available to all After the Stork families to guide infant sleep at no additional charge.",
+    "credentials": "Certified Postpartum Doula \u00b7 Gentle Sleep Coach \u00b7 25+ Years",
+    "bio": "Georgette became a certified postpartum doula over 25 years ago and founded After the Stork out of a genuine desire to support new families. She built the business organically \u2014 moms sharing her phone number with friends \u2014 and grew it into a LOVE Award-winning service. She has four grown children and seven grandchildren of her own. She attended the intensive three-month Gentle Sleep Coach training program and makes herself available to all After the Stork families to guide infant sleep at no additional charge.",
     "photo": null,
-    "areas": ["Philadelphia", "Bryn Mawr", "Wayne", "Villanova", "Ardmore", "Gladwyne", "Chestnut Hill"],
+    "areas": [
+      "Philadelphia",
+      "Bryn Mawr",
+      "Wayne",
+      "Villanova",
+      "Ardmore",
+      "Gladwyne",
+      "Chestnut Hill"
+    ],
     "active": true,
     "order": 1,
     "isLeadership": true
@@ -15,10 +23,14 @@
     "id": "ashley-morrison",
     "name": "Ashley Morrison",
     "title": "General Manager",
-    "credentials": "Certified Postpartum Doula · Elementary Education · Child Development",
+    "credentials": "Certified Postpartum Doula \u00b7 Elementary Education \u00b7 Child Development",
     "bio": "Ashley is Georgette's oldest daughter. She spent her early college years as a full-time nanny, became a certified elementary school teacher with extensive child development training, and received her postpartum doula training twenty years ago. Now a mother of four boys ages nine to eighteen, Ashley brings a grounded, practical understanding of family life to her role managing After the Stork's operations.",
     "photo": null,
-    "areas": ["Philadelphia", "Bryn Mawr", "Wayne"],
+    "areas": [
+      "Philadelphia",
+      "Bryn Mawr",
+      "Wayne"
+    ],
     "active": true,
     "order": 2,
     "isLeadership": true
@@ -27,48 +39,1694 @@
     "id": "allison-hart",
     "name": "Allison Hart, MS RD IBCLC",
     "title": "Lactation Consultant",
-    "credentials": "International Board Certified Lactation Consultant · Registered Dietitian · West Chester University",
-    "bio": "Allison is Georgette's youngest daughter and holds a master's degree in dietetics from West Chester University. As a Registered Dietitian she had the rewarding experience of counseling clients toward their health goals. Allison went on to earn her IBCLC credential — the highest level of breastfeeding training available. She lives by the team's mantra Georgette has instilled in the whole After the Stork team: your goals are our goals. Allison has two young children of her own who make her home a place of lots of girly giggles.",
+    "credentials": "International Board Certified Lactation Consultant \u00b7 Registered Dietitian \u00b7 West Chester University",
+    "bio": "Allison is Georgette's youngest daughter and holds a master's degree in dietetics from West Chester University. As a Registered Dietitian she had the rewarding experience of counseling clients toward their health goals. Allison went on to earn her IBCLC credential \u2014 the highest level of breastfeeding training available. She lives by the team's mantra Georgette has instilled in the whole After the Stork team: your goals are our goals. Allison has two young children of her own who make her home a place of lots of girly giggles.",
     "photo": null,
-    "areas": ["Philadelphia", "Main Line"],
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
     "active": true,
     "order": 3,
     "isLeadership": true
   },
   {
-    "id": "doula-placeholder-1",
-    "name": "Doula Team Member",
+    "id": "alexis",
+    "name": "Alexis \"Lexxi\"",
     "title": "Postpartum Doula",
-    "credentials": "Certified Postpartum Doula",
-    "bio": "A member of the After the Stork care team, bringing warmth, expertise, and dedication to every family we serve.",
-    "photo": null,
-    "areas": ["Philadelphia", "Main Line"],
+    "credentials": "DONA-Trained Postpartum Doula \u00b7 Newborn Care Specialist",
+    "bio": "Since 2006, Alexis/Lexxi has been providing newborn care to families adjusting to life with a new baby. She is incredibly highly requested and we are thrilled to be working with Lexxi. Alexis has a Bachelor's degree in Social Work with an emphasis on Child Welfare. Lexxi is a trained DONA birth doula and a newborn care specialist. In addition to her education and certifications, Alexis has extensive hands-on experience initiating and establishing newborn feeding schedules, healthy sleep habits, diapering, soothing techniques, etc. Alexis has always had a passion for helping families thrive. Her previous experience with serving families in a social work role has provided her with an excellent background as she supports new families as a postpartum doula. Alexis uses both disciplines in her efforts to offer quality care and service to families during the postpartum transition.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Alexis.jpg",
+    "areas": [
+      "Philadelphia"
+    ],
     "active": true,
     "order": 4,
     "isLeadership": false
   },
   {
-    "id": "doula-placeholder-2",
-    "name": "Doula Team Member",
+    "id": "allie",
+    "name": "Allie",
     "title": "Postpartum Doula",
     "credentials": "Certified Postpartum Doula",
-    "bio": "A member of the After the Stork care team, bringing warmth, expertise, and dedication to every family we serve.",
-    "photo": null,
-    "areas": ["Philadelphia", "Main Line"],
+    "bio": "Allie is a caring birth and postpartum doula, childbirth educator, and passionate advocate for maternal and infant health. She also is a medical technician and has worked with mothers and newborns in the labor and delivery division of the hospital. Allie loves working with multiples as well as singletons. When in school to be a medical technician, Allie\u2019s Women Health course ignited a passion for caring for mothers and babies through the postpartum period. Allie went on to train as a Full Spectrum Doula with Indie Birth, which emphasized a wholistic approach, integrating body, mind, and spirit. Beyond her professional endeavors, Allie has a deep love for animals, reflecting her nurturing heart.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
     "active": true,
     "order": 5,
     "isLeadership": false
   },
   {
-    "id": "doula-placeholder-3",
-    "name": "Doula Team Member",
+    "id": "alysia",
+    "name": "Alysia",
     "title": "Postpartum Doula",
-    "credentials": "Certified Postpartum Doula",
-    "bio": "A member of the After the Stork care team, bringing warmth, expertise, and dedication to every family we serve.",
-    "photo": null,
-    "areas": ["Philadelphia", "Main Line"],
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Alysia (pronounced like Alicia) is a trained postpartum doula and the mom to two school aged little girls. Alysia took multiple birth classes while pregnant and has always enjoyed immersing herself in information about all things baby related. She breastfed both her daughters for over a year each. While raising her daughters, she has also supported other moms by watching additional babies in her home. Alysia almost always has a baby in her arms and wouldn't have it any other way. She is a trained postpartum doula through Birth Arts International and loves supporting parents as they adjust to life with a newborn.",
+    "photo": "https://afterthestork.info/wp-content/uploads/ChatGPT-Image-May-18-2026-06_27_50-PM.png",
+    "areas": [
+      "Philadelphia"
+    ],
     "active": true,
     "order": 6,
+    "isLeadership": false
+  },
+  {
+    "id": "amanda",
+    "name": "Amanda",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Amanda is a trained postpartum doula through Birth Arts International and a proud mother of two little boys who are Irish twins. Her second son was born incredibly premature and spent many weeks in the NICU, giving Amanda firsthand experience caring for the most fragile and tiniest of babies, born in the peek of the the pandemic. Through this journey, she developed a deep understanding of the seriousness of premature birth and the intense mental and physical exhaustion parents experience as they support and advocate for their newborn. Amanda brings this compassion and insight into her work with families, offering steady, knowledgeable, and empathetic postpartum support. She is a strong breastfeeding advocate while also honoring that there are many loving ways to feed a baby. In addition to her two sons, Amanda is part of a joyful Brady Bunch family. Her \"other half\" brought his four teenage daughters into Amanda's life, including a set of twins. Amanda truly loves children and often shares that she is especially obsessed with newborn babies. Our clients love Amanda's passion for cleanliness as it allows parents to rest, recovery, and bond with their baby rather than worrying about dishes or laundry. Her nurturing presence, dedication, and hands-on support make her a trusted and comforting resource for families during the postpartum period.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-zoomed.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 7,
+    "isLeadership": false
+  },
+  {
+    "id": "ambria",
+    "name": "Ambria",
+    "title": "Postpartum Doula",
+    "credentials": "DONA-Trained Postpartum Doula \u00b7 Newborn Care Specialist",
+    "bio": "Ambria is a DONA-trained postpartum doula with a true passion for newborns and supporting growing families. Her journey in childcare began many years ago, working in several prestigious early childhood centers and as a long-term nanny for a family she cared deeply for. Over the years, she has developed a wealth of hands-on experience and a natural understanding of babies and their unique needs. Committed to providing exceptional care, Ambria sought out some of the most respected in-person trainings available and completed both her Newborn Care Specialist training and DONA Postpartum Doula training. Her dedication to continuing education reflects her desire to offer families knowledgeable, evidence-based support during the early weeks and months after birth. Ambria is the kind of person to arrive a few minutes early and go the extra mile while in the homes of After the Stork clients. While she may look young, Ambria brings decades of newborn care experience and possesses a remarkable gift for connecting with babies. They seem to sense the love and calm she brings, and families quickly recognize the warmth, confidence, and gentle presence that make her such a special part of the postpartum journey.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Ambria-Harris-Picture-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 8,
+    "isLeadership": false
+  },
+  {
+    "id": "amie",
+    "name": "Amie E.",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Amie is a compassionate postpartum doula trained through Birth Arts International with a lifelong love for babies. As the youngest of five children, Amie naturally became the go-to caregiver as her older siblings began growing their families, nurturing her confidence and ease with newborns from an early age. She went on to care for many families as a trusted babysitter and eventually advanced to overnight newborn care, including supporting a family with twin newborns. It was during those quiet overnight hours that Amie discovered the unique sweetness of caring for newborns in the stillness of the night\u2014an experience that deeply shaped her passion for postpartum work. Amie\u2019s love for newborns continues to grow with every tender interaction, and families quickly feel her calm, nurturing presence. She is also wonderful with dogs, often winning over even the most cautious pets with her gentle demeanor. Amie truly loves being in the home during the tender postpartum weeks, providing attentive care to both babies and their parents as families find their footing in this precious new chapter.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Pic-Amie-scaled.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 9,
+    "isLeadership": false
+  },
+  {
+    "id": "amy",
+    "name": "Amy O.",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Amy is a trained postpartum doula through Birth Arts International. She has always been in love with newborns and has been caring for babies her whole life. Amy spent several years as a nanny, and then went on to become a mother to little three boys who are now all school aged. She made it her life\u2019s work to care for little ones and has gained extensive knowledge through her many years working with newborns. She loves supporting new parents as they welcome their own bundles of joy home.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Amy-OBrien-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 10,
+    "isLeadership": false
+  },
+  {
+    "id": "angely",
+    "name": "Angely",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Angely is a proud mom of three school-aged girls, including a set of twins. With her daughters now entering their teen years, she\u2019s delighted to have a chance to care for sweet newborns and support new parents. Having been in the unique position of raising multiples herself, Angely has a special place in her heart for helping families welcome twins or other multiples. She fondly remembers the whirlwind of those early days\u2014busy beyond belief, yet filled with moments she cherishes to this day. A trained postpartum doula through Birth Arts International, Angely is known for her kindness, warmth, and genuine care. She is training to become a NICU nurse, a dream inspired in part by her own experience when her twin girls spent two months in the NICU. Working as a postpartum doula allows her to continue to pursue her education while working in the field she is passionate about\u2014postpartum care. Angely is honored to serve After the Stork clients, and she is deeply committed to helping parents feel confident, supported, and cared for from the very first days home during this important life transition.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Photo-Angely-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 11,
+    "isLeadership": false
+  },
+  {
+    "id": "ashley-b",
+    "name": "Ashley B (Main Line)",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "After the Stork's Postpartum Doula Ashley brings an exceptional level of care and expertise to every family she supports. With a background as both a NICU and Postpartum Nurse, Ashley offers a depth of experience that sets her apart in the world of postpartum care. She has spent years caring for the most delicate and medically fragile infants, giving her a calm confidence and highly trained eye that new parents find incredibly reassuring. Known for her gentle approach and thorough knowledge, Ashley has guided countless mothers through their first latch moments\u2014helping to establish a strong foundation for breastfeeding with patience and skill. Her extensive training ensures that each family receives the highest level of professional support during the tender first weeks after birth. Ashley\u2019s calm presence, clinical expertise, and deep compassion make her a true partner for families navigating the early postpartum period. Whether caring for a premature newborn or supporting a first-time mom through emotional and physical recovery, Ashley is a trusted and steady guide every step of the way.",
+    "photo": "https://afterthestork.info/wp-content/uploads/pic-2.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 12,
+    "isLeadership": false
+  },
+  {
+    "id": "ashley-b-philly",
+    "name": "Ashley B (Philly)",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Ashley B is a postpartum doula with a lifelong passion for caring for newborns and supporting families during the earliest months of life. Her journey began with over 15 years of experience as a nanny, where she developed a deep understanding of the unique rhythms, needs, and cues of newborn babies. It was during this time that her love for infant care truly took root and grew into a calling. Ashley went on to become a Child Life Specialist, working at one of the city\u2019s most prestigious hospitals. In this role, she supported newborns, children, and their families through some of life\u2019s most challenging moments, providing compassionate, developmentally informed care during times of stress and transition. These experiences shaped her calm presence, clinical insight, and ability to meet families where they are. As a postpartum doula trained through Birth Arts International, Ashley combines her extensive hands-on experience with evidence-based education and a deeply nurturing approach. She is known for her professionalism, attentiveness, and genuine love for babies, offering families confidence and peace of mind during the early postpartum period. Ashley takes pride in providing thoughtful, individualized support, ensuring each family feels cared for, respected, and supported as they settle into life with their new baby.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Profile-Picture.jpeg",
+    "areas": [
+      "Philadelphia"
+    ],
+    "active": true,
+    "order": 13,
+    "isLeadership": false
+  },
+  {
+    "id": "ashley-w",
+    "name": "Ashley W.",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Ashley W, a certified postpartum doula through Birth Arts International, has over ten years of experience caring exclusively for newborns. A mother of three, Ashley has long been passionate about caring for babies. Incredibly warm and caring, she brings a comforting presence to every family she supports and is always ready to help wherever needed. We are thrilled to have Ashley as part of our postpartum doula team.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Ashley-W.jpg",
+    "areas": [
+      "Philadelphia"
+    ],
+    "active": true,
+    "order": 14,
+    "isLeadership": false
+  },
+  {
+    "id": "audrey",
+    "name": "Audrey",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Audrey is a dedicated postpartum doula who has been a valued member of the After the Stork team for many years. With her warm presence and easygoing nature, it takes just a few minutes of conversation to feel like you\u2019ve known her forever. A loving mother of four\u2014now well beyond their baby years\u2014Audrey brings both personal experience and professional expertise to the families she supports. Her genuine love for babies is unmistakable; she\u2019s happiest with a newborn in her arms and takes pride in helping new parents feel confident and cared for. Audrey is most often scheduled with our Center City families, where she\u2019s known for her calming presence, reliability, and deep passion for helping parents enjoy those precious early months with their new baby.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Audreys-pic-2025-scaled.jpg",
+    "areas": [
+      "Center City"
+    ],
+    "active": true,
+    "order": 15,
+    "isLeadership": false
+  },
+  {
+    "id": "brandy",
+    "name": "Brandy",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Originally from New York City, Brandy is thrilled to now call Philadelphia home. A Certified Full Spectrum Doula through The Mothership Institute, Brandy has a deep-rooted passion for all things related to birth and babies. She has dedicated her life to supporting mothers through the beautiful, transformative, and sometimes challenging journey of parenthood. As a loving mother herself, Brandy truly understands the importance of nurturing not just the baby but the entire family during the postpartum period. Brandy is trained in the process of placenta encapsulation, an ancient tradition known to support mothers in their postpartum recovery. She not only performs placenta encapsulations for new mothers but also teaches classes to empower other women to learn the art and benefits of this powerful practice. Brandy has studied the healing effects of herbs and offers herbal support to mothers who wish to integrate these natural remedies into their healing journey. With her extensive training and genuine love for helping families, Brandy is an invaluable asset to those she serves. Brandy\u2019s unwavering dedication to supporting women through their postpartum journey makes her a compassionate and trusted ally for new mothers, and her work continues to touch the lives of many in the Philadelphia area and beyond.",
+    "photo": "https://afterthestork.info/wp-content/uploads/picture-2-e1744231932870.jpeg",
+    "areas": [
+      "Philadelphia"
+    ],
+    "active": true,
+    "order": 16,
+    "isLeadership": false
+  },
+  {
+    "id": "brielle",
+    "name": "Brielle",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Brielle is a labor and delivery nurse and also a postpartum nurse. After the Stork is so honored to also have Brielle working with us as a postpartum doula. She loves personal experience of caring for babies one on one and helping parents adjust to parenthood in their own homes. Her extensive education and nursing experience is a huge asset to us at After the Stork and we are thrilled to have Brielle on our team of doulas.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Brielle-Photo-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 17,
+    "isLeadership": false
+  },
+  {
+    "id": "candace",
+    "name": "Candace",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Candace is a certified postpartum doula through Birth Arts International, bringing warmth, wisdom, and deep empathy to every family she supports. A devoted mother of two sons in college, a daughter in high school, and two beloved fur babies, Candace understands the full spectrum of parenting\u2014from sleepless nights to joyful milestones. Originally from New York City, Candace began caring for children as a babysitter and nanny throughout high school, college, and graduate school. She relocated to the Philadelphia area in the late 1990s, where she raised her family and became deeply rooted in the local community. Candace is passionate about postpartum care and treasures the opportunity to support families during one of the most transformative times in their lives. Known for her calming presence and genuine compassion, she is adored by the families she works with. She finds great joy in nurturing newborns through the night so that parents can rest and wake up refreshed, ready to bond with their baby. In addition to her work as a doula, Candace is a writer and yoga and Pilates instructor. She loves cooking, reading, traveling, and spending quality time with her family.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Candace.jpg",
+    "areas": [
+      "Philadelphia"
+    ],
+    "active": true,
+    "order": 18,
+    "isLeadership": false
+  },
+  {
+    "id": "cerise",
+    "name": "Cerise",
+    "title": "Postpartum Doula",
+    "credentials": "DONA-Trained Postpartum Doula",
+    "bio": "Cerise is a postpartum doula trained through DONA, with a deep passion for supporting families during the early weeks after birth. She is committed to coming alongside parents with compassion, equipping them with the knowledge, confidence, and tools they need to feel empowered as they step into their new role. Cerise has extensive experience caring for babies, toddlers, and children, as she has been a highly sought after caregiver for many years. Known for building strong, lasting relationships, she is often invited to stay with families long-term because of the great value her presence adds to the home. Cerise is thrilled to focus her work on the postpartum period, offering hands-on support during such a tender and important time. Cerise brings a calm, nurturing presence into each home, helping parents feel confident, supported, and truly cared for.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-of-Cerise-scaled.jpg",
+    "areas": [
+      "Philadelphia"
+    ],
+    "active": true,
+    "order": 19,
+    "isLeadership": false
+  },
+  {
+    "id": "chelsea",
+    "name": "Chelsea",
+    "title": "Postpartum Doula",
+    "credentials": "DONA-Trained Postpartum Doula",
+    "bio": "Chelsea is a trained postpartum doula through DONA (Doulas Of North America). She has completed an additional Postpartum Doula certification through Modern Doula and is a trained CLC (Certified Lactation Counselor). As the loving mother of three, she understands firsthand the joys and challenges that come along with welcoming a new baby. Chelsea is compassionate, experienced, and dedicated to supporting families during the transformative weeks after birth. Chelsea's warm presence brings peace of mind to each family she supports. With a passion for empowering parents and a deep understanding of newborn needs, Chelsea creates a warm and stress free environment where families can focus on bonding and healing. We are thrilled to have Chelsea supporting After the Stork families.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Chelsea-F-e1740539748165.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 20,
+    "isLeadership": false
+  },
+  {
+    "id": "colleen",
+    "name": "Colleen",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Colleen is loving mom of three teenagers. She has spent over a decade working in a prestigious daycare where she worked her way up to the position of director. Colleen is warm and kind and puts new parent\u2019s minds at ease knowing she is incredibly confident caring for newborn babies. She received her postpartum doula training from Birth Arts International and loves helping new parents with their precious newborns overnight.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Colleen.jpg",
+    "areas": [
+      "Philadelphia"
+    ],
+    "active": true,
+    "order": 21,
+    "isLeadership": false
+  },
+  {
+    "id": "courtney",
+    "name": "Courtney",
+    "title": "Postpartum Doula",
+    "credentials": "Registered Nurse (RN)",
+    "bio": "Courtney is a registered nurse and postpartum doula who brings both clinical expertise and heartfelt care to every family she supports. Whether in the home or the hospital, she is known for providing attentive, compassionate care to newborns and steady, reassuring support to parents. With her naturally bubbly and approachable personality, Courtney creates a calm, positive environment where families feel comfortable and cared for. Her strong background in newborn care allows her to guide parents through the early postpartum period with clarity and ease, always adapting her support to meet each family\u2019s unique needs. Courtney has experience working with a wide range of families, including high-profile clients who appreciate her professionalism, discretion, and thoughtful attention to detail. Above all, her genuine love for babies and dedication to supporting families is evident in every interaction.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Courtney-e1775874271952.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 22,
+    "isLeadership": false
+  },
+  {
+    "id": "dani",
+    "name": "Dani F",
+    "title": "Postpartum Doula",
+    "credentials": "CAPPA-Certified Postpartum Doula",
+    "bio": "Dani has been a doula for over twenty years, bringing a wealth of experience, wisdom, and compassionate care to every family she serves. She is CAPPA-trained and, as a mother of twins herself, offers a unique understanding of the joys and challenges of caring for multiples. Her twins are now grown, and the caregiver\u2019s heart clearly runs in the family\u2014both have gone on to become nurses. Over the years, Dani has cared for countless families through our agency and has become a treasured resource for parents throughout the Main Line and Philadelphia.",
+    "photo": "https://afterthestork.info/wp-content/uploads/ChatGPT-Image-May-18-2026-02_32_13-PM.png",
+    "areas": [
+      "Philadelphia",
+      "Main Line",
+      "Ardmore"
+    ],
+    "active": true,
+    "order": 23,
+    "isLeadership": false
+  },
+  {
+    "id": "danielle-g",
+    "name": "Danielle G",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Danielle G. is a proud mom of four school-aged girls and a trained postpartum doula through Birth Arts International. With over twenty years of experience working with children, Danielle G. has dedicated her career to nurturing young lives in many different ways. Before becoming a postpartum doula, she served as an infant teacher in a daycare and later as the childcare director. Danielle G. holds a bachelor\u2019s degree in Early Childhood Education from Cabrini University and is currently pursuing her master\u2019s degree in psychology, focusing on child and adolescent development. Her deep understanding of childhood development, combined with her extensive hands-on experience, allows her to offer families both practical guidance and heartfelt support. While she loves children of all ages, Danielle has a special place in her heart for newborns. She is honored to help families adjust to life with their newest addition, ensuring parents feel confident, supported, and cared for during the precious early weeks at home.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-7-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 24,
+    "isLeadership": false
+  },
+  {
+    "id": "dionne",
+    "name": "Dionne",
+    "title": "Postpartum Doula",
+    "credentials": "ProDoula-Certified Postpartum Doula",
+    "bio": "Certified through Pro Doula, Dionne brings a wealth of knowledge, experience, and empathy to every family she serves. As a mother of four college-aged children, Dionne understands firsthand the joys and complexities of raising children. Her own experiences as a mother, combined with her extensive education and training, have fueled her passion for supporting families during the postpartum period. Dionne\u2019s approach ensures each family feels heard, valued, and cared for as they adjust to life with a new baby. With decades of both personal and professional experience, Dionne is deeply committed to serving families. Dionne\u2019s nurturing spirit and dedication to helping families navigate the challenging postpartum period are at the core of her work, making her a trusted ally for those in need of support, guidance, and compassion.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Dionne-Picture-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 25,
+    "isLeadership": false
+  },
+  {
+    "id": "elasofie",
+    "name": "ElaSofie",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Ela is a trained postpartum doula through Birth Arts International who brings both clinical knowledge and heartfelt care to the families she supports. She is currently a nursing student at the University of Pennsylvania and has always been drawn to working with babies and supporting families during the early postpartum period. Ela has several years of hands-on experience caring for infants in a daycare setting and eagerly takes advantage of every opportunity to deepen her newborn care skills. Through her nursing education, she has worked closely with babies in both the postpartum unit and the NICU, assisting with newborn assessments after birth and helping care for infants as they grow stronger day by day. A special area of focus for Ela is infant feeding, particularly breastfeeding. She has spent time shadowing International Board Certified Lactation Consultants (IBCLCs), gaining valuable insight and practical experience to better support families as they navigate feeding their newborns. Ela is deeply passionate about this work and genuinely cares for the families she serves. She brings warmth, dedication, and a strong foundation of knowledge to her role, offering thoughtful and supportive care during this important transition.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Pic-1-e1765825268149.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 26,
+    "isLeadership": false
+  },
+  {
+    "id": "fazia",
+    "name": "Fazia",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Fazia is a dedicated birth and postpartum doula with a passion for supporting families through the transformative journey of welcoming a new baby. She brings experience working with both singletons and multiples, offering compassionate, informed care tailored to each family\u2019s unique needs. Fazia holds a Bachelor's degree in Kinesiology from Temple University, which informs her holistic approach to wellness, healthy movement, and recovery during the perinatal period. She finds deep fulfillment in empowering new moms and dads as they navigate early parenthood and build strong bonds with their newborns.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Fazia.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 27,
+    "isLeadership": false
+  },
+  {
+    "id": "foloma",
+    "name": "Folona",
+    "title": "Postpartum Doula",
+    "credentials": "CAPPA-Certified Postpartum Doula \u00b7 Newborn Care Specialist",
+    "bio": "For over twenty years, Falona has cared for babies and children in the homes of her clients. Trained as a Postpartum Doula through CAPPA and certified as a Newborn Care Specialist, Falona combines professional expertise with a natural warmth that instantly puts families at ease. Her presence fills the home with joy, and she has a gift for creating a calm, reassuring environment that allows parents to rest, recover, and fully enjoy their new baby. Beloved by every family she works with, Falona is more than a doula\u2014she is a steady, joyful presence who makes the early days of parenthood feel lighter, more supported, and filled with confidence. Families often say that Falona\u2019s reputation precedes her. Friends and community members frequently refer her by name, recommending her with the highest confidence to new parents who need gentle, knowledgeable support. Her name has become synonymous with trust, warmth, and exceptional care, which is why so many families seek her out again and again.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-Folona-scaled-e1758246258560.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 28,
+    "isLeadership": false
+  },
+  {
+    "id": "heather-e",
+    "name": "Heather E.",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International \u00b7 Newborn Care Specialist",
+    "bio": "Heather is a Certified Postpartum Doula through Birth Arts International and a trained Newborn Care Specialist through The Newborn Care Training Academy. Known affectionately as a \u201cbaby whisperer,\u201d Heather has a natural gift with infants and a lifelong love for caring for children. She began her career as a full-time nanny and quickly found her niche in supporting families with newborns. Over the years, Heather has become highly sought-after for her calm presence, deep knowledge, and intuitive care during the earliest days of parenthood. Heather now works exclusively with newborns offering both daytime and overnight care depending on the family's needs. Her dedication, skill, and soothing presence help parents rest and recover, knowing their baby is in experienced and loving hands.",
+    "photo": "https://afterthestork.info/wp-content/uploads/IMG_4486-1-scaled-e1724869337612.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 29,
+    "isLeadership": false
+  },
+  {
+    "id": "heather",
+    "name": "Heather K.",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Heather loves babies and has been working with infants and children for 30 years. She is a mom of four including a set of twins. Heather became a postpartum doula in 2012 and has loved working in this role-- it suits her perfectly. She has great organization skills and loves to help parents feel at ease when they wake up to start their day.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Heather.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 30,
+    "isLeadership": false
+  },
+  {
+    "id": "jenn-t",
+    "name": "Jenn T",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "As a mother of three and a passionate postpartum doula, Jenn understands firsthand the challenges and beauty of the fourth trimester. With an incredibly nurturing spirit, she finds immense joy in supporting parents through this tiring, yet transformative period. To her, the work of being a postpartum doula is a privileged position. She is honored to care for the most precious tiny people and also the parents during one of their most vulnerable and precious moments. Jenn provides competent, compassionate, and experienced support to mothers and families as they navigate the early weeks of parenthood. She is deeply committed to helping mothers cherish the bond they share with their newborns, offering both emotional and physical support that allows them to rest, recover, and connect. Her goal is to ensure that new parents can fully embrace this special time, free from stress and uncertainty as she helps parents to get some rest in these early weeks.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Jenn-Tinubu-Picture-e1741107999427.png",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 31,
+    "isLeadership": false
+  },
+  {
+    "id": "joy",
+    "name": "Joy",
+    "title": "Postpartum Doula",
+    "credentials": "DONA-Trained Postpartum Doula",
+    "bio": "Joy is a certified birth and postpartum doula trained through DONA, with many years of experience supporting families through pregnancy, birth, and the newborn stage. Her clients can immediately sense that she is a seasoned and confident doula who brings both expertise and warmth to every family she serves. Joy lives life to the fullest and intentionally fills her days with the things she loves. Baby snuggles are at the top of that list, but she also enjoys traveling and spending time with her family. She finds deep fulfillment in nurturing new parents through one of life\u2019s most meaningful transitions. Supporting families during these tender, life-changing moments brings her genuine joy\u2014just as her name suggests.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-Joy.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 32,
+    "isLeadership": false
+  },
+  {
+    "id": "joyce",
+    "name": "Joyce",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Joyce is a highly requested After the Stork doula. She has been with our company since August 2012! For more than a decade, Joyce has been caring for (mostly) Main Line families as they welcome their newborn babies home. Joyce is the mom of two boys who are now in their teen years and beyond. She says she enjoys her work greatly and finds it very fulfilling \u201cbecause it is rewarding to help moms and families who are welcoming home new babies.\u201d She loves bringing some peace and comfort to the family during this stressful and exciting time. \u201cI feel honored that they invite me into their homes to care for their precious newborns.\u201d Her clients love her, and she is one of our most highly requested doulas.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Joyce.jpg",
+    "areas": [
+      "Main Line",
+      "Wayne",
+      "Villanova"
+    ],
+    "active": true,
+    "order": 33,
+    "isLeadership": false
+  },
+  {
+    "id": "kara",
+    "name": "Kara",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "With a passion for both people and science, Kara obtained a Bachelor of Arts in Anthropology from Penn State University. Throughout college and following graduation, she worked full time as a professional nanny caring for multiples 50 hours each week and babysitting for countless newborns on the weekends. To complement more than a decade of childcare experience with a formal education, she pursued an Early Childhood Education Certificate. Motivated to eliminate the disparities in maternal health and child development emphasized throughout her education coursework, Kara applied to and was successfully accepted into Drexel\u2019s Maternal and Child Health Graduate program. Additionally, Kara has completed her postpartum doula training, broadening the support that she is able to provide to both parents and newborns. In her free time, she is passionate about working with maternal health nonprofits and fostering rescue dogs.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Kara.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 34,
+    "isLeadership": false
+  },
+  {
+    "id": "katharine",
+    "name": "Katharine",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Katharine has always had a deep love for babies and a natural gift for caring for others. As a mother of two girls, she understands firsthand how transformative\u2014and at times challenging\u2014the postpartum journey can be. Before becoming a doula, she spent years working as a private nanny, where she discovered how much she enjoyed nurturing newborns and supporting new parents. With her high emotional intelligence and compassionate spirit, Katharine is exceptionally attuned to the needs of both mothers and their babies. Driven by her desire to help others, she also became an EMT\u2014a true \u201chelper\u201d at heart in every sense. Her passion for supporting families deepened even further after helping her sister care for her NICU baby. That experience inspired Katharine to follow her heart and become a trained postpartum doula through Birth Arts International\u2014and we couldn\u2019t be happier that she did. Our clients often describe her as gentle, kind, and nurturing. Her calm presence and caring nature bring comfort and peace to new parents, especially during those tender overnight hours. A true night owl, Katharine finds joy in spending the quiet hours tending to the smallest and sweetest babies throughout the Philadelphia area.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-7-scaled-e1762877073397.jpeg",
+    "areas": [
+      "Philadelphia"
+    ],
+    "active": true,
+    "order": 35,
+    "isLeadership": false
+  },
+  {
+    "id": "kathy",
+    "name": "Kathy",
+    "title": "Postpartum Doula",
+    "credentials": "Registered Nurse (RN)",
+    "bio": "Kathy is a trained RN who specialized in maternity and newborn nursery. \u201cI enjoy being able to use this experience to help me when working as a postpartum doula.\u201d Kathy is the mother of four daughters and is a grandmother to three grandsons. She left the medical field when her children were small to open her own at-home child care business, and she became a doula because she really enjoys getting to be a part of this special time in new parents\u2019 lives. She loves the support and resources she gets from After the Stork so that she can provide quality postpartum doula care.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Kathy-2-e1505835573725.jpg",
+    "areas": [
+      "Philadelphia"
+    ],
+    "active": true,
+    "order": 36,
+    "isLeadership": false
+  },
+  {
+    "id": "kayla",
+    "name": "Kayla",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Kayla is a postpartum doula who has been professionally trained through Birth Arts International and is also an experienced mother of three school-aged children. Her journey in childcare began as a nanny, where she supported families with infants and quickly developed a deep appreciation for nurturing growing families. One especially rewarding role involved caring for infant twins and their toddler brother\u2014a challenging but formative experience. She later worked in the infant room of a daycare, gaining valuable hands-on experience in early childhood development. Now that her own children are more independent, Kayla finds great fulfillment in supporting other families and reliving the beauty of the infant stage. She brings both professional insight and personal understanding to her doula work, offering calm, capable, and compassionate care. In addition to her work as a doula, Kayla is pursuing a degree in social work at Rutgers University. She has a deep passion for helping others and is committed to lifelong learning so she can better support families and meet their unique needs. Kayla approaches every home with empathy and a sincere desire to make a meaningful difference during one of life\u2019s most transformative seasons.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-Kayla.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 37,
+    "isLeadership": false
+  },
+  {
+    "id": "kerry",
+    "name": "Kerry",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Kerry has been a dedicated member of the After the Stork team for well over a decade. She is beloved by the many families she\u2019s supported throughout Warrington, Doylestown, Newtown, and all along the Main Line. Gentle, sweet, and deeply compassionate, Kerry brings warmth and calm to every home she enters\u2014our clients consistently praise the care and confidence she provides. As a mother of three school-age children, Kerry understands the emotional and physical demands that come with welcoming a new baby. Over the years, she has gained a wealth of hands-on knowledge by caring for infants full-time and supporting countless families during the postpartum period. Her extensive experience has made her a true newborn expert and an invaluable member of our team. Kerry completed her initial Postpartum Doula Training with the Active Birth Institute and later pursued additional training through Birth Arts International. She continues to provide expert care to new parents, helping them feel supported, empowered, and at ease during one of life\u2019s most transformative times. We are so grateful to have Kerry on our team!",
+    "photo": "https://afterthestork.info/wp-content/uploads/LND_CFE073D3-D4E5-4E9C-A4DA-FE19EAC66A4C.jpg",
+    "areas": [
+      "Main Line"
+    ],
+    "active": true,
+    "order": 38,
+    "isLeadership": false
+  },
+  {
+    "id": "kitana",
+    "name": "Kitana",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Kitana is a trained full-spectrum doula through Birthing Advocacy Doula Trainings (BADT) and a proud mother of two children. Her own experiences with pregnancy, birth, and the postpartum period deeply shaped her passion for maternal health and whole-family well-being. Through these transformative seasons of life, Kitana gained a profound appreciation for how much informed care can positively impact new parents. Kitana\u2019s approach to her work as a postpartum doula centers on whole-person wellness while thoughtfully following evidence-based infant care practices to support the well-being of the entire family. She considers it a true privilege to walk alongside parents during these sacred early days, helping them find balance, confidence, and joy as they settle into life with their new baby.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Pic-1-1.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 39,
+    "isLeadership": false
+  },
+  {
+    "id": "laura-d",
+    "name": "Laura D.",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Laura has been described by families as warm, calming, and familiar. Perhaps it's her lovely English accent, her gentle demeanor, or the quiet confidence she brings into every home she enters. A trained postpartum doula and devoted mother of three daughters, Laura has a natural gift for helping new families feel cared for, supported, and completely at ease during one of life's biggest transitions. Laura doesn't view postpartum care as simply a profession\u2014it is a privilege. She feels deeply honored to be invited into a family's home during those irreplaceable first weeks with a new baby. She treasures the opportunity to nurture newborns during their sweetest, sleepiest, and most precious stage of infancy while creating an environment where parents can rest, recover, and settle into their new roles with confidence. Having navigated breastfeeding challenges with her own children, Laura understands that every family's feeding journey is unique. She believes wholeheartedly that a nourished baby and a supported mother are what matter most. Whether families choose to breastfeed, bottle-feed, pump, or combination feed, Laura offers compassionate and evidence-based support that empowers parents to make the choices that are right for them.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Photo-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 40,
+    "isLeadership": false
+  },
+  {
+    "id": "lora",
+    "name": "Lora C.",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Lora has been a cherished member of the After The Stork team for over a decade, bringing warmth, wisdom, and unwavering support to every family she serves. With hundreds of grateful families across the Main Line singing her praises, Lora is one of our most frequently requested doulas\u2014and for good reason. Her compassionate presence, deep experience, and intuitive care have made her a beloved figure in our community. As a seasoned professional and postpartum doula mentor, Lora plays a vital role in guiding and supporting our newer doulas, helping to uphold the high standards of care that After The Stork is known for. Her dedication to nurturing both clients and colleagues alike speaks volumes about the kind of person she is\u2014generous, patient, and deeply committed. Lora is also the proud mother of teenage triplets and was once an After The Stork client herself. Her personal experience as a new mother of triplets receiving doula support inspired her to \u201cpay it forward\u201d by offering the same compassionate care and guidance to others. She understands firsthand just how special\u2014and sometimes overwhelming\u2014the early days of parenthood can be. Lora considers it an honor to help families feel confident, supported, and cared for as they welcome their new baby or babies home. We are endlessly grateful to have Lora as part of our team. She truly embodies the heart of what we do.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Lora-Collett-profile-pic-002-e1607018406633.jpg",
+    "areas": [
+      "Main Line"
+    ],
+    "active": true,
+    "order": 41,
+    "isLeadership": false
+  },
+  {
+    "id": "lyndsay",
+    "name": "Lyndsay",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Certified through Birth Arts International, Lyndsay is a devoted and compassionate postpartum doula who brings both professional expertise and a loving touch to every family she supports. As a mom of two teenagers, Lyndsay has always had a natural connection with babies and a heartfelt passion for nurturing new families during the tender postpartum period. Known for her kindness and caring heart, Lyndsay offers more than just support\u2014she brings peace of mind. Clients often say they sleep better knowing their baby is under her loving, watchful care. Lyndsay\u2019s warmth, experience, and genuine love for what she does make her an exceptional postpartum doula and a cherished part of our team.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-2-from-2025-scaled-e1752523812550.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 42,
+    "isLeadership": false
+  },
+  {
+    "id": "marissa",
+    "name": "Marissa",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Marissa is a trained postpartum doula through Birth Arts International and is currently in her final year of nursing school, where she is studying to become a maternity nurse. As the oldest of four children, Marissa\u2019s love for babies began early. She fondly recalls treating her younger siblings like her own baby dolls and feeling completely comfortable with a baby in her arms from a young age. That early connection led her to years of experience as a babysitter, nanny, and overnight newborn caregiver for many families. Marissa finds deep joy in supporting families during the precious postpartum period\u2014a time when hearts are full, gratitude is abundant, and the bond between parents and baby begins to blossom. She understands that while this stage of life is incredibly special, it can also come with sleepless nights and very little time for self-care. Marissa believes it doesn\u2019t have to be that way. She loves helping parents carve out time for rest, a relaxing shower, or a quiet moment to themselves so they can feel refreshed and present as they connect with their baby. Babies have always been at the center of Marissa\u2019s world. Known for her bubbly and sweet personality, she brings warmth, positivity, and encouragement into every home she enters. Her mission is to support families through the postpartum transition in whatever ways they need most. With Marissa nearby, parents can rest easy knowing their baby is in loving, capable arms.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Marissa-Photo-e1775530289873.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 43,
+    "isLeadership": false
+  },
+  {
+    "id": "marlena",
+    "name": "Marlena",
+    "title": "Postpartum Doula",
+    "credentials": "DONA-Trained Postpartum Doula",
+    "bio": "Marlena is a DONA-trained postpartum doula and proud mom to a son and daughter she loves to pieces. A quintessential Philly girl, Marlena is known for her down-to-earth nature, easygoing warmth, and genuine friendliness\u2014everyone who meets her loves her. Her passion for babies and new mothers shines through in everything she does. Marlena finds deep joy in helping families feel supported and confident as they adjust to life with a newborn. She brings care, compassion, and a little bit of that Philly charm to every home she visits.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Marlena-scaled.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 44,
+    "isLeadership": false
+  },
+  {
+    "id": "sharon",
+    "name": "Sharon",
+    "title": "Postpartum Doula",
+    "credentials": "International Board Certified Lactation Consultant (IBCLC)",
+    "bio": "Sharon is a retired NICU nurse and retired IBCLC (International Board Certified Lactation Consultant) and currently supports postpartum families as a postpartum doula with After the Stork. She has spent career serving in several local hospitals and had an amazing career supporting babies and families in the days and weeks after birth. Her clinical expertise, combined with her warm and compassionate nature, makes her an invaluable resource for the families she serves. Beyond her impressive credentials, is a mother to two grown children and a proud grandma. Sharon is known for her kindness, warmth, and genuine heart for helping postpartum women. She has a calming presence that immediately puts families at ease. Many parents find that after just a few minutes of conversation, it feels as though they've known her for years.",
+    "photo": "https://afterthestork.info/wp-content/uploads/pic-2-scaled-e1781710058160.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 45,
+    "isLeadership": false
+  },
+  {
+    "id": "sydney",
+    "name": "Sydney",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Sydney brings a genuine love for babies to every family she supports. Trained as a postpartum doula through Birth Arts International, Sydney has always felt naturally drawn to caring for little ones. Before becoming a doula, she gained valuable hands-on experience working in the infant room of a daycare and later as a nanny, where her calm presence and nurturing instincts were beloved by parents. Now as a postpartum doula, Sydney loves spending her overnights caring for the sweetest and most delicate members of the family. Her kind heart, gentle touch, and attentive nature allow parents to rest peacefully, knowing their newborn is in exceptionally loving hands. If our clients have fur babies, Sydney will be thrilled since she is an animal lover as well. Parents love Sydney\u2019s warm personality, tender care, and the quiet confidence she brings during those precious early weeks.",
+    "photo": "https://afterthestork.info/wp-content/uploads/May-17-2026-04_29_58-PM.png",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 46,
+    "isLeadership": false
+  },
+  {
+    "id": "tenille",
+    "name": "Tenille",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Tenille is a postpartum doula, trained through Birth Arts International. She is the proud and loving mother of six children, including a set of teenage twins. Her deep love for babies and natural connection with children have been lifelong gifts\u2014so much so that her friends have always called her a kidologist. Now in what she joyfully calls her prime years with most of her children fully grown, Tenille is committed to doing only the work that fills her heart. Being a postpartum doula is that calling. Trained through Birth Arts International, Tenille brings a calm, confident presence and a wealth of real-life parenting experience into every home she enters. Supporting families during the tender postpartum season is more than a job for her\u2014it\u2019s a source of deep happiness and purpose. Tenille believes every new parent deserves to be nurtured, seen, and supported. With warmth, wisdom, and a joyful spirit, she helps families find their rhythm, one baby snuggle at a time.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-2-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 47,
+    "isLeadership": false
+  },
+  {
+    "id": "theresa",
+    "name": "Theresa H.",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Theresa is an experienced postpartum Doula who has enjoyed working with growing families since 2017. As the mother of four adult children, and grandmother of five, she knows firsthand some of the challenges that new parents may face during the postpartum period... Moms especially! Theresa absolutely loves being part of the supportive Doula care team. Admittedly, she has a soft spot for supporting the families we serve and helping them to care for their precious newborns.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Teresa.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 48,
+    "isLeadership": false
+  },
+  {
+    "id": "theresa-r",
+    "name": "Theresa R.",
+    "title": "Postpartum Doula",
+    "credentials": "International Board Certified Lactation Consultant (IBCLC)",
+    "bio": "Theresa R earned her nursing degree from Drexel University and went on to become an International Board Certified Lactation Consultant (IBCLC) through Drexel as well. She has worked as both a NICU nurse and IBCLC, bringing a depth of experience that makes her exceptionally qualified for her role as a postpartum doula. Theresa currently loves working in the intimate setting of the home, where she can thoughtfully care for both newborns and their postpartum families. Tender, calm, and deeply compassionate, she is truly a pleasure to have in the home. In addition to her doula work, Theresa works at her alma mater as a high school guidance counselor and school nurse, supporting the same environment that shaped her own growth and education. She is married to her high school sweetheart. Theresa treasures every opportunity to scoop a newborn into her arms and lovingly care for the needs of both baby and family and we are so blessed to have Theresa on our team.",
+    "photo": "https://afterthestork.info/wp-content/uploads/pic-3-e1772226228552.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 49,
+    "isLeadership": false
+  },
+  {
+    "id": "yhalile",
+    "name": "Yhalile",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Yhalile (pronounced Ju-Lee-La) is a trained postpartum doula through Birth Arts International who brings experience, compassion, and a deeply calming presence to the families she serves. She is the mother of one grown son and is married, with a beautiful blended family. For over a decade, Yhalile has worked as a high end nanny, making the care of children and families not just her profession, but her calling. Supporting parents during the postpartum period is especially meaningful to her, as newborns have always held a special place in her heart. She finds great joy in helping families feel confident, supported, and at ease as they adjust to life with a new baby. Yhalile is a steady, reassuring presence during a time that can feel both joyful and sometimes chaotic and overwhelming. Her gentle approach and quiet confidence bring a sense of peace and stability, allowing families to rest, recover, and truly enjoy their early days together. Yhalile considers it a great honor to care for babies during these tender first weeks of life.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Pic-scaled-e1766167546474.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": true,
+    "order": 50,
+    "isLeadership": false
+  },
+  {
+    "id": "akira",
+    "name": "Akira",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Akira is the loving mother of a toddler she\u2019s absolutely crazy about. Her own experience becoming a mom sparked her passion for supporting other families during the tender early weeks of parenthood. Trained through Birth Arts International, Akira discovered the world of postpartum doula work and immediately knew she had found her calling. She is a strong breastfeeding advocate who also understands that every family\u2019s feeding journey looks different. She also loves supporting bottle feeding parents. Akira brings a calm, supportive presence and clear communication to every home she visits. Families appreciate her genuine care, steady encouragement, and the way she helps make the transition into life with a new baby feel a little easier and a lot more joyful.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-of-Akira-scaled-e1759942355627.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 51,
+    "isLeadership": false
+  },
+  {
+    "id": "alison",
+    "name": "Alison",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Alison loves working with people, and she says that helping families when they have a new baby is \u201ca dream come true\u201d for her. While she has been a postpartum doula since 2013, her experience with children stretches beyond that time; she has a bachelor\u2019s degree in education, and has six children of her own.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Alison.jpg",
+    "areas": [
+      "Philadelphia"
+    ],
+    "active": false,
+    "order": 52,
+    "isLeadership": false
+  },
+  {
+    "id": "amber",
+    "name": "Amber B.",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Amber is a dedicated birth and postpartum doula with a deep passion for supporting families through the transformative journey of childbirth and the postpartum period. A mother of three school aged children, Amber understands firsthand the challenges and joys that come with raising children. This personal experience, combined with her extensive professional training, allows her to connect with parents in a meaningful and compassionate way. Her love for birth work began many years ago, and over the years, Amber has honed her skills and knowledge to become a trusted expert in postpartum care. She is deeply committed to helping families navigate the early days after childbirth, providing both daytime and overnight doula services depending on the week. Whether offering practical support or emotional reassurance, Amber approaches every family with kindness, attention to detail, and a genuine desire to help. Amber received her postpartum doula training through the Community Doulas of South Jersey, where she gained valuable insights and hands-on experience. This education, coupled with her years of experience, has given her the confidence and expertise to support families as they adjust to life with a newborn. Her approach is rooted in compassion and a deep respect for the unique needs of each family. With her extensive knowledge and caring nature, Amber brings both comfort and expertise to every family she works with. Her commitment to postpartum care ensures that new parents feel supported, confident, and empowered as they embark on their parenting journey.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Amber-Picture.png",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 53,
+    "isLeadership": false
+  },
+  {
+    "id": "amber-m",
+    "name": "Amber M.",
+    "title": "Postpartum Doula",
+    "credentials": "DONA-Trained Postpartum Doula",
+    "bio": "Amber M. is a compassionate and highly skilled postpartum doula, deeply committed to supporting families during one of life\u2019s most transformative experiences: the postpartum period. With her specialized training as both a birth and postpartum doula through DONA International and certification through the CoCo Life Foundation, Amber has developed a unique expertise in guiding new parents through the challenges and joys of early parenthood. Amber\u2019s passion for birth work began many years ago, driven by her profound interest in all things related to pregnancy, birth, and postpartum care. Her commitment to continuous learning allows her to stay at the forefront of best practices in the field, offering evidence-based, holistic support tailored to each family\u2019s unique needs. She believes that informed, individualized support can empower families, helping them feel confident and capable in their new roles as parents. Amber\u2019s deep knowledge, combined with her warm and encouraging demeanor, makes her an invaluable resource for any family navigating the postpartum journey.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-1-e1742420371680.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 54,
+    "isLeadership": false
+  },
+  {
+    "id": "anastasia",
+    "name": "Anastasia",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Anastasia/ Ana is a postpartum nurse and has been caring for postpartum families for years in both the hospital setting as well as the home setting. She anticipates our clients' needs perfectly. She has extensive training to assist our breastfeeding mothers and is overly qualified to care for even our most fragile newborns. She also has the kind and compassionate heart that is needed for this work. We are so thankful to have Anastasia on our team!",
+    "photo": "https://afterthestork.info/wp-content/uploads/Anastasia-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 55,
+    "isLeadership": false
+  },
+  {
+    "id": "anneliese",
+    "name": "Anneliese",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Anneliese is a trained postpartum doula through Birth Arts International, dedicated to providing nurturing support to families during the early weeks of parenthood. She is a loving mother of two young children who are now entering their school-aged years. Anneliese understands the realities of newborn life from both personal and professional experience. Born and raised in Palm Beach, Florida, she brings sunshine and warmth to every home she enters. She is known for her calm presence, strong communication skills, and natural ability to help mothers feel seen, supported, and at ease. Anneliese supports parents with patience, flexibility, and genuine care\u2014whether that means assisting with newborn routines, baby laundry, dishes, sharing feeding and sleep guidance with new parents, or simply being a steady, loving presence through one of life\u2019s biggest transitions.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-3-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 56,
+    "isLeadership": false
+  },
+  {
+    "id": "april",
+    "name": "April",
+    "title": "Postpartum Doula",
+    "credentials": "CAPPA-Certified Postpartum Doula",
+    "bio": "April is a trained and certified postpartum doula through CAPPA who has been supporting families for well over a decade. She discovered her passion for postpartum care long before beginning her own family, and quickly fell in love with walking alongside parents during such a crucial, challenging, and beautiful season. Over the years, April has worked with many families, offering not only practical support but also a calming, nurturing presence. In addition to her professional experience, April is the proud mother of three girls in their preteen and teen years. Her own journey through motherhood has deepened her empathy and strengthened her ability to support families with understanding and care. Known for her kindness, sweetness, and genuine compassion, April brings both expertise and heartfelt connection to every home she enters, helping parents feel confident and supported as they adjust to life with their new baby.",
+    "photo": "https://afterthestork.info/wp-content/uploads/April-scaled-e1757538559905.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 57,
+    "isLeadership": false
+  },
+  {
+    "id": "ashley-p",
+    "name": "Ashley P.",
+    "title": "Postpartum Doula",
+    "credentials": "ProDoula-Certified Postpartum Doula",
+    "bio": "Ashley P. is a certified birth and postpartum doula through ProDoula and a proud mom of three boys, whose ages span from teen to toddler. A clear and compassionate communicator, Ashley brings both professional training and lived experience to the families she supports. She is an advocate for breastfeeding and approaches it with empathy, having faced her own struggles. This balance of expertise and vulnerability allows her to meet parents exactly where they are to offer both encouragement and practical guidance. Ashley is deeply passionate about the meaningful work of nurturing families through the tender postpartum season. She strives to create a calm, supportive environment where parents feel empowered, informed, and cared for as they adjust to life with their newest little one.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Ashley-P-Photo-scaled-e1757714860799.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 58,
+    "isLeadership": false
+  },
+  {
+    "id": "ashley-s",
+    "name": "Ashley S.",
+    "title": "Postpartum Doula",
+    "credentials": "International Board Certified Lactation Consultant (IBCLC)",
+    "bio": "Ashley S. is an International Board Certified Lactation Consultant (IBCLC) and mom of six children, four boys and two girls. She has always loved babies and loves not only caring for them, but learning about their growth and development. She has taken many infant growth and development courses and went on to earn her IBCLC, the highest level of lactation education. Ashley S. is usually with our New Jersey and Center City clients. Our parents rest assured knowing a well-educated, loving, professional is caring for their young baby.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Ashley-S.jpg",
+    "areas": [
+      "New Jersey",
+      "Center City"
+    ],
+    "active": false,
+    "order": 59,
+    "isLeadership": false
+  },
+  {
+    "id": "becki",
+    "name": "Becki S.",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Becki is a mom of two kids who are now older teens. She has always loved caring for newborns babies. Becki ran a daycare and also worked as a nanny specializing in newborn babies. Several years ago, Becki began watching newborn babies overnight and absolutely loved it. She became a postpartum doula and has loved adding to her expanding knowledge about newborns. She fell in love with working in the quietness of the night as she cares for sleepy newborns. Is there a better job than this?! She takes great joy in helping new parents in this joyous and yet challenging time.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Becki.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 60,
+    "isLeadership": false
+  },
+  {
+    "id": "becky-m",
+    "name": "Becky M",
+    "title": "Postpartum Doula",
+    "credentials": "DONA-Trained Postpartum Doula",
+    "bio": "Becky is a friendly, kind, compassionate and experienced birth and postpartum doula, trained through DONA International. She has specialized training in breastfeeding support, infant & toddler nutrition, and maternal mental health. She is also a certified reiki practitioner. A bit of a jack-of-all trades, Becky has over 20 years experience working in public service and non-profit, is a trained singer, a former collegiate rower, an enthusiastic school chaperone, and has served as an advisor and advocate for special needs families in the Philadelphia region. A mom of two, Becky made a career pivot after the birth of her second son to pursue doula work. After a very difficult postpartum period that was made easier with an abundance of support and kindness from experienced moms and her larger community, Becky resolved that that no woman should need to navigate childbirth and the postpartum period without compassionate and loving support. Becky offers both professional knowledge and personal insight, while prioritizing the unique needs and circumstances of each family and infant. Her passion lies in walking alongside families-especially mothers. Whether through the profound and emotional journey of childbirth, or during the transformative (and often challenging) postpartum period, Becky\u2019s nurturing presence, unwavering support, and sense of humor help parents feel seen, heard and empowered. Becky cares for babies with the softest touch and most loving hands. She brings warmth and love to each home she works in, and is deeply committed to ensuring each family member feels confident, connected and cared for.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-4.jpeg",
+    "areas": [
+      "Philadelphia"
+    ],
+    "active": false,
+    "order": 61,
+    "isLeadership": false
+  },
+  {
+    "id": "bella",
+    "name": "Bella",
+    "title": "Postpartum Doula",
+    "credentials": "DONA-Trained Postpartum Doula",
+    "bio": "Bella is a DONA trained birth and postpartum doula who has a deep love for babies and gets her hands on a newborn at every opportunity. She has always been a baby whisper and will get even the fussiest of babies settled in her loving arms. Her work ethic is much appreciated in the homes of our clients as she works diligently to support new parents. Bella is sweet and confident. New parents sleep well knowing their newborn is under Bella's watchful eye.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Bella.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 62,
+    "isLeadership": false
+  },
+  {
+    "id": "bernadette",
+    "name": "Bernadette",
+    "title": "Postpartum Doula",
+    "credentials": "DONA-Trained Postpartum Doula",
+    "bio": "Bernadette is a trained DONA postpartum doula and the loving mother of three children. Bernadette is passionate about the Montessori Method and has spent her life studying child development between 0-3 years. After her many years of study, she continuously sees how important the early years are. This has led her to working with families during the postpartum period as a postpartum doula. Bernadette loves caring for newborns during these precious moments and supporting new parents during this important transitional time.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Bernadette-Picture-e1728333120712.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 63,
+    "isLeadership": false
+  },
+  {
+    "id": "beth",
+    "name": "Beth",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Beth has a passion for helping and empowering women to be the best moms they can be, which is why she became a postpartum doula in 2013. \u201cI know firsthand some of the struggles that new parents may encounter, and I love being able to be a listening ear and encourage them through this journey.\u201d She enjoys working with children and spent five years teaching 5th grade before starting her own family; she is the mom of three boys. \u201cI love the personal connections that this job allows and I also love the flexibility of being a doula.\u201d",
+    "photo": "https://afterthestork.info/wp-content/uploads/Beth.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 64,
+    "isLeadership": false
+  },
+  {
+    "id": "brittany",
+    "name": "Brittany",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Brittany is a trained Postpartum Doula through Birth Arts International and also has experience as a NICU Nurse at CHOP. While she loved the fast-paced hospital environment, Brittany transitioned to a more intimate and personal role as a postpartum doula with After the Stork, and we are so fortunate to have her on our team. Brittany\u2019s connection with infants began long before her nursing career, through years of babysitting and nannying. Her sweet warmth, baby experience well beyond her years, and genuine love for newborns shine through in every home she enters. During the school year, she works as a school nurse\u2014beloved by students who are always eager to visit her office\u2014and during the summer months, she dedicates more time to supporting new families with After the Stork. Being a doula is the perfect blend of Brittany\u2019s skills and passions. She finds joy in caring for one baby at a time, offering focused, nurturing support during those precious early weeks. A true night owl, she embraces overnight shifts with warmth and attentiveness, giving parents the peace of mind that their baby is in the most capable and loving hands.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-6-e1746155265114.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 65,
+    "isLeadership": false
+  },
+  {
+    "id": "candice",
+    "name": "Candice",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Candice has been a professional nanny for many years, specializing in newborns. She is also a mom herself. Candice enjoys helping to ease the postpartum period so parents can get a good night\u2019s rest. Candice has a calming presence as she confidently cares for newborns. She has had a newborn baby in her arms consistently over the past 25 years.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Candice.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 66,
+    "isLeadership": false
+  },
+  {
+    "id": "christa",
+    "name": "Christa",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Christa is the mother of five children, and she has been working with children for many years. She has her degree in early childhood education and loves volunteering in her church nursery.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Christa-2.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 67,
+    "isLeadership": false
+  },
+  {
+    "id": "christina",
+    "name": "Christina",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Christina is a compassionate and dedicated postpartum doula with a deep commitment to providing exceptional care for families during the crucial early weeks of parenthood. With a background as a nurse specializing in infant care at a long-term care facility, Christina brings a wealth of professional experience and a calm, nurturing demeanor to her work. Beyond her nursing background, Christina also spent years in the infant room of a prestigious daycare and as a nanny, caring for infants and cultivating a passion for helping parents. An avid reader and researcher, Christina enjoys staying updated on the latest evidence-based practices in infant care. Her love for learning and her genuine care for others make her an invaluable part of the After the Stork team, where she helps families transition into parenthood with confidence and peace of mind.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Square-Christina-Pic-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 68,
+    "isLeadership": false
+  },
+  {
+    "id": "crystal-2",
+    "name": "Crystal",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Crystal is a highly trained and certified postpartum doula through the Active Birth Institute with years of hands-on experience supporting new families. As a mother of five children, all of whom are in school, she deeply understands the challenges and joys of the postpartum period. For many years, Crystal has been a dedicated postpartum doula with After the Stork, where she has built a strong reputation for her professionalism, kindness, and unwavering commitment to her clients. She is known for going above and beyond to ensure that new parents feel supported, confident, and well cared for during the crucial early weeks of parenthood. With her extensive knowledge, compassionate approach, and personal experience as a mother, Crystal provides expert care tailored to each family's needs. Crystal's youngest daughter has special needs which has given Crystal an even deeper appreciation for quality care and the necessity of it. Whether assisting with newborn care, offering emotional support to parents, or helping families establish healthy routines, she brings warmth and reassurance to every home she serves. We are forever grateful to have Crystal caring for After the Stork families.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Crystal-1.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 69,
+    "isLeadership": false
+  },
+  {
+    "id": "danielle-s",
+    "name": "Danielle S",
+    "title": "Postpartum Doula",
+    "credentials": "DONA-Trained Postpartum Doula",
+    "bio": "Danielle S is a DONA trained postpartum doula. She has two children of her own who are now in their middle and high school years. She has been supporting new families for many years as a postpartum doula. Danielle is incredibly easy to talk to. She loves supporting families and caring for sweet babies overnight as the new parents get some much-needed rest.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Danielle-S.jpg",
+    "areas": [
+      "Philadelphia"
+    ],
+    "active": false,
+    "order": 70,
+    "isLeadership": false
+  },
+  {
+    "id": "holly",
+    "name": "Holly",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Holly is a certified Birth Arts postpartum doula and has been a baby whisperer since her teen years. Holly is the mom to three children. She loves supporting breastfeeding mothers and continues to pursue more training in lactation. Holly is cheery and sweet. Her passion for being a doula is evident as she greatly enjoys supporting families in this precious time of their lives.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Hollys-picture-scaled-e1718825358344.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 71,
+    "isLeadership": false
+  },
+  {
+    "id": "jamie",
+    "name": "Jamie",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Jamie is a bubbly and friendly postpartum doula who is beloved by our clients. She is the mom to a teenage son and who she is crazy about. Jamie has specialized in caring for newborns her whole life and cared for many newborns as a high-end nanny before becoming a postpartum doula. Jamie loves the mother/baby connection and loves supporting parents during the beautiful and precious postpartum season of life.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Jamie-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 72,
+    "isLeadership": false
+  },
+  {
+    "id": "jen-d",
+    "name": "Jen D.",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Jen is a compassionate and dedicated postpartum doula, educated through Birth Arts International. With extensive experience supporting families with both singletons and multiples, Jen offers a calming and nurturing presence during the transformative postpartum period. Jen is known for her kindness, warmth, and tenderness which is seen in each interaction she has with the babies she cares for. She loves supporting families during the postpartum time when time when help is so greatly needed. \"We absolutely LOVED working with Jen. She was with us from our first night home from the hospital until our little one turned 10 weeks. She took such good care of our child and on top of that helped us keep the house running and tidy (baby laundry, bottles, etc.) there are not enough words to express how truly special Jen is! She\u2019s an asset to the company and if you can request her, you should.\" Google Review from Grace Simon",
+    "photo": "https://afterthestork.info/wp-content/uploads/Jen-Dole-Picture-e1733501346405.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 73,
+    "isLeadership": false
+  },
+  {
+    "id": "jen-r",
+    "name": "Jen R",
+    "title": "Postpartum Doula",
+    "credentials": "Registered Nurse (RN)",
+    "bio": "Jen is happily married with two adult children. She has been a Registered Nurse for over 30 years. Jen has experience working with healthy babies as well as medically fragile babies. Jen has shifted her focus over the last few years to caring for babies as a postpartum doula. \u201cI absolutely adore children, especially newborns. I\u2019m so happy to be a part of the After the Stork Team!\u201d \u2013 Jen R",
+    "photo": "https://afterthestork.info/wp-content/uploads/Jen-Rodriguez.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 74,
+    "isLeadership": false
+  },
+  {
+    "id": "jenae",
+    "name": "Jenae",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Jenae is a postpartum doula, trained through Birth Arts International. She is also the loving mother of a preteen daughter and has always had a deep love for caring for newborn babies. Her gentle nature and nurturing spirit naturally led her to becoming a postpartum doula. She loves helping parents during the weeks following the birth of their baby. Jenae has a background as an occupational therapist assistant with a focus in the functions of breastfeeding. Soft spoken and kind, Jenae has a calming presence that brings peace to any room she enters. She understands the challenges of the postpartum period and offers compassionate care to parents.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Jenae-Picture-1-scaled-e1738952927262.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 75,
+    "isLeadership": false
+  },
+  {
+    "id": "jenn",
+    "name": "Jenn T.",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Jenn is a trained postpartum doula with Birth Arts International and the mother of three kids who were born very close together. Jenn is incredibly personable and easy to talk with and our clients feel very comfortable with their baby in her loving arms. She has always enjoyed learning about the mother/baby connection and loves to care for newborns in the stillness of the overnight hours as she supports parents in the postpartum period.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Photo-Jenn-Tichy-e1719253586965.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 76,
+    "isLeadership": false
+  },
+  {
+    "id": "jenna",
+    "name": "Jenna",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Jenna is a postpartum doula trained through Birth Arts International. A true \u201cbaby whisperer,\u201d she has been caring for newborns since her teenage years. Now, as her own children enter their teen years, Jenna brings both professional expertise and seasoned maternal insight to her work. She spent many years as a hospital hearing screener, working with babies just hours after birth\u2014a role she loved for the opportunity to support parents and their newborns in those tender first moments after delivery. Today, Jenna cherishes her role as a postpartum doula, providing overnight care for brand-new babies. We are so grateful to have Jenna as part of our team.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Jennas-Bio-Picture-e1770318426104.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 77,
+    "isLeadership": false
+  },
+  {
+    "id": "jennifer",
+    "name": "Jennifer",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Jennifer has always been a baby whisper her entire life and loves working in the role of a postpartum doula. Jen is a mom of a 7 year old boy she is crazy about. Our clients appreciate Jen's excellent communication skills and her caring heart. Jen is very relatable and becomes a fast friend of our clients. Babies settle quickly in her caring arms.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-scaled-e1724177382277.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 78,
+    "isLeadership": false
+  },
+  {
+    "id": "jessica",
+    "name": "Jessica",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Jessica has spent the past 25 years working with infants and toddlers, first as a nanny, then as a postpartum doula, and then she became a mom herself. Jessica enjoys working as a doula to help new moms and dads settle in with their precious newborns. She loves to use her knowledge of this special newborn stage to help put new parents' minds at ease and answer their questions. Jessica says, \"I love helping parents feel confident as they bond with and care for their little one.\"",
+    "photo": "https://afterthestork.info/wp-content/uploads/Jessica-Picture.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 79,
+    "isLeadership": false
+  },
+  {
+    "id": "jo-ann",
+    "name": "Jo Ann",
+    "title": "Postpartum Doula",
+    "credentials": "DONA-Trained Postpartum Doula",
+    "bio": "Jo Ann a DONA trained postpartum doula and has always been passionate about caring for families in the postpartum period. She is the sweetest lady and our clients are all in love with her. She is warm, friendly, loving, and kind. Jo Ann has two grown children of her own. She has a knack for knowing what you need before you even know you need it. Parents feel confident that their baby is in the most loving arms when their baby is under Jo Ann's watchful eye for the night.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Jo-Ann-.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 80,
+    "isLeadership": false
+  },
+  {
+    "id": "jody",
+    "name": "Jody",
+    "title": "Postpartum Doula",
+    "credentials": "Registered Nurse (RN)",
+    "bio": "Jody is a registered nurse with many years experience in labor, delivery, and postpartum recovery. She has helped many moms in the moments during and immediately following the birth of their baby. Her many years of experience as a nurse have equipped her well to be an amazing postpartum doula with us at After the Stork. Jody is also the mother of two young girls who she adores. Jody's extensive background in maternal health gives her a deep understanding of the needs of both new mothers and newborn babies. Jody's calm demeanor paired with her knowledge and nurturing approach make her an invaluable resource to our clients at After the Stork.",
+    "photo": "https://afterthestork.info/wp-content/uploads/IMG_6953-scaled-e1737572474553.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 81,
+    "isLeadership": false
+  },
+  {
+    "id": "jordan",
+    "name": "Jordan",
+    "title": "Postpartum Doula",
+    "credentials": "International Board Certified Lactation Consultant (IBCLC) \u00b7 DONA-Trained Postpartum Doula",
+    "bio": "Jordan is a caring and knowledgeable Postpartum Doula, trained through DONA as a Full Spectrum Doula, with a passion for supporting families during the transformative postpartum period. Her work is rooted in empathy and a deep understanding of the challenges and joys that come with welcoming a new baby into the family. Whether it\u2019s providing physical and emotional support, offering newborn care guidance, or helping parents navigate the early days of parenthood, Jordan is dedicated to helping families thrive during this important time. As a mother herself, Jordan brings a personal perspective to her work, understanding firsthand the ups and downs of the postpartum journey. Jordan is currently studying to become an International Board Certified Lactation Consultant (IBCLC) at Drexel University. This commitment to advanced education allows her to offer informed and personalized lactation support to families, helping new mothers feel confident and successful as they begin their breastfeeding journeys. Her training and experience give her the tools to assist families with breastfeeding challenges and to promote healthy feeding practices that benefit both mother and baby.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Jordan-Picture.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 82,
+    "isLeadership": false
+  },
+  {
+    "id": "julene",
+    "name": "Julene",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International \u00b7 Newborn Care Specialist",
+    "bio": "Julene has been a newborn care specialist for many years and has more recently trained as a postpartum doula with Birth Arts International. Julene's many hours caring for newborns has truly made her an expert in the care of newborns and their unique needs when it comes to sleep, feeding, umbilical cord care, circumcision care, and the many intricacies of infants. Julene loves caring for babies and empowering new parents so they too can confidently care for their new baby. Julene is originally from Jamaica and is the loving mother of three children. She is sweet, kind, and easy to talk with.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Julene.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 83,
+    "isLeadership": false
+  },
+  {
+    "id": "julia",
+    "name": "Julia",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Julia is a trained Birth Arts Postpartum Doula and the loving mother of four children. Julia is trained in lactation and infant sleep and is passionate about providing the absolute best postpartum care to After the Stork clients. With a gentle, sweet nature and soft-spoken demeanor, Julia brings warmth and understanding to every family she supports. Her kind approach and her excellent communication skills create a supportive environment for new parents as the navigate the early stages of parenthood.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Julia-Picture-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 84,
+    "isLeadership": false
+  },
+  {
+    "id": "karen",
+    "name": "Karen",
+    "title": "Postpartum Doula",
+    "credentials": "Newborn Care Specialist",
+    "bio": "Karen has been a postpartum doula with After the Stork for many years. She has three children of her own who are now almost full grown. She is a trained postpartum doula and newborn care specialist. Karen has her degree in Education and Family Studies. Karen loves caring for babies in this most precious time of life.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Karen-HeadShot.png",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 85,
+    "isLeadership": false
+  },
+  {
+    "id": "kelley-t",
+    "name": "Kelley T",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "With decades of experience and a deep passion for supporting families through the postpartum period, Kelley Troy is a trusted postpartum doula dedicated to providing exceptional care to both parents and newborns. Known for her nurturing nature and attentive support, Kelley creates a warm, safe environment where families feel confident and supported as they navigate the early days of parenthood. Her vast experience working with newborns and her heartfelt approach to care make her a cherished presence in the lives of the families she works with. Kelley goes above and beyond expectations, offering not only expert newborn care but also invaluable household support to ease the transition for new parents. Whether caring for the unique needs of a newborn, helping with laundry, dishes, or sterilizing pump parts, Kelley\u2019s commitment to supporting families extends to every aspect of their lives during this transformative time.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-Kelley-Troy-scaled-e1741105376152.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 86,
+    "isLeadership": false
+  },
+  {
+    "id": "kelli",
+    "name": "Kelli",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Kelli is a compassionate and skilled postpartum doula trained by Birth Arts International. As a mother herself, Kelli understands the joys and challenges of welcoming a new baby. Kelli has been especially successful in assisting babies who are accustom to \u201ccontact napping\u201d transition gently into their bassinet or crib. Her calm and patient approach reassures parents and helps little ones to develop independent sleep routines without stress. Known for her kind heart and her ability to make people feel at ease, Kelli is a natural caregiver. Outside of her work with babies, Kelli has a soft spot for dogs and doesn\u2019t mind a furry friend following her around as she cares for a sweet baby through the quiet midnight hours.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Kelli-Picture-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 87,
+    "isLeadership": false
+  },
+  {
+    "id": "kelly",
+    "name": "Kelly",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Kelly is a NICU nurse who loves supporting families in the intimate home setting as a postpartum doula. Kelly mainly supports our clients during the day. Kelly loves being able to focus on meeting the needs of just one sweet little baby and give her undivided attention to one mom and baby pair. We are so glad to have Kelly on our team.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Kelly.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 88,
+    "isLeadership": false
+  },
+  {
+    "id": "kim",
+    "name": "Kim",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Kim is a Maternity Nurse with experience working in both the hospital and doing mom/baby home visits. She is an active grandmother of five including a set of twins. Kim absolutely loves babies and supporting brand new parents as a postpartum doula and feels like she shines in this role. Kim is highly requested by our clients and for good reason. Kim is the mom who everyone wishes they had. We are so thankful to have Kim caring for our families.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Kim.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 89,
+    "isLeadership": false
+  },
+  {
+    "id": "kim-d",
+    "name": "Kim D",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Kim D has been watching newborn babies for over 15 years. She is passionate about caring for babies and especially loves helping babies sleep longer stretches so parents can get a good night's rest. Kim D. has received training in lactation and is happy to assist moms with breastfeeding. Kim is a confident communicator and she puts our clients at ease knowing their baby is under her expert care.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Kimone.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 90,
+    "isLeadership": false
+  },
+  {
+    "id": "lana",
+    "name": "Lana",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Lana is a birth and postpartum doula who lives in the heart of Philly. She began her career working with babies as a highly sought-after nanny in the Philadelphia area, where she became known for her sweet nature, calming presence, and natural ability to help newborns settle quickly. Lana also has a special gift for guiding babies into healthy routines that encourage restful sleep habits, making her a trusted favorite among families. Lana's sister's transformative birth experience inspired her to dive deeper into the birth and postpartum world. She decided to become a birth and postpartum doula through the Birthing Advocacy Training Program, which greatly deepened her knowledge about babies and postpartum care. It is her joy to provide families with restorative overnight rest, giving parents peace of mind knowing their baby is safe and lovingly cared for under Lana\u2019s watchful eye.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Lana-Pic-Square.jpeg",
+    "areas": [
+      "Philadelphia"
+    ],
+    "active": false,
+    "order": 91,
+    "isLeadership": false
+  },
+  {
+    "id": "lauren",
+    "name": "Lauren",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Lauren has loved babies ever since she can remember. She eagerly babysat and nannied throughout high school and college as she cared for several babies including twins. While she enjoyed working with children at every stage, her true passion was always with newborns. After years of nannying and supporting families with their little ones, Lauren decided to focus exclusively on the age group she excels with most\u2014newborns. To pursue this calling, she received her postpartum doula training and certification through the International Doula Institute. Dedicated to continual growth, Lauren values education and is always seeking additional training and certifications to better support her clients. A natural night owl, Lauren loves working overnight shifts and giving parents peace of mind while they rest. With her bright personality, extensive newborn experience, and gentle, nurturing spirit, Lauren brings comfort and reassurance to every family she serves. Her warmth, kindness, and wholesome character help parents feel confident knowing their baby is in loving, capable hands.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-1-e1756261660565.png",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 92,
+    "isLeadership": false
+  },
+  {
+    "id": "leah",
+    "name": "Leah",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Leah is the mother of three children and she has a degree in early childhood education, where she was a valued educator for 12 years. She has always been the go-to baby whisperer for friends and family. She says, \u201csince I first heard what a postpartum doula was, I knew I wanted pursue a career in that field. I am so honored to be able to walk alongside families during this incredible time of bringing home a new baby.\u201d",
+    "photo": "https://afterthestork.info/wp-content/uploads/Leah-for-web.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 93,
+    "isLeadership": false
+  },
+  {
+    "id": "leah-3",
+    "name": "Leah",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Leah is the mother of three children. Leah has wanted to be a postpartum doula ever since she started having children of her own over 13 years ago. After the chaotic arrival of a newborn, Leah\u2019s peaceful presence is very welcome. Tired parents sleep well knowing their baby is in Leah\u2019s arms. She enjoys helping families through the precious yet difficult postpartum period. Leah is very artistic and loves making pottery and jewelry.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Leah-1.jpg",
+    "areas": [
+      "Philadelphia",
+      "Wayne"
+    ],
+    "active": false,
+    "order": 94,
+    "isLeadership": false
+  },
+  {
+    "id": "linda-lin",
+    "name": "Linda \"Lin\"",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Linda \u201cLin\u201d is a postpartum doula and has been working with newborns in some capacity since her college days. Lin is a mom to three young-adult children and also a middle school teacher although she isn\u2019t currently active in the classroom. Her main focus in this season of her life is caring for newborns. Lin loves to support new moms and dads through the sweet and challenging postpartum period. Lin understands the challenges that sometimes come along with growing a family and is a kind and compassionate listening ear.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Lin-Hall-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 95,
+    "isLeadership": false
+  },
+  {
+    "id": "mariam",
+    "name": "Mariam",
+    "title": "Postpartum Doula",
+    "credentials": "DONA-Trained Postpartum Doula",
+    "bio": "Mariam is a DONA trained postpartum doula with a lifelong passion for nurturing and caring for others\u2014especially babies. Her love for infant care began at 18 when her mother gave birth to a baby boy--surprise! While juggling the demands of college, Mariam stepped into the role of a devoted big sister, discovering the joy and deep fulfillment that comes from supporting families with newborns. Now a mother herself, Mariam brings both personal and professional experience to her work. She understands firsthand the emotional and physical transitions that come with welcoming a new baby and offers compassionate, knowledgeable support to help families navigate those early days with confidence and calm. Mariam's dedication to helping others extends beyond her doula work. She has served as a hospital social worker, offering support to individuals during some of their most vulnerable moments. Years ago, she also spent several months in Kenya caring for orphans, an experience that deepened her commitment to compassionate service and global caregiving. Whether it\u2019s her own family or the families she serves, Mariam brings warmth, empathy, and a steady, reassuring presence to every home she enters.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-5-scaled-e1745874928756.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 96,
+    "isLeadership": false
+  },
+  {
+    "id": "maureen",
+    "name": "Maureen",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Maureen has been caring for newborn babies for over 20 years. Maureen is a sleep specialist and loves to help babies establish healthy sleep habits so the whole family can be well rested and enjoy this precious time of life together. Maureen is the loving mother two one son who is now full grown. She is kind, soft spoken, and hard working. We are thrilled to have Maureen working with us at After the Stork.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Maureen.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 97,
+    "isLeadership": false
+  },
+  {
+    "id": "mekayla-j",
+    "name": "MeKayla J.",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "MeKayla is a deeply dedicated birth and postpartum doula whose passion for supporting women and families runs generations deep. Coming from a family of birth workers, she has been immersed in the world of maternal care for most of her life. This lifelong connection to birth work, paired with formal training and real-world experience, makes MeKayla a powerful and compassionate presence for the families she serves. Certified through Uzazi Village and continually expanding her knowledge through advanced postpartum training with leading care experts\u2014including international specialists\u2014MeKayla brings a culturally rich and informed approach to her work. Her care reflects a deep respect for every family's unique journey and traditions. With extensive experience caring for newborns, MeKayla offers both practical knowledge and heartfelt support. Her softness, patience, and genuine kindness make her a beloved by the families she serves. Whether she\u2019s guiding a new mom through the early days of recovery or soothing a fussy baby with confident hands, MeKayla\u2019s presence brings calm, comfort, and a sense of steady reassurance.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-1.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 98,
+    "isLeadership": false
+  },
+  {
+    "id": "monica",
+    "name": "Monica",
+    "title": "Postpartum Doula",
+    "credentials": "ProDoula-Certified Postpartum Doula",
+    "bio": "Monica is a compassionate postpartum doula, trained through ProDoula and dedicated to supporting families through the early days of parenthood. As a loving mother herself, she understands both the joys and challenges of welcoming a newborn and Monica brings warmth, kindness, and expertise into every family she serves. Monica loves sweet little newborn babies and loves being able to be part of this special time for families.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Monica-Pic-scaled-e1739916012428.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 99,
+    "isLeadership": false
+  },
+  {
+    "id": "nia",
+    "name": "Nia",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Nia is a dedicated and highly skilled perinatal doula, certified through the Pennsylvania Certification Board, and a certified lactation counselor through the Academy of Lactation Policy and Practice. With years of experience supporting families, Nia has a true passion for guiding parents through the postpartum stage, offering both expertise and compassion as they navigate the early weeks of parenthood. Nia\u2019s deep knowledge and hands-on experience make her a trusted ally for new parents in all areas of infant care, having an exceptional amount of breastfeeding knowledge. Nia has supported countless families, including those with twins, she is well-versed in troubleshooting common newborn issues, whether it\u2019s establishing a breastfeeding routine, soothing a fussy baby, or offering guidance on sleep and infant care. Her experience allows her to approach each situation with confidence, providing peace of mind to parents as they adjust to life with their newborns. Her passion for nurturing families extends beyond her qualifications \u2013 Nia genuinely loves supporting both singletons and twins during the postpartum period. Her ability to offer calm, practical advice while also being an empathetic listener has made her a beloved resource for parents looking to feel empowered and supported during one of the most challenging, yet rewarding times of their lives.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-3.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 100,
+    "isLeadership": false
+  },
+  {
+    "id": "nichole",
+    "name": "Nichole",
+    "title": "Postpartum Doula",
+    "credentials": "ProDoula-Certified Postpartum Doula",
+    "bio": "Nichole has been a postpartum doula for over 30 years, beginning her journey into this work when she became a mother herself. Experiencing the profound, life-changing transformation of motherhood inspired her to support other mothers during their own transitions. She pursued years of formal training and is now a Pro Doula Certified Postpartum Doula and Infant Feeding Specialist. Nichole is tender, calm, and deeply respectful, bringing a sweet and nurturing presence to every family she supports. Her extensive experience has led many families to welcome her back for the births of their second and third children\u2014a testament to the trust and care she provides, which she treasures above all. A proud mother of four grown children and a grandmother, Nichole has dedicated her career to supporting families when they need her most. She has thoughtfully structured her schedule to work primarily overnight, ensuring she is available at the times her clients rely on her the most.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Nichole-Square.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 101,
+    "isLeadership": false
+  },
+  {
+    "id": "paulina",
+    "name": "Paulina",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Our Postpartum Doula Paulina has always had a deep passion for caring for babies. Originally from Poland, her beautiful accent and gentle nature immediately put families at ease. She began her journey in childcare as an au pair, where she cared for several infants and quickly discovered how much she loved supporting new parents and their little ones. After her time as an au pair, Paulina went on to work as a nanny, specializing in the care of young infants. Her nurturing touch and calm presence made her a natural in the role. Continuing to follow her calling, Paulina is now in school to become both a pediatric and OB nurse\u2014further proof of her lifelong commitment to caring for mothers and babies. Our clients love Paulina\u2019s sweet, gentle way and the loving attention she brings to every baby she cares for. Her warmth, professionalism, and passion shine through in all she does.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Paulina-scaled-e1762887644651.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 102,
+    "isLeadership": false
+  },
+  {
+    "id": "roniece",
+    "name": "Roniece",
+    "title": "Postpartum Doula",
+    "credentials": "Registered Nurse (RN)",
+    "bio": "Roniece is a mom of three kids ranging from 10-27yrs old. She has also been an experienced newborn nanny for more than fifteen years and has more than nine additional newborns under her watchful wing. Roniece has a great sense of humor and her motherly confidence gives new parents peace of mind. Roniece is a skill nurse and is studying to be an RN. She anticipates parents needs incredibly well from working in the homes of newborn babies for many years.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Roniece.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 103,
+    "isLeadership": false
+  },
+  {
+    "id": "ruth",
+    "name": "Ruth",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Ruth brings decades of experience, wisdom, and tenderness to her role as a postpartum doula. Trained through the Active Birth Institute, Ruth has spent much of her life supporting families in the transformative season after birth. Her wealth of experience makes her an invaluable resource to new parents, and her gentle guidance has eased countless families into their new routines. As one of the very first doulas hired by Georgette, Ruth has been a cherished member of the After the Stork team since its early days. Her presence is unmatched\u2014calm, reassuring, and effortless. Parents describe her as the easiest person to have in their home, someone who immediately puts everyone at ease. Babies, too, respond to her soothing touch and peaceful energy, quickly settling in her arms. Beyond her professional work, Ruth is a mother of five children and a proud grandmother to eight grandchildren. She has also opened her heart and home to children through foster care, further deepening her lifelong devotion to nurturing and guiding little ones. With her incomparable experience, deep compassion, and natural gift for caring, Ruth has become a trusted support for both new and seasoned parents. She is truly one of a kind, and families feel fortunate to welcome her into their lives.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Ruth-3.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 104,
+    "isLeadership": false
+  },
+  {
+    "id": "samantha",
+    "name": "Samantha",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Samantha brings a unique blend of clinical expertise and nurturing experience to her role as a postpartum doula. With degrees in both Biology and Nursing, she offers informed, compassionate care to families adjusting to life with a new baby. Since becoming a nurse in 2019, Samantha has worked primarily in postpartum care and has also supported newborns with more complex needs. She has years of experience at some of Philadelphia and the Main Line\u2019s leading children\u2019s hospitals, where she provided high-quality, family-centered care during the critical early days of life. In addition to her nursing background, Samantha spent several years as a nanny for multiple families, offering hands-on support and developing deep connections with both parents and children. Her combined experience allows her to bring calm, knowledgeable, and responsive care to every family she works with. Samantha\u2019s approach is grounded, warm, and deeply supportive\u2014making her a trusted guide for families as they transition into life with a new baby.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Photo-e1749074326380.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 105,
+    "isLeadership": false
+  },
+  {
+    "id": "sarah",
+    "name": "Sarah",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Sarah is a postpartum nurse and in school to be a nurse practitioner focusing her studies on maternal wellness. Sarah enjoys working with parents and newborns in the role of a postpartum doula while she continues her education. Sarah\u2019s extensive education about the postpartum period is a great asset to our team and we are grateful for all Sarah brings to After the Stork.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Sarah-K-Picture-e1720324007847.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 106,
+    "isLeadership": false
+  },
+  {
+    "id": "savana",
+    "name": "Savana",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Savana is a trained postpartum doula through Birth Arts International who brings both professional knowledge and heartfelt care to every family she serves. With a natural gift for nurturing, she has always been drawn to caring for people and has many years of experience with babies\u2014both as a mother and as a doula. Her journey into newborn care began when her brother welcomed a baby many years ago. From the moment she held that tiny little girl, Savana discovered the deep joy of tending to newborns, and her passion only grew from there. Before stepping into her doula role, she worked as a medical assistant and supported families as a nanny, both of which perfectly matched her love for caring for others. Now, as a postpartum doula, Savana treasures the honor of cradling sweet babies in her arms and helping parents feel rested, supported, and confident. She is known as a true sweetheart\u2014gentle, thoughtful, and easy to welcome into the home. Families deeply value her steady presence and the peace of mind she brings during the early days of parenthood. Outside of her work, Savana is the proud mom of two lively little girls who fill her days with joy and adventure. Her personal experience as both a parent and a caregiver continues to shape her ability to support families with empathy, warmth, and understanding.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-from-home-e1758246596786.jpeg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 107,
+    "isLeadership": false
+  },
+  {
+    "id": "shay",
+    "name": "Shay",
+    "title": "Postpartum Doula",
+    "credentials": "DONA-Trained Postpartum Doula",
+    "bio": "Shay is a DONA-trained birth and postpartum doula who has always been drawn to caring for families during the transformative journey of birth and the fourth trimester. With her warm presence, gentle spirit, and natural ability to connect, she quickly becomes a trusted support for the families she serves. Our clients often share how much they appreciate her steady encouragement and heartfelt care. Outside of doula work, Shay treasures her role as a loving mother to her teenage daughter. We feel so fortunate to have her on our team.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Shay.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 108,
+    "isLeadership": false
+  },
+  {
+    "id": "shiya",
+    "name": "Shiya",
+    "title": "Postpartum Doula",
+    "credentials": "International Board Certified Lactation Consultant (IBCLC) \u00b7 Certified Postpartum Doula \u00b7 Birth Arts International",
+    "bio": "Shiya is a highly experienced postpartum doula with a strong foundation in breastfeeding support. A certified NMA Lactation Counselor and Breastfeeding Educator, she offers families the best support as they begin their breastfeeding journey. She is currently advancing her clinical training through Drexel University\u2019s IBCLC program, deepening her expertise in lactation to better serve new parents and their babies. Trained through Birth Arts International, Shiya has supported families through the early postpartum period for many years. Her approach is grounded, nurturing, and rooted in both professional knowledge and personal experience as a mother of two school-aged boys. In addition to her doula and lactation work, Shiya is an yoga instructor and dedicated yogi. Her understanding of mindful movement and breathwork adds a calming, restorative dimension to her care. Shiya\u2019s warm presence, depth of knowledge, and holistic perspective make her a trusted and valued part of the After the Stork team.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-6-scaled.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 109,
+    "isLeadership": false
+  },
+  {
+    "id": "simonne",
+    "name": "Simonne",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Simonne is a seasoned childcare specialist with over 10 years experience. She has worked with varying age groups of children to include children with special needs. She enjoys working with newborn and new parents guiding them through their new experience. As a childcare specialist she employs proven techniques to calm fussy babies and train them to sleep longer throughout the night. She provides support to anxious parents as they embark on their new journey. She says: \u201cThe wellbeing of the parent and child is of utmost importance. I can assure you that I will provide peace of mind whilst working with your family.\u201d",
+    "photo": "https://afterthestork.info/wp-content/uploads/Simonne.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 110,
+    "isLeadership": false
+  },
+  {
+    "id": "skyler",
+    "name": "Skyler",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Skyler is a passionate and knowledgeable Postpartum Doula who is deeply committed to supporting new families in their postpartum journey. With a love for learning about all things related to babies and breastfeeding, Skyler stays up to date on the latest research and techniques to offer the best care and guidance. Her dedication to evidence-based support helps parents feel supported and empowered.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Picture-e1731527226355.png",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 111,
+    "isLeadership": false
+  },
+  {
+    "id": "stephanie",
+    "name": "Stephanie",
+    "title": "Postpartum Doula",
+    "credentials": "Newborn Care Specialist",
+    "bio": "Stephanie is the mother of one, and grandmother to three. She is a newborn care specialist and postpartum doula and has been working with newborns for over twenty years. Stephanie loves having the opportunity to be a support to new moms and dads. She is loving and nurturing and easy to talk to. She puts every new parent at ease. What our clients have to say about Stephanie...",
+    "photo": "https://afterthestork.info/wp-content/uploads/Stephanie-1.jpg",
+    "areas": [
+      "Philadelphia"
+    ],
+    "active": false,
+    "order": 112,
+    "isLeadership": false
+  },
+  {
+    "id": "tiana",
+    "name": "Tiana",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "In 2020, Tiana received her postpartum doula training and certification through The Midwifery Institute. As a mother of two children, Tiana understands firsthand the joys and challenges of the postpartum journey, which fuels her passion for providing exceptional care to families during this precious time. Known for her sweet and soft-spoken demeanor, Tiana creates a warm and nurturing environment where families feel supported and cared for.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Tiana.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 113,
+    "isLeadership": false
+  },
+  {
+    "id": "trish",
+    "name": "Trish",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Trish is a warm and approachable postpartum doula, certified through the Active Birth Institute, who brings both personal experience and professional expertise to every family she supports. As a mom of twins herself, now in their teenage years, she understands the unique challenges and joys of parenting during the postpartum period. Trish\u2019s firsthand experience gives her an authentic perspective, allowing her to offer invaluable support to parents navigating this transformative time. With a natural gift for connecting with people, Trish is known for her friendly, personable nature and her ability to make parents feel at ease. She creates a comfortable, open environment where families can feel heard and supported as they adjust to life with a newborn. Trish\u2019s engaging personality and ease in conversation make her a joy to have in the homes of our clients--and we can't get enough of that gorgeous Zambian/English accent. Her genuine love for helping others and her dedication to supporting families during this important stage make Trish a treasured postpartum doula. Whether it\u2019s offering practical advice, emotional encouragement, or simply being a listening ear, Trish\u2019s caring and encouraging spirit ensures that parents feel empowered and confident as they embrace life with their little ones.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Trish.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 114,
+    "isLeadership": false
+  },
+  {
+    "id": "victoria-vicki",
+    "name": "Vicki",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "Vicki is a postpartum doula who also has her degree in nursing. She is a mother of six children: two older boys in their early twenties and four girls who are school aged. This loving mother and wife has a deep passion for helping families thrive in their postpartum period. Vicki\u2019s ample experience caring for babies both professionally as well as personally sets parents minds at ease as she supports families with gentle confidence. Vicki\u2019s sweet and kind approach creates a safe and comforting space where families feel cared for and empowered.",
+    "photo": "https://afterthestork.info/wp-content/uploads/pic-2-of-Vicki-scaled-e1733518988877.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 115,
+    "isLeadership": false
+  },
+  {
+    "id": "yalandra",
+    "name": "Yalandra",
+    "title": "Postpartum Doula",
+    "credentials": "Certified Postpartum Doula",
+    "bio": "With over 15 years of experience in the maternity unit of a hospital, Yalandra is a seasoned expert in caring for mothers and their newborns. Yalandra\u2019s extensive hands-on experience with newborns has equipped her with unmatched skills in nurturing and guiding new parents as they navigate the joys and challenges of welcoming a baby. As a birth and postpartum doula, she provides personalized care, offering emotional, physical, and educational support to ensure a positive postpartum experience. Her approach is grounded in empathy and professionalism, tailoring her services to meet each family\u2019s unique needs. Whether helping with the first nights home from the hospital, breastfeeding guidance, or newborn soothing techniques, Yalandra is a calming and reassuring presence every step of the way of your postpartum journey.",
+    "photo": "https://afterthestork.info/wp-content/uploads/Yalandra-Headshot.jpg",
+    "areas": [
+      "Philadelphia",
+      "Main Line"
+    ],
+    "active": false,
+    "order": 116,
     "isLeadership": false
   }
 ]
