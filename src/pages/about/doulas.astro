@@ -4,9 +4,11 @@ import Button from '@/components/ui/Button.astro'
 import Eyebrow from '@/components/ui/Eyebrow.astro'
 import Media from '@/components/ui/Media.astro'
 import type { Doula } from '@/types'
-import doulaData from '@/data/doulas.json'
+import { sanityClient, urlFor } from '@/lib/sanity'
 
-const allDoulas = (doulaData as Doula[]).filter(d => d.active).sort((a, b) => a.order - b.order)
+const allDoulas = await sanityClient.fetch<Doula[]>(
+  `*[_type == "doula" && active == true] | order(order asc)`
+)
 const filterOptions = ['All', 'Overnight', 'Daytime', 'NCS']
 ---
 
@@ -73,7 +75,7 @@ const filterOptions = ['All', 'Overnight', 'Daytime', 'NCS']
               }`}
             >
               <Media
-                src={doula.photo}
+                src={doula.photo ? urlFor(doula.photo).width(600).height(800).url() : null}
                 alt={isPlaceholder ? 'After the Stork care team member' : `${doula.name}, ${doula.title}`}
                 label={isPlaceholder ? 'Coming Soon' : doula.name}
                 ratio="3/4"

@@ -18,12 +18,13 @@ There is no test suite or linter configured.
 
 ### Data layer
 
-There is no backend or database. All content lives in flat files:
+There is no traditional backend/database, but doula profiles are now managed in **Sanity CMS**:
 
-- `src/data/*.json` — company info, services, doulas, navigation, testimonials, FAQs
-- `src/content/blog/*.mdx` — blog posts as Astro content collections (schema in `src/content/config.ts`)
+- `src/data/*.json` — company info, services, navigation, testimonials, FAQs (`doulas.json` is legacy — kept only as the seed source for `npm run migrate:doulas`, no longer read by pages)
+- `src/content/blog/*.mdx` — blog posts as Astro content collections (schema in `src/content/config.ts`) — not yet migrated to Sanity
+- **Doulas** — fetched at build time from Sanity via `src/lib/sanity.ts` (`sanityClient`, `urlFor`), queried with GROQ in `src/pages/about/index.astro` and `src/pages/about/doulas.astro`
 
-A `sanity/` directory contains CMS schemas for future blog/doula management, but Sanity is **not yet wired up**. Once activated it would replace the JSON files and MDX with GROQ queries.
+The `sanity/` directory holds the CMS schemas (`doula.ts`, `blogPost.ts`, aggregated in `schema/index.ts`); `blogPost` is defined but not yet wired to a page. The Studio itself is embedded in the Astro app at `/studio`, configured by root `sanity.config.ts` + the `sanity()` integration in `astro.config.mjs`. Project ID/dataset live in `.env` (`PUBLIC_SANITY_PROJECT_ID`, `PUBLIC_SANITY_DATASET`) — see `sanity/README.md` for details on adding doulas and inviting editors.
 
 ### Component model
 

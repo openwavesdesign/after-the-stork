@@ -1,38 +1,23 @@
 # Sanity CMS — Integration Guide
 
-The schema definitions in this directory (`blogPost.ts`, `doula.ts`) are scaffolded and ready to connect to a live Sanity project. No live connection exists yet.
+Sanity is live. The Studio is embedded in the Astro site at `/studio` (dev: `http://localhost:4321/studio`), configured by `../sanity.config.ts` and `../astro.config.mjs`, using the `doula` and `blogPost` schemas in this directory (`schema/index.ts`).
 
-## To activate Sanity
+Project: `lpw4qk4n`, dataset `production` (see `.env` / `.env.example` for `PUBLIC_SANITY_PROJECT_ID` / `PUBLIC_SANITY_DATASET`).
 
-1. Install the Sanity SDK: `npm install @sanity/client @sanity/image-url`
-2. Create a Sanity project at https://sanity.io
-3. Add environment variables to `.env`:
-   ```
-   PUBLIC_SANITY_PROJECT_ID=your_project_id
-   PUBLIC_SANITY_DATASET=production
-   ```
-4. Create a `sanity/client.ts` file:
-   ```ts
-   import { createClient } from '@sanity/client'
-   export const sanityClient = createClient({
-     projectId: import.meta.env.PUBLIC_SANITY_PROJECT_ID,
-     dataset: import.meta.env.PUBLIC_SANITY_DATASET || 'production',
-     apiVersion: '2024-01-01',
-     useCdn: true,
-   })
-   ```
+## Adding doulas
 
-## Replacing JSON data
+Open `/studio`, sign in with a Sanity account invited to the project, and create/edit "Doula Profile" documents. The doula pages (`src/pages/about/index.astro` leadership section, `src/pages/about/doulas.astro` full team grid) query Sanity directly via `src/lib/sanity.ts` — no rebuild-and-redeploy of JSON needed, just a new production build to pick up the latest content (`useCdn: false`, so builds always fetch fresh).
 
-- **Blog posts**: Replace Astro content collection entries in `src/content/blog/` with GROQ queries to Sanity.
-- **Doula profiles**: Replace `src/data/doulas.json` imports with a Sanity GROQ query.
+`src/data/doulas.json` is no longer read by the site; it's kept only as the seed source for `npm run migrate:doulas` (see `scripts/migrate-doulas.mjs`), a one-time import of the original three team bios into Sanity.
 
-## GROQ query examples
+## Inviting editors
+
+Add teammates (e.g. Georgette, Ashley, Allison) as project members at https://www.sanity.io/manage under project `lpw4qk4n` → Members, so they can log into `/studio` and manage doula profiles themselves.
+
+## Replacing blog JSON
+
+Blog posts still live in `src/content/blog/*.mdx` as Astro content collections — the `blogPost` schema exists here but isn't wired to a page yet. To activate it, replace the content-collection reads with a GROQ query, e.g.:
 
 ```ts
-// All active doulas, ordered
-const doulas = await sanityClient.fetch(`*[_type == "doula" && active == true] | order(order asc)`)
-
-// Single blog post by slug
 const post = await sanityClient.fetch(`*[_type == "blogPost" && slug.current == $slug][0]`, { slug })
 ```

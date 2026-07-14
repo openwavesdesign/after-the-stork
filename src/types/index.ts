@@ -4,7 +4,7 @@ export interface Doula {
   title: string
   credentials: string
   bio: string
-  photo: string | null
+  photo: import('@sanity/types').Image | null
   areas: string[]
   active: boolean
   order: number
